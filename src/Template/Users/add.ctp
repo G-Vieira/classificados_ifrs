@@ -3,6 +3,7 @@
  * @var \App\View\AppView $this
  * @var \App\Model\Entity\User $user
  */
+  $this->layout = true;
 ?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
@@ -19,7 +20,8 @@
             echo $this->Form->control('password');
             echo $this->Form->control('nome');
             echo $this->Form->control('email');
-            echo $this->Form->control('role');
+            echo $this->Form->input('role', array(
+            'options' => array('admin' => 'Admin','normal' => 'Normal')));
             echo $this->Form->control('cidade');
         ?>
     </fieldset>

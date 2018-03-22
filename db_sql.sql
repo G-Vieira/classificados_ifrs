@@ -30,3 +30,13 @@ CREATE TABLE users (
   cidade INT NOT NULL,
   FOREIGN KEY(cidade) REFERENCES cidades(id)
 );
+
+INSERT INTO cidades (nome,uf) VALUES('Ibirubá','RS');
+INSERT INTO cidades (nome,uf) VALUES('Tapera','RS');
+INSERT INTO cidades (nome,uf) VALUES('Selbach','RS');
+INSERT INTO cidades (nome,uf) VALUES('Fortaleza dos Valos','RS');
+
+INSERT INTO `users` (`username`, `password`, `nome`, `email`, `role`, `created`, `modified`, `cidade`) VALUES
+('gian.vieira', '$2y$10$KWQ8kH/nGRAmVcmwSdufbuo2Shh4tgV.NUyBA3DGyYOTLJIeohYtm', 'Gian Paulo', 'gian.vieira@ibiruba.ifrs.edu.br', 'admin', '2018-03-22 16:03:51', '2018-03-22 16:03:51', 2),
+('matheus.neu', '$2y$10$KWQ8kH/nGRAmVcmwSdufbuo2Shh4tgV.NUyBA3DGyYOTLJIeohYtm', 'Matheus Neu', 'gian.vieira@ibiruba.ifrs.edu.br', 'admin', '2018-03-22 16:04:20', '2018-03-22 16:04:20', 4),
+('everton.hoffmann', '$2y$10$KWQ8kH/nGRAmVcmwSdufbuo2Shh4tgV.NUyBA3DGyYOTLJIeohYtm', 'Everton Hoffmann', 'gian.vieira@ibiruba.ifrs.edu.br', 'admin', '2018-03-22 16:05:00', '2018-03-22 16:05:00', 3);
