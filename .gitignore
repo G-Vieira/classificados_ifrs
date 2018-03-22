@@ -29,4 +29,4 @@ nbproject/*
 # Visual Studio Code
 .vscode
 # Sass preprocessor
-.sass-cache/
+.sass-cache
