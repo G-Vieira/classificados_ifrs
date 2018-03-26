@@ -31,6 +31,51 @@ CREATE TABLE users (
   FOREIGN KEY(cidade) REFERENCES cidades(id)
 );
 
+CREATE TABLE categorias (
+id INT AUTO_INCREMENT PRIMARY KEY,
+descricao VARCHAR(200) NOT NULL UNIQUE
+);
+
+CREATE TABLE anuncios(
+id INT AUTO_INCREMENT PRIMARY KEY,
+user_id INT NOT NULL,
+categoria_id INT NOT NULL,
+descricao TEXT NOT NULL,
+titulo VARCHAR(50) NOT NULL,
+validade DATE NOT NULL,
+created DATETIME DEFAULT NULL,
+modified DATETIME DEFAULT NULL,
+FOREIGN KEY(user_id) REFERENCES users(id),
+FOREIGN KEY(categoria_id) REFERENCES categorias(id)
+);
+
+CREATE TABLE anexos(
+id INT AUTO_INCREMENT PRIMARY KEY,
+anuncio_id INT NOT NULL,
+caminho VARCHAR(300) NOT NULL,
+FOREIGN KEY(anuncio_id) REFERENCES anuncios(id)
+);
+
+CREATE TABLE comentarios(
+id INT AUTO_INCREMENT PRIMARY KEY,
+anuncio_id INT NOT NULL,
+user_id INT NOT NULL,
+descricao TEXT NOT NULL,
+created DATETIME DEFAULT NULL,
+modified DATETIME DEFAULT NULL,
+FOREIGN KEY(anuncio_id) REFERENCES anuncios(id),
+FOREIGN KEY(user_id) REFERENCES users(id) 
+);
+
+CREATE TABLE favoritos(
+user_id INT NOT NULL,
+categoria_id INT NOT NULL,
+FOREIGN KEY(categoria_id) REFERENCES categorias(id),
+FOREIGN KEY(user_id) REFERENCES users(id),
+PRIMARY KEY(user_id, categoria_id)
+);
+
+
 INSERT INTO cidades (nome,uf) VALUES('Ibirubá','RS');
 INSERT INTO cidades (nome,uf) VALUES('Tapera','RS');
 INSERT INTO cidades (nome,uf) VALUES('Selbach','RS');
