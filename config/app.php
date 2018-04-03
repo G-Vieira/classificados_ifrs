@@ -229,8 +229,8 @@ return [
              * the following line and set the port accordingly
              */
             //'port' => 'non_standard_port_number',
-            'username' => 'root',
-            'password' => '315218',
+            'username' => 'classificados_ifrs',
+            'password' => 'ifrs',
             'database' => 'classificados_ifrs',
             'encoding' => 'utf8',
             'timezone' => 'UTC',

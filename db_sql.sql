@@ -8,7 +8,12 @@
  * Created: 20/03/2018
  */
 
+
 create database classificados_ifrs;
+
+create user 'classificados_ifrs'@'%' identified by 'ifrs';
+grant all PRIVILEGES on classificados_ifrs.* to classificados_ifrs;
+flush PRIVILEGES;
 
 use classificados_ifrs;
 
