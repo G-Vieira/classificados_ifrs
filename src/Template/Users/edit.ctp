@@ -27,7 +27,7 @@
             echo $this->Form->control('nome');
             echo $this->Form->control('email');
             echo $this->Form->input('role', array(
-            'options' => array('admin' => 'Admin','normal' => 'Normal')
+            'options' => array('admin' => 'Admin','normal' => 'Normal')));
             echo $this->Form->control('cidade');
         ?>
     </fieldset>

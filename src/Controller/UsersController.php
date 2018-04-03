@@ -16,7 +16,7 @@
 
     public function beforeFilter(Event $event) {
       parent::beforeFilter($event);
-      $this->Auth->deny(['index', 'view', 'edit', 'delete']);
+      $this->Auth->deny(['index', 'add','view', 'edit', 'delete']);
       $this->Auth->allow(['register']);
     }
 

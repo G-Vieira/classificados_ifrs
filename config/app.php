@@ -230,7 +230,7 @@ return [
              */
             //'port' => 'non_standard_port_number',
             'username' => 'root',
-            'password' => 'root',
+            'password' => '315218',
             'database' => 'classificados_ifrs',
             'encoding' => 'utf8',
             'timezone' => 'UTC',
