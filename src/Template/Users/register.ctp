@@ -2,7 +2,6 @@
 /**
   * @var \App\View\AppView $this
   */
-    $this->layout = true;
 ?>
 <div class="users form large-9 medium-8 columns content">
     <?= $this->Form->create($user) ?>

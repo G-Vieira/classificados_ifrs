@@ -11,11 +11,11 @@
 
 create database classificados_ifrs;
 
-create user 'classificados_ifrs'@'%' identified by 'ifrs';
-grant all PRIVILEGES on classificados_ifrs.* to classificados_ifrs;
-flush PRIVILEGES;
+CREATE USER 'ifrs'@'%' IDENTIFIED BY 'ifrs';
+GRANT ALL PRIVILEGES ON classificados_ifrs.* TO ifrs;
+FLUSH PRIVILEGES;
 
-use classificados_ifrs;
+USE classificados_ifrs;
 
 CREATE TABLE cidades (
   id INT AUTO_INCREMENT PRIMARY KEY,
@@ -88,5 +88,5 @@ INSERT INTO cidades (nome,uf) VALUES('Fortaleza dos Valos','RS');
 
 INSERT INTO `users` (`username`, `password`, `nome`, `email`, `role`, `created`, `modified`, `cidade`) VALUES
 ('gian.vieira', '$2y$10$KWQ8kH/nGRAmVcmwSdufbuo2Shh4tgV.NUyBA3DGyYOTLJIeohYtm', 'Gian Paulo', 'gian.vieira@ibiruba.ifrs.edu.br', 'admin', '2018-03-22 16:03:51', '2018-03-22 16:03:51', 2),
-('matheus.neu', '$2y$10$KWQ8kH/nGRAmVcmwSdufbuo2Shh4tgV.NUyBA3DGyYOTLJIeohYtm', 'Matheus Neu', 'gian.vieira@ibiruba.ifrs.edu.br', 'admin', '2018-03-22 16:04:20', '2018-03-22 16:04:20', 4),
-('everton.hoffmann', '$2y$10$KWQ8kH/nGRAmVcmwSdufbuo2Shh4tgV.NUyBA3DGyYOTLJIeohYtm', 'Everton Hoffmann', 'gian.vieira@ibiruba.ifrs.edu.br', 'admin', '2018-03-22 16:05:00', '2018-03-22 16:05:00', 3);
+('matheus.neu', '$2y$10$KWQ8kH/nGRAmVcmwSdufbuo2Shh4tgV.NUyBA3DGyYOTLJIeohYtm', 'Matheus Neu', 'matheus.neu@ibiruba.ifrs.edu.br', 'admin', '2018-03-22 16:04:20', '2018-03-22 16:04:20', 4),
+('everton.hoffmann', '$2y$10$KWQ8kH/nGRAmVcmwSdufbuo2Shh4tgV.NUyBA3DGyYOTLJIeohYtm', 'Everton Hoffmann', 'everton.hoffmann@ibiruba.ifrs.edu.br', 'admin', '2018-03-22 16:05:00', '2018-03-22 16:05:00', 3);

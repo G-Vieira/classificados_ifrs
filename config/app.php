@@ -229,7 +229,7 @@ return [
              * the following line and set the port accordingly
              */
             //'port' => 'non_standard_port_number',
-            'username' => 'classificados_ifrs',
+            'username' => 'ifrs',
             'password' => 'ifrs',
             'database' => 'classificados_ifrs',
             'encoding' => 'utf8',

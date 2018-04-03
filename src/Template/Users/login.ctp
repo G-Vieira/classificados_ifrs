@@ -1,4 +1,3 @@
-<?php $this->layout = true; ?>
 
 <div class="large-4 columns">
 <?= $this->Flash->render() ?>

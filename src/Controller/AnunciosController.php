@@ -43,16 +43,7 @@ class AnunciosController extends AppController
 
         $this->set('anuncio', $anuncio);
     }
-
-    public function mostrar(){
-        $this->paginate = [
-            'contain' => ['Users', 'Categorias']
-        ];
-        $anuncios = $this->paginate($this->Anuncios);
-
-        $this->set(compact('anuncios'));
-    }
-    
+   
     /**
      * Add method
      *

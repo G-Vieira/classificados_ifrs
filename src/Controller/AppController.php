@@ -45,8 +45,8 @@
       $this->loadComponent('Flash');
       $this->loadComponent('Auth', [
 	'loginRedirect' => [
-	  'controller' => 'Users',
-	  'action' => 'index'
+	  'controller' => 'Pages',
+	  'action' => 'display'
 	],
 	'authError' => 'Area de acesso privado.',
 	'logoutRedirect' => [
@@ -56,6 +56,29 @@
       ]);
       $this->set('authUser', $this->Auth->user());
     }
+
+    /*
+     * Função que retorna se um usuario é admin ou não
+     * Caso receba true como parametro, ela irá redirecionar o usuario(caso ele não seja admin)
+     * Função no nivel dos controllers
+     */
+
+    public function isAdmin($redirecionar = true) {
+      $user = ($this->Auth->user()) ? $this->Auth->user() : null;
+
+      if (($user['role'] === 'admin')) {
+	return true;
+      }
+      if ($redirecionar) {
+	return $this->redirect(
+	    array('controller' => 'Pages',
+	          'action' => 'display'));
+      }
+      else {
+	return false;
+      }
+    }
+
 
     /**
      * Before render callback.
@@ -71,8 +94,13 @@
       }
     }
 
+    /*
+     * Filtro para autorização
+     */
+
     public function beforeFilter(Event $event) {
-      $this->Auth->allow(['index', 'view', 'display']);
+      $this->Auth->deny(['add', 'edit', 'delete']);
+      $this->Auth->allow(['index', 'display', 'view']);
     }
 
   }

@@ -319,3 +319,60 @@ Stack Trace:
 #18 {main}
 
 
+2018-04-03 13:54:37 Error: [Cake\View\Exception\MissingTemplateException] Template file "Pages\predisplay.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Pages\\predisplay.ctp',
+)
+Request URL: /pages/predisplay?msg=Acesso+Negado
+Stack Trace:
+#0 C:\wamp\www\classificados_ifrs\vendor\cakephp\cakephp\src\View\View.php(768): Cake\View\View->_getViewFileName('predisplay')
+#1 C:\wamp\www\classificados_ifrs\vendor\cakephp\cakephp\src\Controller\Controller.php(623): Cake\View\View->render('predisplay', NULL)
+#2 C:\wamp\www\classificados_ifrs\src\Controller\PagesController.php(67): Cake\Controller\Controller->render('predisplay')
+#3 C:\wamp\www\classificados_ifrs\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\PagesController->display('predisplay')
+#4 C:\wamp\www\classificados_ifrs\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#5 C:\wamp\www\classificados_ifrs\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PagesController))
+#6 C:\wamp\www\classificados_ifrs\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp\www\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp\www\classificados_ifrs\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp\www\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp\www\classificados_ifrs\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp\www\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\wamp\www\classificados_ifrs\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\wamp\www\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\wamp\www\classificados_ifrs\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\wamp\www\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\wamp\www\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\wamp\www\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\wamp\www\classificados_ifrs\webroot\index.php(40): Cake\Http\Server->run()
+#19 {main}
+
+
+2018-04-03 14:36:02 Error: [Cake\View\Exception\MissingLayoutException] Layout file "Layout\1.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Layout\\1.ctp',
+)
+Request URL: /
+Stack Trace:
+#0 C:\wamp\www\classificados_ifrs\vendor\cakephp\cakephp\src\View\View.php(801): Cake\View\View->_getLayoutFileName(true)
+#1 C:\wamp\www\classificados_ifrs\vendor\cakephp\cakephp\src\View\View.php(777): Cake\View\View->renderLayout('', true)
+#2 C:\wamp\www\classificados_ifrs\vendor\cakephp\cakephp\src\Controller\Controller.php(623): Cake\View\View->render('home', NULL)
+#3 C:\wamp\www\classificados_ifrs\src\Controller\PagesController.php(61): Cake\Controller\Controller->render('home')
+#4 C:\wamp\www\classificados_ifrs\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\PagesController->display('home')
+#5 C:\wamp\www\classificados_ifrs\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#6 C:\wamp\www\classificados_ifrs\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PagesController))
+#7 C:\wamp\www\classificados_ifrs\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\wamp\www\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\wamp\www\classificados_ifrs\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\wamp\www\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\wamp\www\classificados_ifrs\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\wamp\www\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\wamp\www\classificados_ifrs\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\wamp\www\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\wamp\www\classificados_ifrs\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\wamp\www\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\wamp\www\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\wamp\www\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\wamp\www\classificados_ifrs\webroot\index.php(40): Cake\Http\Server->run()
+#20 {main}
+
+
