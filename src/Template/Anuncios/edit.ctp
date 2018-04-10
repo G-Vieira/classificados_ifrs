@@ -6,7 +6,7 @@
 ?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
+        <li class="heading"><?= __('Ações') ?></li>
         <li><?= $this->Form->postLink(
                 __('Delete'),
                 ['action' => 'delete', $anuncio->id],
@@ -33,7 +33,8 @@
             echo $this->Form->control('categoria_id', ['options' => $categorias]);
             echo $this->Form->control('descricao');
             echo $this->Form->control('titulo');
-            echo $this->Form->control('validade');
+	    $data = ((new DateTime(date('Y-m-d H:i:s')))->modify('+1 month'))->format('Y-m-d');
+            echo '<input type="date" value = "' . $data , '" style="display:none;" required />';
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>
