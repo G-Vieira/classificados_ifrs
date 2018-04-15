@@ -17,6 +17,6 @@
             'options' => array('normal' => 'Normal')));
         ?>
     </fieldset>
-    <?= $this->Form->button(__('Submit')) ?>
+    <?= $this->Form->button(__('Registrar')) ?>
     <?= $this->Form->end() ?>
 </div>

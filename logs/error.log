@@ -584,3 +584,85 @@ Stack Trace:
 #21 {main}
 
 
+2018-04-15 20:37:23 Error: [ParseError] syntax error, unexpected '?>', expecting ',' or ')'
+Request URL: /
+Referer URL: http://localhost/classificados_ifrs/users
+Stack Trace:
+#0 C:\wamp64\www\classificados_ifrs\vendor\cakephp\cakephp\src\View\View.php(1164): Cake\View\View->_evaluate('C:\\wamp64\\www\\c...', Array)
+#1 C:\wamp64\www\classificados_ifrs\vendor\cakephp\cakephp\src\View\View.php(819): Cake\View\View->_render('C:\\wamp64\\www\\c...')
+#2 C:\wamp64\www\classificados_ifrs\vendor\cakephp\cakephp\src\View\View.php(777): Cake\View\View->renderLayout('', 'default')
+#3 C:\wamp64\www\classificados_ifrs\vendor\cakephp\cakephp\src\Controller\Controller.php(623): Cake\View\View->render('home', NULL)
+#4 C:\wamp64\www\classificados_ifrs\src\Controller\PagesController.php(61): Cake\Controller\Controller->render('home')
+#5 C:\wamp64\www\classificados_ifrs\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\PagesController->display('home')
+#6 C:\wamp64\www\classificados_ifrs\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#7 C:\wamp64\www\classificados_ifrs\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PagesController))
+#8 C:\wamp64\www\classificados_ifrs\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\classificados_ifrs\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\wamp64\www\classificados_ifrs\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\wamp64\www\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\wamp64\www\classificados_ifrs\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\wamp64\www\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\wamp64\www\classificados_ifrs\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\wamp64\www\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\wamp64\www\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\wamp64\www\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\wamp64\www\classificados_ifrs\webroot\index.php(40): Cake\Http\Server->run()
+#21 {main}
+
+
+2018-04-15 20:37:30 Error: [ParseError] syntax error, unexpected '?>', expecting ',' or ')'
+Request URL: /
+Stack Trace:
+#0 C:\wamp64\www\classificados_ifrs\vendor\cakephp\cakephp\src\View\View.php(1164): Cake\View\View->_evaluate('C:\\wamp64\\www\\c...', Array)
+#1 C:\wamp64\www\classificados_ifrs\vendor\cakephp\cakephp\src\View\View.php(819): Cake\View\View->_render('C:\\wamp64\\www\\c...')
+#2 C:\wamp64\www\classificados_ifrs\vendor\cakephp\cakephp\src\View\View.php(777): Cake\View\View->renderLayout('', 'default')
+#3 C:\wamp64\www\classificados_ifrs\vendor\cakephp\cakephp\src\Controller\Controller.php(623): Cake\View\View->render('home', NULL)
+#4 C:\wamp64\www\classificados_ifrs\src\Controller\PagesController.php(61): Cake\Controller\Controller->render('home')
+#5 C:\wamp64\www\classificados_ifrs\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\PagesController->display('home')
+#6 C:\wamp64\www\classificados_ifrs\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#7 C:\wamp64\www\classificados_ifrs\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PagesController))
+#8 C:\wamp64\www\classificados_ifrs\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\classificados_ifrs\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\wamp64\www\classificados_ifrs\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\wamp64\www\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\wamp64\www\classificados_ifrs\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\wamp64\www\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\wamp64\www\classificados_ifrs\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\wamp64\www\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\wamp64\www\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\wamp64\www\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\wamp64\www\classificados_ifrs\webroot\index.php(40): Cake\Http\Server->run()
+#21 {main}
+
+
+2018-04-15 20:38:27 Error: [ParseError] syntax error, unexpected ')', expecting ']'
+Request URL: /
+Stack Trace:
+#0 C:\wamp64\www\classificados_ifrs\vendor\cakephp\cakephp\src\View\View.php(1164): Cake\View\View->_evaluate('C:\\wamp64\\www\\c...', Array)
+#1 C:\wamp64\www\classificados_ifrs\vendor\cakephp\cakephp\src\View\View.php(819): Cake\View\View->_render('C:\\wamp64\\www\\c...')
+#2 C:\wamp64\www\classificados_ifrs\vendor\cakephp\cakephp\src\View\View.php(777): Cake\View\View->renderLayout('', 'default')
+#3 C:\wamp64\www\classificados_ifrs\vendor\cakephp\cakephp\src\Controller\Controller.php(623): Cake\View\View->render('home', NULL)
+#4 C:\wamp64\www\classificados_ifrs\src\Controller\PagesController.php(61): Cake\Controller\Controller->render('home')
+#5 C:\wamp64\www\classificados_ifrs\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\PagesController->display('home')
+#6 C:\wamp64\www\classificados_ifrs\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#7 C:\wamp64\www\classificados_ifrs\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PagesController))
+#8 C:\wamp64\www\classificados_ifrs\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\classificados_ifrs\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\wamp64\www\classificados_ifrs\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\wamp64\www\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\wamp64\www\classificados_ifrs\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\wamp64\www\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\wamp64\www\classificados_ifrs\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\wamp64\www\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\wamp64\www\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\wamp64\www\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\wamp64\www\classificados_ifrs\webroot\index.php(40): Cake\Http\Server->run()
+#21 {main}
+
+

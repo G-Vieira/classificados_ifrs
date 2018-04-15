@@ -1,6 +1,6 @@
 <?php
 
-  /**
+/**
  * CakePHP(tm) : Rapid Development Framework (https://cakephp.org)
  * Copyright (c) Cake Software Foundation, Inc. (https://cakefoundation.org)
  *
@@ -14,7 +14,7 @@
  * @license       https://opensource.org/licenses/mit-license.php MIT License
  */
 
-$cakeDescription = 'CakePHP: the rapid development php framework';
+$cakeDescription = 'Classificados Ifrs';
 ?>
 <!DOCTYPE html>
 <html>
@@ -37,27 +37,35 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
   <body>
     <nav class="top-bar expanded" data-topbar role="navigation">
       <div class="top-bar-section">
-	<ul class="left">
-	  <li class="name">
+        <ul class="left">
+          <li class="name">
                 <?php
                   //Se o usuario estiver logado, mostre uma frase de boas-vindas
                   if($authUser){
                     echo "<h1>" . $this->Html->link(__('Olá, ' . $authUser['username']), ['controller' => 'users', 'action' => 'view', $authUser['id']])  . "</h1>";
+                  }else{
+                    echo "<h1>" . $this->Html->link(__('Registrar-se'), ['controller' => 'users', 'action' => 'register'])  . "</h1>";
                   }
                 ?>
-	  </li>
-	</ul>
-	<ul class="right">
-	  <li class="name">
-	    <h1><?= $this->Html->link(__('Home'), ['controller' => 'Pages']	) ?></h1>
-	  </li>
+          </li>
+        </ul>
+        <ul class="right">
+          <li class="name">
+            <h1><?= $this->Html->link(__('Home'), ['controller' => 'Pages']	) ?></h1>
+          </li>
+          <li class="name">
+            <h1><?= $this->Html->link(__('Anuncios'), ['controller' => 'anuncios']) ?></h1>
+          </li>
+          <li class="name">
+            <h1><?= $this->Html->link(__('Categorias'), ['controller' => 'categorias']) ?></h1>
+          </li>
 	      <?php
                 //se o usuario estiver logado, exiba o link para usuarios
                 if($authUser['role'] === 'admin') {
                   echo "<li class='name'><h1>" . $this->Html->link(__('Usuarios'), ['controller' => 'Users', 'action' => 'index']) . "</h1></li>";
                 }
               ?>
-	  <li class="name">
+          <li class="name">
                 <?php
                   //se o usuario estiver logado, exiba o link para sair, senão exiba o link para entrar
                   if($authUser) {
@@ -72,8 +80,8 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                       );
                   }
                 ?>
-	  </li>          
-	</ul>
+          </li>          
+        </ul>
       </div>
     </nav>
     <?= $this->Flash->render() ?>
