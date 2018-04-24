@@ -4,8 +4,9 @@
  * @var \App\Model\Entity\User $user
  */
 ?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
+<div class="row">
+<nav class="col-md-3" id="actions-sidebar">
+    <ul class="nav nav-pills nav-stacked">
         <li class="heading"><?= __('Ações') ?></li>
         <li><?= $this->Html->link(__('Editar Usuário'), ['action' => 'edit', $user->id]) ?> </li>
         <li><?= $this->Form->postLink(__('Deletar Usuário'), ['action' => 'delete', $user->id], ['confirm' => __('Deletar usuário # {0}?', $user->id)]) ?> </li>
@@ -13,16 +14,12 @@
         <li><?= $this->Html->link(__('Novo Usuário'), ['action' => 'add']) ?> </li>
     </ul>
 </nav>
-<div class="users view large-9 medium-8 columns content">
+<div class="col-md-9">
     <h3><?= h($user->id) ?></h3>
-    <table class="vertical-table">
+    <table class="table">
         <tr>
             <th scope="row"><?= __('Username') ?></th>
             <td><?= h($user->username) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Password') ?></th>
-            <td><?= h($user->password) ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Nome') ?></th>

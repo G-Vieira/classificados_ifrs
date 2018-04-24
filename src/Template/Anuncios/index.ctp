@@ -6,16 +6,9 @@
 ?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('New Anuncio'), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Users'), ['controller' => 'Users', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New User'), ['controller' => 'Users', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Categorias'), ['controller' => 'Categorias', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Categoria'), ['controller' => 'Categorias', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Anexos'), ['controller' => 'Anexos', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Anexo'), ['controller' => 'Anexos', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Comentarios'), ['controller' => 'Comentarios', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Comentario'), ['controller' => 'Comentarios', 'action' => 'add']) ?></li>
+        <li class="heading"><?= __('Ações') ?></li>
+        <li><?= $this->Html->link(__('Novo Anuncio'), ['action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('Listar Categorias'), ['controller' => 'Categorias', 'action' => 'index']) ?></li>
     </ul>
 </nav>
 <div class="anuncios index large-9 medium-8 columns content">
@@ -44,9 +37,9 @@
                 <td><?= h($anuncio->created) ?></td>
                 <td><?= h($anuncio->modified) ?></td>
                 <td class="actions">
-                    <?= $this->Html->link(__('View'), ['action' => 'view', $anuncio->id]) ?>
-                    <?= $this->Html->link(__('Edit'), ['action' => 'edit', $anuncio->id]) ?>
-                    <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $anuncio->id], ['confirm' => __('Are you sure you want to delete # {0}?', $anuncio->id)]) ?>
+                    <?= $this->Html->link(__('Ver'), ['action' => 'view', $anuncio->id]) ?>
+                    <?= $this->Html->link(__('Editar'), ['action' => 'edit', $anuncio->id]) ?>
+                    <?= $this->Form->postLink(__('Deletar'), ['action' => 'delete', $anuncio->id], ['confirm' => __('Are you sure you want to delete # {0}?', $anuncio->id)]) ?>
                 </td>
             </tr>
             <?php endforeach; ?>

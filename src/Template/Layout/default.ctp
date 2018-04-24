@@ -1,6 +1,6 @@
 <?php
 
-/**
+  /**
  * CakePHP(tm) : Rapid Development Framework (https://cakephp.org)
  * Copyright (c) Cake Software Foundation, Inc. (https://cakefoundation.org)
  *
@@ -27,65 +27,62 @@ $cakeDescription = 'Classificados Ifrs';
     </title>
     <?= $this->Html->meta('icon') ?>
 
-    <?= $this->Html->css('base.css') ?>
-    <?= $this->Html->css('cake.css') ?>
+    <!-- $this->Html->css('base.css')
+    $this->Html->css('cake.css') -->
+    <?= $this->Html->css('bootstrap.min.css'); ?>
+    <?= $this->Html->css('smartmenu.css'); ?>
+    <?= $this->Html->css('jquery.smartmenus.bootstrap.css'); ?>
+    <?= $this->Html->css('app.css'); ?>
+
     <?= $this->Html->script('jquery.js') ?>
+    <?= $this->Html->script('bootstrap.min.js') ?>
+    <?= $this->Html->script('jquery.smartmenus.min.js') ?>
+    <?= $this->Html->script('jquery.smartmenus.bootstrap.min.js') ?>
+
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
     <?= $this->fetch('script') ?>
   </head>
   <body>
-    <nav class="top-bar expanded" data-topbar role="navigation">
-      <div class="top-bar-section">
-        <ul class="left">
-          <li class="name">
-                <?php
-                  //Se o usuario estiver logado, mostre uma frase de boas-vindas
-                  if($authUser){
-                    echo "<h1>" . $this->Html->link(__('Olá, ' . $authUser['username']), ['controller' => 'users', 'action' => 'view', $authUser['id']])  . "</h1>";
-                  }else{
-                    echo "<h1>" . $this->Html->link(__('Registrar-se'), ['controller' => 'users', 'action' => 'register'])  . "</h1>";
-                  }
-                ?>
-          </li>
-        </ul>
-        <ul class="right">
-          <li class="name">
-            <h1><?= $this->Html->link(__('Home'), ['controller' => 'Pages']	) ?></h1>
-          </li>
-          <li class="name">
-            <h1><?= $this->Html->link(__('Anuncios'), ['controller' => 'anuncios']) ?></h1>
-          </li>
-          <li class="name">
-            <h1><?= $this->Html->link(__('Categorias'), ['controller' => 'categorias']) ?></h1>
-          </li>
-	      <?php
-                //se o usuario estiver logado, exiba o link para usuarios
-                if($authUser['role'] === 'admin') {
-                  echo "<li class='name'><h1>" . $this->Html->link(__('Usuarios'), ['controller' => 'Users', 'action' => 'index']) . "</h1></li>";
-                }
-              ?>
-          <li class="name">
-                <?php
-                  //se o usuario estiver logado, exiba o link para sair, senão exiba o link para entrar
-                  if($authUser) {
-                    echo $this->Html->image('logout_logo.png', array(
-                        'alt' => 'logout',
-                        'url' => array('controller' => 'users', 'action' => 'logout'))
-                      );
-                  } else {
-                    echo $this->Html->image('login_logo.png', array(
-                        'alt' => 'login',
-                        'url' => array('controller' => 'users', 'action' => 'login'))
-                      );
-                  }
-                ?>
-          </li>          
-        </ul>
+    <div class="navbar navbar-default" role="navigation">
+      <div class="navbar-header">
+	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	  <span class="sr-only">Toggle navigation</span>
+	  <span class="icon-bar"></span>
+	  <span class="icon-bar"></span>
+	  <span class="icon-bar"></span>
+	</button>
+	<a class="navbar-brand" href="/classificados_ifrs/pages/" >IFRS</a>
       </div>
-    </nav>
+      <div class="navbar-collapse collapse">
+	<ul class="nav navbar-nav navbar-left">
+	  <?php
+	    if($authUser){
+              echo "
+	        <li>
+		  <a href='javascript:void(0);'><label>Olá, " . $authUser['username'] . "<span class='caret'></span></label></a>
+	          <ul class='dropdown-menu '>
+		    <li>".$this->Html->link(__('Perfil'), ['controller' => 'users', 'action' => 'view', $authUser['id']])."</li>
+		    <li>".$this->Html->link(__('Sair'), ['controller' => 'users', 'action' => 'logout'])."</li>
+		  </ul>
+		</li>
+                ";
+	    }else{
+	      echo "<li>" . $this->Html->link(__('Registrar-se'), ['controller' => 'users', 'action' => 'register'])  . "</li>";
+	      echo "<li>" . $this->Html->link(__('Login'), ['controller' => 'users', 'action' => 'login'])  . "</li>";
+	    }
+	  ?>
+	</ul>
+	<ul class="nav navbar-nav navbar-right">
+	  <li><?= $this->Html->link(__('Home'), ['controller' => 'Pages']	) ?></li>
+	  <li><?= $this->Html->link(__('Anuncios'), ['controller' => 'anuncios']) ?></li>
+	  <li><?= $this->Html->link(__('Categorias'), ['controller' => 'categorias']) ?></li>
+	  <li><?= ($authUser['role'] === 'admin')? ($this->Html->link(__('Usuarios'), ['controller' => 'Users', 'action' => 'index'])): ''?></li>
+	</ul>
+      </div><!--/.nav-collapse -->
+    </div>
     <?= $this->Flash->render() ?>
-    <div class="container clearfix">
+    <div class="container-fluid">
         <?= $this->fetch('content') ?>
     </div>
     <footer>

@@ -6,19 +6,16 @@
 ?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('Edit Anuncio'), ['action' => 'edit', $anuncio->id]) ?> </li>
-        <li><?= $this->Form->postLink(__('Delete Anuncio'), ['action' => 'delete', $anuncio->id], ['confirm' => __('Are you sure you want to delete # {0}?', $anuncio->id)]) ?> </li>
-        <li><?= $this->Html->link(__('List Anuncios'), ['action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Anuncio'), ['action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List Users'), ['controller' => 'Users', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New User'), ['controller' => 'Users', 'action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List Categorias'), ['controller' => 'Categorias', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Categoria'), ['controller' => 'Categorias', 'action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List Anexos'), ['controller' => 'Anexos', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Anexo'), ['controller' => 'Anexos', 'action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List Comentarios'), ['controller' => 'Comentarios', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Comentario'), ['controller' => 'Comentarios', 'action' => 'add']) ?> </li>
+        <li class="heading"><?= __('Ações') ?></li>
+        <li><?= $this->Html->link(__('Editar Anuncio'), ['action' => 'edit', $anuncio->id]) ?> </li>
+        <li><?= $this->Form->postLink(__('Deletar Anuncio'), ['action' => 'delete', $anuncio->id], ['confirm' => __('Deseja deletar # {0}?', $anuncio->id)]) ?> </li>
+        <li><?= $this->Html->link(__('Listar Anuncios'), ['action' => 'index']) ?> </li>
+        <li><?= $this->Html->link(__('Novo Anuncio'), ['action' => 'add']) ?> </li>
+        <li><?= $this->Html->link(__('Listar Categorias'), ['controller' => 'Categorias', 'action' => 'index']) ?> </li>
+        <li><?= $this->Html->link(__('Listar Anexos'), ['controller' => 'Anexos', 'action' => 'index', $anuncio->id]) ?> </li>
+        <li><?= $this->Html->link(__('Novo Anexo'), ['controller' => 'Anexos', 'action' => 'add',$anuncio->id]) ?> </li>
+        <li><?= $this->Html->link(__('Listar Comentarios'), ['controller' => 'Comentarios', 'action' => 'index',$anuncio->id]) ?> </li>
+        <li><?= $this->Html->link(__('Novo Comentario'), ['controller' => 'Comentarios', 'action' => 'add',$anuncio->id]) ?> </li>
     </ul>
 </nav>
 <div class="anuncios view large-9 medium-8 columns content">
@@ -58,7 +55,7 @@
         <?= $this->Text->autoParagraph(h($anuncio->descricao)); ?>
     </div>
     <div class="related">
-        <h4><?= __('Related Anexos') ?></h4>
+        <h4><?= __('Anexos') ?></h4>
         <?php if (!empty($anuncio->anexos)): ?>
         <table cellpadding="0" cellspacing="0">
             <tr>
@@ -73,9 +70,9 @@
                 <td><?= h($anexos->anuncio_id) ?></td>
                 <td><?= h($anexos->caminho) ?></td>
                 <td class="actions">
-                    <?= $this->Html->link(__('View'), ['controller' => 'Anexos', 'action' => 'view', $anexos->id]) ?>
-                    <?= $this->Html->link(__('Edit'), ['controller' => 'Anexos', 'action' => 'edit', $anexos->id]) ?>
-                    <?= $this->Form->postLink(__('Delete'), ['controller' => 'Anexos', 'action' => 'delete', $anexos->id], ['confirm' => __('Are you sure you want to delete # {0}?', $anexos->id)]) ?>
+                    <?= $this->Html->link(__('Ver'), ['controller' => 'Anexos', 'action' => 'view', $anexos->id]) ?>
+                    <?= $this->Html->link(__('Editar'), ['controller' => 'Anexos', 'action' => 'edit', $anexos->id]) ?>
+                    <?= $this->Form->postLink(__('Deletar'), ['controller' => 'Anexos', 'action' => 'delete', $anexos->id], ['confirm' => __('Are you sure you want to delete # {0}?', $anexos->id)]) ?>
                 </td>
             </tr>
             <?php endforeach; ?>
@@ -83,7 +80,7 @@
         <?php endif; ?>
     </div>
     <div class="related">
-        <h4><?= __('Related Comentarios') ?></h4>
+        <h4><?= __('Comentarios') ?></h4>
         <?php if (!empty($anuncio->comentarios)): ?>
         <table cellpadding="0" cellspacing="0">
             <tr>
@@ -104,9 +101,9 @@
                 <td><?= h($comentarios->created) ?></td>
                 <td><?= h($comentarios->modified) ?></td>
                 <td class="actions">
-                    <?= $this->Html->link(__('View'), ['controller' => 'Comentarios', 'action' => 'view', $comentarios->id]) ?>
-                    <?= $this->Html->link(__('Edit'), ['controller' => 'Comentarios', 'action' => 'edit', $comentarios->id]) ?>
-                    <?= $this->Form->postLink(__('Delete'), ['controller' => 'Comentarios', 'action' => 'delete', $comentarios->id], ['confirm' => __('Are you sure you want to delete # {0}?', $comentarios->id)]) ?>
+                    <?= $this->Html->link(__('Ver'), ['controller' => 'Comentarios', 'action' => 'view', $comentarios->id]) ?>
+                    <?= $this->Html->link(__('Editar'), ['controller' => 'Comentarios', 'action' => 'edit', $comentarios->id]) ?>
+                    <?= $this->Form->postLink(__('Deletar'), ['controller' => 'Comentarios', 'action' => 'delete', $comentarios->id], ['confirm' => __('Are you sure you want to delete # {0}?', $comentarios->id)]) ?>
                 </td>
             </tr>
             <?php endforeach; ?>

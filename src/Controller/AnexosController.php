@@ -47,7 +47,7 @@
      *
      * @return \Cake\Http\Response|null Redirects on successful add, renders view otherwise.
      */
-    public function add() {
+    public function add($anuncio_id) {
       $anexo = $this->Anexos->newEntity();
       if ($this->request->is('post')) {
 	$anexo = $this->Anexos->patchEntity($anexo, $this->request->getData());
@@ -58,8 +58,10 @@
 	}
 	$this->Flash->error(__('Erro ao gravar o anexo.'));
       }
-      $anuncios = $this->Anexos->Anuncios->find('list', ['limit' => 200]);
-      $this->set(compact('anexo', 'anuncios'));
+      $anuncio = $this->Anexos->Anuncios->get($anuncio_id, [
+	'contain' => []
+      ]);
+      $this->set(compact('anexo', 'anuncio'));
     }
 
     /**

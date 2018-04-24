@@ -4,6 +4,7 @@
 
   use App\Controller\AppController;
   use Cake\Event\Event;
+  use Cake\ORM\TableRegistry;
 
   /**
    * Users Controller
@@ -88,7 +89,11 @@
 	}
 	$this->Flash->error(__('Erro ao gravar o usuario! Tente novamente.'));
       }
+      $temp = TableRegistry::get('Cidades');
+      $cidades = $temp->find();
+
       $this->set(compact('user'));
+      $this->set(compact('cidades'));
     }
 
     /**
@@ -99,7 +104,12 @@
      * @throws \Cake\Network\Exception\NotFoundException When record not found.
      */
     public function edit($id = null) {
-      $this->isAdmin(true);
+      $tuser = $this->Auth->user();
+      
+      if($tuser['id'] != $id){
+	$this->isAdmin(true);
+      }
+      
       $user = $this->Users->get($id, [
 	'contain' => []
       ]);
@@ -142,13 +152,16 @@
 	$user = $this->Users->patchEntity($user, $this->request->getData());
 	if ($this->Users->save($user)) {
 	  $this->Flash->success(__('O usuário foi criado.'));
-	   return $this->redirect($this->Auth->redirectUrl());
+	  return $this->redirect($this->Auth->redirectUrl());
 	}
 	$this->Flash->error(__('Erro ao criar o usuário! Tente novamente.'));
       }
-      $this->set(compact('user'));
-      $this->set('_serialize', ['user']);
+      $temp = TableRegistry::get('Cidades');
+      $cidades = $temp->find();
 
+      $this->set(compact('user'));
+      $this->set(compact('cidades'));
+      $this->set('_serialize', ['user', 'cidades']);
     }
 
   }
