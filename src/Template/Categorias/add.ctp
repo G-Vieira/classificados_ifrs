@@ -1,27 +1,31 @@
 <?php
-/**
+
+  /**
  * @var \App\View\AppView $this
  * @var \App\Model\Entity\Categoria $categoria
  */
 ?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('List Categorias'), ['action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('List Anuncios'), ['controller' => 'Anuncios', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Anuncio'), ['controller' => 'Anuncios', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Favoritos'), ['controller' => 'Favoritos', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Favorito'), ['controller' => 'Favoritos', 'action' => 'add']) ?></li>
+<div class="row">
+  <div class="col-md-3" id="actions-sidebar">
+    <ul class="nav nav-pills nav-stacked">
+      <li class="heading"><?= __('Ações') ?></li>
+      <li><?= $this->Html->link(__('Listar Categorias'), ['action' => 'index']) ?></li>
     </ul>
-</nav>
-<div class="categorias form large-9 medium-8 columns content">
+  </div>
+  <div class="col-md-9 text-center">
     <?= $this->Form->create($categoria) ?>
     <fieldset>
-        <legend><?= __('Add Categoria') ?></legend>
-        <?php
-            echo $this->Form->control('descricao');
-        ?>
+      <legend><?= __('Nova Categoria') ?></legend>
+
+      <div class="form-group row">
+	<label for="descricao" class="col-sm-3 col-form-label"><b>Descrição</b></label>
+	<div class="col-sm-7">
+	  <?= $this->Form->control('descricao',['label'=>false,'class'=>'form-control']) ?>
+	</div>
+      </div>
+      <div class="form-group row">
+	<button class="btn btn-success" type='submit'>Gravar</button>
+      </div>
     </fieldset>
-    <?= $this->Form->button(__('Submit')) ?>
     <?= $this->Form->end() ?>
-</div>
+  </div>

@@ -26,6 +26,10 @@
      */
 
     public function login() {
+      if ($this->Auth->user()) {
+	$this->isAdmin();
+      }
+
       if ($this->request->is('post')) {
 	$user = $this->Auth->identify();
 	if ($user) {
@@ -50,7 +54,7 @@
      * @return \Cake\Http\Response|void
      */
     public function index() {
-      $this->isAdmin(true);
+      $this->isAdmin();
       $users = $this->paginate($this->Users);
 
       $this->set(compact('users'));
@@ -64,7 +68,7 @@
      * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
      */
     public function view($id = null) {
-      $this->isAdmin(true);
+      $this->isAdmin();
       $user = $this->Users->get($id, [
 	'contain' => []
       ]);
@@ -78,7 +82,7 @@
      * @return \Cake\Http\Response|null Redirects on successful add, renders view otherwise.
      */
     public function add() {
-      $this->isAdmin(true);
+      $this->isAdmin();
       $user = $this->Users->newEntity();
       if ($this->request->is('post')) {
 	$user = $this->Users->patchEntity($user, $this->request->getData());
@@ -105,11 +109,11 @@
      */
     public function edit($id = null) {
       $tuser = $this->Auth->user();
-      
-      if($tuser['id'] != $id){
-	$this->isAdmin(true);
+
+      if ($tuser['id'] != $id) {
+	$this->isAdmin();
       }
-      
+
       $user = $this->Users->get($id, [
 	'contain' => []
       ]);
@@ -122,7 +126,11 @@
 	}
 	$this->Flash->error(__('Erro ao alterar o usuario! Tente novamente.'));
       }
+      $temp = TableRegistry::get('Cidades');
+      $cidades = $temp->find();
+
       $this->set(compact('user'));
+      $this->set(compact('cidades'));
     }
 
     /**
@@ -133,7 +141,7 @@
      * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
      */
     public function delete($id = null) {
-      $this->isAdmin(true);
+      $this->isAdmin();
       $this->request->allowMethod(['post', 'delete']);
       $user = $this->Users->get($id);
       if ($this->Users->delete($user)) {
@@ -147,6 +155,10 @@
     }
 
     public function register() {
+      if ($this->Auth->user()) {
+	$this->isAdmin();
+      }
+
       $user = $this->Users->newEntity();
       if ($this->request->is('post')) {
 	$user = $this->Users->patchEntity($user, $this->request->getData());
