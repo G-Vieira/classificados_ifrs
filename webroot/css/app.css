@@ -1,5 +1,3 @@
-
-
 div.message {
     text-align: center;
     cursor: pointer;
@@ -48,3 +46,7 @@ div.message.error:before {
 div.message.hidden {
     height: 0;
 }
+/*
+.navbar-default{
+  background-color: #449d44;
+}*/
