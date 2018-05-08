@@ -72,6 +72,12 @@ $cakeDescription = 'Classificados Ifrs';
 	      echo "<li>" . $this->Html->link(__('Login'), ['controller' => 'users', 'action' => 'login'])  . "</li>";
 	    }
 	  ?>
+          <form class="navbar-form navbar-left" method="post" action="./anuncios/">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Pesquisar anúncios" name="pesquisa">
+            </div>
+            <button type="submit" class="btn btn-default">Procurar</button>
+          </form>
 	</ul>
 	<ul class="nav navbar-nav navbar-right">
 	  <li><?= $this->Html->link(__('Home'), ['controller' => 'Pages']	) ?></li>
