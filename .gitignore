@@ -31,3 +31,6 @@ nbproject/*
 # Sass preprocessor
 .sass-cache
 /vendor/
+
+/tmp/
+/vendor/
