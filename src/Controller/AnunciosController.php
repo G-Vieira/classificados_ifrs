@@ -76,9 +76,9 @@ class AnunciosController extends AppController {
       }
       $this->Flash->error(__('Erro ao criar o anuncio.'));
     }
-    $users = $this->Anuncios->Users->find('list', ['limit' => 200]);
-    $categorias = $this->Anuncios->Categorias->find('list', ['limit' => 200]);
-    $this->set(compact('anuncio', 'users', 'categorias'));
+    $categorias = $this->Anuncios->Categorias->find('all');
+
+    $this->set(compact('anuncio', 'categorias'));
   }
 
   /**

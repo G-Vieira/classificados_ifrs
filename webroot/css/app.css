@@ -46,3 +46,6 @@ div.message.error:before {
 div.message.hidden {
     height: 0;
 }
+.navbar-default{
+  box-shadow: 3px 3px #e0dede;
+}

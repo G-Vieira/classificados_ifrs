@@ -92,4 +92,4 @@ create database classificados_ifrs;
   insert into categorias(descricao) values ('Automovel');
   insert into categorias(descricao) values ('Joias');
 
-  insert into anuncios (user_id,categoria_id,descricao,preco,titulo,validade) values(1,1,'Estou vendendo meu Uno, ano 2000',2000.00,'Vendo Uno','06/14/2018');
+  insert into anuncios (user_id,categoria_id,descricao,preco,titulo,validade,created,modified) values(1,1,'Estou vendendo meu Uno, ano 2000',2000.00,'Vendo Uno','06/14/2018',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
