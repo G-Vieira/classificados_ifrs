@@ -1,12 +1,12 @@
 <?php
 
 /**
- * @var \App\View\AppView $this
- * @var \App\Model\Entity\Anuncio $anuncio
- */
+* @var \App\View\AppView $this
+* @var \App\Model\Entity\Anuncio $anuncio
+*/
 ?>
 <div class="row">
-  <div class="col-md-3" id="actions-sidebar">
+  <div class="col-md-2" id="actions-sidebar">
     <ul class="nav nav-pills nav-stacked">
       <li class="heading"><?= __('Ações') ?></li>
       <li><?= $this->Html->link(__('Editar Anuncio'), ['action' => 'edit', $anuncio->id]) ?> </li>
@@ -14,13 +14,9 @@
       <li><?= $this->Html->link(__('Listar Anuncios'), ['action' => 'index']) ?> </li>
       <li><?= $this->Html->link(__('Novo Anuncio'), ['action' => 'add']) ?> </li>
       <li><?= $this->Html->link(__('Listar Categorias'), ['controller' => 'Categorias', 'action' => 'index']) ?> </li>
-      <li><?= $this->Html->link(__('Listar Anexos'), ['controller' => 'Anexos', 'action' => 'index', $anuncio->id]) ?> </li>
-      <li><?= $this->Html->link(__('Novo Anexo'), ['controller' => 'Anexos', 'action' => 'add',$anuncio->id]) ?> </li>
-      <li><?= $this->Html->link(__('Listar Comentarios'), ['controller' => 'Comentarios', 'action' => 'index',$anuncio->id]) ?> </li>
-      <li><?= $this->Html->link(__('Novo Comentario'), ['controller' => 'Comentarios', 'action' => 'add',$anuncio->id]) ?> </li>
     </ul>
   </div>
-  <div class="col-md-9">
+  <div class="col-md-10">
     <h3><?= h($anuncio->id) ?></h3>
     <table class="table">
       <tr>
@@ -36,81 +32,60 @@
         <td><?= h($anuncio->titulo) ?></td>
       </tr>
       <tr>
-        <th scope="row"><?= __('Id') ?></th>
-        <td><?= $this->Number->format($anuncio->id) ?></td>
+        <th scope="row"><?= __('Preço') ?></th>
+        <td><?= $this->Number->format($anuncio->preco) ?></td>
       </tr>
       <tr>
         <th scope="row"><?= __('Validade') ?></th>
         <td><?= h($anuncio->validade) ?></td>
       </tr>
-      <tr>
-        <th scope="row"><?= __('Created') ?></th>
-        <td><?= h($anuncio->created) ?></td>
-      </tr>
-      <tr>
-        <th scope="row"><?= __('Modified') ?></th>
-        <td><?= h($anuncio->modified) ?></td>
-      </tr>
     </table>
     <div class="row">
       <h4><?= __('Descricao') ?></h4>
-        <?= $this->Text->autoParagraph(h($anuncio->descricao)); ?>
+      <?= $this->Text->autoParagraph(h($anuncio->descricao)); ?>
     </div>
-    <div class="related">
-      <h4><?= __('Anexos') ?></h4>
-        <?php if (!empty($anuncio->anexos)): ?>
-      <table cellpadding="0" cellspacing="0">
-        <tr>
-          <th scope="col"><?= __('Id') ?></th>
-          <th scope="col"><?= __('Anuncio Id') ?></th>
-          <th scope="col"><?= __('Caminho') ?></th>
-          <th scope="col" class="actions"><?= __('Ações') ?></th>
-        </tr>
-            <?php foreach ($anuncio->anexos as $anexos): ?>
-        <tr>
-          <td><?= h($anexos->id) ?></td>
-          <td><?= h($anexos->anuncio_id) ?></td>
-          <td><?= h($anexos->caminho) ?></td>
-          <td class="actions">
-                    <?= $this->Html->link(__('Ver'), ['controller' => 'Anexos', 'action' => 'view', $anexos->id]) ?>
-                    <?= $this->Html->link(__('Editar'), ['controller' => 'Anexos', 'action' => 'edit', $anexos->id]) ?>
-                    <?= $this->Form->postLink(__('Deletar'), ['controller' => 'Anexos', 'action' => 'delete', $anexos->id], ['confirm' => __('Are you sure you want to delete # {0}?', $anexos->id)]) ?>
-          </td>
-        </tr>
-            <?php endforeach; ?>
-      </table>
-        <?php endif; ?>
-    </div>
-    <div class="related">
+    <br>
+    <?= $this->Form->create($ncomentario,['url'=>'/comentarios/add/']) ?>
+    <fieldset>
+      <legend><?= __('Adicionar Comentario') ?></legend>
+      <?= $this->Form->control('anuncio_id',['type'=>'hidden','value'=>$anuncio->id]); ?>
+      <?= $this->Form->control('user_id',['type'=>'hidden','value'=>$anuncio->user_id]); ?>
+      <div class="form-group row">
+        <div class="col-md-12">
+          <?= $this->Form->control('descricao',['class'=>'form-control']); ?>
+        </div>
+      </div>
+      <div class="form-group row">
+        <button class="btn btn-success" type="submit">Gravar</button>
+      </div>
+    </fieldset>
+    <?= $this->Form->end() ?>
+
+    <br>
+    <div class="row">
       <h4><?= __('Comentarios') ?></h4>
-        <?php if (!empty($anuncio->comentarios)): ?>
-      <table cellpadding="0" cellspacing="0" class="table">
-        <tr>
-          <th scope="col"><?= __('Id') ?></th>
-          <th scope="col"><?= __('Anuncio Id') ?></th>
-          <th scope="col"><?= __('User Id') ?></th>
-          <th scope="col"><?= __('Descricao') ?></th>
-          <th scope="col"><?= __('Created') ?></th>
-          <th scope="col"><?= __('Modified') ?></th>
-          <th scope="col" class="actions"><?= __('Actions') ?></th>
-        </tr>
-            <?php foreach ($anuncio->comentarios as $comentarios): ?>
-        <tr>
-          <td><?= h($comentarios->id) ?></td>
-          <td><?= h($comentarios->anuncio_id) ?></td>
-          <td><?= h($comentarios->user_id) ?></td>
-          <td><?= h($comentarios->descricao) ?></td>
-          <td><?= h($comentarios->created) ?></td>
-          <td><?= h($comentarios->modified) ?></td>
-          <td class="actions">
-                    <?= $this->Html->link(__('Ver'), ['controller' => 'Comentarios', 'action' => 'view', $comentarios->id]) ?>
-                    <?= $this->Html->link(__('Editar'), ['controller' => 'Comentarios', 'action' => 'edit', $comentarios->id]) ?>
-                    <?= $this->Form->postLink(__('Deletar'), ['controller' => 'Comentarios', 'action' => 'delete', $comentarios->id], ['confirm' => __('Are you sure you want to delete # {0}?', $comentarios->id)]) ?>
-          </td>
-        </tr>
-            <?php endforeach; ?>
-      </table>
-        <?php endif; ?>
+      <?php if (!empty($anuncio->comentarios)): ?>
+        <table cellpadding="0" cellspacing="0" class="table">
+          <tr>
+            <th scope="col"><?= __('Usuário') ?></th>
+            <th scope="col"><?= __('Descricao') ?></th>
+            <th scope="col" class="actions"><?= __('Ações') ?></th>
+          </tr>
+          <?php foreach ($anuncio->comentarios as $comentarios): ?>
+            <tr>
+              <td><?= h($comentarios->user_id) ?></td>
+              <td><?= h($comentarios->descricao) ?></td>
+              <td class="actions">
+                <?php
+                if(($authUser['id'] == $anuncio->user_id) || ($authUser['id'] == $comentario->user_id) || ($authUser['role'] === 'admin')){
+                  echo $this->Form->postLink(__('Deletar'), ['controller' => 'Comentarios', 'action' => 'delete', $comentarios->id], ['confirm' => __('Deseja deletar # {0}?', $comentarios->id)]);
+                }
+                ?>
+              </td>
+            </tr>
+          <?php endforeach; ?>
+        </table>
+      <?php endif; ?>
     </div>
   </div>
 </div>

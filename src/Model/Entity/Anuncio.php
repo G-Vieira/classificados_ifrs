@@ -11,6 +11,7 @@ use Cake\ORM\Entity;
  * @property int $categoria_id
  * @property string $descricao
  * @property string $titulo
+ * @property double $preco
  * @property \Cake\I18n\FrozenDate $validade
  * @property \Cake\I18n\FrozenTime $created
  * @property \Cake\I18n\FrozenTime $modified
@@ -37,6 +38,7 @@ class Anuncio extends Entity
         'categoria_id' => true,
         'descricao' => true,
         'titulo' => true,
+        'preco' => true,
         'validade' => true,
         'created' => true,
         'modified' => true,

@@ -52,6 +52,12 @@
 	  <?= $this->Form->control('descricao',['label'=>false,'class'=>'form-control']) ?>
         </div>
       </div>
+      <div class="form-group row">
+        <label for="preco" class="col-sm-3 col-form-label"><b>Preço</b></label>
+        <div class="col-sm-7">
+	  <?= $this->Form->control('preco',['label'=>false,'class'=>'form-control','type'=>'number']) ?>
+        </div>
+      </div>
         <?php
 	    $data = ((new DateTime(date('Y-m-d H:i:s')))->modify('+1 month'))->format('Y-m-d');
             echo '<input type="date" name="validade" value = "' . $data , '" style="display:none;" required />';

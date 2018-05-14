@@ -5,22 +5,22 @@ namespace App\Controller;
 use App\Controller\AppController;
 
 /**
- * Anuncios Controller
- *
- * @property \App\Model\Table\AnunciosTable $Anuncios
- *
- * @method \App\Model\Entity\Anuncio[]|\Cake\Datasource\ResultSetInterface paginate($object = null, array $settings = [])
- */
+* Anuncios Controller
+*
+* @property \App\Model\Table\AnunciosTable $Anuncios
+*
+* @method \App\Model\Entity\Anuncio[]|\Cake\Datasource\ResultSetInterface paginate($object = null, array $settings = [])
+*/
 class AnunciosController extends AppController {
 
   /**
-   * Index method
-   *
-   * @return \Cake\Http\Response|void
-   */
+  * Index method
+  *
+  * @return \Cake\Http\Response|void
+  */
   public function index() {
     $this->paginate = [
-        'contain' => ['Users', 'Categorias']
+      'contain' => ['Users', 'Categorias']
     ];
 
     if ($this->request->is('post')) {
@@ -30,9 +30,9 @@ class AnunciosController extends AppController {
         $anuncios = $anuncios = $this->paginate($this->Anuncios);
       } else {
         $resultado = $this->Anuncios->find('all', array(
-            'conditions' => array(
-                "Anuncios.titulo LIKE " => '%' . $pesquisa . '%'
-            )
+          'conditions' => array(
+            "Anuncios.titulo LIKE " => '%' . $pesquisa . '%'
+          )
         ));
         $anuncios = $this->paginate($resultado);
       }
@@ -44,25 +44,27 @@ class AnunciosController extends AppController {
   }
 
   /**
-   * View method
-   *
-   * @param string|null $id Anuncio id.
-   * @return \Cake\Http\Response|void
-   * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
-   */
+  * View method
+  *
+  * @param string|null $id Anuncio id.
+  * @return \Cake\Http\Response|void
+  * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
+  */
   public function view($id = null) {
+    $ncomentario = $this->Anuncios->Comentarios->newEntity();
     $anuncio = $this->Anuncios->get($id, [
-        'contain' => ['Users', 'Categorias', 'Anexos', 'Comentarios']
+      'contain' => ['Users', 'Categorias', 'Anexos', 'Comentarios']
     ]);
 
     $this->set('anuncio', $anuncio);
+    $this->set('ncomentario');
   }
 
   /**
-   * Add method
-   *
-   * @return \Cake\Http\Response|null Redirects on successful add, renders view otherwise.
-   */
+  * Add method
+  *
+  * @return \Cake\Http\Response|null Redirects on successful add, renders view otherwise.
+  */
   public function add() {
     $anuncio = $this->Anuncios->newEntity();
     if ($this->request->is('post')) {
@@ -80,22 +82,22 @@ class AnunciosController extends AppController {
   }
 
   /**
-   * Edit method
-   *
-   * @param string|null $id Anuncio id.
-   * @return \Cake\Http\Response|null Redirects on successful edit, renders view otherwise.
-   * @throws \Cake\Network\Exception\NotFoundException When record not found.
-   */
+  * Edit method
+  *
+  * @param string|null $id Anuncio id.
+  * @return \Cake\Http\Response|null Redirects on successful edit, renders view otherwise.
+  * @throws \Cake\Network\Exception\NotFoundException When record not found.
+  */
   public function edit($id = null) {
     $anuncio = $this->Anuncios->get($id, [
-        'contain' => []
+      'contain' => []
     ]);
     if ($anuncio->user_id != $this->Auth->user()['id']) {
       $this->isAdmin(true); //redirecionar
       $users = $this->Anuncios->Users->find('list', ['limit' => 200]);
     } else {
       $users = $this->Anuncios->Users->get($anuncio->user_id, [
-          'contain' => []
+        'contain' => []
       ]);
     }
 
@@ -114,12 +116,12 @@ class AnunciosController extends AppController {
   }
 
   /**
-   * Delete method
-   *
-   * @param string|null $id Anuncio id.
-   * @return \Cake\Http\Response|null Redirects to index.
-   * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
-   */
+  * Delete method
+  *
+  * @param string|null $id Anuncio id.
+  * @return \Cake\Http\Response|null Redirects to index.
+  * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
+  */
   public function delete($id = null) {
     $this->request->allowMethod(['post', 'delete']);
     $anuncio = $this->Anuncios->get($id);
@@ -129,7 +131,7 @@ class AnunciosController extends AppController {
       $users = $this->Anuncios->Users->find('list', ['limit' => 200]);
     } else {
       $users = $this->Anuncios->Users->get($anuncio->user_id, [
-          'contain' => []
+        'contain' => []
       ]);
     }
 

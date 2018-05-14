@@ -1,6 +1,6 @@
 <?php
 
-/**
+  /**
  * @var \App\View\AppView $this
  * @var \App\Model\Entity\Anuncio $anuncio
  */
@@ -40,6 +40,12 @@
         <label for="descricao" class="col-sm-3 col-form-label"><b>Descrição</b></label>
         <div class="col-sm-7">
 	  <?= $this->Form->control('descricao',['label'=>false,'class'=>'form-control']) ?>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="preco" class="col-sm-3 col-form-label"><b>Preço</b></label>
+        <div class="col-sm-7">
+	  <?= $this->Form->control('preco',['label'=>false,'class'=>'form-control','type'=>'number']) ?>
         </div>
       </div>
         <?php

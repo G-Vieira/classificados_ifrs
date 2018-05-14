@@ -28,7 +28,7 @@
       $this->set(compact('comentarios'));
     }
 
-    /**
+    /*
      * View method
      *
      * @param string|null $id Comentario id.
@@ -51,38 +51,14 @@
     public function add() {
       $comentario = $this->Comentarios->newEntity();
       if ($this->request->is('post')) {
+	$anuncio = $this->request->getData()['anuncio_id'];
 	$comentario = $this->Comentarios->patchEntity($comentario, $this->request->getData());
 	if ($this->Comentarios->save($comentario)) {
 	  $this->Flash->success(__('O comentario foi gravado.'));
-
-	  return $this->redirect(['action' => 'index']);
+	  return $this->redirect(['controller' => 'anuncios', 'action' => 'view', $anuncio]);
 	}
 	$this->Flash->error(__('Erro ao gravar o comentario.'));
-      }
-      $anuncios = $this->Comentarios->Anuncios->find('list', ['limit' => 200]);
-      $users = $this->Comentarios->Users->find('list', ['limit' => 200]);
-      $this->set(compact('comentario', 'anuncios', 'users'));
-    }
-
-    /**
-     * Edit method
-     *
-     * @param string|null $id Comentario id.
-     * @return \Cake\Http\Response|null Redirects on successful edit, renders view otherwise.
-     * @throws \Cake\Network\Exception\NotFoundException When record not found.
-     */
-    public function edit($id = null) {
-      $comentario = $this->Comentarios->get($id, [
-	'contain' => []
-      ]);
-      if ($this->request->is(['patch', 'post', 'put'])) {
-	$comentario = $this->Comentarios->patchEntity($comentario, $this->request->getData());
-	if ($this->Comentarios->save($comentario)) {
-	  $this->Flash->success(__('O comentario foi gravado.'));
-
-	  return $this->redirect(['action' => 'index']);
-	}
-	$this->Flash->error(__('Erro ao editar o comentario.'));
+	return $this->redirect(['controller' => 'anuncios', 'action' => 'view', $anuncio]);
       }
       $anuncios = $this->Comentarios->Anuncios->find('list', ['limit' => 200]);
       $users = $this->Comentarios->Users->find('list', ['limit' => 200]);
