@@ -18,7 +18,7 @@
   </div>
   <div class="col-md-10">
     <h3><?= h($anuncio->id) ?></h3>
-    
+
     <table class="table">
       <tr>
         <th scope="row"><?= __('User') ?></th>
@@ -72,14 +72,14 @@
             <th scope="col"><?= __('Descricao') ?></th>
             <th scope="col" class="actions"><?= __('Ações') ?></th>
           </tr>
-          <?php foreach ($anuncio->comentarios as $comentarios): ?>
+          <?php foreach ($anuncio->comentarios as $comentario): ?>
             <tr>
-              <td><?= h($comentarios->user_id) ?></td>
-              <td><?= h($comentarios->descricao) ?></td>
+              <td><?= h($comentario->user_id) ?></td>
+              <td><?= h($comentario->descricao) ?></td>
               <td class="actions">
                 <?php
                 if(($authUser['id'] == $anuncio->user_id) || ($authUser['id'] == $comentario->user_id) || ($authUser['role'] === 'admin')){
-                  echo $this->Form->postLink(__('Deletar'), ['controller' => 'Comentarios', 'action' => 'delete', $comentarios->id], ['confirm' => __('Deseja deletar # {0}?', $comentarios->id)]);
+                  echo $this->Form->postLink(__('Deletar'), ['controller' => 'Comentarios', 'action' => 'delete', $comentario->id], ['confirm' => __('Deseja deletar # {0}?', $comentarios->id)]);
                 }
                 ?>
               </td>
