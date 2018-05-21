@@ -79,6 +79,13 @@ create database classificados_ifrs;
     PRIMARY KEY(user_id, categoria_id)
   );
 
+  CREATE TABLE sugestoes(
+    user_id INT NOT NULL,
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    comentario text NOT NULL,
+    FOREIGN KEY(user_id) REFERENCES users(id)
+  );
+
   INSERT INTO cidades (nome,uf) VALUES('Ibirubá','RS');
   INSERT INTO cidades (nome,uf) VALUES('Tapera','RS');
   INSERT INTO cidades (nome,uf) VALUES('Selbach','RS');
