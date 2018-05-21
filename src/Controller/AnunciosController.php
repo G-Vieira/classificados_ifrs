@@ -31,7 +31,8 @@ class AnunciosController extends AppController {
       } else {
         $resultado = $this->Anuncios->find('all', array(
           'conditions' => array(
-            "Anuncios.titulo LIKE " => '%' . $pesquisa . '%'
+            "Anuncios.titulo LIKE " => '%' . $pesquisa . '%',
+            "Anuncios.validade >= CURRENT_DATE"
           )
         ));
         $anuncios = $this->paginate($resultado);
@@ -59,6 +60,16 @@ class AnunciosController extends AppController {
     $this->set('anuncio', $anuncio);
     $this->set('ncomentario');
   }
+
+ public function vencidos(){
+   $resultado = $this->Anuncios->find('all', array(
+     'conditions' => array(
+       "Anuncios.validade <= CURRENT_DATE"
+     )
+   ));
+   $anuncios = $this->paginate($resultado);
+   $this->set(compact('anuncios'));
+ }
 
   /**
   * Add method

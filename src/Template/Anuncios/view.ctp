@@ -65,27 +65,23 @@
     <br>
     <div class="row">
       <h4><?= __('Comentarios') ?></h4>
-      <?php if (!empty($anuncio->comentarios)): ?>
-        <table cellpadding="0" cellspacing="0" class="table">
-          <tr>
-            <th scope="col"><?= __('Usuário') ?></th>
-            <th scope="col"><?= __('Descricao') ?></th>
-            <th scope="col" class="actions"><?= __('Ações') ?></th>
-          </tr>
+      <ul class="list-group">
+        <?php if (!empty($anuncio->comentarios)): ?>
+
           <?php foreach ($anuncio->comentarios as $comentario): ?>
-            <tr>
-              <td><?= h($comentario->user_id) ?></td>
-              <td><?= h($comentario->descricao) ?></td>
-              <td class="actions">
-                <?php
-                if(($authUser['id'] == $anuncio->user_id) || ($authUser['id'] == $comentario->user_id) || ($authUser['role'] === 'admin')){
-                  echo $this->Form->postLink(__('Deletar'), ['controller' => 'Comentarios', 'action' => 'delete', $comentario->id], ['confirm' => __('Deseja deletar # {0}?', $comentarios->id)]);
-                }
-                ?>
-              </td>
-            </tr>
+            <li class="list-group-item">
+              <?= $this->Form->postLink(__('Usuario: ' . $comentario->user_id), ['controller' => 'users', 'action' => 'view',$comentario->user_id]) ?>
+              <br>
+              <?= h($comentario->descricao) ?>
+              <br><br>
+              <?php
+              if(($authUser['id'] == $anuncio->user_id) || ($authUser['id'] == $comentario->user_id) || ($authUser['role'] === 'admin')){
+                echo $this->Form->postLink(__('Deletar'), ['controller' => 'Comentarios', 'action' => 'delete', $comentario->id], ['confirm' => __('Deseja deletar # {0}?', $comentario->id)]);
+              }
+              ?>
+            </li>
           <?php endforeach; ?>
-        </table>
+        </ul>
       <?php endif; ?>
     </div>
   </div>

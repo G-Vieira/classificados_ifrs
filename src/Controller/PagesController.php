@@ -75,6 +75,9 @@ class PagesController extends AppController {
   private function get_anuncios() {
     $temp = TableRegistry::get('Anuncios');
     return $temp->find('all', array(
+      'conditions' => [
+        'Anuncios.validade >= CURRENT_DATE'
+        ],
       'limit' => 10,
       'order' => 'Anuncios.created DESC'
 

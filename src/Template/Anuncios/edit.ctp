@@ -35,7 +35,12 @@ foreach($categorias as $categoria){
       <?= $this->Form->create($anuncio) ?>
       <fieldset>
         <legend><?= __('Editar Anuncio') ?></legend>
-        <?= $this->Form->control('user_id',['options' => $anuncio->user_id,'label'=>false,'class'=>'form-control']) ?>
+        <div class="form-group row">
+          <label for="user_id" class="col-sm-3 col-form-label"><b>Usuário</b></label>
+          <div class="col-sm-7">
+        <?= $this->Form->control('user_id',['value' => $anuncio->user_id,'label'=>false,'class'=>'form-control']) ?>
+      </div>
+    </div>
         <div class="form-group row">
           <label for="categoria_id" class="col-sm-3 col-form-label"><b>Categoria</b></label>
           <div class="col-sm-7">
@@ -61,8 +66,19 @@ foreach($categorias as $categoria){
           </div>
         </div>
         <?php
-        $data = ((new DateTime(date('Y-m-d H:i:s')))->modify('+1 month'))->format('Y-m-d');
-        echo '<input type="date" name="validade" value = "' . $data , '" style="display:none;" required />';
+          $data = ((new DateTime(date('Y-m-d H:i:s')))->modify('+1 month'))->format('Y-m-d');
+          if($authUser['role'] == 'admin'){
+        ?>
+          <div class="form-group row">
+            <label for="validade" class="col-sm-3 col-form-label"><b>Validade</b></label>
+            <div class="col-sm-7">
+              <input type="date" name="validade" class="form-control" value = "<?= $data ?>" required />
+            </div>
+          </div>
+        <?php
+          }else{
+            echo '<input type="date" name="validade" value = "' . $data , '" style="display:none;" required />';
+          }
         ?>
       </fieldset>
       <div class="form-group row">
