@@ -89,6 +89,10 @@ class PagesController extends AppController {
     return $temp->find();
   }
 
+  public function sobre(){
+    
+  }
+
 
 
 }
