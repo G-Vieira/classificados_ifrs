@@ -28,9 +28,8 @@
                         <td><?= $sugesto->has('user') ? $this->Html->link($sugesto->user->id, ['controller' => 'Users', 'action' => 'view', $sugesto->user->id]) : '' ?></td>
                         <td><?= $this->Number->format($sugesto->id) ?></td>
                         <td class="actions">
-                            <?= $this->Html->link(__('View'), ['action' => 'view', $sugesto->id]) ?>
-                            <?= $this->Html->link(__('Edit'), ['action' => 'edit', $sugesto->id]) ?>
-                            <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $sugesto->id], ['confirm' => __('Are you sure you want to delete # {0}?', $sugesto->id)]) ?>
+                            <?= $this->Html->link(__('Ver'), ['action' => 'view', $sugesto->id]) ?>
+                            <?= $this->Form->postLink(__('Deletar'), ['action' => 'delete', $sugesto->id], ['confirm' => __('Deseja deletar # {0}?', $sugesto->id)]) ?>
                         </td>
                     </tr>
                 <?php endforeach; ?>
@@ -38,11 +37,11 @@
         </table>
         <div class="paginator">
             <ul class="pagination">
-                <?= $this->Paginator->first('<< ' . __('first')) ?>
-                <?= $this->Paginator->prev('< ' . __('previous')) ?>
+                <?= $this->Paginator->first('<< ' . __('primeiro')) ?>
+                <?= $this->Paginator->prev('< ' . __('anterior')) ?>
                 <?= $this->Paginator->numbers() ?>
-                <?= $this->Paginator->next(__('next') . ' >') ?>
-                <?= $this->Paginator->last(__('last') . ' >>') ?>
+                <?= $this->Paginator->next(__('proximo') . ' >') ?>
+                <?= $this->Paginator->last(__('ultimo') . ' >>') ?>
             </ul>
             <p><?= $this->Paginator->counter(['format' => __('Página {{page}} de {{pages}}, mostrando {{current}} comentários(s) de {{count}} total')]) ?></p>
         </div>
