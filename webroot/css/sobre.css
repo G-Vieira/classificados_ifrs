@@ -1,0 +1,21 @@
+   h1{
+    font-weight: bold;
+   } 
+
+   #p1{
+    font-size: 20px;
+   }
+
+   h2{
+    font-weight: bold;
+   }
+   
+body {
+  padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
