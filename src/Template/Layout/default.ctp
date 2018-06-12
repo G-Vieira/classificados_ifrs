@@ -83,6 +83,7 @@
        <li><?= $this->Html->link(__('Home'), ['controller' => 'Pages']	) ?></li>
        <li><?= $this->Html->link(__('Anuncios'), ['controller' => 'anuncios']) ?></li>
        <li><?= $this->Html->link(__('Categorias'), ['controller' => 'categorias']) ?></li>
+       <li><?= ($authUser)?($this->Html->link(__('Sugestões'), ['controller' => 'sugestoes', 'action' => 'add'])):'' ?></li>
        <li><?= ($authUser['role'] === 'admin')? ($this->Html->link(__('Usuarios'), ['controller' => 'Users', 'action' => 'index'])): ''?></li>
        <li><?= $this->Html->link(__('Sobre'), ['controller'=> 'Pages', 'action' => 'sobre']); ?></li>
      </ul> 

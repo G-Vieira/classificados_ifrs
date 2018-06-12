@@ -41,7 +41,7 @@
           <td class="actions">
                     <?= $this->Html->link(__('Ver'), ['action' => 'view', $anuncio->id]) ?>
                   <?php
-                    if($authUser){
+                    if($authUser['role'] == 'admin' || $authUser['id'] == $anuncio->user_id){
                        echo $this->Html->link(__('Editar'), ['action' => 'edit', $anuncio->id]);
                        echo $this->Form->postLink(__('Deletar'), ['action' => 'delete', $anuncio->id], ['confirm' => __('Are you sure you want to delete # {0}?', $anuncio->id)]);
                     }

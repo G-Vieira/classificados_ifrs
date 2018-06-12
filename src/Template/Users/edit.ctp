@@ -9,12 +9,16 @@
   <nav class="col-md-3" id="actions-sidebar">
     <ul class="nav nav-pills nav-stacked">
       <li class="heading"><?= __('Ações') ?></li>
-      <li><?= $this->Form->postLink(
-                __('Deletar'),
-                ['action' => 'delete', $user->id],
-                ['confirm' => __('Deseja deletar # {0}?', $user->id)]
-            )
-        ?></li>
+      <?php
+        if($authUser['role'] == 'admin'){
+          echo '<li>' . $this->Form->postLink(
+                  __('Deletar'),
+                  ['action' => 'delete', $user->id],
+                  ['confirm' => __('Deseja deletar # {0}?', $user->id)]
+              ) .
+          '</li>';
+        }
+      ?>
       <li><?= $this->Html->link(__('Listar Usuários'), ['action' => 'index']) ?></li>
     </ul>
   </nav>

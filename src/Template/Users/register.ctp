@@ -38,7 +38,7 @@
 	  <label for="role" class="col-sm-3 col-form-label"><b>Papel</b></label>
 	  <div class="col-sm-7">
 	  <?= $this->Form->input('role', array('label' => false,'class'=>'form-control',
-            'options' => array('admin' => 'Admin','normal' => 'Normal'))) ?>
+            'options' => array('normal' => 'Normal'))) ?>
 	  </div>
 	</div>
 	<div class="form-group row">

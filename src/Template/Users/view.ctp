@@ -8,10 +8,21 @@
 <nav class="col-md-3" id="actions-sidebar">
     <ul class="nav nav-pills nav-stacked">
         <li class="heading"><?= __('Ações') ?></li>
-        <li><?= $this->Html->link(__('Editar Usuário'), ['action' => 'edit', $user->id]) ?> </li>
-        <li><?= $this->Form->postLink(__('Deletar Usuário'), ['action' => 'delete', $user->id], ['confirm' => __('Deletar usuário # {0}?', $user->id)]) ?> </li>
+        <?php
+          if($authUser['role'] == 'admin' || $authUser['id'] == $user->id){
+            echo '<li>' . $this->Html->link(__('Editar Usuário'), ['action' => 'edit', $user->id]) . '</li>';
+          }
+        
+        if($authUser['role'] == 'admin'){
+            echo '<li>' . $this->Form->postLink(
+                    __('Deletar'),
+                    ['action' => 'delete', $user->id],
+                    ['confirm' => __('Deseja deletar # {0}?', $user->id)]
+                ) .
+            '</li>';
+          }
+        ?>      
         <li><?= $this->Html->link(__('Listar Usuário'), ['action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('Novo Usuário'), ['action' => 'add']) ?> </li>
     </ul>
 </nav>
 <div class="col-md-9">
