@@ -7,9 +7,9 @@
 * Author:  gian.vieira
 * Created: 20/03/2018
 */
-create database classificados_ifrs;
 
   CREATE USER 'ifrs'@'%' IDENTIFIED BY 'ifrs';
+  CREATE DATABASE classificados_ifrs;
   GRANT ALL PRIVILEGES ON classificados_ifrs.* TO ifrs;
   FLUSH PRIVILEGES;
 
@@ -94,9 +94,33 @@ create database classificados_ifrs;
   INSERT INTO `users` (`username`, `password`, `nome`, `email`, `role`, `created`, `modified`, `cidade`) VALUES
   ('gian.vieira', '$2y$10$KWQ8kH/nGRAmVcmwSdufbuo2Shh4tgV.NUyBA3DGyYOTLJIeohYtm', 'Gian Paulo', 'gian.vieira@ibiruba.ifrs.edu.br', 'admin', '2018-03-22 16:03:51', '2018-03-22 16:03:51', 2),
   ('matheus.neu', '$2y$10$KWQ8kH/nGRAmVcmwSdufbuo2Shh4tgV.NUyBA3DGyYOTLJIeohYtm', 'Matheus Neu', 'matheus.neu@ibiruba.ifrs.edu.br', 'admin', '2018-03-22 16:04:20', '2018-03-22 16:04:20', 4),
-  ('everton.hoffmann', '$2y$10$KWQ8kH/nGRAmVcmwSdufbuo2Shh4tgV.NUyBA3DGyYOTLJIeohYtm', 'Everton Hoffmann', 'everton.hoffmann@ibiruba.ifrs.edu.br', 'admin', '2018-03-22 16:05:00', '2018-03-22 16:05:00', 3);
+  ('everton.hoffmann', '$2y$10$KWQ8kH/nGRAmVcmwSdufbuo2Shh4tgV.NUyBA3DGyYOTLJIeohYtm', 'Everton Hoffmann', 'everton.hoffmann@ibiruba.ifrs.edu.br', 'admin', '2018-03-22 16:05:00', '2018-03-22 16:05:00', 3),
+  ('catarina.rene', '$2y$10$KWQ8kH/nGRAmVcmwSdufbuo2Shh4tgV.NUyBA3DGyYOTLJIeohYtm', 'Catarina Rene', 'catarina.rene@teste.ifrs.edu.br', 'normal', '2018-03-22 16:05:00', '2018-03-22 16:05:00', 2),
+  ('pedro.pedroso', '$2y$10$KWQ8kH/nGRAmVcmwSdufbuo2Shh4tgV.NUyBA3DGyYOTLJIeohYtm', 'Pedro Pedroso', 'pedro.pedroso@teste.ifrs.edu.br', 'normal', '2018-03-22 16:05:00', '2018-03-22 16:05:00', 3),
+  ('joao.barro', '$2y$10$KWQ8kH/nGRAmVcmwSdufbuo2Shh4tgV.NUyBA3DGyYOTLJIeohYtm', 'Joao de Barro', 'joao.barro@teste.ifrs.edu.br', 'normal', '2018-03-22 16:05:00', '2018-03-22 16:05:00', 3),
+  ('zabuza.momochi', '$2y$10$KWQ8kH/nGRAmVcmwSdufbuo2Shh4tgV.NUyBA3DGyYOTLJIeohYtm', 'Zabuza Momochi', 'zabuza.momochi@teste.ifrs.edu.br', 'normal', '2018-03-22 16:05:00', '2018-03-22 16:05:00', 2);
 
-  insert into categorias(descricao) values ('Automovel');
-  insert into categorias(descricao) values ('Joias');
+  insert into categorias(descricao) values 
+  ('Automovel'),
+  ('Joias'),
+  ('Games'),
+  ('Celulares'),
+  ('Bijuterias'),
+  ('Serviços'),
+  ('Animais');
 
-  insert into anuncios (user_id,categoria_id,descricao,preco,titulo,validade,created,modified) values(1,1,'Estou vendendo meu Uno, ano 2000',2000.00,'Vendo Uno','06/14/2018',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+  insert into anuncios (user_id,categoria_id,descricao,preco,titulo,validade,created,modified) values
+  (4,1,'Estou vendendo meu Uno, ano 2000',2000.00,'Vendo Uno','2018-07-04',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP),
+  (4,1,'Estou vendendo meu Gol, ano 2005',3000.00,'Vendo Gol','2018-06-04','2018-05-04','2018-05-04'),
+  (4,2,'Vendo colar de ouro',1000.00,'Vendo Colar de Ouro','2018-07-04',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP),
+  (5,2,'Vendo anel de diamante',2500.00,'Vendo Anel de diamante','2018-07-04',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP),
+  (2,3,'Vendo PlayStation 4, usado mas em boas condições.',2000.00,'Vendo PS4','2018-06-04','2018-05-04','2018-05-04'),
+  (2,3,'Vendo VR, novo, importado dos EUA.',4000.00,'Vendo VR','2018-07-04',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP),
+  (7,4,'Estou vendendo um Nokia SX 500, com capa grátis, não possui arranhões nem fissuras. \n4GB RAM, 32GB MEMORIA',900.00,'Vendo NOKIA SX 500','2018-07-04',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP),
+  (7,4,'Vendo Nokia tijolão, só pela nostalgia.',10.00,'Vendo Nokia Tijolão','2018-07-04',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP),
+  (6,5,'Vendo anel de casamento que minha ex-namorada não quis.',300.00,'Vendo Anel de Casamento','2018-07-04',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP),
+  (5,4,'Vendo pulseira de plástico que minha sobrinha fez.',5.00,'Vendo Pulseira','2018-07-04',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP),
+  (1,6,'Formato computadores',70.00,'Formato Computador','2018-07-04',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP),
+  (3,6,'Faço serviço de personal trainer.',70.00,'Vendo Uno','2018-07-04',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP),
+  (3,7,'Vendo monstro, bem comportado, basta alimenta-lo com uma dose de whey a cada dois dias, \n e frango com batata doce.',1000.00,'Vendo Monstro','2018-07-04',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP),
+  (6,7,'vendo meu cavalo, ele se chama Pé de Pano.',2500.00,'Vendo Pé de Pano','2018-07-04',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
