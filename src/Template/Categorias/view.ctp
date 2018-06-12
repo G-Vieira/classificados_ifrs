@@ -9,10 +9,14 @@
   <nav class="col-md-2" id="actions-sidebar">
     <ul class="nav nav-pills nav-stacked">
       <li class="heading"><?= __('Actions') ?></li>
-      <li><?= $this->Html->link(__('Editar Categoria'), ['action' => 'edit', $categoria->id]) ?> </li>
-      <li><?= $this->Form->postLink(__('Deletar Categoria'), ['action' => 'delete', $categoria->id], ['confirm' => __('Deseja deletar # {0}?', $categoria->id)]) ?> </li>
+      <?php
+	if($authUser['role'] == 'admin'){
+	  echo '<li>' . $this->Html->link(__('Nova Categoria'), ['action' => 'add']) . '</li>';
+	  echo '<li>' . $this->Html->link(__('Editar Categoria'), ['action' => 'edit', $categoria->id]) . '</li>';
+	  echo '<li>' . $this->Form->postLink(__('Deletar Categoria'), ['action' => 'delete', $categoria->id], ['confirm' => __('Deseja deletar # {0}?', $categoria->id)]) . '</li>';
+	}
+      ?>
       <li><?= $this->Html->link(__('Listar Categorias'), ['action' => 'index']) ?> </li>
-      <li><?= $this->Html->link(__('Nova Categoria'), ['action' => 'add']) ?> </li>
       <li><?= $this->Html->link(__('Listar Anuncios'), ['controller' => 'Anuncios', 'action' => 'index']) ?> </li>
       <li><?= $this->Html->link(__('Novo Anuncio'), ['controller' => 'Anuncios', 'action' => 'add']) ?> </li>
     </ul>
@@ -56,8 +60,7 @@
               <td><?= h($anuncios->modified) ?></td>
               <td class="actions">
                 <?= $this->Html->link(__('Ver'), ['controller' => 'Anuncios', 'action' => 'view', $anuncios->id]) ?>
-                <?= $this->Html->link(__('Editar'), ['controller' => 'Anuncios', 'action' => 'edit', $anuncios->id]) ?>
-                <?= $this->Form->postLink(__('Deletar'), ['controller' => 'Anuncios', 'action' => 'delete', $anuncios->id], ['confirm' => __('Deseja deletar # {0}?', $anuncios->id)]) ?>
+            
               </td>
             </tr>
           <?php endforeach; ?>

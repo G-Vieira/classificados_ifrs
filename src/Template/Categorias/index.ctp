@@ -9,7 +9,11 @@
     <div class="col-md-3" id="actions-sidebar">
       <ul class="nav nav-pills nav-stacked">
         <li class="heading"><?= __('Ações') ?></li>
-        <li><?= $this->Html->link(__('Nova Categoria'), ['action' => 'add']) ?></li>
+        <?php
+	  if($authUser['role'] == 'admin'){
+	    echo '<li>' . $this->Html->link(__('Nova Categoria'), ['action' => 'add']) . '</li>';
+	  }  
+	?>
         <li><?= $this->Html->link(__('Listar Anuncios'), ['controller' => 'Anuncios', 'action' => 'index']) ?></li>
       </ul>
     </div>
@@ -31,8 +35,10 @@
            <td class="actions">
             <?= $this->Html->link(__('Ver'), ['action' => 'view', $categoria->id]) ?>
             <?php
-            echo $this->Html->link(__('Editar'), ['action' => 'edit', $categoria->id]);
-            echo $this->Form->postLink(__('Deletar'), ['action' => 'delete', $categoria->id], ['confirm' => __('Deseja deletar # {0}?', $categoria->id)]);
+	      if($authUser['role'] == 'admin'){
+		echo $this->Html->link(__('Editar'), ['action' => 'edit', $categoria->id]);
+                echo $this->Form->postLink(__('Deletar'), ['action' => 'delete', $categoria->id], ['confirm' => __('Deseja deletar # {0}?', $categoria->id)]);
+	      }
             ?>
           </td>
         </tr>

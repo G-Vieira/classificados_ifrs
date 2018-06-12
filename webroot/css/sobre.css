@@ -1,21 +1,11 @@
-   h1{
-    font-weight: bold;
-   } 
+h1{
+ font-weight: bold;
+} 
 
-   #p1{
-    font-size: 20px;
-   }
-
-   h2{
-    font-weight: bold;
-   }
-   
-body {
-  padding-top: 54px;
+#p1{
+ font-size: 20px;
 }
 
-@media (min-width: 992px) {
-  body {
-    padding-top: 56px;
-  }
+h2{
+ font-weight: bold;
 }

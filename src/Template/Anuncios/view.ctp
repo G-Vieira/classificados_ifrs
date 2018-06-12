@@ -9,10 +9,16 @@
   <div class="col-md-2" id="actions-sidebar">
     <ul class="nav nav-pills nav-stacked">
       <li class="heading"><?= __('Ações') ?></li>
-      <li><?= $this->Html->link(__('Editar Anuncio'), ['action' => 'edit', $anuncio->id]) ?> </li>
-      <li><?= $this->Form->postLink(__('Deletar Anuncio'), ['action' => 'delete', $anuncio->id], ['confirm' => __('Deseja deletar # {0}?', $anuncio->id)]) ?> </li>
+      <?php 
+	if($authUser){
+	  echo '<li>' . $this->Html->link(__('Novo Anuncio'), ['action' => 'add']) . '</li>';
+	}
+	if($authUser['role'] == 'admin' || $authUser['id'] == $anuncio->user_id){
+	  echo '<li>' . $this->Html->link(__('Editar Anuncio'), ['action' => 'edit', $anuncio->id]) . '</li>';
+	  echo '<li>' . $this->Form->postLink(__('Deletar Anuncio'), ['action' => 'delete', $anuncio->id], ['confirm' => __('Deseja deletar # {0}?', $anuncio->id)]) . '</li>';
+	}
+      ?>
       <li><?= $this->Html->link(__('Listar Anuncios'), ['action' => 'index']) ?> </li>
-      <li><?= $this->Html->link(__('Novo Anuncio'), ['action' => 'add']) ?> </li>
       <li><?= $this->Html->link(__('Listar Categorias'), ['controller' => 'Categorias', 'action' => 'index']) ?> </li>
     </ul>
   </div>
