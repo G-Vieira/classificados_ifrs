@@ -20,9 +20,19 @@ class CategoriasController extends AppController {
    * @return \Cake\Http\Response|void
    */
   public function index() {
-    $categorias = $this->paginate($this->Categorias);
+     $categorias = $this->paginate($this->Categorias);
 
+    if($this->Auth->user()){
+      $favoritos = $this->Categorias->Favoritos->find('all',[
+        'conditions' => [
+           'Favoritos.user_id' => $this->Auth->user()['id']
+          ]
+        ]
+      );
+    }
+    
     $this->set(compact('categorias'));
+    $this->set(compact('favoritos'));
   }
 
 

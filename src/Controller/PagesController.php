@@ -59,8 +59,12 @@ class PagesController extends AppController {
 
     $categorias = $this->get_categorias();
     $anuncios = $this->get_anuncios();
+    $favoritos = null;
+    if($this->Auth->user()){
+      $favoritos = $this->get_favoritos();
+    }
 
-    $this->set(compact('page', 'subpage', 'categorias', 'anuncios'));
+    $this->set(compact('page', 'subpage', 'categorias', 'anuncios', 'favoritos'));
 
     try {
       $this->render(implode('/', $path));
@@ -79,6 +83,24 @@ class PagesController extends AppController {
         'Anuncios.validade >= CURRENT_DATE'
         ],
       'limit' => 10,
+      'order' => 'Anuncios.created DESC'
+
+    ));
+  }
+
+  private function get_favoritos() {
+    $temp = TableRegistry::get('Anuncios');
+    return $temp->find('all', array(
+      'join' => [
+         'table' => 'Favoritos',
+         'type' => 'inner',
+         'conditions' => 'Favoritos.categoria_id = Anuncios.categoria_id'
+      ],
+      'conditions' => [
+        'Anuncios.validade >= CURRENT_DATE',
+        'Favoritos.user_id = ' . $this->Auth->user()['id']
+        ],
+      'limit' => 5,
       'order' => 'Anuncios.created DESC'
 
     ));

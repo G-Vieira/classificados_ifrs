@@ -34,8 +34,8 @@ class FavoritosTable extends Table
         parent::initialize($config);
 
         $this->setTable('favoritos');
-        $this->setDisplayField('user_id');
-        $this->setPrimaryKey(['user_id', 'categoria_id']);
+        $this->setDisplayField('id');
+        $this->setPrimaryKey('id');
 
         $this->belongsTo('Users', [
             'foreignKey' => 'user_id',
@@ -45,6 +45,21 @@ class FavoritosTable extends Table
             'foreignKey' => 'categoria_id',
             'joinType' => 'INNER'
         ]);
+    }
+
+    /**
+     * Default validation rules.
+     *
+     * @param \Cake\Validation\Validator $validator Validator instance.
+     * @return \Cake\Validation\Validator
+     */
+    public function validationDefault(Validator $validator)
+    {
+        $validator
+            ->integer('id')
+            ->allowEmpty('id', 'create');
+
+        return $validator;
     }
 
     /**

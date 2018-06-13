@@ -8,6 +8,30 @@
     </ul>
   </div>
   <div class="col-md-9">
+  <?php 
+    if($favoritos != null){
+  ?>
+    <div class="row">
+      <?php  foreach ($favoritos as $favorito): ?>
+
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <a href="./anuncios/view/<?= $favorito->id ?>">
+              <img src="">
+            </a>
+            <div class="caption">
+              <h3><a href="./anuncios/view/<?= $favorito->id ?>"><?= $favorito->titulo ?></a></h3>
+              <p><?= $favorito->descricao ?></p>
+            </div>
+          </div>
+        </div>
+
+      <?php endforeach; ?>
+    </div>
+  <?php
+    }
+  ?>
+  <hr>
     <div class="row">
       <?php  foreach ($anuncios as $anuncio): ?>
 
@@ -25,5 +49,4 @@
 
       <?php endforeach; ?>
     </div>
-  </div>
 </div>

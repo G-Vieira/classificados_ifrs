@@ -72,11 +72,11 @@
   );
 
   CREATE TABLE favoritos(
-    user_id INT NOT NULL,
-    categoria_id INT NOT NULL,
-    FOREIGN KEY(categoria_id) REFERENCES categorias(id),
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id int not null,
+    categoria_id int not null,
     FOREIGN KEY(user_id) REFERENCES users(id),
-    PRIMARY KEY(user_id, categoria_id)
+    FOREIGN KEY(categoria_id) REFERENCES categorias(id)
   );
 
   CREATE TABLE sugestoes(

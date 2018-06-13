@@ -6,6 +6,7 @@ use Cake\ORM\Entity;
 /**
  * Favorito Entity
  *
+ * @property int $id
  * @property int $user_id
  * @property int $categoria_id
  *
@@ -25,6 +26,8 @@ class Favorito extends Entity
      * @var array
      */
     protected $_accessible = [
+        'user_id' => true,
+        'categoria_id' => true,
         'user' => true,
         'categoria' => true
     ];

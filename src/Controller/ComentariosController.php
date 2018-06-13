@@ -1,8 +1,8 @@
 <?php
 
-  namespace App\Controller;
+namespace App\Controller;
 
-  use App\Controller\AppController;
+use App\Controller\AppController;
 
   /**
    * Comentarios Controller
@@ -21,12 +21,12 @@
     public function index() {
       $this->isAdmin(true);
       $this->paginate = [
-	'contain' => ['Anuncios', 'Users']
-      ];
-      $comentarios = $this->paginate($this->Comentarios);
+       'contain' => ['Anuncios', 'Users']
+     ];
+     $comentarios = $this->paginate($this->Comentarios);
 
-      $this->set(compact('comentarios'));
-    }
+     $this->set(compact('comentarios'));
+   }
 
     /*
      * View method
@@ -37,8 +37,8 @@
      */
     public function view($id = null) {
       $comentario = $this->Comentarios->get($id, [
-	'contain' => ['Anuncios', 'Users']
-      ]);
+       'contain' => ['Anuncios', 'Users']
+     ]);
 
       $this->set('comentario', $comentario);
     }
@@ -51,19 +51,19 @@
     public function add() {
       $comentario = $this->Comentarios->newEntity();
       if ($this->request->is('post')) {
-	$anuncio = $this->request->getData()['anuncio_id'];
-	$comentario = $this->Comentarios->patchEntity($comentario, $this->request->getData());
-	if ($this->Comentarios->save($comentario)) {
-	  $this->Flash->success(__('O comentario foi gravado.'));
-	  return $this->redirect(['controller' => 'anuncios', 'action' => 'view', $anuncio]);
-	}
-	$this->Flash->error(__('Erro ao gravar o comentario.'));
-	return $this->redirect(['controller' => 'anuncios', 'action' => 'view', $anuncio]);
-      }
-      $anuncios = $this->Comentarios->Anuncios->find('list', ['limit' => 200]);
-      $users = $this->Comentarios->Users->find('list', ['limit' => 200]);
-      $this->set(compact('comentario', 'anuncios', 'users'));
-    }
+       $anuncio = $this->request->getData()['anuncio_id'];
+       $comentario = $this->Comentarios->patchEntity($comentario, $this->request->getData());
+       if ($this->Comentarios->save($comentario)) {
+         $this->Flash->success(__('O comentario foi gravado.'));
+         return $this->redirect(['controller' => 'anuncios', 'action' => 'view', $anuncio]);
+       }
+       $this->Flash->error(__('Erro ao gravar o comentario.'));
+       return $this->redirect(['controller' => 'anuncios', 'action' => 'view', $anuncio]);
+     }
+     $anuncios = $this->Comentarios->Anuncios->find('list', ['limit' => 200]);
+     $users = $this->Comentarios->Users->find('list', ['limit' => 200]);
+     $this->set(compact('comentario', 'anuncios', 'users'));
+   }
 
     /**
      * Delete method
@@ -76,14 +76,14 @@
       $this->request->allowMethod(['post', 'delete']);
       $comentario = $this->Comentarios->get($id);
       if ($this->Comentarios->delete($comentario)) {
-	$this->Flash->success(__('O comentario foi deletado.'));
-      }
-      else {
-	$this->Flash->error(__('Erro ao deletar o comentario.'));
-      }
+       $this->Flash->success(__('O comentario foi deletado.'));
+     }
+     else {
+       $this->Flash->error(__('Erro ao deletar o comentario.'));
+     }
 
-      return $this->redirect(['action' => 'index']);
-    }
+     return $this->redirect(['action' => 'index']);
+   }
 
-  }
-  
+ }
+ 
