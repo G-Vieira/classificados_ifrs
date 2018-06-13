@@ -15,14 +15,11 @@
       <?php  foreach ($favoritos as $favorito): ?>
 
         <div class="col-sm-6 col-md-4">
-          <div class="thumbnail">
-            <a href="./anuncios/view/<?= $favorito->id ?>">
-              <img src="">
+          <div>
+            <h3><?= $favorito->titulo ?></h3>
+	    <a href="./anuncios/view/<?= $favorito->id ?>" class="thumbnail">
+              <img class="img_anuncio_home" src="webroot/files/Anuncios/imagem/<?= $favorito->imagem ?>">
             </a>
-            <div class="caption">
-              <h3><a href="./anuncios/view/<?= $favorito->id ?>"><?= $favorito->titulo ?></a></h3>
-              <p><?= $favorito->descricao ?></p>
-            </div>
           </div>
         </div>
 
@@ -36,14 +33,11 @@
       <?php  foreach ($anuncios as $anuncio): ?>
 
         <div class="col-sm-6 col-md-4">
-          <div class="thumbnail">
-            <a href="./anuncios/view/<?= $anuncio->id ?>">
-              <img src="">
+          <div>
+            <h3><?= $anuncio->titulo ?></h3>
+	    <a href="./anuncios/view/<?= $anuncio->id ?>" class="thumbnail">
+              <img class="img_anuncio_home" src="webroot/files/Anuncios/imagem/<?= $anuncio->imagem ?>">
             </a>
-            <div class="caption">
-              <h3><a href="./anuncios/view/<?= $anuncio->id ?>"><?= $anuncio->titulo ?></a></h3>
-              <p><?= $anuncio->descricao ?></p>
-            </div>
           </div>
         </div>
 

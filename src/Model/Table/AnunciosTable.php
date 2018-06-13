@@ -57,6 +57,10 @@ class AnunciosTable extends Table
         $this->hasMany('Comentarios', [
             'foreignKey' => 'anuncio_id'
         ]);
+	
+	$this->addBehavior('Josegonzalez/Upload.Upload', [
+            'imagem' => []
+        ]);
     }
 
     /**

@@ -47,17 +47,11 @@
     preco decimal(12,5) NULL,
     titulo VARCHAR(50) NOT NULL,
     validade DATE NOT NULL,
+    imagem VARCHAR(255) DEFAULT 'sem_imagem.jpg',
     created DATETIME DEFAULT NULL,
     modified DATETIME DEFAULT NULL,
     FOREIGN KEY(user_id) REFERENCES users(id),
     FOREIGN KEY(categoria_id) REFERENCES categorias(id)
-  );
-
-  CREATE TABLE anexos(
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    anuncio_id INT NOT NULL,
-    caminho VARCHAR(300) NOT NULL,
-    FOREIGN KEY(anuncio_id) REFERENCES anuncios(id)
   );
 
   CREATE TABLE comentarios(

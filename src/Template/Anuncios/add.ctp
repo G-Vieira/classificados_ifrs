@@ -20,7 +20,7 @@ foreach($categorias as $categoria){
     </ul>
   </nav>
   <div class="col-md-9 text-center">
-    <?= $this->Form->create($anuncio) ?>
+    <?= $this->Form->create($anuncio, ['type' => 'file']) ?>
     <fieldset>
       <legend><?= __('Editar Anuncio') ?></legend>
       <?= $this->Form->control('user_id',['label'=>false,'class'=>'form-control','type'=>'hidden','value'=>$authUser['id']]) ?>
@@ -46,6 +46,12 @@ foreach($categorias as $categoria){
         <label for="preco" class="col-sm-3 col-form-label"><b>Preço</b></label>
         <div class="col-sm-7">
           <?= $this->Form->control('preco',['label'=>false,'class'=>'form-control','type'=>'number']) ?>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="imagem" class="col-sm-3 col-form-label"><b>Imagem</b></label>
+        <div class="col-sm-7">
+          <?= $this->Form->control('imagem',['label'=>false,'class'=>'form-control', 'type' => 'file']) ?>
         </div>
       </div>
       <?php

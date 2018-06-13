@@ -44,6 +44,7 @@ class Anuncio extends Entity
         'modified' => true,
         'user' => true,
         'categoria' => true,
+        'imagem' => true,
         'anexos' => true,
         'comentarios' => true
     ];
