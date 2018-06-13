@@ -82,7 +82,7 @@ class PagesController extends AppController {
       'conditions' => [
         'Anuncios.validade >= CURRENT_DATE'
         ],
-      'limit' => 10,
+      'limit' => 20,
       'order' => 'Anuncios.created DESC'
 
     ));

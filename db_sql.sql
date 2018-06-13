@@ -47,7 +47,7 @@
     preco decimal(12,5) NULL,
     titulo VARCHAR(50) NOT NULL,
     validade DATE NOT NULL,
-    imagem VARCHAR(255) DEFAULT 'sem_imagem.jpg',
+    imagem VARCHAR(255) NOT NULL,
     created DATETIME DEFAULT NULL,
     modified DATETIME DEFAULT NULL,
     FOREIGN KEY(user_id) REFERENCES users(id),
@@ -103,18 +103,18 @@
   ('Serviços'),
   ('Animais');
 
-  insert into anuncios (user_id,categoria_id,descricao,preco,titulo,validade,created,modified) values
-  (4,1,'Estou vendendo meu Uno, ano 2000',2000.00,'Vendo Uno','2018-07-04',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP),
-  (4,1,'Estou vendendo meu Gol, ano 2005',3000.00,'Vendo Gol','2018-06-04','2018-05-04','2018-05-04'),
-  (4,2,'Vendo colar de ouro',1000.00,'Vendo Colar de Ouro','2018-07-04',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP),
-  (5,2,'Vendo anel de diamante',2500.00,'Vendo Anel de diamante','2018-07-04',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP),
-  (2,3,'Vendo PlayStation 4, usado mas em boas condições.',2000.00,'Vendo PS4','2018-06-04','2018-05-04','2018-05-04'),
-  (2,3,'Vendo VR, novo, importado dos EUA.',4000.00,'Vendo VR','2018-07-04',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP),
-  (7,4,'Estou vendendo um Nokia SX 500, com capa grátis, não possui arranhões nem fissuras. \n4GB RAM, 32GB MEMORIA',900.00,'Vendo NOKIA SX 500','2018-07-04',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP),
-  (7,4,'Vendo Nokia tijolão, só pela nostalgia.',10.00,'Vendo Nokia Tijolão','2018-07-04',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP),
-  (6,5,'Vendo anel de casamento que minha ex-namorada não quis.',300.00,'Vendo Anel de Casamento','2018-07-04',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP),
-  (5,4,'Vendo pulseira de plástico que minha sobrinha fez.',5.00,'Vendo Pulseira','2018-07-04',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP),
-  (1,6,'Formato computadores',70.00,'Formato Computador','2018-07-04',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP),
-  (3,6,'Faço serviço de personal trainer.',70.00,'Vendo Uno','2018-07-04',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP),
-  (3,7,'Vendo monstro, bem comportado, basta alimenta-lo com uma dose de whey a cada dois dias, \n e frango com batata doce.',1000.00,'Vendo Monstro','2018-07-04',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP),
-  (6,7,'vendo meu cavalo, ele se chama Pé de Pano.',2500.00,'Vendo Pé de Pano','2018-07-04',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+  insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values
+  (4,1,'Estou vendendo meu Uno, ano 2000',2000.00,'Vendo Uno','uno.jpg','2018-07-04',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP),
+  (4,1,'Estou vendendo meu Gol, ano 2005',3000.00,'Vendo Gol','sem_imagem.jpg','2018-06-04','2018-05-04','2018-05-04'),
+  (4,2,'Vendo colar de ouro',1000.00,'Vendo Colar de Ouro','colar_ouro.jpg','2018-07-04',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP),
+  (5,2,'Vendo anel de diamante',2500.00,'Vendo Anel de diamante','anel_diamante.jpg','2018-07-04',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP),
+  (2,3,'Vendo PlayStation 4, usado mas em boas condições.',2000.00,'Vendo PS4','sem_imagem.jpg','2018-06-04','2018-05-04','2018-05-04'),
+  (2,3,'Vendo VR, novo, importado dos EUA.',4000.00,'Vendo VR','vr.jpg','2018-07-04',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP),
+  (7,4,'Estou vendendo um Nokia SX 500, com capa grátis, não possui arranhões nem fissuras. \n4GB RAM, 32GB MEMORIA',900.00,'Vendo NOKIA SX 500','nokia_sx.jpg','2018-07-04',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP),
+  (7,4,'Vendo Nokia tijolão, só pela nostalgia.',10.00,'Vendo Nokia Tijolão','nokia_tj.jpg','2018-07-04',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP),
+  (6,5,'Vendo anel de casamento que minha ex-namorada não quis.',300.00,'Vendo Anel de Casamento','anel_c.jpg','2018-07-04',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP),
+  (5,4,'Vendo pulseira de plástico que minha sobrinha fez.',5.00,'Vendo Pulseira','pulseira.jpg','2018-07-04',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP),
+  (1,6,'Formato computadores',70.00,'Formato Computador','formatacao.jpg','2018-07-04',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP),
+  (3,6,'Faço serviço de personal trainer.',70.00,'Personal Trainer','sem_imagem.jpg','2018-07-04',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP),
+  (3,7,'Vendo monstro, bem comportado, basta alimenta-lo com uma dose de whey a cada dois dias, \n e frango com batata doce.',1000.00,'Vendo Monstro','sem_imagem.jpg','2018-07-04',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP),
+  (6,7,'vendo meu cavalo, ele se chama Pé de Pano.',2500.00,'Vendo Pé de Pano','sem_imagem.jpg','2018-07-04',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);

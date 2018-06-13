@@ -54,7 +54,7 @@ class AnunciosController extends AppController {
   public function view($id = null) {
     $ncomentario = $this->Anuncios->Comentarios->newEntity();
     $anuncio = $this->Anuncios->get($id, [
-      'contain' => ['Users', 'Categorias', 'Anexos', 'Comentarios']
+      'contain' => ['Users', 'Categorias', 'Comentarios']
     ]);
 
     $this->set('anuncio', $anuncio);

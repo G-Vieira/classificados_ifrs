@@ -1,6 +1,5 @@
 <?php
 namespace App\Model\Entity;
-
 use Cake\ORM\Entity;
 
 /**
@@ -48,4 +47,5 @@ class Anuncio extends Entity
         'anexos' => true,
         'comentarios' => true
     ];
+    
 }

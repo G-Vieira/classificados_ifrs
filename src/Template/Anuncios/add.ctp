@@ -51,7 +51,7 @@ foreach($categorias as $categoria){
       <div class="form-group row">
         <label for="imagem" class="col-sm-3 col-form-label"><b>Imagem</b></label>
         <div class="col-sm-7">
-          <?= $this->Form->control('imagem',['label'=>false,'class'=>'form-control', 'type' => 'file']) ?>
+          <?= $this->Form->control('imagem',['required' => true,'label'=>false,'class'=>'form-control', 'type' => 'file']) ?>
         </div>
       </div>
       <?php
