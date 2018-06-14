@@ -75,6 +75,7 @@ use App\Controller\AppController;
     public function delete($id = null) {
       $this->request->allowMethod(['post', 'delete']);
       $comentario = $this->Comentarios->get($id);
+      $anuncio = $comentario->anuncio_id;
       if ($this->Comentarios->delete($comentario)) {
        $this->Flash->success(__('O comentario foi deletado.'));
      }
@@ -82,7 +83,7 @@ use App\Controller\AppController;
        $this->Flash->error(__('Erro ao deletar o comentario.'));
      }
 
-     return $this->redirect(['action' => 'index']);
+     return $this->redirect(['controller' => 'anuncios', 'action' => 'view', $anuncio]);
    }
 
  }
