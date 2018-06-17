@@ -92,13 +92,13 @@ class PagesController extends AppController {
     $temp = TableRegistry::get('Anuncios');
     return $temp->find('all', array(
       'join' => [
-         'table' => 'Favoritos',
+         'table' => 'favoritos',
          'type' => 'inner',
-         'conditions' => 'Favoritos.categoria_id = Anuncios.categoria_id'
+         'conditions' => 'favoritos.categoria_id = Anuncios.categoria_id'
       ],
       'conditions' => [
         'Anuncios.validade >= CURRENT_DATE',
-        'Favoritos.user_id = ' . $this->Auth->user()['id']
+        'favoritos.user_id = ' . $this->Auth->user()['id']
         ],
       'limit' => 5,
       'order' => 'Anuncios.created DESC'
@@ -112,7 +112,7 @@ class PagesController extends AppController {
   }
 
   public function sobre(){
-    
+
   }
 
 

@@ -1,9 +1,10 @@
 <?php
 
   $temp = [];
-
-  foreach($favoritos as $f){
-    $temp[$f->categoria_id] = $f->id;
+  if(isset($favoritos)){
+    foreach($favoritos as $f){
+      $temp[$f->categoria_id] = $f->id;
+    }
   }
 
   /**
@@ -18,7 +19,7 @@
         <?php
         if($authUser['role'] == 'admin'){
          echo '<li>' . $this->Html->link(__('Nova Categoria'), ['action' => 'add']) . '</li>';
-       }  
+       }
        ?>
        <li><?= $this->Html->link(__('Listar Anuncios'), ['controller' => 'Anuncios', 'action' => 'index']) ?></li>
      </ul>
@@ -50,10 +51,10 @@
         <?php
           if($authUser){
               if(isset($temp[$categoria->id])){
-                echo '<td>' . 
-		    $this->Form->postLink(__('Desfavoritar'), 
-		       ['controller' => 'favoritos', 'action' => 'delete', $temp[$categoria->id]], 
-		       ['class' => 'btn btn-default','confirm' => __('Deseja desfavoritar # {0}?', $categoria->descricao)]) . 
+                echo '<td>' .
+		    $this->Form->postLink(__('Desfavoritar'),
+		       ['controller' => 'favoritos', 'action' => 'delete', $temp[$categoria->id]],
+		       ['class' => 'btn btn-default','confirm' => __('Deseja desfavoritar # {0}?', $categoria->descricao)]) .
 		  '</td>';
               }else{
                 echo '<td>
