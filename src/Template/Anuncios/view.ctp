@@ -28,11 +28,11 @@
     <table class="table">
       <tr>
         <th scope="row"><?= __('User') ?></th>
-        <td><?= $anuncio->has('user') ? $this->Html->link($anuncio->user->id, ['controller' => 'Users', 'action' => 'view', $anuncio->user->id]) : '' ?></td>
+        <td><?= $anuncio->has('user') ? $this->Html->link($anuncio->user->username, ['controller' => 'Users', 'action' => 'view', $anuncio->user->id]) : '' ?></td>
       </tr>
       <tr>
         <th scope="row"><?= __('Categoria') ?></th>
-        <td><?= $anuncio->has('categoria') ? $this->Html->link($anuncio->categoria->id, ['controller' => 'Categorias', 'action' => 'view', $anuncio->categoria->id]) : '' ?></td>
+        <td><?= $anuncio->has('categoria') ? $this->Html->link($anuncio->categoria->descricao, ['controller' => 'Categorias', 'action' => 'view', $anuncio->categoria->id]) : '' ?></td>
       </tr>
       <tr>
         <th scope="row"><?= __('Titulo') ?></th>

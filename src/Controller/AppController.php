@@ -99,7 +99,7 @@ class AppController extends Controller {
 
   public function beforeFilter(Event $event) {
     $this->Auth->deny(['add', 'edit', 'delete']);
-    $this->Auth->allow(['index', 'display', 'view']);
+    $this->Auth->allow(['index', 'display', 'view','visitas','eventos']);
   }
 
 }

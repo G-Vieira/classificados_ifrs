@@ -38,6 +38,8 @@
       <?= $this->Html->script('bootstrap.min.js') ?>
       <?= $this->Html->script('jquery.smartmenus.min.js') ?>
       <?= $this->Html->script('jquery.smartmenus.bootstrap.min.js') ?>
+      <?= $this->Html->script('ahoy.js') ?>
+      <?= $this->Html->script('app.js') ?>
 
       <?= $this->fetch('meta') ?>
       <?= $this->fetch('css') ?>
@@ -72,7 +74,7 @@
            echo "<li>" . $this->Html->link(__('Login'), ['controller' => 'users', 'action' => 'login'])  . "</li>";
          }
          ?>
-         <form class="navbar-form navbar-left" method="post" action="./anuncios/">
+         <form class="navbar-form navbar-left" method="post" action="anuncios">
           <div class="form-group">
             <input type="text" class="form-control" placeholder="Pesquisar anúncios" name="pesquisa">
           </div>

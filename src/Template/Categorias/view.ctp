@@ -38,26 +38,18 @@
       <?php if (!empty($categoria->anuncios)): ?>
         <table cellpadding="0" cellspacing="0" class="table">
           <tr>
-            <th scope="col"><?= __('Id') ?></th>
-            <th scope="col"><?= __('User Id') ?></th>
-            <th scope="col"><?= __('Categoria Id') ?></th>
             <th scope="col"><?= __('Descricao') ?></th>
             <th scope="col"><?= __('Titulo') ?></th>
             <th scope="col"><?= __('Validade') ?></th>
-            <th scope="col"><?= __('Created') ?></th>
-            <th scope="col"><?= __('Modified') ?></th>
-            <th scope="col" class="actions"><?= __('Actions') ?></th>
+            <th scope="col"><?= __('Criado em') ?></th>
+            <th scope="col" class="actions"><?= __('Ações') ?></th>
           </tr>
           <?php foreach ($categoria->anuncios as $anuncios): ?>
-            <tr>
-              <td><?= h($anuncios->id) ?></td>
-              <td><?= h($anuncios->user_id) ?></td>
-              <td><?= h($anuncios->categoria_id) ?></td>
+            <tr>  
               <td><?= h($anuncios->descricao) ?></td>
               <td><?= h($anuncios->titulo) ?></td>
               <td><?= h($anuncios->validade) ?></td>
               <td><?= h($anuncios->created) ?></td>
-              <td><?= h($anuncios->modified) ?></td>
               <td class="actions">
                 <?= $this->Html->link(__('Ver'), ['controller' => 'Anuncios', 'action' => 'view', $anuncios->id]) ?>
             
