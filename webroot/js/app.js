@@ -1,7 +1,7 @@
 ahoy.configure({
   urlPrefix: "",
-  visitsUrl: "/tracking/visitas",
-  eventsUrl: "/tracking/eventos",
+  visitsUrl: "/classificados_ifrs/tracking/visitas",
+  eventsUrl: "/classificados_ifrs/tracking/eventos",
   page: null,
   platform: "Web",
   useBeacon: true,
@@ -13,3 +13,5 @@ ahoy.configure({
   visitParams: {},
   withCredentials: false
 });
+
+ahoy.trackAll();

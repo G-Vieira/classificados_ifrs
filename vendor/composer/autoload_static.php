@@ -54,6 +54,7 @@ class ComposerStaticInit88e55201768761a3624c152476bf78e3
             'Psy\\' => 4,
             'Psr\\Log\\' => 8,
             'Psr\\Http\\Message\\' => 17,
+            'Predis\\' => 7,
             'PhpParser\\' => 10,
             'Phinx\\' => 6,
         ),
@@ -179,6 +180,10 @@ class ComposerStaticInit88e55201768761a3624c152476bf78e3
         'Psr\\Http\\Message\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/http-message/src',
+        ),
+        'Predis\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/predis/predis/src',
         ),
         'PhpParser\\' => 
         array (

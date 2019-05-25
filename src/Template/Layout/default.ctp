@@ -74,7 +74,7 @@
            echo "<li>" . $this->Html->link(__('Login'), ['controller' => 'users', 'action' => 'login'])  . "</li>";
          }
          ?>
-         <form class="navbar-form navbar-left" method="post" action="anuncios">
+         <form class="navbar-form navbar-left" method="post" action="<?= $this->Url->build(["controller" => "Anuncios","action" => "index"]); ?>">
           <div class="form-group">
             <input type="text" class="form-control" placeholder="Pesquisar anúncios" name="pesquisa">
           </div>
