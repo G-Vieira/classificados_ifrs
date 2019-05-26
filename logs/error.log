@@ -10774,3 +10774,263 @@ Stack Trace:
 #13 {main}
 
 
+2019-05-25 23:49:57 Error: [Predis\ClientException] Command 'ALL' is not a registered Redis command.
+Request URL: /tracking/teste
+Stack Trace:
+#0 /var/www/html/classificados_ifrs/vendor/predis/predis/src/Client.php(323): Predis\Profile\RedisProfile->createCommand('ALL', Array)
+#1 /var/www/html/classificados_ifrs/vendor/predis/predis/src/Client.php(314): Predis\Client->createCommand('all', Array)
+#2 /var/www/html/classificados_ifrs/src/Controller/TrackingController.php(40): Predis\Client->__call('all', Array)
+#3 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Controller/Controller.php(440): App\Controller\TrackingController->teste()
+#4 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#5 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\TrackingController))
+#6 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /var/www/html/classificados_ifrs/webroot/index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2019-05-26 00:01:41 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /css/bootstrap.min.css.map
+Stack Trace:
+#0 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /var/www/html/classificados_ifrs/webroot/index.php(40): Cake\Http\Server->run()
+#13 {main}
+
+
+2019-05-26 00:01:46 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /css/bootstrap.min.css.map
+Stack Trace:
+#0 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /var/www/html/classificados_ifrs/webroot/index.php(40): Cake\Http\Server->run()
+#13 {main}
+
+
+2019-05-26 00:02:00 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /css/bootstrap.min.css.map
+Stack Trace:
+#0 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /var/www/html/classificados_ifrs/webroot/index.php(40): Cake\Http\Server->run()
+#13 {main}
+
+
+2019-05-26 00:02:26 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /css/bootstrap.min.css.map
+Stack Trace:
+#0 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /var/www/html/classificados_ifrs/webroot/index.php(40): Cake\Http\Server->run()
+#13 {main}
+
+
+2019-05-26 00:02:38 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /css/bootstrap.min.css.map
+Stack Trace:
+#0 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /var/www/html/classificados_ifrs/webroot/index.php(40): Cake\Http\Server->run()
+#13 {main}
+
+
+2019-05-26 00:03:12 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Error/Debugger.php line=850 in [/var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /tracking/eventos
+Referer URL: http://localhost/classificados_ifrs/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-05-26 00:03:12 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Error/Debugger.php:850) in [/var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Request URL: /tracking/eventos
+Referer URL: http://localhost/classificados_ifrs/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-05-26 00:03:12 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Error/Debugger.php:850) in [/var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /tracking/eventos
+Referer URL: http://localhost/classificados_ifrs/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-05-26 00:03:12 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /css/bootstrap.min.css.map
+Stack Trace:
+#0 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /var/www/html/classificados_ifrs/webroot/index.php(40): Cake\Http\Server->run()
+#13 {main}
+
+
+2019-05-26 00:03:28 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /css/bootstrap.min.css.map
+Stack Trace:
+#0 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /var/www/html/classificados_ifrs/webroot/index.php(40): Cake\Http\Server->run()
+#13 {main}
+
+
+2019-05-26 00:04:12 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /css/bootstrap.min.css.map
+Stack Trace:
+#0 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /var/www/html/classificados_ifrs/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /var/www/html/classificados_ifrs/webroot/index.php(40): Cake\Http\Server->run()
+#13 {main}
+
+

@@ -20,14 +20,29 @@ class TrackingController extends AppController {
     $this->RequestHandler->respondAs('json');
     $this->response->type('application/json');  
     $this->autoRender = false; 
-    echo json_encode($_POST);
+
+    $eventos = $this->request->data['events_json'];
+    $visit_token = $this->request->data['visit_token'];
+    $visitor_token = $this->request->data['visitor_token'];
+
+    $redis = new \Predis\Client();
+    
+    echo json_encode(['result' => 'OK']);
   }
 
   public function eventos(){
     $this->RequestHandler->respondAs('json');
     $this->response->type('application/json');  
-    $this->autoRender = false; 
-    echo json_encode($_POST);
+    $this->autoRender = false;
+
+    $eventos = $this->request->data['events_json'];
+    $visit_token = $this->request->data['visit_token'];
+    $visitor_token = $this->request->data['visitor_token'];
+    
+    $redis = new \Predis\Client();
+
+
+    echo json_encode(['result' => 'OK']);
   }
 
   public function teste(){
@@ -36,8 +51,7 @@ class TrackingController extends AppController {
     $this->autoRender = false; 
 
     $redis = new \Predis\Client();
-    $redis->set('cakephp', 'a');
-    echo json_encode([$redis->get('cakephp')]);
+    echo json_encode(['result' => 'OK']);
   }
 
 }
