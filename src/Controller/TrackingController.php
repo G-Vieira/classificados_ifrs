@@ -20,12 +20,6 @@ class TrackingController extends AppController {
     $this->RequestHandler->respondAs('json');
     $this->response->type('application/json');  
     $this->autoRender = false; 
-
-    $eventos = $this->request->data['events_json'];
-    $visit_token = $this->request->data['visit_token'];
-    $visitor_token = $this->request->data['visitor_token'];
-
-    $redis = new \Predis\Client();
     
     echo json_encode(['result' => 'OK']);
   }
@@ -35,23 +29,19 @@ class TrackingController extends AppController {
     $this->response->type('application/json');  
     $this->autoRender = false;
 
-    $eventos = $this->request->data['events_json'];
+    $events = $this->request->data['events_json'];
     $visit_token = $this->request->data['visit_token'];
     $visitor_token = $this->request->data['visitor_token'];
     
     $redis = new \Predis\Client();
 
+    $key = "visitor:$visit_token";
+    if(empty($redis->get($key))){
+      $redis->set($key, $visit_token);
+    }
+    $res = $redis->rpush("events:$visitor_token", $events);
 
-    echo json_encode(['result' => 'OK']);
-  }
-
-  public function teste(){
-    $this->RequestHandler->respondAs('json');
-    $this->response->type('application/json');  
-    $this->autoRender = false; 
-
-    $redis = new \Predis\Client();
-    echo json_encode(['result' => 'OK']);
+    echo json_encode(['result' => $res]);
   }
 
 }
