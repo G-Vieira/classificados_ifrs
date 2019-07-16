@@ -33,7 +33,12 @@ class TrackingController extends AppController {
     $visit_token = $this->request->data['visit_token'];
     $visitor_token = $this->request->data['visitor_token'];
     
-    $redis = new \Predis\Client();
+    $redis = new \Predis\Client([
+      "scheme" => "tcp",
+		  "host" => "redis",
+      "password" => "tccredis",
+		  "port" => 6379
+    ]);
 
     $key = "visitor:$visit_token";
     if(empty($redis->get($key))){

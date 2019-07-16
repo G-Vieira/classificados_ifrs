@@ -54,7 +54,7 @@
            <span class="icon-bar"></span>
            <span class="icon-bar"></span>
          </button>
-         <a class="navbar-brand" href="/classificados_ifrs/pages/" >IFRS</a>
+         <a class="navbar-brand" href="/" >IFRS</a>
        </div>
        <div class="navbar-collapse collapse">
          <ul class="nav navbar-nav navbar-left">
@@ -70,7 +70,7 @@
             </li>
             ";
           }else{
-           echo "<li>" . $this->Html->link(__('Registrar-se'), ['controller' => 'users', 'action' => 'register'])  . "</li>";
+           //echo "<li>" . $this->Html->link(__('Registrar-se'), ['controller' => 'users', 'action' => 'register'])  . "</li>";
            echo "<li>" . $this->Html->link(__('Login'), ['controller' => 'users', 'action' => 'login'])  . "</li>";
          }
          ?>
@@ -87,7 +87,7 @@
        <li><?= $this->Html->link(__('Categorias'), ['controller' => 'categorias']) ?></li>
        <li><?= ($authUser)?($this->Html->link(__('Sugestões'), ['controller' => 'sugestoes', 'action' => 'add'])):'' ?></li>
        <li><?= ($authUser['role'] === 'admin')? ($this->Html->link(__('Usuarios'), ['controller' => 'Users', 'action' => 'index'])): ''?></li>
-       <li><?= $this->Html->link(__('Sobre'), ['controller'=> 'Pages', 'action' => 'sobre']); ?></li>
+      
      </ul> 
    </div><!--/.nav-collapse -->
  </div>

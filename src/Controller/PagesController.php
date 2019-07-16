@@ -79,12 +79,8 @@ class PagesController extends AppController {
   private function get_anuncios() {
     $temp = TableRegistry::get('Anuncios');
     return $temp->find('all', array(
-      'conditions' => [
-        'Anuncios.validade >= CURRENT_DATE'
-        ],
       'limit' => 20,
       'order' => 'Anuncios.created DESC'
-
     ));
   }
 
@@ -97,7 +93,6 @@ class PagesController extends AppController {
          'conditions' => 'favoritos.categoria_id = Anuncios.categoria_id'
       ],
       'conditions' => [
-        'Anuncios.validade >= CURRENT_DATE',
         'favoritos.user_id = ' . $this->Auth->user()['id']
         ],
       'limit' => 5,

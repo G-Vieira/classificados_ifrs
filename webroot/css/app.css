@@ -62,3 +62,9 @@ div.message.hidden {
   max-width: 100px;
   max-height: 100px;
 }
+#carousel_anuncios{
+  height: 350px!important;
+  width: 400px;
+  margin: auto;
+  padding-top: 35px;
+}

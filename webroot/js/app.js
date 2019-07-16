@@ -1,7 +1,7 @@
 ahoy.configure({
   urlPrefix: "",
-  visitsUrl: "/classificados_ifrs/tracking/visitas",
-  eventsUrl: "/classificados_ifrs/tracking/eventos",
+  visitsUrl: "/tracking/visitas",
+  eventsUrl: "/tracking/eventos",
   page: null,
   platform: "Web",
   useBeacon: true,

@@ -222,7 +222,7 @@ return [
             'className' => 'Cake\Database\Connection',
             'driver' => 'Cake\Database\Driver\Mysql',
             'persistent' => false,
-            'host' => 'localhost',
+            'host' => 'mysql',
             'username' => 'ifrs',
             'password' => 'ifrs',
             'database' => 'classificados_ifrs',

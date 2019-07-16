@@ -3,7 +3,7 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
-
+use Cake\Event\Event;
 /**
 * Anuncios Controller
 *
@@ -12,6 +12,11 @@ use App\Controller\AppController;
 * @method \App\Model\Entity\Anuncio[]|\Cake\Datasource\ResultSetInterface paginate($object = null, array $settings = [])
 */
 class AnunciosController extends AppController {
+
+  public function beforeFilter(Event $event) {
+    parent::beforeFilter($event);
+    $this->Auth->allow(['ultimos','procurados']);
+  }
 
   /**
   * Index method
@@ -31,8 +36,7 @@ class AnunciosController extends AppController {
       } else {
         $resultado = $this->Anuncios->find('all', array(
           'conditions' => array(
-            "Anuncios.titulo LIKE " => '%' . $pesquisa . '%',
-            "Anuncios.validade >= CURRENT_DATE"
+            "Anuncios.titulo LIKE " => '%' . $pesquisa . '%'
           )
         ));
         $anuncios = $this->paginate($resultado);
@@ -41,6 +45,42 @@ class AnunciosController extends AppController {
       $anuncios = $this->paginate($this->Anuncios);
     }
 
+    $this->set(compact('anuncios'));
+  }
+
+  /*
+    Anuncios mais procurados (FIXO)
+  */
+  public function procurados() {
+    $this->paginate = [
+      'contain' => ['Users', 'Categorias']
+    ];
+
+    //Ajustar os anuncios fixos
+    $resultado = $this->Anuncios->find('all', array(
+      'conditions' => array(
+        "Anuncios.id  IN " => [1,2,3]
+      )
+    ));
+
+    $anuncios = $this->paginate($resultado);
+    $this->set(compact('anuncios'));
+  }
+
+  /*
+    Ultimos adicionados (por ajustar)
+  */
+  public function ultimos() {
+    $this->paginate = [
+      'contain' => ['Users', 'Categorias']
+    ];
+
+    $resultado = $this->Anuncios->find('all', array(
+      'limit' => 20,
+      'order' => 'Anuncios.created DESC'
+    ));
+
+    $anuncios = $this->paginate($resultado);
     $this->set(compact('anuncios'));
   }
 
