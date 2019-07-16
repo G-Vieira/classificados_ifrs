@@ -1,4 +1,4 @@
-  <div class="col-sm-2" id="actions-sidebar">
+  <div data-section="filtros" class="col-sm-2" id="actions-sidebar">
     <ul class="nav nav-pills nav-stacked">
       <li class="heading"><b><?= __('Filtros Por:') ?></b></li>
       <li><?= __('Categorias') ?></li>
@@ -33,7 +33,7 @@
     ?>
     <hr>
       <div class="row">
-          <div id="carousel_anuncios" class="carousel slide" data-ride="carousel">
+          <div id="carousel_anuncios" data-section="carrossel" class="carousel slide" data-ride="carousel">
          
             <ol class="carousel-indicators">
               <li data-target="#carousel_anuncios" data-slide-to="0"></li>
@@ -45,7 +45,13 @@
             <div class="carousel-inner">
               <?php  foreach ($anuncios as $key => $anuncio): ?>
               <div class="item <?= ($key == 0)? 'active':' ' ?>">
-                <?= $this->Html->image('../files/Anuncios/imagem/' . $anuncio->imagem, ['alt' => $anuncio->titulo]); ?>
+                <?= $this->Html->link(
+                      $this->Html->image('../files/Anuncios/imagem/' . $anuncio->imagem,['alt' => $anuncio->titulo]),
+                      [
+                          'controller' => 'anuncios', 
+                          'action' => 'view',
+                          $anuncio->id
+                      ], ['escape' => false]); ?>
               </div>
               <?php endforeach; ?>
             </div>

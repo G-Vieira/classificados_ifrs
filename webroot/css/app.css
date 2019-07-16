@@ -64,7 +64,10 @@ div.message.hidden {
 }
 #carousel_anuncios{
   height: 350px!important;
-  width: 400px;
   margin: auto;
   padding-top: 35px;
+}
+.carousel-inner>.item>a>img, 
+.carousel-inner>.item>img{
+  margin: auto;
 }
