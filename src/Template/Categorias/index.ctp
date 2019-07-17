@@ -29,7 +29,6 @@
     <table cellpadding="0" class="table" cellspacing="0">
       <thead>
        <tr>
-         <th scope="col"><?= $this->Paginator->sort('id') ?></th>
          <th scope="col"><?= $this->Paginator->sort('descricao') ?></th>
          <th scope="col" class="actions"><?= __('Ações') ?></th>
        </tr>
@@ -37,7 +36,6 @@
      <tbody>
       <?php foreach ($categorias as $categoria): ?>
        <tr>
-         <td><?= $this->Number->format($categoria->id) ?></td>
          <td><?= h($categoria->descricao) ?></td>
          <td class="actions">
           <?= $this->Html->link(__('Ver'), ['action' => 'view', $categoria->id]) ?>

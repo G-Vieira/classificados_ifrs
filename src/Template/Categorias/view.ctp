@@ -28,10 +28,6 @@
         <th scope="row"><?= __('Descricao') ?></th>
         <td><?= h($categoria->descricao) ?></td>
       </tr>
-      <tr>
-        <th scope="row"><?= __('Id') ?></th>
-        <td><?= $this->Number->format($categoria->id) ?></td>
-      </tr>
     </table>
     <div class="row">
       <h4><?= __('Anuncios') ?></h4>

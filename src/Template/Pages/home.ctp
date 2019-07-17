@@ -3,7 +3,7 @@
       <li class="heading"><b><?= __('Filtros Por:') ?></b></li>
       <li><?= __('Categorias') ?></li>
       <?php foreach ($categorias as $categoria): ?>
-        <li><?= $this->Html->link(__($categoria->descricao), ['controller' => 'categorias','action' => 'view',$categoria->id]) ?></li>
+        <li><?= $this->Html->link(__($categoria->descricao), ['controller' => 'categorias','action' => 'view',$categoria->id],['data-id'=>$categoria->id]) ?></li>
       <?php endforeach; ?>
       <li><?= __('Anúncios') ?></li>
       <li><?= $this->Html->link(__('Últimos adicionados'), ['controller' => 'anuncios','action' => 'ultimos']) ?></li>
@@ -20,7 +20,7 @@
           <div class="col-sm-6 col-md-4">
             <div>
               <h3><?= $favorito->titulo ?></h3>
-  	             <a href="./anuncios/view/<?= $favorito->id ?>" class="thumbnail">
+  	             <a data-id="<?= $favorito->id ?>" href="./anuncios/view/<?= $favorito->id ?>" class="thumbnail">
                  <?= $this->Html->image('../files/Anuncios/imagem/' . $favorito->imagem, ['class' => 'img_anuncio_home']); ?>
               </a>
             </div>
@@ -47,12 +47,12 @@
               <?php  foreach ($anuncios as $key => $anuncio): ?>
               <div class="item <?= ($key == 0)? 'active':' ' ?>">
                 <?= $this->Html->link(
-                      $this->Html->image('../files/Anuncios/imagem/' . $anuncio->imagem,['alt' => $anuncio->titulo]),
+                      $this->Html->image('../files/Anuncios/imagem/' . $anuncio->imagem,['alt' => $anuncio->titulo,'data-id' => $anuncio->id,'class' => 'anuncio_carrossel']),
                       [
                           'controller' => 'anuncios', 
                           'action' => 'view',
                           $anuncio->id
-                      ], ['escape' => false]); ?>
+                      ], ['escape' => false, 'id' => 'car_' . $anuncio->id]); ?>
               </div>
               <?php endforeach; ?>
             </div>

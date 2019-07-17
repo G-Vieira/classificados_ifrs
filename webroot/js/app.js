@@ -1,3 +1,8 @@
+$(document).on("click",".anuncio_carrossel",function(event){
+  event.preventDefault();
+  $("#car_" + $(this).attr("data-id"))[0].click();
+});
+
 ahoy.configure({
   urlPrefix: "",
   visitsUrl: "/tracking/visitas",

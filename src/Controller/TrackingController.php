@@ -19,7 +19,23 @@ class TrackingController extends AppController {
   public function visitas(){
     $this->RequestHandler->respondAs('json');
     $this->response->type('application/json');  
-    $this->autoRender = false; 
+    $this->autoRender = false;
+
+    $events = $this->request->data['events_json'];
+    $visit_token = $this->request->data['visit_token'];
+    $visitor_token = $this->request->data['visitor_token'];
+    
+    $redis = new \Predis\Client([
+      "scheme" => "tcp",
+		  "host" => "redis",
+      "password" => "tccredis",
+		  "port" => 6379
+    ]);
+
+    $key = "visitor:$visit_token";
+    if(empty($redis->get($key))){
+      $redis->set($key, $visit_token);
+    }
     
     echo json_encode(['result' => 'OK']);
   }
@@ -45,8 +61,7 @@ class TrackingController extends AppController {
       $redis->set($key, $visit_token);
     }
     $res = $redis->rpush("events:$visitor_token", $events);
-
-    echo json_encode(['result' => $res]);
+    echo json_encode(['result' => 'OK']);
   }
 
 }
