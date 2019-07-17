@@ -33,6 +33,7 @@
     ?>
     <hr>
       <div class="row">
+          <?php if(!$anuncios->isEmpty()): ?>
           <div id="carousel_anuncios" data-section="carrossel" class="carousel slide" data-ride="carousel">
          
             <ol class="carousel-indicators">
@@ -66,6 +67,11 @@
               <span class="sr-only">Próximo</span>
             </a>
           </div>
+          <?php else: ?>
+            <div>
+              <h3>Não existem anúncios ainda!</h3>
+            </div>
+          <?php endif; ?>
         
       </div>
   </div>
