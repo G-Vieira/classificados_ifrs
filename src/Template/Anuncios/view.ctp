@@ -27,7 +27,7 @@
     <?= $this->Html->image('../files/Anuncios/imagem/' . $anuncio->imagem); ?>
     <table class="table">
       <tr>
-        <th scope="row"><?= __('User') ?></th>
+        <th scope="row"><?= __('Criado por') ?></th>
         <td><?= $anuncio->has('user') ? $this->Html->link($anuncio->user->username, ['controller' => 'Users', 'action' => 'view', $anuncio->user->id]) : '' ?></td>
       </tr>
       <tr>
@@ -52,6 +52,8 @@
       <?= $this->Text->autoParagraph(h($anuncio->descricao)); ?>
     </div>
     <br>
+
+    <?php if($authUser): ?>
     <?= $this->Form->create($ncomentario,['url'=>'/comentarios/add/']) ?>
     <fieldset>
       <legend><?= __('Adicionar Comentario') ?></legend>
@@ -67,6 +69,7 @@
       </div>
     </fieldset>
     <?= $this->Form->end() ?>
+    <?php endif; ?>
 
     <br>
     <div class="row">

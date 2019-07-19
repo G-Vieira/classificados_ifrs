@@ -396,7 +396,8 @@
       id: presence(target.id),
       "class": presence(target.className),
       page: page(),
-      section: getClosestSection(target)
+      section: getClosestSection(target),
+      value: presence(target.value)
     });
   }
 
@@ -574,6 +575,7 @@
   ahoy.trackChanges = function () {
     onEvent("change", "input, textarea, select", function (e) {
       var properties = eventProperties(e);
+      console.log(properties);
       ahoy.track("$change", properties);
     });
   };
