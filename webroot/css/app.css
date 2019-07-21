@@ -89,4 +89,5 @@ div.message.hidden {
   color: black;
   top: 0;
   padding: 0;
+  position: initial;
 }
