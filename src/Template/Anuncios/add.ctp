@@ -15,14 +15,14 @@ foreach($categorias as $categoria){
   <nav class="col-md-3" id="actions-sidebar">
     <ul class="nav nav-pills nav-stacked">
       <li class="heading"><?= __('Ações') ?></li>
-      <li><?= $this->Html->link(__('Listar Anuncios'), ['action' => 'index']) ?></li>
+      <li><?= $this->Html->link(__('Listar Anúncios'), ['action' => 'index']) ?></li>
       <li><?= $this->Html->link(__('Listar Categorias'), ['controller' => 'Categorias', 'action' => 'index']) ?></li>
     </ul>
   </nav>
   <div class="col-md-9 text-center">
     <?= $this->Form->create($anuncio, ['type' => 'file']) ?>
     <fieldset>
-      <legend><?= __('Editar Anuncio') ?></legend>
+      <legend><?= __('Editar Anúncio') ?></legend>
       <?= $this->Form->control('user_id',['label'=>false,'class'=>'form-control','type'=>'hidden','value'=>$authUser['id']]) ?>
       <div class="form-group row">
         <label for="categoria_id" class="col-sm-3 col-form-label"><b>Categoria</b></label>

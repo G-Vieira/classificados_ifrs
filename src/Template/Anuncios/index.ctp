@@ -9,20 +9,28 @@
   <div class="col-md-3" id="actions-sidebar">
     <ul class="nav nav-pills nav-stacked">
       <li class="heading"><?= __('Ações') ?></li>
-      <li><?= $this->Html->link(__('Novo Anuncio'), ['action' => 'add']) ?></li>
+      <li><?= $this->Html->link(__('Novo Anúncio'), ['action' => 'add']) ?></li>
       <li><?= $this->Html->link(__('Listar Categorias'), ['controller' => 'Categorias', 'action' => 'index']) ?></li>
+    </ul>
+    <ul data-section="section" class="nav nav-pills nav-stacked">
+      <li class="heading"><b><?= __('Filtros Por:') ?></b></li>
+      <li><?= __('Categorias') ?></li>
+      <?php foreach ($categorias as $categoria): ?>
+        <li><?= $this->Html->link(__($categoria->descricao), ['controller' => 'categorias','action' => 'view',$categoria->id],['data-id'=>$categoria->id]) ?></li>
+      <?php endforeach; ?>
+      <li><?= __('Anúncios') ?></li>
+      <li><?= $this->Html->link(__('Últimos adicionados'), ['controller' => 'anuncios','action' => 'ultimos']) ?></li>
+      <li><?= $this->Html->link(__('Mais procurados'), ['controller' => 'anuncios','action' => 'procurados']) ?></li>
     </ul>
   </div>
   <div class="col-md-9">
-    <h3><?= __('Anuncios') ?></h3>
+    <h3><?= __('Anúncios') ?></h3>
     <table cellpadding="0" cellspacing="0" class="table">
       <thead>
         <tr>
           <th scope="col"><?= $this->Paginator->sort('user_id','Usuário') ?></th>
           <th scope="col"><?= $this->Paginator->sort('categoria_id') ?></th>
           <th scope="col"><?= $this->Paginator->sort('titulo') ?></th>
-          <th scope="col"><?= $this->Paginator->sort('validade') ?></th>
-          <th scope="col"><?= $this->Paginator->sort('created','Criado em') ?></th>
           <th scope="col" class="actions"><?= __('Ações') ?></th>
         </tr>
       </thead>
@@ -32,8 +40,6 @@
           <td><?= $anuncio->has('user') ? $this->Html->link($anuncio->user->username, ['controller' => 'Users', 'action' => 'view', $anuncio->user->id]) : '' ?></td>
           <td><?= $anuncio->has('categoria') ? $this->Html->link($anuncio->categoria->descricao, ['controller' => 'Categorias', 'action' => 'view', $anuncio->categoria->id]) : '' ?></td>
           <td><?= h($anuncio->titulo) ?></td>
-          <td><?= h($anuncio->validade) ?></td>
-          <td><?= h($anuncio->created) ?></td>
           <td class="actions">
                     <?= $this->Html->link(__('Ver'), ['action' => 'view', $anuncio->id]) ?>
                   <?php

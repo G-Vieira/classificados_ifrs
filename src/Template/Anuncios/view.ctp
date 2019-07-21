@@ -14,11 +14,11 @@
 	        echo '<li>' . $this->Html->link(__('Novo Anuncio'), ['action' => 'add']) . '</li>';
 	      }
 	      if($authUser['role'] == 'admin' || $authUser['id'] == $anuncio->user_id){
-	        echo '<li>' . $this->Html->link(__('Editar Anuncio'), ['action' => 'edit', $anuncio->id]) . '</li>';
-	        echo '<li>' . $this->Form->postLink(__('Deletar Anuncio'), ['action' => 'delete', $anuncio->id], ['confirm' => __('Deseja deletar # {0}?', $anuncio->id)]) . '</li>';
+	        echo '<li>' . $this->Html->link(__('Editar Anúncio'), ['action' => 'edit', $anuncio->id]) . '</li>';
+	        echo '<li>' . $this->Form->postLink(__('Deletar Anúncio'), ['action' => 'delete', $anuncio->id], ['confirm' => __('Deseja deletar # {0}?', $anuncio->id)]) . '</li>';
 	      }
       ?>
-      <li><?= $this->Html->link(__('Listar Anuncios'), ['action' => 'index']) ?> </li>
+      <li><?= $this->Html->link(__('Listar Anúncios'), ['action' => 'index']) ?> </li>
       <li><?= $this->Html->link(__('Listar Categorias'), ['controller' => 'Categorias', 'action' => 'index']) ?> </li>
     </ul>
   </div>
@@ -48,7 +48,7 @@
       </tr>
     </table>
     <div class="row">
-      <h4><?= __('Descricao') ?></h4>
+      <h4><?= __('Descrição') ?></h4>
       <?= $this->Text->autoParagraph(h($anuncio->descricao)); ?>
     </div>
     <br>
@@ -73,7 +73,7 @@
 
     <br>
     <div class="row">
-      <h4><?= __('Comentarios') ?></h4>
+      <h4><?= __('Comentários') ?></h4>
       <ul class="list-group">
         <?php if (!empty($anuncio->comentarios)): ?>
 

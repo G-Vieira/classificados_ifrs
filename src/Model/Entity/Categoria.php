@@ -8,9 +8,11 @@ use Cake\ORM\Entity;
  *
  * @property int $id
  * @property string $descricao
+ * @property int $parent_id
  *
  * @property \App\Model\Entity\Anuncio[] $anuncios
  * @property \App\Model\Entity\Favorito[] $favoritos
+ * @property \App\Model\Entity\Categoria $categoria
  */
 class Categoria extends Entity
 {
@@ -26,7 +28,9 @@ class Categoria extends Entity
      */
     protected $_accessible = [
         'descricao' => true,
+        'parent_id' => true,
         'anuncios' => true,
-        'favoritos' => true
+        'favoritos' => true,
+        'categoria' => true
     ];
 }

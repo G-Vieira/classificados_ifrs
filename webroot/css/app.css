@@ -69,7 +69,7 @@ div.message.hidden {
 #carousel_anuncios{
   height: 350px!important;
   margin: auto;
-  padding-top: 35px;
+  padding-top: 0;
 }
 .carousel-inner,
 .carousel-inner>.item,
@@ -84,4 +84,9 @@ div.message.hidden {
 .carousel-inner > .item > a{
   display: inline-block;
   width: 100%;
+}
+.carousel-caption{
+  color: black;
+  top: 0;
+  padding: 0;
 }

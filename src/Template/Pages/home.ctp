@@ -11,9 +11,7 @@
     </ul>
   </div>
   <div class="col-md-9">
-    <?php 
-      if($favoritos != null){
-    ?>
+    <?php if($favoritos != null): ?>
       <div class="row">
         <?php  foreach ($favoritos as $favorito): ?>
   
@@ -28,31 +26,36 @@
   
         <?php endforeach; ?>
       </div>
-    <?php
-      }
-    ?>
-    <hr>
+    <?php endif; ?>
       <div class="row">
           <?php if(!$anuncios->isEmpty()): ?>
+          <h3>Anúncios mais procurados</h3>
+          <hr>
           <div id="carousel_anuncios" data-section="carrossel" class="carousel slide" data-ride="carousel">
          
+            <!--
             <ol class="carousel-indicators">
               <li data-target="#carousel_anuncios" data-slide-to="0"></li>
-              <!--<li data-target="#carousel_anuncios" data-slide-to="1"></li>
-              <li data-target="#carousel_anuncios" data-slide-to="2"></li>-->
-            </ol>
+              <li data-target="#carousel_anuncios" data-slide-to="1"></li>
+              <li data-target="#carousel_anuncios" data-slide-to="2"></li>
+            </ol>-->
 
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
               <?php  foreach ($anuncios as $key => $anuncio): ?>
               <div class="item <?= ($key == 0)? 'active':' ' ?>">
+                  <div class="carousel-caption">
+                    <h2><?= $anuncio->titulo ?></h2>
+                  </div>
                 <?= $this->Html->link(
-                      $this->Html->image('../files/Anuncios/imagem/' . $anuncio->imagem,['alt' => $anuncio->titulo,'data-id' => $anuncio->id,'class' => 'anuncio_carrossel']),
-                      [
-                          'controller' => 'anuncios', 
-                          'action' => 'view',
-                          $anuncio->id
-                      ], ['escape' => false, 'id' => 'car_' . $anuncio->id]); ?>
+                  $this->Html->image('../files/Anuncios/imagem/' . $anuncio->imagem,['alt' => $anuncio->titulo,'data-id' => $anuncio->id,'class' => 'anuncio_carrossel']),
+                  [
+                    'controller' => 'anuncios', 
+                    'action' => 'view',
+                    $anuncio->id
+                  ], ['escape' => false, 'id' => 'car_' . $anuncio->id]); 
+                ?>
+                  
               </div>
               <?php endforeach; ?>
             </div>

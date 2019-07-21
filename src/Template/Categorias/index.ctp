@@ -21,7 +21,7 @@
          echo '<li>' . $this->Html->link(__('Nova Categoria'), ['action' => 'add']) . '</li>';
        }
        ?>
-       <li><?= $this->Html->link(__('Listar Anuncios'), ['controller' => 'Anuncios', 'action' => 'index']) ?></li>
+       <li><?= $this->Html->link(__('Listar Anúncios'), ['controller' => 'Anuncios', 'action' => 'index']) ?></li>
      </ul>
    </div>
    <div class="col-md-9">
@@ -30,6 +30,7 @@
       <thead>
        <tr>
          <th scope="col"><?= $this->Paginator->sort('descricao') ?></th>
+         <th scope="col"><?= $this->Paginator->sort('parent_id','Categoria Pai') ?></th>
          <th scope="col" class="actions"><?= __('Ações') ?></th>
        </tr>
      </thead>
@@ -37,6 +38,7 @@
       <?php foreach ($categorias as $categoria): ?>
        <tr>
          <td><?= h($categoria->descricao) ?></td>
+         <td><?= $categoria->has('parent_id')? $categoria->parent_categoria->descricao: ' ' ?></td>
          <td class="actions">
           <?= $this->Html->link(__('Ver'), ['action' => 'view', $categoria->id]) ?>
           <?php
@@ -50,10 +52,10 @@
           if($authUser){
               if(isset($temp[$categoria->id])){
                 echo '<td>' .
-		    $this->Form->postLink(__('Desfavoritar'),
-		       ['controller' => 'favoritos', 'action' => 'delete', $temp[$categoria->id]],
-		       ['class' => 'btn btn-default','confirm' => __('Deseja desfavoritar # {0}?', $categoria->descricao)]) .
-		  '</td>';
+                  $this->Form->postLink(__('Desfavoritar'),
+                    ['controller' => 'favoritos', 'action' => 'delete', $temp[$categoria->id]],
+                    ['class' => 'btn btn-default','confirm' => __('Deseja desfavoritar # {0}?', $categoria->descricao)]) .
+                '</td>';
               }else{
                 echo '<td>
                    <form action="favoritos/add/" method="post">

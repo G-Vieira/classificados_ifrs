@@ -9,7 +9,9 @@ use Cake\Validation\Validator;
 /**
  * Categorias Model
  *
+ * @property |\Cake\ORM\Association\BelongsTo $ParentCategorias
  * @property \App\Model\Table\AnunciosTable|\Cake\ORM\Association\HasMany $Anuncios
+ * @property |\Cake\ORM\Association\HasMany $ChildCategorias
  * @property \App\Model\Table\FavoritosTable|\Cake\ORM\Association\HasMany $Favoritos
  *
  * @method \App\Model\Entity\Categoria get($primaryKey, $options = [])
@@ -37,8 +39,16 @@ class CategoriasTable extends Table
         $this->setDisplayField('id');
         $this->setPrimaryKey('id');
 
+        $this->belongsTo('ParentCategorias', [
+            'className' => 'Categorias',
+            'foreignKey' => 'parent_id'
+        ]);
         $this->hasMany('Anuncios', [
             'foreignKey' => 'categoria_id'
+        ]);
+        $this->hasMany('ChildCategorias', [
+            'className' => 'Categorias',
+            'foreignKey' => 'parent_id'
         ]);
         $this->hasMany('Favoritos', [
             'foreignKey' => 'categoria_id'
@@ -61,8 +71,7 @@ class CategoriasTable extends Table
             ->scalar('descricao')
             ->maxLength('descricao', 200)
             ->requirePresence('descricao', 'create')
-            ->notEmpty('descricao')
-            ->add('descricao', 'unique', ['rule' => 'validateUnique', 'provider' => 'table']);
+            ->notEmpty('descricao');
 
         return $validator;
     }
@@ -76,7 +85,7 @@ class CategoriasTable extends Table
      */
     public function buildRules(RulesChecker $rules)
     {
-        $rules->add($rules->isUnique(['descricao']));
+        $rules->add($rules->existsIn(['parent_id'], 'ParentCategorias'));
 
         return $rules;
     }

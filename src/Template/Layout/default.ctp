@@ -81,9 +81,8 @@
           <button type="submit" class="btn btn-default">Procurar</button>
         </form>
       </ul>
-      <ul class="nav navbar-nav navbar-right">
-       <li><?= $this->Html->link(__('Home'), ['controller' => 'Pages']	) ?></li>
-       <li><?= $this->Html->link(__('Anuncios'), ['controller' => 'anuncios']) ?></li>
+      <ul class="nav navbar-nav navbar-right" data-section="filtros">
+       <li><?= $this->Html->link(__('Anúncios'), ['controller' => 'anuncios']) ?></li>
        <li><?= $this->Html->link(__('Categorias'), ['controller' => 'categorias']) ?></li>
        <li><?= ($authUser)?($this->Html->link(__('Sugestões'), ['controller' => 'sugestoes', 'action' => 'add'])):'' ?></li>
        <li><?= ($authUser['role'] === 'admin')? ($this->Html->link(__('Usuarios'), ['controller' => 'Users', 'action' => 'index'])): ''?></li>

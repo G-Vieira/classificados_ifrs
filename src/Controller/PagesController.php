@@ -79,8 +79,9 @@ class PagesController extends AppController {
   private function get_anuncios() {
     $temp = TableRegistry::get('Anuncios');
     return $temp->find('all', array(
-      'limit' => 20,
-      'order' => 'Anuncios.created DESC'
+      'conditions' => array(
+        "Anuncios.id  IN " => [100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000]
+      )
     ));
   }
 
@@ -103,7 +104,9 @@ class PagesController extends AppController {
 
   private function get_categorias() {
     $temp = TableRegistry::get('Categorias');
-    return $temp->find();
+    return $temp->find('all',[
+      'conditions' => ['Categorias.parent_id is null']
+    ]);
   }
 
   public function sobre(){

@@ -20,7 +20,11 @@ class CategoriasController extends AppController {
    * @return \Cake\Http\Response|void
    */
   public function index() {
-     $categorias = $this->paginate($this->Categorias);
+    $this->paginate = [
+      'contain' => ['ParentCategorias','ChildCategorias']
+    ];
+    
+    $categorias = $this->paginate($this->Categorias);
 
     if($this->Auth->user()){
       $favoritos = $this->Categorias->Favoritos->find('all',[
@@ -31,8 +35,7 @@ class CategoriasController extends AppController {
       );
     }
     
-    $this->set(compact('categorias'));
-    $this->set(compact('favoritos'));
+    $this->set(compact('categorias','favoritos'));
   }
 
 
@@ -45,7 +48,7 @@ class CategoriasController extends AppController {
    */
   public function view($id = null) {
     $categoria = $this->Categorias->get($id, [
-        'contain' => ['Anuncios', 'Favoritos']
+        'contain' => ['Anuncios', 'Favoritos', 'ParentCategorias','ChildCategorias']
     ]);
 
     $this->set('categoria', $categoria);
@@ -68,7 +71,10 @@ class CategoriasController extends AppController {
       }
       $this->Flash->error(__('Erro ao gravar a categoria! Tente novamente.'));
     }
-    $this->set(compact('categoria'));
+    $categorias = $this->Categorias->find('all',[
+      'conditions' => ['Categorias.parent_id is null']
+    ]);
+    $this->set(compact('categoria','categorias'));
   }
 
   /**
@@ -92,7 +98,10 @@ class CategoriasController extends AppController {
       }
       $this->Flash->error(__('Erro ao alterar a categoria! Tente novamente.'));
     }
-    $this->set(compact('categoria'));
+    $categorias = $this->Categorias->find('all',[
+      'conditions' => ['Categorias.parent_id is null']
+    ]);
+    $this->set(compact('categoria','categorias'));
   }
 
   /**

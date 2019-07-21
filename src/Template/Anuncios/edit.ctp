@@ -23,18 +23,18 @@ foreach($categorias as $categoria){
         ['confirm' => __('Deseja deletar # {0}?', $anuncio->id)]
         )
         ?></li>
-        <li><?= $this->Html->link(__('Listar Anuncios'), ['action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('Listar Anúncios'), ['action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('Listar Categorias'), ['controller' => 'Categorias', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('Listar Anexos'), ['controller' => 'Anexos', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('Novo Anexo'), ['controller' => 'Anexos', 'action' => 'add', $anuncio->id]) ?></li>
-        <li><?= $this->Html->link(__('Listar Comentarios'), ['controller' => 'Comentarios', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('Novo Comentario'), ['controller' => 'Comentarios', 'action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('Listar Comentários'), ['controller' => 'Comentarios', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('Novo Comentário'), ['controller' => 'Comentarios', 'action' => 'add']) ?></li>
       </ul>
     </div>
     <div class="col-md-9 text-center">
       <?= $this->Form->create($anuncio, ['type' => 'file']) ?>
       <fieldset>
-        <legend><?= __('Editar Anuncio') ?></legend>
+        <legend><?= __('Editar Anúncio') ?></legend>
         <div class="form-group row">
           <label for="user_id" class="col-sm-3 col-form-label"><b>Usuário</b></label>
           <div class="col-sm-7">

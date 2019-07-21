@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Controller\AppController;
 use Cake\Event\Event;
+use Cake\ORM\TableRegistry;
 /**
 * Anuncios Controller
 *
@@ -45,7 +46,12 @@ class AnunciosController extends AppController {
       $anuncios = $this->paginate($this->Anuncios);
     }
 
-    $this->set(compact('anuncios'));
+    $temp = TableRegistry::get('Categorias');
+    $categorias = $temp->find('all',[
+      'conditions' => ['Categorias.parent_id is null']
+    ]);
+
+    $this->set(compact('anuncios','categorias'));
   }
 
   /*
@@ -59,7 +65,7 @@ class AnunciosController extends AppController {
     //Ajustar os anuncios fixos
     $resultado = $this->Anuncios->find('all', array(
       'conditions' => array(
-        "Anuncios.id  IN " => [1,2,3]
+        "Anuncios.id  IN " => [100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000]
       )
     ));
 
