@@ -73,8 +73,7 @@ div.message.hidden {
 }
 .carousel-inner,
 .carousel-inner>.item,
-.carousel-inner>.item>a,
-.carousel-inner>.item>a>img{
+.carousel-inner>.item>a{
   height: 100%;
 }
 .carousel-inner>.item>a>img, 

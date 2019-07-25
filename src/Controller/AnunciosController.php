@@ -65,7 +65,7 @@ class AnunciosController extends AppController {
     //Ajustar os anuncios fixos
     $resultado = $this->Anuncios->find('all', array(
       'conditions' => array(
-        "Anuncios.id  IN " => [100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000]
+        "Anuncios.id  IN " => [1,5,10,15,20,25,30,35,40,100,120,125,127,150,151,152,160,165,170,200,210,215,267,289,300,330,350,400,504,510,580,600,610,670,700]
       )
     ));
 
