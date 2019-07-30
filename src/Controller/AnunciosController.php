@@ -53,7 +53,10 @@ class AnunciosController extends AppController {
 
     $resultado = $this->Anuncios->find('all', array(
       'conditions' => array(
-        "Anuncios.titulo LIKE " => '%' . $pesquisa . '%'
+        'OR' => [
+          ["Anuncios.titulo LIKE " => '%' . $pesquisa . '%'],
+          ["Anuncios.descricao LIKE " => '%' . $pesquisa . '%']
+        ]
       )
     ));
     $anuncios = $this->paginate($resultado);

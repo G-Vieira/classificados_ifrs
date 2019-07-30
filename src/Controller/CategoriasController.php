@@ -48,10 +48,17 @@ class CategoriasController extends AppController {
    */
   public function view($id = null) {
     $categoria = $this->Categorias->get($id, [
-        'contain' => ['Anuncios', 'Favoritos', 'ParentCategorias','ChildCategorias']
+        'contain' => ['Favoritos', 'ParentCategorias','ChildCategorias']
     ]);
 
-    $this->set('categoria', $categoria);
+    $resultado = $this->Categorias->Anuncios->find('all', array(
+      'conditions' => array(
+        "Anuncios.categoria_id = " => $categoria->id
+      )
+    ));
+
+    $anuncios = $this->paginate($resultado);
+    $this->set(compact('categoria','anuncios'));
   }
 
   /**

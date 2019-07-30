@@ -18,22 +18,18 @@
     <table cellpadding="0" cellspacing="0" class="table">
       <thead>
         <tr>
-          <th scope="col"><?= $this->Paginator->sort('user_id','Usuário') ?></th>
+          <th scope="col"><<?= __('Imagem') ?></th>
           <th scope="col"><?= $this->Paginator->sort('categoria_id') ?></th>
           <th scope="col"><?= $this->Paginator->sort('titulo') ?></th>
-          <th scope="col"><?= $this->Paginator->sort('validade') ?></th>
-          <th scope="col"><?= $this->Paginator->sort('created','Criado em') ?></th>
           <th scope="col" class="actions"><?= __('Ações') ?></th>
         </tr>
       </thead>
       <tbody>
             <?php foreach ($anuncios as $anuncio): ?>
         <tr>  
-          <td><?= $anuncio->has('user') ? $this->Html->link($anuncio->user->username, ['controller' => 'Users', 'action' => 'view', $anuncio->user->id]) : '' ?></td>
+          <td><?= $this->Html->image('../files/Anuncios/imagem/' . $anuncio->imagem); ?></td>
           <td><?= $anuncio->has('categoria') ? $this->Html->link($anuncio->categoria->descricao, ['controller' => 'Categorias', 'action' => 'view', $anuncio->categoria->id]) : '' ?></td>
           <td><?= h($anuncio->titulo) ?></td>
-          <td><?= h($anuncio->validade) ?></td>
-          <td><?= h($anuncio->created) ?></td>
           <td class="actions">
                     <?= $this->Html->link(__('Ver'), ['action' => 'view', $anuncio->id]) ?>
                   <?php

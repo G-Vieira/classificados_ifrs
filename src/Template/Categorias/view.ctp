@@ -4,6 +4,7 @@
 * @var \App\View\AppView $this
 * @var \App\Model\Entity\Categoria $categoria
 */
+
 ?>
 <div class="row" >
   <nav data-section="filtros" class="col-md-2" id="actions-sidebar">
@@ -53,25 +54,35 @@
       <?php endif; ?>
     </div>
     <div class="row" data-section="filtros">
-      <?php if (!empty($categoria->anuncios)): ?>
+      <?php if (!empty($anuncios)): ?>
         <h4><?= __('Anúncios') ?></h4>
         <table cellpadding="0" cellspacing="0" class="table">
           <tr>
-            <th scope="col"><?= __('Titulo') ?></th>
-            <th scope="col"><?= __('Descricao') ?></th>
+            <th scope="col"><?= __('Imagem') ?></th>
+            <th scope="col"><?= $this->Paginator->sort('Titulo') ?></th>
             <th scope="col" class="actions"><?= __('Ações') ?></th>
           </tr>
-          <?php foreach ($categoria->anuncios as $anuncios): ?>
+          <?php foreach ($anuncios as $anuncio): ?>
             <tr>  
-              <td><?= h($anuncios->titulo) ?></td>
-              <td><?= h($anuncios->descricao) ?></td>
+              <td><?= $this->Html->image('../files/Anuncios/imagem/' . $anuncio->imagem); ?></td>
+              <td><?= h($anuncio->titulo) ?></td>
               <td class="actions">
-                <?= $this->Html->link(__('Ver'), ['controller' => 'Anuncios', 'action' => 'view', $anuncios->id]) ?>
+                <?= $this->Html->link(__('Ver'), ['controller' => 'Anuncios', 'action' => 'view', $anuncio->id]) ?>
             
               </td>
             </tr>
           <?php endforeach; ?>
         </table>
+        <div class="paginator">
+          <ul class="pagination">
+            <?= $this->Paginator->first('<< ' . __('primeiro')) ?>
+            <?= $this->Paginator->prev('< ' . __('anterior')) ?>
+            <?= $this->Paginator->numbers() ?>
+            <?= $this->Paginator->next(__('próximo') . ' >') ?>
+            <?= $this->Paginator->last(__('ultimo') . ' >>') ?>
+          </ul>
+          <p><?= $this->Paginator->counter(['format' => __('Página {{page}} de {{pages}}, mostrando {{current}} registros(s) de {{count}}')]) ?></p>
+        </div>
       <?php endif; ?>
     </div>
   </div>
