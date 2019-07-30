@@ -16,7 +16,7 @@ class AnunciosController extends AppController {
 
   public function beforeFilter(Event $event) {
     parent::beforeFilter($event);
-    $this->Auth->allow(['ultimos','procurados']);
+    $this->Auth->allow(['ultimos','procurados','pesquisar']);
   }
 
   /**
@@ -29,22 +29,34 @@ class AnunciosController extends AppController {
       'contain' => ['Users', 'Categorias']
     ];
 
+    $anuncios = $this->paginate($this->Anuncios);
+
+    $temp = TableRegistry::get('Categorias');
+    $categorias = $temp->find('all',[
+      'conditions' => ['Categorias.parent_id is null']
+    ]);
+
+    $this->set(compact('anuncios','categorias'));
+  }
+
+  public function pesquisar() {
+    $this->paginate = [
+      'contain' => ['Users', 'Categorias']
+    ];
+
     if ($this->request->is('post')) {
       $requisicao = $this->request->getData();
       $pesquisa = str_replace(' ', '%', $requisicao['pesquisa']);
-      if ($pesquisa == '') {
-        $anuncios = $anuncios = $this->paginate($this->Anuncios);
-      } else {
-        $resultado = $this->Anuncios->find('all', array(
-          'conditions' => array(
-            "Anuncios.titulo LIKE " => '%' . $pesquisa . '%'
-          )
-        ));
-        $anuncios = $this->paginate($resultado);
-      }
     } else {
-      $anuncios = $this->paginate($this->Anuncios);
+      $pesquisa = $this->request->query['0'];
     }
+
+    $resultado = $this->Anuncios->find('all', array(
+      'conditions' => array(
+        "Anuncios.titulo LIKE " => '%' . $pesquisa . '%'
+      )
+    ));
+    $anuncios = $this->paginate($resultado);
 
     $temp = TableRegistry::get('Categorias');
     $categorias = $temp->find('all',[
