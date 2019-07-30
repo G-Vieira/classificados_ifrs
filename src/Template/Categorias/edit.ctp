@@ -24,6 +24,12 @@ foreach($categorias as $cat){
         ?></li>
       <li><?= $this->Html->link(__('Listar Categorias'), ['action' => 'index']) ?></li>
     </ul>
+    <ul data-section="section" class="nav nav-pills nav-stacked">
+      <li class="heading"><b><?= __('Filtros Por:') ?></b></li>
+      <li><?= __('Anúncios') ?></li>
+      <li><?= $this->Html->link(__('Últimos adicionados'), ['controller' => 'anuncios','action' => 'ultimos']) ?></li>
+      <li><?= $this->Html->link(__('Mais procurados'), ['controller' => 'anuncios','action' => 'procurados']) ?></li>
+    </ul>
   </div>
   <div class="col-md-9 text-center">
     <?= $this->Form->create($categoria) ?>

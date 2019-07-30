@@ -23,7 +23,7 @@
     </ul>
   </div>
   <div class="col-md-10">
-    <h3><?= h($anuncio->id) ?></h3>
+    <h3>ID: <?= h($anuncio->id) ?></h3>
     <?= $this->Html->image('../files/Anuncios/imagem/' . $anuncio->imagem); ?>
     <table class="table">
       <tr>

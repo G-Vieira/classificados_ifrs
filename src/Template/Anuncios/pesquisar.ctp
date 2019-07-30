@@ -7,8 +7,8 @@
 
   if(isset($_POST['pesquisa'])){
     $pesquisa = $_POST['pesquisa'];
-  }else if(isset($_GET['0'])){
-    $pesquisa = $_GET['0'];
+  }else if(isset($_GET['pesquisa'])){
+    $pesquisa = $_GET['pesquisa'];
   }
 ?>
 <div class="row">
@@ -37,6 +37,7 @@
           <th scope="col"><?= __('Imagem') ?></th>
           <th scope="col"><?= $this->Paginator->sort('categoria_id') ?></th>
           <th scope="col"><?= $this->Paginator->sort('titulo') ?></th>
+          <th scope="col"><?= $this->Paginator->sort('preco') ?></th>
           <th scope="col" class="actions"><?= __('Ações') ?></th>
         </tr>
       </thead>
@@ -46,6 +47,7 @@
           <td><?= $this->Html->image('../files/Anuncios/imagem/' . $anuncio->imagem); ?></td>
           <td><?= $anuncio->has('categoria') ? $this->Html->link($anuncio->categoria->descricao, ['controller' => 'Categorias', 'action' => 'view', $anuncio->categoria->id]) : '' ?></td>
           <td><?= h($anuncio->titulo) ?></td>
+          <td>R$ <?= h($anuncio->preco) ?></td>
           <td class="actions">
                     <?= $this->Html->link(__('Ver'), ['action' => 'view', $anuncio->id]) ?>
                   <?php
@@ -61,7 +63,7 @@
     </table>
     <div class="paginator">
       <ul class="pagination">
-            <?php $this->Paginator->options(array('url' => array("?"=>$pesquisa))); ?>
+            <?php $this->Paginator->options(array('url' => array("?"=>['pesquisa' => $pesquisa]))); ?>
             <?= $this->Paginator->first('<< ' . __('primeiro')) ?>
             <?= $this->Paginator->prev('< ' . __('anterior')) ?>
             <?= $this->Paginator->numbers() ?>

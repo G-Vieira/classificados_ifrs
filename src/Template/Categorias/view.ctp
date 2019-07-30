@@ -9,7 +9,7 @@
 <div class="row" >
   <nav data-section="filtros" class="col-md-2" id="actions-sidebar">
     <ul class="nav nav-pills nav-stacked">
-      <li class="heading"><?= __('Actions') ?></li>
+      <li class="heading"><?= __('Ações') ?></li>
       <?php
         if($authUser['role'] == 'admin'){
           echo '<li>' . $this->Html->link(__('Nova Categoria'), ['action' => 'add']) . '</li>';
@@ -20,6 +20,17 @@
       <li><?= $this->Html->link(__('Listar Categorias'), ['action' => 'index']) ?> </li>
       <li><?= $this->Html->link(__('Listar Anúncios'), ['controller' => 'Anuncios', 'action' => 'index']) ?> </li>
       <li><?= $this->Html->link(__('Novo Anúncio'), ['controller' => 'Anuncios', 'action' => 'add']) ?> </li>
+    </ul>
+    <ul data-section="section" class="nav nav-pills nav-stacked">
+      <li class="heading"><b><?= __('Filtros Por:') ?></b></li>
+      <li><?= __('Anúncios') ?></li>
+      <li><?= $this->Html->link(__('Últimos adicionados'), ['controller' => 'anuncios','action' => 'ultimos']) ?></li>
+      <li><?= $this->Html->link(__('Mais procurados'), ['controller' => 'anuncios','action' => 'procurados']) ?></li>
+      <li><?= __('Preço') ?></li>
+      <li><?= $this->Html->link(__('Até R$ 500,00'), ['action' => 'view', $categoria->id,'?' => ['preco' => 'A']]) ?></li>
+      <li><?= $this->Html->link(__('De R$ 500,00 até R$ 1000,00'), ['action' => 'view', $categoria->id,'?' => ['preco' => 'B']]) ?></li>
+      <li><?= $this->Html->link(__('De R$ 1000,00 até R$ 1500,00'), ['action' => 'view', $categoria->id,'?' => ['preco' => 'C']]) ?></li>
+      <li><?= $this->Html->link(__('Mais de R$ 1500,00'), ['action' => 'view', $categoria->id,'?' => ['preco' => 'D']]) ?></li>
     </ul>
   </nav>
   <div class="col-md-10">
@@ -54,18 +65,20 @@
       <?php endif; ?>
     </div>
     <div class="row" data-section="filtros">
-      <?php if (!empty($anuncios)): ?>
+      <?php if (!$anuncios->isEmpty()): ?>
         <h4><?= __('Anúncios') ?></h4>
         <table cellpadding="0" cellspacing="0" class="table">
           <tr>
             <th scope="col"><?= __('Imagem') ?></th>
             <th scope="col"><?= $this->Paginator->sort('Titulo') ?></th>
+            <th scope="col"><?= $this->Paginator->sort('Preco') ?></th>
             <th scope="col" class="actions"><?= __('Ações') ?></th>
           </tr>
           <?php foreach ($anuncios as $anuncio): ?>
             <tr>  
               <td><?= $this->Html->image('../files/Anuncios/imagem/' . $anuncio->imagem); ?></td>
               <td><?= h($anuncio->titulo) ?></td>
+              <td>R$ <?= h($anuncio->preco) ?></td>
               <td class="actions">
                 <?= $this->Html->link(__('Ver'), ['controller' => 'Anuncios', 'action' => 'view', $anuncio->id]) ?>
             

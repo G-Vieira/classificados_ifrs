@@ -29,7 +29,45 @@ class AnunciosController extends AppController {
       'contain' => ['Users', 'Categorias']
     ];
 
-    $anuncios = $this->paginate($this->Anuncios);
+    if(isset($this->request->query['preco'])){
+      $preco = $this->request->query['preco'];
+      
+      switch($preco){
+        case 'A': 
+          $condicoes = [
+            'conditions' => ['Anuncios.preco <= ' => 500]
+          ];
+          break;
+        case 'B':
+          $condicoes = [
+            'conditions' => [
+              ['Anuncios.preco >= ' => 500],
+              ['Anuncios.preco <= ' => 1000]
+            ]
+          ];
+          break;
+          case 'C':
+          $condicoes = [
+            'conditions' => [
+              ['Anuncios.preco >= ' => 1000],
+              ['Anuncios.preco <= ' => 1500]
+            ]
+          ];
+          break;
+        case 'D':
+        $condicoes = [
+          'conditions' => ['Anuncios.preco > ' => 1500]
+        ];
+          break;
+        default: $condicoes = [];
+      }
+
+      $resultado = $this->Anuncios->find('all', $condicoes);
+
+      $anuncios = $this->paginate($resultado);
+    }else{
+      $anuncios = $this->paginate($this->Anuncios);
+    }
 
     $temp = TableRegistry::get('Categorias');
     $categorias = $temp->find('all',[
@@ -48,7 +86,7 @@ class AnunciosController extends AppController {
       $requisicao = $this->request->getData();
       $pesquisa = str_replace(' ', '%', $requisicao['pesquisa']);
     } else {
-      $pesquisa = $this->request->query['0'];
+      $pesquisa = $this->request->query['pesquisa'];
     }
 
     $resultado = $this->Anuncios->find('all', array(
@@ -77,15 +115,53 @@ class AnunciosController extends AppController {
       'contain' => ['Users', 'Categorias']
     ];
 
-    //Ajustar os anuncios fixos
-    $resultado = $this->Anuncios->find('all', array(
-      'conditions' => array(
-        "Anuncios.id  IN " => [1,5,10,15,20,25,30,35,40,100,120,125,127,150,151,152,160,165,170,200,210,215,267,289,300,330,350,400,504,510,580,600,610,670,700]
-      )
-    ));
+    if(isset($this->request->query['preco'])){
+      $preco = $this->request->query['preco'];
+      
+      switch($preco){
+        case 'A': 
+          $condicoes = [
+            'conditions' => ['Anuncios.preco <= ' => 500]
+          ];
+          break;
+        case 'B':
+          $condicoes = [
+            'conditions' => [
+              ['Anuncios.preco >= ' => 500],
+              ['Anuncios.preco <= ' => 1000]
+            ]
+          ];
+          break;
+          case 'C':
+          $condicoes = [
+            'conditions' => [
+              ['Anuncios.preco >= ' => 1000],
+              ['Anuncios.preco <= ' => 1500]
+            ]
+          ];
+          break;
+        case 'D':
+        $condicoes = [
+          'conditions' => ['Anuncios.preco > ' => 1500]
+        ];
+          break;
+        default: $condicoes = [
+          'conditions' => []
+        ];
+      }
+    }
 
+    $condicoes['conditions']["Anuncios.id  IN "] = [1,5,10,15,20,25,30,35,40,100,120,125,127,150,151,152,160,165,170,200,210,215,267,289,300,330,350,400,504,510,580,600,610,670,700];
+
+    $resultado = $this->Anuncios->find('all', $condicoes);
     $anuncios = $this->paginate($resultado);
-    $this->set(compact('anuncios'));
+
+    $temp = TableRegistry::get('Categorias');
+    $categorias = $temp->find('all',[
+      'conditions' => ['Categorias.parent_id is null']
+    ]);
+
+    $this->set(compact('anuncios','categorias'));
   }
 
   /*
@@ -96,13 +172,55 @@ class AnunciosController extends AppController {
       'contain' => ['Users', 'Categorias']
     ];
 
-    $resultado = $this->Anuncios->find('all', array(
-      'limit' => 20,
-      'order' => 'Anuncios.created DESC'
-    ));
+    if(isset($this->request->query['preco'])){
+      $preco = $this->request->query['preco'];
+      
+      switch($preco){
+        case 'A': 
+          $condicoes = [
+            'conditions' => ['Anuncios.preco <= ' => 500]
+          ];
+          break;
+        case 'B':
+          $condicoes = [
+            'conditions' => [
+              ['Anuncios.preco >= ' => 500],
+              ['Anuncios.preco <= ' => 1000]
+            ]
+          ];
+          break;
+          case 'C':
+          $condicoes = [
+            'conditions' => [
+              ['Anuncios.preco >= ' => 1000],
+              ['Anuncios.preco <= ' => 1500]
+            ]
+          ];
+          break;
+        case 'D':
+        $condicoes = [
+          'conditions' => ['Anuncios.preco > ' => 1500]
+        ];
+          break;
+        default: $condicoes = [];
+      }
 
+    }else{
+      $condicoes = [];
+    }
+
+    $condicoes['limit'] = 20;
+    $condicoes['order'] = 'Anuncios.created DESC';
+
+    $resultado = $this->Anuncios->find('all', $condicoes);
     $anuncios = $this->paginate($resultado);
-    $this->set(compact('anuncios'));
+
+    $temp = TableRegistry::get('Categorias');
+    $categorias = $temp->find('all',[
+      'conditions' => ['Categorias.parent_id is null']
+    ]);
+
+    $this->set(compact('anuncios','categorias'));
   }
 
   /**
