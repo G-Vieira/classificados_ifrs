@@ -9,6 +9,14 @@
     $pesquisa = $_POST['pesquisa'];
   }else if(isset($_GET['pesquisa'])){
     $pesquisa = $_GET['pesquisa'];
+  }else{
+    $pesquisa = '';
+  }
+
+  $parametros = ['pesquisa' => $pesquisa];
+
+  if(isset($_GET['preco'])){
+    $parametros['preco'] = $_GET['preco'];
   }
 ?>
 <div class="row">
@@ -27,6 +35,11 @@
       <li><?= __('Anúncios') ?></li>
       <li><?= $this->Html->link(__('Últimos adicionados'), ['controller' => 'anuncios','action' => 'ultimos']) ?></li>
       <li><?= $this->Html->link(__('Mais procurados'), ['controller' => 'anuncios','action' => 'procurados']) ?></li>
+      <li><?= __('Preço') ?></li>
+      <li><?= $this->Html->link(__('Até R$ 500,00'), ['?' => ['preco' => 'A', 'pesquisa' => $parametros['pesquisa']]]) ?></li>
+      <li><?= $this->Html->link(__('De R$ 500,00 até R$ 1000,00'), ['?' => ['preco' => 'B', 'pesquisa' => $parametros['pesquisa']]]) ?></li>
+      <li><?= $this->Html->link(__('De R$ 1000,00 até R$ 1500,00'), ['?' => ['preco' => 'C', 'pesquisa' => $parametros['pesquisa']]]) ?></li>
+      <li><?= $this->Html->link(__('Mais de R$ 1500,00'), ['?' => ['preco' => 'D', 'pesquisa' => $parametros['pesquisa']]]) ?></li>
     </ul>
   </div>
   <div class="col-md-9">
@@ -63,7 +76,7 @@
     </table>
     <div class="paginator">
       <ul class="pagination">
-            <?php $this->Paginator->options(array('url' => array("?"=>['pesquisa' => $pesquisa]))); ?>
+            <?php $this->Paginator->options(array('url' => array("?"=>$parametros))); ?>
             <?= $this->Paginator->first('<< ' . __('primeiro')) ?>
             <?= $this->Paginator->prev('< ' . __('anterior')) ?>
             <?= $this->Paginator->numbers() ?>

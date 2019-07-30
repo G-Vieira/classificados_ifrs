@@ -34757,3 +34757,1355 @@ Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
 
 
 
+2019-07-30 17:23:07 Notice: Notice (8): compact(): Undefined variable: etagMatches in [C:\xampp\htdocs\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Response.php, line 1887]
+Request URL: /anuncios/pesquisar
+Referer URL: http://localhost/classificados_ifrs/categorias/view/14?preco=B
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+compact - [internal], line ??
+Cake\Http\Response::checkNotModified() - CORE\src\Http\Response.php, line 1887
+Cake\Controller\Component\RequestHandlerComponent::beforeRender() - CORE\src\Controller\Component\RequestHandlerComponent.php, line 333
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 416
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 393
+Cake\Controller\Controller::dispatchEvent() - CORE\src\Event\EventDispatcherTrait.php, line 110
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 610
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-07-30 17:23:07 Notice: Notice (8): compact() [<a href='https://secure.php.net/function.compact'>function.compact</a>]: Undefined variable: timeMatches in [C:\xampp\htdocs\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Response.php, line 1887]
+Request URL: /anuncios/pesquisar
+Referer URL: http://localhost/classificados_ifrs/categorias/view/14?preco=B
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+compact - [internal], line ??
+Cake\Http\Response::checkNotModified() - CORE\src\Http\Response.php, line 1887
+Cake\Controller\Component\RequestHandlerComponent::beforeRender() - CORE\src\Controller\Component\RequestHandlerComponent.php, line 333
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 416
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 393
+Cake\Controller\Controller::dispatchEvent() - CORE\src\Event\EventDispatcherTrait.php, line 110
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 610
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-07-30 17:23:09 Notice: Notice (8): compact(): Undefined variable: etagMatches in [C:\xampp\htdocs\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Response.php, line 1887]
+Request URL: /anuncios/pesquisar
+Referer URL: http://localhost/classificados_ifrs/anuncios/pesquisar
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+compact - [internal], line ??
+Cake\Http\Response::checkNotModified() - CORE\src\Http\Response.php, line 1887
+Cake\Controller\Component\RequestHandlerComponent::beforeRender() - CORE\src\Controller\Component\RequestHandlerComponent.php, line 333
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 416
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 393
+Cake\Controller\Controller::dispatchEvent() - CORE\src\Event\EventDispatcherTrait.php, line 110
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 610
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-07-30 17:23:09 Notice: Notice (8): compact() [<a href='https://secure.php.net/function.compact'>function.compact</a>]: Undefined variable: timeMatches in [C:\xampp\htdocs\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Response.php, line 1887]
+Request URL: /anuncios/pesquisar
+Referer URL: http://localhost/classificados_ifrs/anuncios/pesquisar
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+compact - [internal], line ??
+Cake\Http\Response::checkNotModified() - CORE\src\Http\Response.php, line 1887
+Cake\Controller\Component\RequestHandlerComponent::beforeRender() - CORE\src\Controller\Component\RequestHandlerComponent.php, line 333
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 416
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 393
+Cake\Controller\Controller::dispatchEvent() - CORE\src\Event\EventDispatcherTrait.php, line 110
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 610
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-07-30 17:23:13 Notice: Notice (8): compact(): Undefined variable: etagMatches in [C:\xampp\htdocs\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Response.php, line 1887]
+Request URL: /anuncios/pesquisar?pesquisa=tv&page=2
+Referer URL: http://localhost/classificados_ifrs/anuncios/pesquisar
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+compact - [internal], line ??
+Cake\Http\Response::checkNotModified() - CORE\src\Http\Response.php, line 1887
+Cake\Controller\Component\RequestHandlerComponent::beforeRender() - CORE\src\Controller\Component\RequestHandlerComponent.php, line 333
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 416
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 393
+Cake\Controller\Controller::dispatchEvent() - CORE\src\Event\EventDispatcherTrait.php, line 110
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 610
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-07-30 17:23:13 Notice: Notice (8): compact() [<a href='https://secure.php.net/function.compact'>function.compact</a>]: Undefined variable: timeMatches in [C:\xampp\htdocs\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Response.php, line 1887]
+Request URL: /anuncios/pesquisar?pesquisa=tv&page=2
+Referer URL: http://localhost/classificados_ifrs/anuncios/pesquisar
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+compact - [internal], line ??
+Cake\Http\Response::checkNotModified() - CORE\src\Http\Response.php, line 1887
+Cake\Controller\Component\RequestHandlerComponent::beforeRender() - CORE\src\Controller\Component\RequestHandlerComponent.php, line 333
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 416
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 393
+Cake\Controller\Controller::dispatchEvent() - CORE\src\Event\EventDispatcherTrait.php, line 110
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 610
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-07-30 17:23:29 Notice: Notice (8): compact() [<a href='https://secure.php.net/function.compact'>function.compact</a>]: Undefined variable: etagMatches in [C:\xampp\htdocs\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Response.php, line 1887]
+Request URL: /anuncios/pesquisar?pesquisa=tv&page=2&preco=B
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+compact - [internal], line ??
+Cake\Http\Response::checkNotModified() - CORE\src\Http\Response.php, line 1887
+Cake\Controller\Component\RequestHandlerComponent::beforeRender() - CORE\src\Controller\Component\RequestHandlerComponent.php, line 333
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 416
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 393
+Cake\Controller\Controller::dispatchEvent() - CORE\src\Event\EventDispatcherTrait.php, line 110
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 610
+Cake\Error\ExceptionRenderer::_outputMessage() - CORE\src\Error\ExceptionRenderer.php, line 325
+Cake\Error\ExceptionRenderer::render() - CORE\src\Error\ExceptionRenderer.php, line 200
+Cake\Error\Middleware\ErrorHandlerMiddleware::handleException() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 118
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 100
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-07-30 17:23:29 Notice: Notice (8): compact() [<a href='https://secure.php.net/function.compact'>function.compact</a>]: Undefined variable: timeMatches in [C:\xampp\htdocs\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Response.php, line 1887]
+Request URL: /anuncios/pesquisar?pesquisa=tv&page=2&preco=B
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+compact - [internal], line ??
+Cake\Http\Response::checkNotModified() - CORE\src\Http\Response.php, line 1887
+Cake\Controller\Component\RequestHandlerComponent::beforeRender() - CORE\src\Controller\Component\RequestHandlerComponent.php, line 333
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 416
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 393
+Cake\Controller\Controller::dispatchEvent() - CORE\src\Event\EventDispatcherTrait.php, line 110
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 610
+Cake\Error\ExceptionRenderer::_outputMessage() - CORE\src\Error\ExceptionRenderer.php, line 325
+Cake\Error\ExceptionRenderer::render() - CORE\src\Error\ExceptionRenderer.php, line 200
+Cake\Error\Middleware\ErrorHandlerMiddleware::handleException() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 118
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 100
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-07-30 17:23:40 Notice: Notice (8): compact() [<a href='https://secure.php.net/function.compact'>function.compact</a>]: Undefined variable: etagMatches in [C:\xampp\htdocs\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Response.php, line 1887]
+Request URL: /anuncios/pesquisar?pesquisa=tv&preco=B&page=2
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+compact - [internal], line ??
+Cake\Http\Response::checkNotModified() - CORE\src\Http\Response.php, line 1887
+Cake\Controller\Component\RequestHandlerComponent::beforeRender() - CORE\src\Controller\Component\RequestHandlerComponent.php, line 333
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 416
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 393
+Cake\Controller\Controller::dispatchEvent() - CORE\src\Event\EventDispatcherTrait.php, line 110
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 610
+Cake\Error\ExceptionRenderer::_outputMessage() - CORE\src\Error\ExceptionRenderer.php, line 325
+Cake\Error\ExceptionRenderer::render() - CORE\src\Error\ExceptionRenderer.php, line 200
+Cake\Error\Middleware\ErrorHandlerMiddleware::handleException() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 118
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 100
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-07-30 17:23:40 Notice: Notice (8): compact() [<a href='https://secure.php.net/function.compact'>function.compact</a>]: Undefined variable: timeMatches in [C:\xampp\htdocs\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Response.php, line 1887]
+Request URL: /anuncios/pesquisar?pesquisa=tv&preco=B&page=2
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+compact - [internal], line ??
+Cake\Http\Response::checkNotModified() - CORE\src\Http\Response.php, line 1887
+Cake\Controller\Component\RequestHandlerComponent::beforeRender() - CORE\src\Controller\Component\RequestHandlerComponent.php, line 333
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 416
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 393
+Cake\Controller\Controller::dispatchEvent() - CORE\src\Event\EventDispatcherTrait.php, line 110
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 610
+Cake\Error\ExceptionRenderer::_outputMessage() - CORE\src\Error\ExceptionRenderer.php, line 325
+Cake\Error\ExceptionRenderer::render() - CORE\src\Error\ExceptionRenderer.php, line 200
+Cake\Error\Middleware\ErrorHandlerMiddleware::handleException() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 118
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 100
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-07-30 17:23:57 Notice: Notice (8): compact() [<a href='https://secure.php.net/function.compact'>function.compact</a>]: Undefined variable: etagMatches in [C:\xampp\htdocs\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Response.php, line 1887]
+Request URL: /anuncios/pesquisar?pesquisa=tv&preco=B&page=2
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+compact - [internal], line ??
+Cake\Http\Response::checkNotModified() - CORE\src\Http\Response.php, line 1887
+Cake\Controller\Component\RequestHandlerComponent::beforeRender() - CORE\src\Controller\Component\RequestHandlerComponent.php, line 333
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 416
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 393
+Cake\Controller\Controller::dispatchEvent() - CORE\src\Event\EventDispatcherTrait.php, line 110
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 610
+Cake\Error\ExceptionRenderer::_outputMessage() - CORE\src\Error\ExceptionRenderer.php, line 325
+Cake\Error\ExceptionRenderer::render() - CORE\src\Error\ExceptionRenderer.php, line 200
+Cake\Error\Middleware\ErrorHandlerMiddleware::handleException() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 118
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 100
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-07-30 17:23:57 Notice: Notice (8): compact() [<a href='https://secure.php.net/function.compact'>function.compact</a>]: Undefined variable: timeMatches in [C:\xampp\htdocs\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Response.php, line 1887]
+Request URL: /anuncios/pesquisar?pesquisa=tv&preco=B&page=2
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+compact - [internal], line ??
+Cake\Http\Response::checkNotModified() - CORE\src\Http\Response.php, line 1887
+Cake\Controller\Component\RequestHandlerComponent::beforeRender() - CORE\src\Controller\Component\RequestHandlerComponent.php, line 333
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 416
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 393
+Cake\Controller\Controller::dispatchEvent() - CORE\src\Event\EventDispatcherTrait.php, line 110
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 610
+Cake\Error\ExceptionRenderer::_outputMessage() - CORE\src\Error\ExceptionRenderer.php, line 325
+Cake\Error\ExceptionRenderer::render() - CORE\src\Error\ExceptionRenderer.php, line 200
+Cake\Error\Middleware\ErrorHandlerMiddleware::handleException() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 118
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 100
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-07-30 17:24:10 Notice: Notice (8): compact(): Undefined variable: etagMatches in [C:\xampp\htdocs\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Response.php, line 1887]
+Request URL: /anuncios/pesquisar?pesquisa=tv&preco=B
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+compact - [internal], line ??
+Cake\Http\Response::checkNotModified() - CORE\src\Http\Response.php, line 1887
+Cake\Controller\Component\RequestHandlerComponent::beforeRender() - CORE\src\Controller\Component\RequestHandlerComponent.php, line 333
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 416
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 393
+Cake\Controller\Controller::dispatchEvent() - CORE\src\Event\EventDispatcherTrait.php, line 110
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 610
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-07-30 17:24:10 Notice: Notice (8): compact() [<a href='https://secure.php.net/function.compact'>function.compact</a>]: Undefined variable: timeMatches in [C:\xampp\htdocs\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Response.php, line 1887]
+Request URL: /anuncios/pesquisar?pesquisa=tv&preco=B
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+compact - [internal], line ??
+Cake\Http\Response::checkNotModified() - CORE\src\Http\Response.php, line 1887
+Cake\Controller\Component\RequestHandlerComponent::beforeRender() - CORE\src\Controller\Component\RequestHandlerComponent.php, line 333
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 416
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 393
+Cake\Controller\Controller::dispatchEvent() - CORE\src\Event\EventDispatcherTrait.php, line 110
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 610
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-07-30 17:24:17 Notice: Notice (8): compact(): Undefined variable: etagMatches in [C:\xampp\htdocs\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Response.php, line 1887]
+Request URL: /anuncios/pesquisar?pesquisa=tv&preco=A
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+compact - [internal], line ??
+Cake\Http\Response::checkNotModified() - CORE\src\Http\Response.php, line 1887
+Cake\Controller\Component\RequestHandlerComponent::beforeRender() - CORE\src\Controller\Component\RequestHandlerComponent.php, line 333
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 416
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 393
+Cake\Controller\Controller::dispatchEvent() - CORE\src\Event\EventDispatcherTrait.php, line 110
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 610
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-07-30 17:24:17 Notice: Notice (8): compact() [<a href='https://secure.php.net/function.compact'>function.compact</a>]: Undefined variable: timeMatches in [C:\xampp\htdocs\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Response.php, line 1887]
+Request URL: /anuncios/pesquisar?pesquisa=tv&preco=A
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+compact - [internal], line ??
+Cake\Http\Response::checkNotModified() - CORE\src\Http\Response.php, line 1887
+Cake\Controller\Component\RequestHandlerComponent::beforeRender() - CORE\src\Controller\Component\RequestHandlerComponent.php, line 333
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 416
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 393
+Cake\Controller\Controller::dispatchEvent() - CORE\src\Event\EventDispatcherTrait.php, line 110
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 610
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-07-30 17:24:26 Notice: Notice (8): compact(): Undefined variable: etagMatches in [C:\xampp\htdocs\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Response.php, line 1887]
+Request URL: /anuncios/pesquisar?pesquisa=tv&preco=C
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+compact - [internal], line ??
+Cake\Http\Response::checkNotModified() - CORE\src\Http\Response.php, line 1887
+Cake\Controller\Component\RequestHandlerComponent::beforeRender() - CORE\src\Controller\Component\RequestHandlerComponent.php, line 333
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 416
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 393
+Cake\Controller\Controller::dispatchEvent() - CORE\src\Event\EventDispatcherTrait.php, line 110
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 610
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-07-30 17:24:26 Notice: Notice (8): compact() [<a href='https://secure.php.net/function.compact'>function.compact</a>]: Undefined variable: timeMatches in [C:\xampp\htdocs\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Response.php, line 1887]
+Request URL: /anuncios/pesquisar?pesquisa=tv&preco=C
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+compact - [internal], line ??
+Cake\Http\Response::checkNotModified() - CORE\src\Http\Response.php, line 1887
+Cake\Controller\Component\RequestHandlerComponent::beforeRender() - CORE\src\Controller\Component\RequestHandlerComponent.php, line 333
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 416
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 393
+Cake\Controller\Controller::dispatchEvent() - CORE\src\Event\EventDispatcherTrait.php, line 110
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 610
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-07-30 17:24:53 Notice: Notice (8): compact(): Undefined variable: etagMatches in [C:\xampp\htdocs\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Response.php, line 1887]
+Request URL: /anuncios/pesquisar?pesquisa=tv&preco=C
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+compact - [internal], line ??
+Cake\Http\Response::checkNotModified() - CORE\src\Http\Response.php, line 1887
+Cake\Controller\Component\RequestHandlerComponent::beforeRender() - CORE\src\Controller\Component\RequestHandlerComponent.php, line 333
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 416
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 393
+Cake\Controller\Controller::dispatchEvent() - CORE\src\Event\EventDispatcherTrait.php, line 110
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 610
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-07-30 17:24:53 Notice: Notice (8): compact() [<a href='https://secure.php.net/function.compact'>function.compact</a>]: Undefined variable: timeMatches in [C:\xampp\htdocs\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Response.php, line 1887]
+Request URL: /anuncios/pesquisar?pesquisa=tv&preco=C
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+compact - [internal], line ??
+Cake\Http\Response::checkNotModified() - CORE\src\Http\Response.php, line 1887
+Cake\Controller\Component\RequestHandlerComponent::beforeRender() - CORE\src\Controller\Component\RequestHandlerComponent.php, line 333
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 416
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 393
+Cake\Controller\Controller::dispatchEvent() - CORE\src\Event\EventDispatcherTrait.php, line 110
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 610
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-07-30 17:24:56 Notice: Notice (8): compact(): Undefined variable: etagMatches in [C:\xampp\htdocs\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Response.php, line 1887]
+Request URL: /anuncios/pesquisar?pesquisa=tv&preco=A
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+compact - [internal], line ??
+Cake\Http\Response::checkNotModified() - CORE\src\Http\Response.php, line 1887
+Cake\Controller\Component\RequestHandlerComponent::beforeRender() - CORE\src\Controller\Component\RequestHandlerComponent.php, line 333
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 416
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 393
+Cake\Controller\Controller::dispatchEvent() - CORE\src\Event\EventDispatcherTrait.php, line 110
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 610
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-07-30 17:24:56 Notice: Notice (8): compact() [<a href='https://secure.php.net/function.compact'>function.compact</a>]: Undefined variable: timeMatches in [C:\xampp\htdocs\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Response.php, line 1887]
+Request URL: /anuncios/pesquisar?pesquisa=tv&preco=A
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+compact - [internal], line ??
+Cake\Http\Response::checkNotModified() - CORE\src\Http\Response.php, line 1887
+Cake\Controller\Component\RequestHandlerComponent::beforeRender() - CORE\src\Controller\Component\RequestHandlerComponent.php, line 333
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 416
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 393
+Cake\Controller\Controller::dispatchEvent() - CORE\src\Event\EventDispatcherTrait.php, line 110
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 610
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-07-30 17:25:04 Notice: Notice (8): compact(): Undefined variable: etagMatches in [C:\xampp\htdocs\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Response.php, line 1887]
+Request URL: /anuncios/pesquisar?pesquisa=tv&preco=B
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+compact - [internal], line ??
+Cake\Http\Response::checkNotModified() - CORE\src\Http\Response.php, line 1887
+Cake\Controller\Component\RequestHandlerComponent::beforeRender() - CORE\src\Controller\Component\RequestHandlerComponent.php, line 333
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 416
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 393
+Cake\Controller\Controller::dispatchEvent() - CORE\src\Event\EventDispatcherTrait.php, line 110
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 610
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-07-30 17:25:04 Notice: Notice (8): compact() [<a href='https://secure.php.net/function.compact'>function.compact</a>]: Undefined variable: timeMatches in [C:\xampp\htdocs\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Response.php, line 1887]
+Request URL: /anuncios/pesquisar?pesquisa=tv&preco=B
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+compact - [internal], line ??
+Cake\Http\Response::checkNotModified() - CORE\src\Http\Response.php, line 1887
+Cake\Controller\Component\RequestHandlerComponent::beforeRender() - CORE\src\Controller\Component\RequestHandlerComponent.php, line 333
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 416
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 393
+Cake\Controller\Controller::dispatchEvent() - CORE\src\Event\EventDispatcherTrait.php, line 110
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 610
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-07-30 17:25:07 Notice: Notice (8): compact(): Undefined variable: etagMatches in [C:\xampp\htdocs\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Response.php, line 1887]
+Request URL: /anuncios/pesquisar?pesquisa=tv&preco=C
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+compact - [internal], line ??
+Cake\Http\Response::checkNotModified() - CORE\src\Http\Response.php, line 1887
+Cake\Controller\Component\RequestHandlerComponent::beforeRender() - CORE\src\Controller\Component\RequestHandlerComponent.php, line 333
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 416
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 393
+Cake\Controller\Controller::dispatchEvent() - CORE\src\Event\EventDispatcherTrait.php, line 110
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 610
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-07-30 17:25:07 Notice: Notice (8): compact() [<a href='https://secure.php.net/function.compact'>function.compact</a>]: Undefined variable: timeMatches in [C:\xampp\htdocs\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Response.php, line 1887]
+Request URL: /anuncios/pesquisar?pesquisa=tv&preco=C
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+compact - [internal], line ??
+Cake\Http\Response::checkNotModified() - CORE\src\Http\Response.php, line 1887
+Cake\Controller\Component\RequestHandlerComponent::beforeRender() - CORE\src\Controller\Component\RequestHandlerComponent.php, line 333
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 416
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 393
+Cake\Controller\Controller::dispatchEvent() - CORE\src\Event\EventDispatcherTrait.php, line 110
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 610
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-07-30 17:25:11 Notice: Notice (8): compact(): Undefined variable: etagMatches in [C:\xampp\htdocs\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Response.php, line 1887]
+Request URL: /anuncios/pesquisar?pesquisa=tv&preco=D
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+compact - [internal], line ??
+Cake\Http\Response::checkNotModified() - CORE\src\Http\Response.php, line 1887
+Cake\Controller\Component\RequestHandlerComponent::beforeRender() - CORE\src\Controller\Component\RequestHandlerComponent.php, line 333
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 416
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 393
+Cake\Controller\Controller::dispatchEvent() - CORE\src\Event\EventDispatcherTrait.php, line 110
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 610
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-07-30 17:25:11 Notice: Notice (8): compact() [<a href='https://secure.php.net/function.compact'>function.compact</a>]: Undefined variable: timeMatches in [C:\xampp\htdocs\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Response.php, line 1887]
+Request URL: /anuncios/pesquisar?pesquisa=tv&preco=D
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+compact - [internal], line ??
+Cake\Http\Response::checkNotModified() - CORE\src\Http\Response.php, line 1887
+Cake\Controller\Component\RequestHandlerComponent::beforeRender() - CORE\src\Controller\Component\RequestHandlerComponent.php, line 333
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 416
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 393
+Cake\Controller\Controller::dispatchEvent() - CORE\src\Event\EventDispatcherTrait.php, line 110
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 610
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-07-30 17:25:15 Notice: Notice (8): compact(): Undefined variable: etagMatches in [C:\xampp\htdocs\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Response.php, line 1887]
+Request URL: /anuncios/pesquisar?pesquisa=tv&page=2
+Referer URL: http://localhost/classificados_ifrs/anuncios/pesquisar?pesquisa=tv&preco=D
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+compact - [internal], line ??
+Cake\Http\Response::checkNotModified() - CORE\src\Http\Response.php, line 1887
+Cake\Controller\Component\RequestHandlerComponent::beforeRender() - CORE\src\Controller\Component\RequestHandlerComponent.php, line 333
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 416
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 393
+Cake\Controller\Controller::dispatchEvent() - CORE\src\Event\EventDispatcherTrait.php, line 110
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 610
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-07-30 17:25:15 Notice: Notice (8): compact() [<a href='https://secure.php.net/function.compact'>function.compact</a>]: Undefined variable: timeMatches in [C:\xampp\htdocs\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Response.php, line 1887]
+Request URL: /anuncios/pesquisar?pesquisa=tv&page=2
+Referer URL: http://localhost/classificados_ifrs/anuncios/pesquisar?pesquisa=tv&preco=D
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+compact - [internal], line ??
+Cake\Http\Response::checkNotModified() - CORE\src\Http\Response.php, line 1887
+Cake\Controller\Component\RequestHandlerComponent::beforeRender() - CORE\src\Controller\Component\RequestHandlerComponent.php, line 333
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 416
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 393
+Cake\Controller\Controller::dispatchEvent() - CORE\src\Event\EventDispatcherTrait.php, line 110
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 610
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-07-30 17:25:28 Notice: Notice (8): compact(): Undefined variable: etagMatches in [C:\xampp\htdocs\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Response.php, line 1887]
+Request URL: /anuncios/pesquisar?pesquisa=tv
+Referer URL: http://localhost/classificados_ifrs/anuncios/pesquisar?pesquisa=tv&page=2
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+compact - [internal], line ??
+Cake\Http\Response::checkNotModified() - CORE\src\Http\Response.php, line 1887
+Cake\Controller\Component\RequestHandlerComponent::beforeRender() - CORE\src\Controller\Component\RequestHandlerComponent.php, line 333
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 416
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 393
+Cake\Controller\Controller::dispatchEvent() - CORE\src\Event\EventDispatcherTrait.php, line 110
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 610
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-07-30 17:25:28 Notice: Notice (8): compact() [<a href='https://secure.php.net/function.compact'>function.compact</a>]: Undefined variable: timeMatches in [C:\xampp\htdocs\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Response.php, line 1887]
+Request URL: /anuncios/pesquisar?pesquisa=tv
+Referer URL: http://localhost/classificados_ifrs/anuncios/pesquisar?pesquisa=tv&page=2
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+compact - [internal], line ??
+Cake\Http\Response::checkNotModified() - CORE\src\Http\Response.php, line 1887
+Cake\Controller\Component\RequestHandlerComponent::beforeRender() - CORE\src\Controller\Component\RequestHandlerComponent.php, line 333
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 416
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 393
+Cake\Controller\Controller::dispatchEvent() - CORE\src\Event\EventDispatcherTrait.php, line 110
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 610
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-07-30 17:27:32 Notice: Notice (8): compact(): Undefined variable: etagMatches in [C:\xampp\htdocs\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Response.php, line 1887]
+Request URL: /anuncios/pesquisar?pesquisa=tv
+Referer URL: http://localhost/classificados_ifrs/anuncios/pesquisar?pesquisa=tv&page=2
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+compact - [internal], line ??
+Cake\Http\Response::checkNotModified() - CORE\src\Http\Response.php, line 1887
+Cake\Controller\Component\RequestHandlerComponent::beforeRender() - CORE\src\Controller\Component\RequestHandlerComponent.php, line 333
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 416
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 393
+Cake\Controller\Controller::dispatchEvent() - CORE\src\Event\EventDispatcherTrait.php, line 110
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 610
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-07-30 17:27:32 Notice: Notice (8): compact() [<a href='https://secure.php.net/function.compact'>function.compact</a>]: Undefined variable: timeMatches in [C:\xampp\htdocs\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Response.php, line 1887]
+Request URL: /anuncios/pesquisar?pesquisa=tv
+Referer URL: http://localhost/classificados_ifrs/anuncios/pesquisar?pesquisa=tv&page=2
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+compact - [internal], line ??
+Cake\Http\Response::checkNotModified() - CORE\src\Http\Response.php, line 1887
+Cake\Controller\Component\RequestHandlerComponent::beforeRender() - CORE\src\Controller\Component\RequestHandlerComponent.php, line 333
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 416
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 393
+Cake\Controller\Controller::dispatchEvent() - CORE\src\Event\EventDispatcherTrait.php, line 110
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 610
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-07-30 17:33:32 Notice: Notice (8): compact(): Undefined variable: etagMatches in [C:\xampp\htdocs\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Response.php, line 1887]
+Request URL: /anuncios/pesquisar?pesquisa=tv
+Referer URL: http://localhost/classificados_ifrs/anuncios/pesquisar?pesquisa=tv&page=2
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+compact - [internal], line ??
+Cake\Http\Response::checkNotModified() - CORE\src\Http\Response.php, line 1887
+Cake\Controller\Component\RequestHandlerComponent::beforeRender() - CORE\src\Controller\Component\RequestHandlerComponent.php, line 333
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 416
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 393
+Cake\Controller\Controller::dispatchEvent() - CORE\src\Event\EventDispatcherTrait.php, line 110
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 610
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-07-30 17:33:32 Notice: Notice (8): compact() [<a href='https://secure.php.net/function.compact'>function.compact</a>]: Undefined variable: timeMatches in [C:\xampp\htdocs\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Response.php, line 1887]
+Request URL: /anuncios/pesquisar?pesquisa=tv
+Referer URL: http://localhost/classificados_ifrs/anuncios/pesquisar?pesquisa=tv&page=2
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+compact - [internal], line ??
+Cake\Http\Response::checkNotModified() - CORE\src\Http\Response.php, line 1887
+Cake\Controller\Component\RequestHandlerComponent::beforeRender() - CORE\src\Controller\Component\RequestHandlerComponent.php, line 333
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 416
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 393
+Cake\Controller\Controller::dispatchEvent() - CORE\src\Event\EventDispatcherTrait.php, line 110
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 610
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-07-30 17:34:39 Notice: Notice (8): compact(): Undefined variable: etagMatches in [C:\xampp\htdocs\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Response.php, line 1887]
+Request URL: /anuncios/pesquisar?pesquisa=tv
+Referer URL: http://localhost/classificados_ifrs/anuncios/pesquisar?pesquisa=tv&page=2
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+compact - [internal], line ??
+Cake\Http\Response::checkNotModified() - CORE\src\Http\Response.php, line 1887
+Cake\Controller\Component\RequestHandlerComponent::beforeRender() - CORE\src\Controller\Component\RequestHandlerComponent.php, line 333
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 416
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 393
+Cake\Controller\Controller::dispatchEvent() - CORE\src\Event\EventDispatcherTrait.php, line 110
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 610
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-07-30 17:34:39 Notice: Notice (8): compact() [<a href='https://secure.php.net/function.compact'>function.compact</a>]: Undefined variable: timeMatches in [C:\xampp\htdocs\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Response.php, line 1887]
+Request URL: /anuncios/pesquisar?pesquisa=tv
+Referer URL: http://localhost/classificados_ifrs/anuncios/pesquisar?pesquisa=tv&page=2
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+compact - [internal], line ??
+Cake\Http\Response::checkNotModified() - CORE\src\Http\Response.php, line 1887
+Cake\Controller\Component\RequestHandlerComponent::beforeRender() - CORE\src\Controller\Component\RequestHandlerComponent.php, line 333
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 416
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 393
+Cake\Controller\Controller::dispatchEvent() - CORE\src\Event\EventDispatcherTrait.php, line 110
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 610
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-07-30 17:34:44 Notice: Notice (8): compact(): Undefined variable: etagMatches in [C:\xampp\htdocs\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Response.php, line 1887]
+Request URL: /anuncios/pesquisar?preco=A&pesquisa=tv
+Referer URL: http://localhost/classificados_ifrs/anuncios/pesquisar?pesquisa=tv
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+compact - [internal], line ??
+Cake\Http\Response::checkNotModified() - CORE\src\Http\Response.php, line 1887
+Cake\Controller\Component\RequestHandlerComponent::beforeRender() - CORE\src\Controller\Component\RequestHandlerComponent.php, line 333
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 416
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 393
+Cake\Controller\Controller::dispatchEvent() - CORE\src\Event\EventDispatcherTrait.php, line 110
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 610
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-07-30 17:34:44 Notice: Notice (8): compact() [<a href='https://secure.php.net/function.compact'>function.compact</a>]: Undefined variable: timeMatches in [C:\xampp\htdocs\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Response.php, line 1887]
+Request URL: /anuncios/pesquisar?preco=A&pesquisa=tv
+Referer URL: http://localhost/classificados_ifrs/anuncios/pesquisar?pesquisa=tv
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+compact - [internal], line ??
+Cake\Http\Response::checkNotModified() - CORE\src\Http\Response.php, line 1887
+Cake\Controller\Component\RequestHandlerComponent::beforeRender() - CORE\src\Controller\Component\RequestHandlerComponent.php, line 333
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 416
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 393
+Cake\Controller\Controller::dispatchEvent() - CORE\src\Event\EventDispatcherTrait.php, line 110
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 610
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-07-30 17:34:50 Notice: Notice (8): compact(): Undefined variable: etagMatches in [C:\xampp\htdocs\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Response.php, line 1887]
+Request URL: /anuncios/pesquisar?preco=B&pesquisa=tv
+Referer URL: http://localhost/classificados_ifrs/anuncios/pesquisar?preco=A&pesquisa=tv
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+compact - [internal], line ??
+Cake\Http\Response::checkNotModified() - CORE\src\Http\Response.php, line 1887
+Cake\Controller\Component\RequestHandlerComponent::beforeRender() - CORE\src\Controller\Component\RequestHandlerComponent.php, line 333
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 416
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 393
+Cake\Controller\Controller::dispatchEvent() - CORE\src\Event\EventDispatcherTrait.php, line 110
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 610
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-07-30 17:34:50 Notice: Notice (8): compact() [<a href='https://secure.php.net/function.compact'>function.compact</a>]: Undefined variable: timeMatches in [C:\xampp\htdocs\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Response.php, line 1887]
+Request URL: /anuncios/pesquisar?preco=B&pesquisa=tv
+Referer URL: http://localhost/classificados_ifrs/anuncios/pesquisar?preco=A&pesquisa=tv
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+compact - [internal], line ??
+Cake\Http\Response::checkNotModified() - CORE\src\Http\Response.php, line 1887
+Cake\Controller\Component\RequestHandlerComponent::beforeRender() - CORE\src\Controller\Component\RequestHandlerComponent.php, line 333
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 416
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 393
+Cake\Controller\Controller::dispatchEvent() - CORE\src\Event\EventDispatcherTrait.php, line 110
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 610
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-07-30 17:34:54 Notice: Notice (8): compact(): Undefined variable: etagMatches in [C:\xampp\htdocs\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Response.php, line 1887]
+Request URL: /anuncios/pesquisar?preco=C&pesquisa=tv
+Referer URL: http://localhost/classificados_ifrs/anuncios/pesquisar?preco=B&pesquisa=tv
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+compact - [internal], line ??
+Cake\Http\Response::checkNotModified() - CORE\src\Http\Response.php, line 1887
+Cake\Controller\Component\RequestHandlerComponent::beforeRender() - CORE\src\Controller\Component\RequestHandlerComponent.php, line 333
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 416
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 393
+Cake\Controller\Controller::dispatchEvent() - CORE\src\Event\EventDispatcherTrait.php, line 110
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 610
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-07-30 17:34:54 Notice: Notice (8): compact() [<a href='https://secure.php.net/function.compact'>function.compact</a>]: Undefined variable: timeMatches in [C:\xampp\htdocs\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Response.php, line 1887]
+Request URL: /anuncios/pesquisar?preco=C&pesquisa=tv
+Referer URL: http://localhost/classificados_ifrs/anuncios/pesquisar?preco=B&pesquisa=tv
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+compact - [internal], line ??
+Cake\Http\Response::checkNotModified() - CORE\src\Http\Response.php, line 1887
+Cake\Controller\Component\RequestHandlerComponent::beforeRender() - CORE\src\Controller\Component\RequestHandlerComponent.php, line 333
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 416
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 393
+Cake\Controller\Controller::dispatchEvent() - CORE\src\Event\EventDispatcherTrait.php, line 110
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 610
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-07-30 17:35:00 Notice: Notice (8): compact(): Undefined variable: etagMatches in [C:\xampp\htdocs\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Response.php, line 1887]
+Request URL: /anuncios/pesquisar?preco=D&pesquisa=tv
+Referer URL: http://localhost/classificados_ifrs/anuncios/pesquisar?preco=C&pesquisa=tv
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+compact - [internal], line ??
+Cake\Http\Response::checkNotModified() - CORE\src\Http\Response.php, line 1887
+Cake\Controller\Component\RequestHandlerComponent::beforeRender() - CORE\src\Controller\Component\RequestHandlerComponent.php, line 333
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 416
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 393
+Cake\Controller\Controller::dispatchEvent() - CORE\src\Event\EventDispatcherTrait.php, line 110
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 610
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-07-30 17:35:00 Notice: Notice (8): compact() [<a href='https://secure.php.net/function.compact'>function.compact</a>]: Undefined variable: timeMatches in [C:\xampp\htdocs\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Response.php, line 1887]
+Request URL: /anuncios/pesquisar?preco=D&pesquisa=tv
+Referer URL: http://localhost/classificados_ifrs/anuncios/pesquisar?preco=C&pesquisa=tv
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+compact - [internal], line ??
+Cake\Http\Response::checkNotModified() - CORE\src\Http\Response.php, line 1887
+Cake\Controller\Component\RequestHandlerComponent::beforeRender() - CORE\src\Controller\Component\RequestHandlerComponent.php, line 333
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 416
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 393
+Cake\Controller\Controller::dispatchEvent() - CORE\src\Event\EventDispatcherTrait.php, line 110
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 610
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-07-30 17:35:03 Notice: Notice (8): compact(): Undefined variable: etagMatches in [C:\xampp\htdocs\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Response.php, line 1887]
+Request URL: /anuncios/pesquisar?pesquisa=tv&preco=D&page=2
+Referer URL: http://localhost/classificados_ifrs/anuncios/pesquisar?preco=D&pesquisa=tv
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+compact - [internal], line ??
+Cake\Http\Response::checkNotModified() - CORE\src\Http\Response.php, line 1887
+Cake\Controller\Component\RequestHandlerComponent::beforeRender() - CORE\src\Controller\Component\RequestHandlerComponent.php, line 333
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 416
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 393
+Cake\Controller\Controller::dispatchEvent() - CORE\src\Event\EventDispatcherTrait.php, line 110
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 610
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-07-30 17:35:03 Notice: Notice (8): compact() [<a href='https://secure.php.net/function.compact'>function.compact</a>]: Undefined variable: timeMatches in [C:\xampp\htdocs\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Response.php, line 1887]
+Request URL: /anuncios/pesquisar?pesquisa=tv&preco=D&page=2
+Referer URL: http://localhost/classificados_ifrs/anuncios/pesquisar?preco=D&pesquisa=tv
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+compact - [internal], line ??
+Cake\Http\Response::checkNotModified() - CORE\src\Http\Response.php, line 1887
+Cake\Controller\Component\RequestHandlerComponent::beforeRender() - CORE\src\Controller\Component\RequestHandlerComponent.php, line 333
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 416
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 393
+Cake\Controller\Controller::dispatchEvent() - CORE\src\Event\EventDispatcherTrait.php, line 110
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 610
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 125
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-07-30 17:35:12 Notice: Notice (8): compact(): Undefined variable: etagMatches in [C:\xampp\htdocs\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Response.php, line 1887]
+Request URL: /
+Referer URL: http://localhost/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+compact - [internal], line ??
+Cake\Http\Response::checkNotModified() - CORE\src\Http\Response.php, line 1887
+Cake\Controller\Component\RequestHandlerComponent::beforeRender() - CORE\src\Controller\Component\RequestHandlerComponent.php, line 333
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 416
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 393
+Cake\Controller\Controller::dispatchEvent() - CORE\src\Event\EventDispatcherTrait.php, line 110
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 610
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 70
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 440
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 119
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-07-30 17:35:12 Notice: Notice (8): compact() [<a href='https://secure.php.net/function.compact'>function.compact</a>]: Undefined variable: timeMatches in [C:\xampp\htdocs\classificados_ifrs\vendor\cakephp\cakephp\src\Http\Response.php, line 1887]
+Request URL: /
+Referer URL: http://localhost/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+compact - [internal], line ??
+Cake\Http\Response::checkNotModified() - CORE\src\Http\Response.php, line 1887
+Cake\Controller\Component\RequestHandlerComponent::beforeRender() - CORE\src\Controller\Component\RequestHandlerComponent.php, line 333
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 416
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 393
+Cake\Controller\Controller::dispatchEvent() - CORE\src\Event\EventDispatcherTrait.php, line 110
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 610
+App\Controller\PagesController::display() - APP/Controller\PagesController.php, line 70
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 440
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 119
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
+[main] - ROOT\webroot\index.php, line 40
+
+
+

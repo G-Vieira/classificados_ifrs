@@ -89,14 +89,52 @@ class AnunciosController extends AppController {
       $pesquisa = $this->request->query['pesquisa'];
     }
 
-    $resultado = $this->Anuncios->find('all', array(
-      'conditions' => array(
-        'OR' => [
-          ["Anuncios.titulo LIKE " => '%' . $pesquisa . '%'],
-          ["Anuncios.descricao LIKE " => '%' . $pesquisa . '%']
-        ]
-      )
-    ));
+    if(isset($this->request->query['preco'])){
+      $preco = $this->request->query['preco'];
+      
+      switch($preco){
+        case 'A': 
+          $condicoes = [
+            'conditions' => ['Anuncios.preco <= ' => 500]
+          ];
+          break;
+        case 'B':
+          $condicoes = [
+            'conditions' => [
+              ['Anuncios.preco >= ' => 500],
+              ['Anuncios.preco <= ' => 1000]
+            ]
+          ];
+          break;
+          case 'C':
+          $condicoes = [
+            'conditions' => [
+              'AND' => [
+                ['Anuncios.preco >= ' => 1000],
+                ['Anuncios.preco <= ' => 1500]
+              ]
+            ]
+          ];
+          break;
+        case 'D':
+        $condicoes = [
+          'conditions' => ['Anuncios.preco > ' => 1500]
+        ];
+          break;
+        default: $condicoes = [
+          'conditions' => []
+        ];
+      }
+    }else{
+      $condicoes = [];
+    }
+
+    $condicoes['conditions']['OR'] = [
+      ["Anuncios.titulo LIKE " => '%' . $pesquisa . '%'],
+      ["Anuncios.descricao LIKE " => '%' . $pesquisa . '%']
+    ];
+
+    $resultado = $this->Anuncios->find('all', $condicoes);
     $anuncios = $this->paginate($resultado);
 
     $temp = TableRegistry::get('Categorias');
