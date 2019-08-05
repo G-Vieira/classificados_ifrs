@@ -15,7 +15,7 @@
   FLUSH PRIVILEGES;
 */
   USE classificados_ifrs;
-
+/*
   CREATE TABLE cidades (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(300) NOT NULL UNIQUE,
@@ -95,7 +95,7 @@
   ('pedro.pedroso', '$2y$10$KWQ8kH/nGRAmVcmwSdufbuo2Shh4tgV.NUyBA3DGyYOTLJIeohYtm', 'Pedro Pedroso', 'pedro.pedroso@teste.ifrs.edu.br', 'normal', '2018-03-22 16:05:00', '2018-03-22 16:05:00', 3),
   ('joao.barro', '$2y$10$KWQ8kH/nGRAmVcmwSdufbuo2Shh4tgV.NUyBA3DGyYOTLJIeohYtm', 'Joao de Barro', 'joao.barro@teste.ifrs.edu.br', 'normal', '2018-03-22 16:05:00', '2018-03-22 16:05:00', 3),
   ('zabuza.momochi', '$2y$10$KWQ8kH/nGRAmVcmwSdufbuo2Shh4tgV.NUyBA3DGyYOTLJIeohYtm', 'Zabuza Momochi', 'zabuza.momochi@teste.ifrs.edu.br', 'normal', '2018-03-22 16:05:00', '2018-03-22 16:05:00', 2);
-
+*/
   insert into categorias(descricao,parent_id) values 
   ('Eletrônicos',null),
   ('Roupas',null),
@@ -281,7 +281,7 @@ insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validad
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,15,'Lampião Recarregável Bright 36 Leds - EchoLife','0','Lampião Recarregável Bright 36 Leds - EchoLife','182.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,15,'Lanterna Tática Led T6 Police 2 Baterias','44','Lanterna Tática Led T6 Police 2 Baterias','183.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,15,'Mochila de Trekking Cargueira Intruder 45 Litros Verde e Preto Nautika','187','Mochila de Trekking Cargueira Intruder 45 Litros Verde e Preto Nautika','184.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,15,'Bobby Compress by XD Design - Organizador à prova d'água para as suas malas e mochilas (Unisex)','90','Bobby Compress by XD Design - Organizador à prova d'água para as suas malas e mochilas (Unisex)','185.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,15,'Bobby Compress by XD Design - Organizador à prova dágua para as suas malas e mochilas (Unisex)','90','Bobby Compress by XD Design - Organizador à prova dágua para as suas malas e mochilas (Unisex)','185.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,15,'Lanterna Mini Portatil Manual','0','Lanterna Mini Portatil Manual','186.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,15,'Canivete Suíço Victorinox Alpineer 111 mm 0.8823','235','Canivete Suíço Victorinox Alpineer 111 mm 0.8823','187.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,15,'Tênis Timberland Gorge Masculino','299','Tênis Timberland Gorge Masculino','188.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
@@ -350,7 +350,7 @@ insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validad
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,15,'Canivete Suíço Victorinox Classic Edição Limitada Cappadocia 58mm 0.6223.L1804','139','Canivete Suíço Victorinox Classic Edição Limitada Cappadocia 58mm 0.6223.L1804','251.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,15,'Lanterna Recarregável 19 Leds LRV 360 Bivolt-VONDER-8075360000','0','Lanterna Recarregável 19 Leds LRV 360 Bivolt-VONDER-8075360000','252.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,15,'Carrinho Mesa Praia Alumínio 2 posições','186','Carrinho Mesa Praia Alumínio 2 posições','253.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,15,'Lanterna Holofote Recarregavel 14400mah 30w A Prova D'agua 24 leds','0','Lanterna Holofote Recarregavel 14400mah 30w A Prova D'agua 24 leds','254.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,15,'Lanterna Holofote Recarregavel 14400mah 30w A Prova Dagua 24 leds','0','Lanterna Holofote Recarregavel 14400mah 30w A Prova Dagua 24 leds','254.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,15,'Colchão Inflável Mor Multiuso King','117','Colchão Inflável Mor Multiuso King','255.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,15,'Barraca Weekend para 4 Pessoas - EchoLife','137','Barraca Weekend para 4 Pessoas - EchoLife','256.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,15,'Barraca 5 Lugares Luna - 9038','231','Barraca 5 Lugares Luna - 9038','257.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
@@ -449,15 +449,9 @@ insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validad
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Bicicleta Mtb Caloi 29 Aro 29 Câmbios Shimano 21 Marchas','1439','Bicicleta Mtb Caloi 29 Aro 29 Câmbios Shimano 21 Marchas','350.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Cadeado Color Line, Papaiz, CR25, Verde','15','Cadeado Color Line, Papaiz, CR25, Verde','351.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Conjunto Ciclismo Infantil Sódbike Corujinha','135','Conjunto Ciclismo Infantil Sódbike Corujinha','352.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Capa
- Protetora Impermeável Para Bike Bicicleta - Sol e Chuva','32','Capa Protetora Impermeável Para Bike Bicicleta - Sol e
- Chuva','353.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Bici
-cleta, Styll Baby, Rosa, Aro 12','143','Bicicleta, Styll Baby, Rosa, Aro 12','354.jpg','2020-01-01',CURRENT_TIMESTAMP,
-CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Tric
-iclo Zootico Froggy, Bandeirante, Verde','59','Triciclo Zootico Froggy, Bandeirante, Verde','355.jpg','2020-01-01',CUR
-RENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Capa Protetora Impermeável Para Bike Bicicleta - Sol e Chuva','32','Capa Protetora Impermeável Para Bike Bicicleta - Sol e Chuva','353.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Bicicleta, Styll Baby, Rosa, Aro 12','143','Bicicleta, Styll Baby, Rosa, Aro 12','354.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Triciclo Zootico Froggy, Bandeirante, Verde','59','Triciclo Zootico Froggy, Bandeirante, Verde','355.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Tico-Tico Festa com Aro Magic Toys Lilás/Rosa','134','Tico-Tico Festa com Aro Magic Toys Lilás/Rosa','356.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Cadeado Color Line, Papaiz, CR40, Azul','31','Cadeado Color Line, Papaiz, CR40, Azul','357.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Bicicleta GTS Aro 29 Freio a Disco Câmbio GTS TSI 27 Marchas Amortecedor Com Câmara de ar Anti Furo | GTS M1 Walk New','1299','Bicicleta GTS Aro 29 Freio a Disco Câmbio GTS TSI 27 Marchas Amortecedor Com Câmara de ar Anti Furo | GTS M1 Walk New','358.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
@@ -479,15 +473,9 @@ insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validad
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Tico-Tico Bichos com Som e Luzes Magic Toys','251','Tico-Tico Bichos com Som e Luzes Magic Toys','374.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Kit Farol e Lanterna Led para Bicicleta TopGet','35','Kit Farol e Lanterna Led para Bicicleta TopGet','375.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Monitor Cardíaco Multilaser Es045 com Heart Rate Monitor e Gps','498','Monitor Cardíaco Multilaser Es045 com Heart Rate Monitor e Gps','376.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Capa
- Protetora Impermeável Para Bike Bicicleta - Sol e Chuva','32','Capa Protetora Impermeável Para Bike Bicicleta - Sol e
- Chuva','377.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Bici
-cleta, Styll Baby, Rosa, Aro 12','143','Bicicleta, Styll Baby, Rosa, Aro 12','378.jpg','2020-01-01',CURRENT_TIMESTAMP,
-CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Tric
-iclo Zootico Froggy, Bandeirante, Verde','59','Triciclo Zootico Froggy, Bandeirante, Verde','379.jpg','2020-01-01',CUR
-RENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Capa Protetora Impermeável Para Bike Bicicleta - Sol e Chuva','32','Capa Protetora Impermeável Para Bike Bicicleta - Sol e Chuva','377.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Bicicleta, Styll Baby, Rosa, Aro 12','143','Bicicleta, Styll Baby, Rosa, Aro 12','378.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Triciclo Zootico Froggy, Bandeirante, Verde','59','Triciclo Zootico Froggy, Bandeirante, Verde','379.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Tico-Tico Festa com Aro Magic Toys Lilás/Rosa','134','Tico-Tico Festa com Aro Magic Toys Lilás/Rosa','380.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Cadeado Color Line, Papaiz, CR40, Azul','31','Cadeado Color Line, Papaiz, CR40, Azul','381.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Bicicleta GTS Aro 29 Freio a Disco Câmbio GTS TSI 27 Marchas Amortecedor Com Câmara de ar Anti Furo | GTS M1 Walk New','1299','Bicicleta GTS Aro 29 Freio a Disco Câmbio GTS TSI 27 Marchas Amortecedor Com Câmara de ar Anti Furo | GTS M1 Walk New','382.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
@@ -509,16 +497,9 @@ insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validad
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Tico-Tico Bichos com Som e Luzes Magic Toys','251','Tico-Tico Bichos com Som e Luzes Magic Toys','398.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Kit Farol e Lanterna Led para Bicicleta TopGet','35','Kit Farol e Lanterna Led para Bicicleta TopGet','399.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Monitor Cardíaco Multilaser Es045 com Heart Rate Monitor e Gps','498','Monitor Cardíaco Multilaser Es045 com Heart Rate Monitor e Gps','400.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Bici
-cletário de Piso para 5 Bicicletas','189','Bicicletário de Piso para 5 Bicicletas','401.jpg','2020-01-01',CURRENT_TIME
-STAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'CADE
-ADO TRAVA ANTI-FURTO COM SENHA SEGREDO PARA ESTEPE, MOTO OU BIKE','13','CADEADO TRAVA ANTI-FURTO COM SENHA SEGREDO PAR
-A ESTEPE, MOTO OU BIKE','402.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Cami
-sa Para Ciclismo Masculina Hh3-Aero Velo Hammerhead Homens  Branco (3)M','42','Camisa Para Ciclismo Masculina Hh3-Aero
- Velo Hammerhead Homens  Branco (3)M','403.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Cadeado Com Segredo Vonder Cinza','35','Cadeado Com Segredo Vonder Cinza','404.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Bicicletário de Piso para 5 Bicicletas','189','Bicicletário de Piso para 5 Bicicletas','401.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'CADEADO TRAVA ANTI-FURTO COM SENHA SEGREDO PARA ESTEPE, MOTO OU BIKE','13','CADEADO TRAVA ANTI-FURTO COM SENHA SEGREDO PARA ESTEPE, MOTO OU BIKE','402.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Camisa Para Ciclismo Masculina Hh3-Aero Velo Hammerhead Homens  Branco (3)M','42','Camisa Para Ciclismo Masculina Hh3-Aero Velo Hammerhead Homens  Branco (3)M','403.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Cadeado Com Segredo Vonder Cinza','35','Cadeado Com Segredo Vonder Cinza','404.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Bermuda Biker Solid Power Uv50 Muvin Cbl-500','36','Bermuda Biker Solid Power Uv50 Muvin Cbl-500','405.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Suporte de Teto Para Bicicleta com Sistema de Elevação Bemfixa Preto 1','98','Suporte de Teto Para Bicicleta com Sistema de Elevação Bemfixa Preto 1','406.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Camisa Para Ciclismo Masculina Hh3-Aero Elite Hammerhead Homens  Azul/Branco/Preto (3)M','51','Camisa Para Ciclismo Masculina Hh3-Aero Elite Hammerhead Homens  Azul/Branco/Preto (3)M','407.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
@@ -539,21 +520,11 @@ insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validad
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Triciclo Smile Conforte com Empurrador Biemme','102','Triciclo Smile Conforte com Empurrador Biemme','422.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'CADEADO SM LT-35MM, Pado, 51000029, Dourado','16','CADEADO SM LT-35MM, Pado, 51000029, Dourado','423.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Bicicleta Aro 12 Veloz - Nathor','169','Bicicleta Aro 12 Veloz - Nathor','424.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'CADE
-ADO SM LT-35MM, Pado, 51000029, Dourado','16','CADEADO SM LT-35MM, Pado, 51000029, Dourado','425.jpg','2020-01-01',CUR
-RENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Bici
-cleta Aro 12 Veloz - Nathor','169','Bicicleta Aro 12 Veloz - Nathor','426.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_
-TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Tric
-iclo Velotrol Transformers Bandeirante Amarelo','331','Triciclo Velotrol Transformers Bandeirante Amarelo','427.jpg','
-2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Cade
-ado Color Line, Papaiz, CR20, Azul','14','Cadeado Color Line, Papaiz, CR20, Azul','428.jpg','2020-01-01',CURRENT_TIMES
-TAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Capa
- Para Cobrir Bicicleta Infantil Juvenil e Adulto Com Forro Gofrada','31','Capa Para Cobrir Bicicleta Infantil Juvenil 
-e Adulto Com Forro Gofrada','429.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'CADEADO SM LT-35MM, Pado, 51000029, Dourado','16','CADEADO SM LT-35MM, Pado, 51000029, Dourado','425.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Bicicleta Aro 12 Veloz - Nathor','169','Bicicleta Aro 12 Veloz - Nathor','426.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Triciclo Velotrol Transformers Bandeirante Amarelo','331','Triciclo Velotrol Transformers Bandeirante Amarelo','427.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Cadeado Color Line, Papaiz, CR20, Azul','14','Cadeado Color Line, Papaiz, CR20, Azul','428.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Capa Para Cobrir Bicicleta Infantil Juvenil e Adulto Com Forro Gofrada','31','Capa Para Cobrir Bicicleta Infantil Juvenil e Adulto Com Forro Gofrada','429.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Trailer para bicicletas Thule Cadence Verde872299039593','2624','Trailer para bicicletas Thule Cadence Verde872299039593','430.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Triciclo Infantil Azul','48','Triciclo Infantil Azul','431.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Triciclo Peixinho com Empurrador Xalingo','85','Triciclo Peixinho com Empurrador Xalingo','432.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
@@ -573,22 +544,11 @@ insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validad
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Kit de Proteção Baby Alive Laço de Fita','21','Kit de Proteção Baby Alive Laço de Fita','446.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Cadeado Chromo, Papaiz, CR20, Cromado','13','Cadeado Chromo, Papaiz, CR20, Cromado','447.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Cadeado Chromo, Papaiz, CR25, Cromado','18','Cadeado Chromo, Papaiz, CR25, Cromado','448.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Cade
-ado Standard, Papaiz, CR60, Latão','47','Cadeado Standard, Papaiz, CR60, Latão','449.jpg','2020-01-01',CURRENT_TIMESTA
-MP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Bici
-cleta Aro 16" Princesas Disney Bandeirante Rosa','549','Bicicleta Aro 16" Princesas Disney Bandeirante Rosa','450.jpg'
-,'2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Bici
-cleta Feminina GTS Aro 29 Freio a Disco Câmbio Traseiro Shimano 24 Marchas e Amortecedor| GTS M1 Ride','899','Biciclet
-a Feminina GTS Aro 29 Freio a Disco Câmbio Traseiro Shimano 24 Marchas e Amortecedor| GTS M1 Ride','451.jpg','2020-01-
-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Cami
-sa Para Corrida Feminina Hh3 Long Distance Hammerhead Mulheres Preto/Rosa (3) M','38','Camisa Para Corrida Feminina Hh
-3 Long Distance Hammerhead Mulheres Preto/Rosa (3) M','452.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Ferr
-olho Chato 3. 1/2" Zincado Leve Kala','1','Ferrolho Chato 3. 1/2" Zincado Leve Kala','453.jpg','2020-01-01',CURRENT_TI
-MESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Cadeado Standard, Papaiz, CR60, Latão','47','Cadeado Standard, Papaiz, CR60, Latão','449.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Bicicleta Aro 16" Princesas Disney Bandeirante Rosa','549','Bicicleta Aro 16" Princesas Disney Bandeirante Rosa','450.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Bicicleta Feminina GTS Aro 29 Freio a Disco Câmbio Traseiro Shimano 24 Marchas e Amortecedor| GTS M1 Ride','899','Bicicleta Feminina GTS Aro 29 Freio a Disco Câmbio Traseiro Shimano 24 Marchas e Amortecedor| GTS M1 Ride','451.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Camisa Para Corrida Feminina Hh3 Long Distance Hammerhead Mulheres Preto/Rosa (3) M','38','Camisa Para Corrida Feminina Hh3 Long Distance Hammerhead Mulheres Preto/Rosa (3) M','452.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Ferrolho Chato 3. 1/2" Zincado Leve Kala','1','Ferrolho Chato 3. 1/2" Zincado Leve Kala','453.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Acessório para Bicicleta Capacete Mor','45','Acessório para Bicicleta Capacete Mor','454.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Cadeirinha de Criança Thule RideAlong Laranja','1180','Cadeirinha de Criança Thule RideAlong Laranja','455.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Jaqueta Ciclismo Corta Vento Impermeável Agile Rain Oggi','113','Jaqueta Ciclismo Corta Vento Impermeável Agile Rain Oggi','456.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
@@ -608,21 +568,11 @@ insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validad
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Calça Térmica Poker Skin Drac - Preto - P','98','Calça Térmica Poker Skin Drac - Preto - P','470.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Ferramenta Extrator de Cassete / Roda Livre KL-9715-A (kenli)','19','Ferramenta Extrator de Cassete / Roda Livre KL-9715-A (kenli)','471.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Cadeado Com Segredo Para Moto Vonder 100 Cm','95','Cadeado Com Segredo Para Moto Vonder 100 Cm','472.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Bols
-a De Quadro Phone Bag Curtlo Unissex U Preto','119','Bolsa De Quadro Phone Bag Curtlo Unissex U Preto','473.jpg','2020
--01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Luz 
-Recarregavel Para Bike 100 Lumes','0','Luz Recarregavel Para Bike 100 Lumes','474.jpg','2020-01-01',CURRENT_TIMESTAMP,
-CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Tric
-iclo Lolli Pop, Xalingo, Lilás/Rosa, Pequeno','86','Triciclo Lolli Pop, Xalingo, Lilás/Rosa, Pequeno','475.jpg','2020-
-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Cade
-ado Para Moto, Com Chave Vonder 100 Cm','91','Cadeado Para Moto, Com Chave Vonder 100 Cm','476.jpg','2020-01-01',CURRE
-NT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Capa
-cete Ciclismo Absolute WT012 com Pisca Branco e AZUL','0','Capacete Ciclismo Absolute WT012 com Pisca Branco e AZUL','
-477.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Bolsa De Quadro Phone Bag Curtlo Unissex U Preto','119','Bolsa De Quadro Phone Bag Curtlo Unissex U Preto','473.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Luz Recarregavel Para Bike 100 Lumes','0','Luz Recarregavel Para Bike 100 Lumes','474.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Triciclo Lolli Pop, Xalingo, Lilás/Rosa, Pequeno','86','Triciclo Lolli Pop, Xalingo, Lilás/Rosa, Pequeno','475.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Cadeado Para Moto, Com Chave Vonder 100 Cm','91','Cadeado Para Moto, Com Chave Vonder 100 Cm','476.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Capacete Ciclismo Absolute WT012 com Pisca Branco e AZUL','0','Capacete Ciclismo Absolute WT012 com Pisca Branco e AZUL','477.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Tico-Tico Cargo Magic Toys','0','Tico-Tico Cargo Magic Toys','478.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Cadeado Tetra Chave, Papaiz, CRT 60, Latão','117','Cadeado Tetra Chave, Papaiz, CRT 60, Latão','479.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Exercitador Pedal bicicleta ergometrica fisioterapia braços GT371 - Lorben','94','Exercitador Pedal bicicleta ergometrica fisioterapia braços GT371 - Lorben','480.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
@@ -642,22 +592,11 @@ insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validad
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'SUPORTE ALINHADOR CENTRALIZADOR RODAS 20-29 BIKE OU MOTO PROFISSIONAL','240','SUPORTE ALINHADOR CENTRALIZADOR RODAS 20-29 BIKE OU MOTO PROFISSIONAL','494.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Kit Farol Lanterna LED e campainha buzina Bicicleta Bike Segurança','25','Kit Farol Lanterna LED e campainha buzina Bicicleta Bike Segurança','495.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Ciclo Computador Kikos Ccb400 com 16 Funções Sem Fio','34','Ciclo Computador Kikos Ccb400 com 16 Funções Sem Fio','496.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Kit 
-Farol Lanterna LED e campainha buzina Bicicleta Bike Segurança','25','Kit Farol Lanterna LED e campainha buzina Bicicl
-eta Bike Segurança','497.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Cicl
-o Computador Kikos Ccb400 com 16 Funções Sem Fio','34','Ciclo Computador Kikos Ccb400 com 16 Funções Sem Fio','498.jpg
-','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Bici
-cleta Aro 29 KSW XLT 24v Câmbios Shimano TX-800 Freio a Disco Hidráulico com Suspensão','1499','Bicicleta Aro 29 KSW X
-LT 24v Câmbios Shimano TX-800 Freio a Disco Hidráulico com Suspensão','499.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT
-_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Banc
-o Selim Ddk Speed K-30 Branco Com Azul','86','Banco Selim Ddk Speed K-30 Branco Com Azul','500.jpg','2020-01-01',CURRE
-NT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Bici
-cleta Mobilidade Caloi Rouge Aro 26 - Preta','0','Bicicleta Mobilidade Caloi Rouge Aro 26 - Preta','501.jpg','2020-01-
-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Kit Farol Lanterna LED e campainha buzina Bicicleta Bike Segurança','25','Kit Farol Lanterna LED e campainha buzina Bicicleta Bike Segurança','497.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Ciclo Computador Kikos Ccb400 com 16 Funções Sem Fio','34','Ciclo Computador Kikos Ccb400 com 16 Funções Sem Fio','498.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Bicicleta Aro 29 KSW XLT 24v Câmbios Shimano TX-800 Freio a Disco Hidráulico com Suspensão','1499','Bicicleta Aro 29 KSW XLT 24v Câmbios Shimano TX-800 Freio a Disco Hidráulico com Suspensão','499.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Banco Selim Ddk Speed K-30 Branco Com Azul','86','Banco Selim Ddk Speed K-30 Branco Com Azul','500.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Bicicleta Mobilidade Caloi Rouge Aro 26 - Preta','0','Bicicleta Mobilidade Caloi Rouge Aro 26 - Preta','501.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Pneu 27x1.1/4 Pirelli Jet Caju','36','Pneu 27x1.1/4 Pirelli Jet Caju','502.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Cadeado Onguard Neon 8154 U-lock Preto Cabo Bike Moto Bicicleta','0','Cadeado Onguard Neon 8154 U-lock Preto Cabo Bike Moto Bicicleta','503.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Triciclo Veloban, Bandeirante, Vermelho','188','Triciclo Veloban, Bandeirante, Vermelho','504.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
@@ -677,21 +616,11 @@ insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validad
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Corrente Sunrace Cn10a 10v Compatível Shimano Bike','96','Corrente Sunrace Cn10a 10v Compatível Shimano Bike','518.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Pulseira para Atividades Físicas Fitbit Flex 2 FB403 Bluetooth À prova de água','475','Pulseira para Atividades Físicas Fitbit Flex 2 FB403 Bluetooth À prova de água','519.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Kit 5 Oleo Desengripante Lubrificante Spray 300ml Beltools','36','Kit 5 Oleo Desengripante Lubrificante Spray 300ml Beltools','520.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Pneu
- Bicicleta 29x2.20 Pirelli Scorpion Pro Kevlar','119','Pneu Bicicleta 29x2.20 Pirelli Scorpion Pro Kevlar','521.jpg','
-2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Tric
-iclo Fit Trike Magic Toys','438','Triciclo Fit Trike Magic Toys','522.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIME
-STAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Bici
-cleta Aro Hulk Avengers Bandeirante Verde 14"','440','Bicicleta Aro Hulk Avengers Bandeirante Verde 14"','523.jpg','20
-20-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Capa
- Bicicleta HB-E-003 Cinza Até Aro 29 Bike Mtb Speed','42','Capa Bicicleta HB-E-003 Cinza Até Aro 29 Bike Mtb Speed','5
-24.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Bici
-cleta Mazza Bikes Ninne - Aro 29 Disco - Shimano Tourney 21 Marchas Mzz-1300','1399','Bicicleta Mazza Bikes Ninne - Ar
-o 29 Disco - Shimano Tourney 21 Marchas Mzz-1300','525.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Pneu Bicicleta 29x2.20 Pirelli Scorpion Pro Kevlar','119','Pneu Bicicleta 29x2.20 Pirelli Scorpion Pro Kevlar','521.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Triciclo Fit Trike Magic Toys','438','Triciclo Fit Trike Magic Toys','522.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Bicicleta Aro Hulk Avengers Bandeirante Verde 14"','440','Bicicleta Aro Hulk Avengers Bandeirante Verde 14"','523.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Capa Bicicleta HB-E-003 Cinza Até Aro 29 Bike Mtb Speed','42','Capa Bicicleta HB-E-003 Cinza Até Aro 29 Bike Mtb Speed','524.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Bicicleta Mazza Bikes Ninne - Aro 29 Disco - Shimano Tourney 21 Marchas Mzz-1300','1399','Bicicleta Mazza Bikes Ninne - Aro 29 Disco - Shimano Tourney 21 Marchas Mzz-1300','525.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'LANTERNA TRASEIRA PISCA USB SINALIZADOR 6 MODOS LUZ BIKE vermelha recarregável grande autonomia','42','LANTERNA TRASEIRA PISCA USB SINALIZADOR 6 MODOS LUZ BIKE vermelha recarregável grande autonomia','526.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Bicicleta Infantil Aro 20 Brave Preto e Pink Verden Bikes','359','Bicicleta Infantil Aro 20 Brave Preto e Pink Verden Bikes','527.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Tranca Trava Cadeado Moto Bicicleta Espiral Corrente Aco Encapado Seguranca (Trava Lemoto)','25','Tranca Trava Cadeado Moto Bicicleta Espiral Corrente Aco Encapado Seguranca (Trava Lemoto)','528.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
@@ -711,21 +640,11 @@ insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validad
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Triciclo Mototico Andador e Pedal, Bandeirante, Azul','139','Triciclo Mototico Andador e Pedal, Bandeirante, Azul','542.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'CICLOCOMPUTADOR CATEYE CC VL820 VELO 9 BLACK','129','CICLOCOMPUTADOR CATEYE CC VL820 VELO 9 BLACK','543.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Chave Canivete Alem .12 X 1 Com Extrator De Corrente Bike','22','Chave Canivete Alem .12 X 1 Com Extrator De Corrente Bike','544.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Cola
- De Neoprene Cemente Cetus','29','Cola De Neoprene Cemente Cetus','545.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIM
-ESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Lant
-erna Traseira Farol Bike Com Ciclovia a Laser e Farol de led','24','Lanterna Traseira Farol Bike Com Ciclovia a Laser 
-e Farol de led','546.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Tric
-iclo Lisy Princesa do Gelo Supertoys Lilás','89','Triciclo Lisy Princesa do Gelo Supertoys Lilás','547.jpg','2020-01-0
-1',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Cade
-ado Chromo, Papaiz, CR30, Cromado','16','Cadeado Chromo, Papaiz, CR30, Cromado','548.jpg','2020-01-01',CURRENT_TIMESTA
-MP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Lant
-erna de LED Frontal para Bicicleta-BRASFORT-7862','42','Lanterna de LED Frontal para Bicicleta-BRASFORT-7862','549.jpg
-','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Cola De Neoprene Cemente Cetus','29','Cola De Neoprene Cemente Cetus','545.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Lanterna Traseira Farol Bike Com Ciclovia a Laser e Farol de led','24','Lanterna Traseira Farol Bike Com Ciclovia a Laser e Farol de led','546.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Triciclo Lisy Princesa do Gelo Supertoys Lilás','89','Triciclo Lisy Princesa do Gelo Supertoys Lilás','547.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Cadeado Chromo, Papaiz, CR30, Cromado','16','Cadeado Chromo, Papaiz, CR30, Cromado','548.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Lanterna de LED Frontal para Bicicleta-BRASFORT-7862','42','Lanterna de LED Frontal para Bicicleta-BRASFORT-7862','549.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Bicicleta Aro Frozen Disney Bandeirante Branco 16"','0','Bicicleta Aro Frozen Disney Bandeirante Branco 16"','550.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Luva Para Musculação - ES132 Atrio Ajustável Preta','39','Luva Para Musculação - ES132 Atrio Ajustável Preta','551.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Bicicleta Aro 12 Arco Íris Track Bikes','173','Bicicleta Aro 12 Arco Íris Track Bikes','552.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
@@ -745,21 +664,11 @@ insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validad
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Pasta Mcnett Graxa de Silicone Grease 1/4','32','Pasta Mcnett Graxa de Silicone Grease 1/4','566.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Colete Esportivo de Futebol - Cor Laranja - Kanga Sport','8','Colete Esportivo de Futebol - Cor Laranja - Kanga Sport','567.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Colete Esportivo de Futebol - Cor Azul Royal - Kanga Sport','8','Colete Esportivo de Futebol - Cor Azul Royal - Kanga Sport','568.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Kit 
-10 chaves micha fechaduras cadeados aço inox GT406 - Lorben','29','Kit 10 chaves micha fechaduras cadeados aço inox GT
-406 - Lorben','569.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Tico
--Tico Mecânico Magic Toys Vermelho/Amarelo','179','Tico-Tico Mecânico Magic Toys Vermelho/Amarelo','570.jpg','2020-01-
-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Tric
-iclo Joaninha Xalingo Vermelho','67','Triciclo Joaninha Xalingo Vermelho','571.jpg','2020-01-01',CURRENT_TIMESTAMP,CUR
-RENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Supo
-rte De Bicicleta P/chão p/Aro 29 C/Apoio - Aro 26 a 29','54','Suporte De Bicicleta P/chão p/Aro 29 C/Apoio - Aro 26 a 
-29','572.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Hot 
-Wheels Caloi Bicicleta Infantil Infantil 12 polegadas, Caloi','389','Hot Wheels Caloi Bicicleta Infantil Infantil 12 p
-olegadas, Caloi','573.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Kit 10 chaves micha fechaduras cadeados aço inox GT406 - Lorben','29','Kit 10 chaves micha fechaduras cadeados aço inox GT406 - Lorben','569.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Tico-Tico Mecânico Magic Toys Vermelho/Amarelo','179','Tico-Tico Mecânico Magic Toys Vermelho/Amarelo','570.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Triciclo Joaninha Xalingo Vermelho','67','Triciclo Joaninha Xalingo Vermelho','571.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Suporte De Bicicleta P/chão p/Aro 29 C/Apoio - Aro 26 a 29','54','Suporte De Bicicleta P/chão p/Aro 29 C/Apoio - Aro 26 a 29','572.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Hot Wheels Caloi Bicicleta Infantil Infantil 12 polegadas, Caloi','389','Hot Wheels Caloi Bicicleta Infantil Infantil 12 polegadas, Caloi','573.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Garrafa Squeeze para Corrida 600 ml com Bolsa Ergonômica Material em PP/PE e Nylon Preto/Branco Atrio, Multilaser ES106, Mochilas, Capas e Maletas para Notebook','27','Garrafa Squeeze para Corrida 600 ml com Bolsa Ergonômica Material em PP/PE e Nylon Preto/Branco Atrio, Multilaser ES106, Mochilas, Capas e Maletas para Notebook','574.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Triciclo Zoo Xalingo Azul','67','Triciclo Zoo Xalingo Azul','575.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Relógio Garmin Forerunner 735XT - 010-01614-16 (Azul)','2999','Relógio Garmin Forerunner 735XT - 010-01614-16 (Azul)','576.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
@@ -779,21 +688,11 @@ insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validad
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Ceci Caloi Bicicleta Infantil Infantil 16 polegadas, Caloi','439','Ceci Caloi Bicicleta Infantil Infantil 16 polegadas, Caloi','590.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Triciclo Smart Comfort Reclinável, Bandeirante, Rosa','671','Triciclo Smart Comfort Reclinável, Bandeirante, Rosa','591.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Bicicleta Aro Batman Bandeirante Preto 16"','0','Bicicleta Aro Batman Bandeirante Preto 16"','592.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Cade
-ado De Segredo, Papaiz, C23, Preto','23','Cadeado De Segredo, Papaiz, C23, Preto','593.jpg','2020-01-01',CURRENT_TIMES
-TAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Kit 
-Farol Dianteiro e Traseiro para Bike BI050 Branco/Vermelho Atrio','29','Kit Farol Dianteiro e Traseiro para Bike BI050
- Branco/Vermelho Atrio','594.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Bici
-cleta, Styll Baby, Rosa, Aro 12','133','Bicicleta, Styll Baby, Rosa, Aro 12','595.jpg','2020-01-01',CURRENT_TIMESTAMP,
-CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Supo
-rte de bicicleta para engate Thule Xpress 970 para 2 bicicletas','739','Suporte de bicicleta para engate Thule Xpress 
-970 para 2 bicicletas','596.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'CAMI
-SA CICLISMO FEMININA BRANCA AZUL REFLETIVA 4 BOLSOS M','149','CAMISA CICLISMO FEMININA BRANCA AZUL REFLETIVA 4 BOLSOS 
-M','597.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Cadeado De Segredo, Papaiz, C23, Preto','23','Cadeado De Segredo, Papaiz, C23, Preto','593.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Kit Farol Dianteiro e Traseiro para Bike BI050 Branco/Vermelho Atrio','29','Kit Farol Dianteiro e Traseiro para Bike BI050 Branco/Vermelho Atrio','594.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Bicicleta, Styll Baby, Rosa, Aro 12','133','Bicicleta, Styll Baby, Rosa, Aro 12','595.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Suporte de bicicleta para engate Thule Xpress 970 para 2 bicicletas','739','Suporte de bicicleta para engate Thule Xpress 970 para 2 bicicletas','596.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'CAMISA CICLISMO FEMININA BRANCA AZUL REFLETIVA 4 BOLSOS M','149','CAMISA CICLISMO FEMININA BRANCA AZUL REFLETIVA 4 BOLSOS M','597.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Acessório Limpador De Corrente Bicicleta Ciclismo Azul','22','Acessório Limpador De Corrente Bicicleta Ciclismo Azul','598.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Selim Banco Absolute Nero Ergonomico Confort Vazado Preto','55','Selim Banco Absolute Nero Ergonomico Confort Vazado Preto','599.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Bicicleta Infantil Aro 20 Pink Kit E Roda Aero Pink C/Cadeirinha de Boneca Completa','699','Bicicleta Infantil Aro 20 Pink Kit E Roda Aero Pink C/Cadeirinha de Boneca Completa','600.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
@@ -813,21 +712,11 @@ insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validad
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Bicicleta Mtb Caloi Aluminum Sport Aro 26-21 Marchas Preta','0','Bicicleta Mtb Caloi Aluminum Sport Aro 26-21 Marchas Preta','614.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Lanterna Traseira e Frontal para Bike Bicicleta','18','Lanterna Traseira e Frontal para Bike Bicicleta','615.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Triciclo New Turbo Xalingo Vermelho','160','Triciclo New Turbo Xalingo Vermelho','616.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Cade
-ado De Latão, Encartelado Vonder 20 Mm','12','Cadeado De Latão, Encartelado Vonder 20 Mm','617.jpg','2020-01-01',CURRE
-NT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Bici
-cleta Mtb Caloi Andes Aro 26 Susp Dianteira 21 Marchas','799','Bicicleta Mtb Caloi Andes Aro 26 Susp Dianteira 21 Marc
-has','618.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'CADE
-ADO SM EXECUTIVE 4 SEGREDOS PRATA, Pado, 52018283, Dourado','37','CADEADO SM EXECUTIVE 4 SEGREDOS PRATA, Pado, 5201828
-3, Dourado','619.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Bici
-cleta Track & Bikes Aro 20 Xr 20 6v Dupla Suspensão','0','Bicicleta Track & Bikes Aro 20 Xr 20 6v Dupla Suspensão','62
-0.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Cade
-ado De Latão Vonder 30 Mm','9','Cadeado De Latão Vonder 30 Mm','621.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMEST
-AMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Cadeado De Latão, Encartelado Vonder 20 Mm','12','Cadeado De Latão, Encartelado Vonder 20 Mm','617.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Bicicleta Mtb Caloi Andes Aro 26 Susp Dianteira 21 Marchas','799','Bicicleta Mtb Caloi Andes Aro 26 Susp Dianteira 21 Marchas','618.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'CADEADO SM EXECUTIVE 4 SEGREDOS PRATA, Pado, 52018283, Dourado','37','CADEADO SM EXECUTIVE 4 SEGREDOS PRATA, Pado, 52018283, Dourado','619.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Bicicleta Track & Bikes Aro 20 Xr 20 6v Dupla Suspensão','0','Bicicleta Track & Bikes Aro 20 Xr 20 6v Dupla Suspensão','620.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Cadeado De Latão Vonder 30 Mm','9','Cadeado De Latão Vonder 30 Mm','621.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Monitor Cardíaco Atrio Altius + Cinta Cardíaca Cinza HC008 Multilaser','124','Monitor Cardíaco Atrio Altius + Cinta Cardíaca Cinza HC008 Multilaser','622.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Cadeado rígido U-lock com chave para bicicleta ou moto Onguard Neons 8152 Verde','0','Cadeado rígido U-lock com chave para bicicleta ou moto Onguard Neons 8152 Verde','623.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'CADEIRINHA TRASEIRA THULE RIDEALONG LITE - CINZA CLARO','747','CADEIRINHA TRASEIRA THULE RIDEALONG LITE - CINZA CLARO','624.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
@@ -847,21 +736,11 @@ insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validad
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Bicicleta Aro 24 Status Belíssima','355','Bicicleta Aro 24 Status Belíssima','638.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Bicicleta Aro 20 Status Belíssima','299','Bicicleta Aro 20 Status Belíssima','639.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,14,'Bermuda Ciclismo Masculina Basic Compression Preta','283','Bermuda Ciclismo Masculina Basic Compression Preta','640.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chut
-eira Society, Umbro','89','Chuteira Society, Umbro','641.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bola
- Futebol Campo Adidas Fifa Copa Do Mundo 2018 Telstar Top Replica Cor: BCO - Tam: UN','155','Bola Futebol Campo Adidas
- Fifa Copa Do Mundo 2018 Telstar Top Replica Cor: BCO - Tam: UN','642.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIME
-STAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bomb
-a Manual Bel Life Bel Fix Preto 36 cm','21','Bomba Manual Bel Life Bel Fix Preto 36 cm','643.jpg','2020-01-01',CURRENT
-_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bola
- Nike Rabisco Conmebol Copa América Brasil 2019','99','Bola Nike Rabisco Conmebol Copa América Brasil 2019','644.jpg',
-'2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bomb
-a para Pressão em Arma Pneumática Cressi','0','Bomba para Pressão em Arma Pneumática Cressi','645.jpg','2020-01-01',CU
-RRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chuteira Society, Umbro','89','Chuteira Society, Umbro','641.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bola Futebol Campo Adidas Fifa Copa Do Mundo 2018 Telstar Top Replica Cor: BCO - Tam: UN','155','Bola Futebol Campo Adidas Fifa Copa Do Mundo 2018 Telstar Top Replica Cor: BCO - Tam: UN','642.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bomba Manual Bel Life Bel Fix Preto 36 cm','21','Bomba Manual Bel Life Bel Fix Preto 36 cm','643.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bola Nike Rabisco Conmebol Copa América Brasil 2019','99','Bola Nike Rabisco Conmebol Copa América Brasil 2019','644.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bomba para Pressão em Arma Pneumática Cressi','0','Bomba para Pressão em Arma Pneumática Cressi','645.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Rede de Futsal AX Esportes Fio 2mm','95','Rede de Futsal AX Esportes Fio 2mm','646.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bola Topper Slick Costurada Futsal Amarela','69','Bola Topper Slick Costurada Futsal Amarela','647.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Canelito De Compressão Unisex Lupo Pro (Adulto)','35','Canelito De Compressão Unisex Lupo Pro (Adulto)','648.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
@@ -881,21 +760,11 @@ insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validad
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Mini Bomba Portátil de Mão para Bicicleta e Infláveis com 2 Adaptadores Preto Atrio - BI143','26','Mini Bomba Portátil de Mão para Bicicleta e Infláveis com 2 Adaptadores Preto Atrio - BI143','662.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bomba de Ar Elétrica Quick-Fill 110V Intex','107','Bomba de Ar Elétrica Quick-Fill 110V Intex','663.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Luva De Goleiro Uhlsport Soft Hn Comp','299','Luva De Goleiro Uhlsport Soft Hn Comp','664.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chut
-eira Society, Umbro','89','Chuteira Society, Umbro','665.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bola
- Futebol Campo Adidas Fifa Copa Do Mundo 2018 Telstar Top Replica Cor: BCO - Tam: UN','155','Bola Futebol Campo Adidas
- Fifa Copa Do Mundo 2018 Telstar Top Replica Cor: BCO - Tam: UN','666.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIME
-STAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bomb
-a Manual Bel Life Bel Fix Preto 36 cm','21','Bomba Manual Bel Life Bel Fix Preto 36 cm','667.jpg','2020-01-01',CURRENT
-_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bola
- Nike Rabisco Conmebol Copa América Brasil 2019','99','Bola Nike Rabisco Conmebol Copa América Brasil 2019','668.jpg',
-'2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bomb
-a para Pressão em Arma Pneumática Cressi','0','Bomba para Pressão em Arma Pneumática Cressi','669.jpg','2020-01-01',CU
-RRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chuteira Society, Umbro','89','Chuteira Society, Umbro','665.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bola Futebol Campo Adidas Fifa Copa Do Mundo 2018 Telstar Top Replica Cor: BCO - Tam: UN','155','Bola Futebol Campo Adidas Fifa Copa Do Mundo 2018 Telstar Top Replica Cor: BCO - Tam: UN','666.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bomba Manual Bel Life Bel Fix Preto 36 cm','21','Bomba Manual Bel Life Bel Fix Preto 36 cm','667.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bola Nike Rabisco Conmebol Copa América Brasil 2019','99','Bola Nike Rabisco Conmebol Copa América Brasil 2019','668.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bomba para Pressão em Arma Pneumática Cressi','0','Bomba para Pressão em Arma Pneumática Cressi','669.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Rede de Futsal AX Esportes Fio 2mm','95','Rede de Futsal AX Esportes Fio 2mm','670.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bola Topper Slick Costurada Futsal Amarela','69','Bola Topper Slick Costurada Futsal Amarela','671.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Canelito De Compressão Unisex Lupo Pro (Adulto)','35','Canelito De Compressão Unisex Lupo Pro (Adulto)','672.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
@@ -915,21 +784,11 @@ insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validad
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Mini Bomba Portátil de Mão para Bicicleta e Infláveis com 2 Adaptadores Preto Atrio - BI143','26','Mini Bomba Portátil de Mão para Bicicleta e Infláveis com 2 Adaptadores Preto Atrio - BI143','686.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bomba de Ar Elétrica Quick-Fill 110V Intex','107','Bomba de Ar Elétrica Quick-Fill 110V Intex','687.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Luva De Goleiro Uhlsport Soft Hn Comp','299','Luva De Goleiro Uhlsport Soft Hn Comp','688.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bomb
-a manual 50 cm pintada, Eda, 9RV, Preto','42','Bomba manual 50 cm pintada, Eda, 9RV, Preto','689.jpg','2020-01-01',CUR
-RENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chut
-eira Penalty Matís VIII Campo Amarela','109','Chuteira Penalty Matís VIII Campo Amarela','690.jpg','2020-01-01',CURREN
-T_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Pran
-cheta Tática Magnética Futebol de Campo - KIEF','94','Prancheta Tática Magnética Futebol de Campo - KIEF','691.jpg','2
-020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Brin
-quedo Diverso Spider-Man Chute a Gol Lider','77','Brinquedo Diverso Spider-Man Chute a Gol Lider','692.jpg','2020-01-0
-1',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bola
- Kagiva Futsal F5 Brasil Pro X','104','Bola Kagiva Futsal F5 Brasil Pro X','693.jpg','2020-01-01',CURRENT_TIMESTAMP,CU
-RRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bomba manual 50 cm pintada, Eda, 9RV, Preto','42','Bomba manual 50 cm pintada, Eda, 9RV, Preto','689.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chuteira Penalty Matís VIII Campo Amarela','109','Chuteira Penalty Matís VIII Campo Amarela','690.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Prancheta Tática Magnética Futebol de Campo - KIEF','94','Prancheta Tática Magnética Futebol de Campo - KIEF','691.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Brinquedo Diverso Spider-Man Chute a Gol Lider','77','Brinquedo Diverso Spider-Man Chute a Gol Lider','692.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bola Kagiva Futsal F5 Brasil Pro X','104','Bola Kagiva Futsal F5 Brasil Pro X','693.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chuteira Futsal Topper Dominator 3','89','Chuteira Futsal Topper Dominator 3','694.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bomba de Ar Bike/Bola com 02 Bicos Poker','52','Bomba de Ar Bike/Bola com 02 Bicos Poker','695.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bomba manual 50 cm cromada, Eda, 9RW, Preto','46','Bomba manual 50 cm cromada, Eda, 9RW, Preto','696.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
@@ -949,21 +808,11 @@ insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validad
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Luva Goleiro Campo Infantil Crianças Progne - PAR','44','Luva Goleiro Campo Infantil Crianças Progne - PAR','710.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chuteira Umbro Pro IV Society Marinho','299','Chuteira Umbro Pro IV Society Marinho','711.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bola Futsal RX 50 R3 Fusion VIII Penalty 52 cm Branco','69','Bola Futsal RX 50 R3 Fusion VIII Penalty 52 cm Branco','712.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chut
-eira Umbro Speed Sonic Campo Azul e Preta','169','Chuteira Umbro Speed Sonic Campo Azul e Preta','713.jpg','2020-01-01
-',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bola
- de Futebol de Campo Explore com PVC Soft Poker','52','Bola de Futebol de Campo Explore com PVC Soft Poker','714.jpg',
-'2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chut
-eira Topper Boleiro Campo Masculino 4200390','73','Chuteira Topper Boleiro Campo Masculino 4200390','715.jpg','2020-01
--01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Cami
-sa Corinthians - Modelo I','175','Camisa Corinthians - Modelo I','716.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIME
-STAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Infl
-ador Compressor Balão Bexiga 2 Bicos+ Medidor De Bexiga - 110v','99','Inflador Compressor Balão Bexiga 2 Bicos+ Medido
-r De Bexiga - 110v','717.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chuteira Umbro Speed Sonic Campo Azul e Preta','169','Chuteira Umbro Speed Sonic Campo Azul e Preta','713.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bola de Futebol de Campo Explore com PVC Soft Poker','52','Bola de Futebol de Campo Explore com PVC Soft Poker','714.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chuteira Topper Boleiro Campo Masculino 4200390','73','Chuteira Topper Boleiro Campo Masculino 4200390','715.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Camisa Corinthians - Modelo I','175','Camisa Corinthians - Modelo I','716.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Inflador Compressor Balão Bexiga 2 Bicos+ Medidor De Bexiga - 110v','99','Inflador Compressor Balão Bexiga 2 Bicos+ Medidor De Bexiga - 110v','717.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bola de Futebol de Campo Illusive Wilson','52','Bola de Futebol de Campo Illusive Wilson','718.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bola de Futsal AX Esportes Maxi 50 Matrizada com 32 Gomos','36','Bola de Futsal AX Esportes Maxi 50 Matrizada com 32 Gomos','719.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bola de Futebol de Campo Xalingo Branco/Vermelha','46','Bola de Futebol de Campo Xalingo Branco/Vermelha','720.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
@@ -983,22 +832,12 @@ insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validad
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Camisa São Paulo Celeste Masculina','59','Camisa São Paulo Celeste Masculina','734.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chuteira Society Adidas X Tango 18.4 TF','249','Chuteira Society Adidas X Tango 18.4 TF','735.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chuteira de Campo Umbro Attak - PRETO - 43','149','Chuteira de Campo Umbro Attak - PRETO - 43','736.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bomb
-a de Ar Elétrica Quick-Fill 120V AC Pequena - Intex','103','Bomba de Ar Elétrica Quick-Fill 120V AC Pequena - Intex','
-737.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Calç
-ão Placar Plus Size Liso My Anmar Preto','34','Calção Placar Plus Size Liso My Anmar Preto','738.jpg','2020-01-01',CUR
-RENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Calç
-ão Kappa Shangai Royal','29','Calção Kappa Shangai Royal','739.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chut
-eira Penalty Matís VIII Campo Juvenil Amarela','109','Chuteira Penalty Matís VIII Campo Juvenil Amarela','740.jpg','20
-20-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bola
- de Futebol de Campo Rx R3 Penalty','99','Bola de Futebol de Campo Rx R3 Penalty','741.jpg','2020-01-01',CURRENT_TIMES
-TAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bola
- Futevôlei Mikasa FT5','259','Bola Futevôlei Mikasa FT5','742.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bomba de Ar Elétrica Quick-Fill 120V AC Pequena - Intex','103','Bomba de Ar Elétrica Quick-Fill 120V AC Pequena - Intex','737.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Calção Placar Plus Size Liso My Anmar Preto','34','Calção Placar Plus Size Liso My Anmar Preto','738.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Calção Kappa Shangai Royal','29','Calção Kappa Shangai Royal','739.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chuteira Penalty Matís VIII Campo Juvenil Amarela','109','Chuteira Penalty Matís VIII Campo Juvenil Amarela','740.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bola de Futebol de Campo Rx R3 Penalty','99','Bola de Futebol de Campo Rx R3 Penalty','741.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bola Futevôlei Mikasa FT5','259','Bola Futevôlei Mikasa FT5','742.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Luva Goleiro Profissional Three Stars Gold','176','Luva Goleiro Profissional Three Stars Gold','743.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Luva de Goleiro One Grip 4 - Puma','89','Luva de Goleiro One Grip 4 - Puma','744.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Camisa Social Blusão Flamengo Hat Trick Rosa CSFLA11','175','Camisa Social Blusão Flamengo Hat Trick Rosa CSFLA11','745.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
@@ -1017,21 +856,11 @@ insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validad
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Luva Goleiro Profissional Three Stars Century','183','Luva Goleiro Profissional Three Stars Century','758.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Luva de Goleiro Future Grip 19.4 (Preto e Verde) - Puma','149','Luva de Goleiro Future Grip 19.4 (Preto e Verde) - Puma','759.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Jogo de Camisa PSV 14 de Linha e 1 Goleiro Ref 8925','389','Jogo de Camisa PSV 14 de Linha e 1 Goleiro Ref 8925','760.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Luva
- de Goleiro Future Grip 19.4 (Preto e Verde) - Puma','149','Luva de Goleiro Future Grip 19.4 (Preto e Verde) - Puma','
-761.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Jogo
- de Camisa PSV 14 de Linha e 1 Goleiro Ref 8925','389','Jogo de Camisa PSV 14 de Linha e 1 Goleiro Ref 8925','762.jpg'
-,'2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Luva
- de Goleiro Future Grip 19.4 (Vermelho e Preto) - Puma','149','Luva de Goleiro Future Grip 19.4 (Vermelho e Preto) - P
-uma','763.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Jogo
- de Camisa Peru 20 de Linha e 1 Goleiro Ref 8995','579','Jogo de Camisa Peru 20 de Linha e 1 Goleiro Ref 8995','764.jp
-g','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Cami
-sa Adidas Flamengo I 2018 S/MRV FK9531','180','Camisa Adidas Flamengo I 2018 S/MRV FK9531','765.jpg','2020-01-01',CURR
-ENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Luva de Goleiro Future Grip 19.4 (Preto e Verde) - Puma','149','Luva de Goleiro Future Grip 19.4 (Preto e Verde) - Puma','761.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Jogo de Camisa PSV 14 de Linha e 1 Goleiro Ref 8925','389','Jogo de Camisa PSV 14 de Linha e 1 Goleiro Ref 8925','762.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Luva de Goleiro Future Grip 19.4 (Vermelho e Preto) - Puma','149','Luva de Goleiro Future Grip 19.4 (Vermelho e Preto) - Puma','763.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Jogo de Camisa Peru 20 de Linha e 1 Goleiro Ref 8995','579','Jogo de Camisa Peru 20 de Linha e 1 Goleiro Ref 8995','764.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Camisa Adidas Flamengo I 2018 S/MRV FK9531','180','Camisa Adidas Flamengo I 2018 S/MRV FK9531','765.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Camisa Social do flamengo','175','Camisa Social do flamengo','766.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Uniforme Esportivo França 12 Camisas e Calções Ref 8969','489','Uniforme Esportivo França 12 Camisas e Calções Ref 8969','767.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Uniforme Esportivo França 12 Camisas e Calções Ref 8967','489','Uniforme Esportivo França 12 Camisas e Calções Ref 8967','768.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
@@ -1051,21 +880,11 @@ insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validad
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chuteira Society Munique Astro 321','198','Chuteira Society Munique Astro 321','782.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chuteira Munique Cravo Trivela Mn18-421','198','Chuteira Munique Cravo Trivela Mn18-421','783.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chuteira Futsal Munique Talento Mn18-indoor','198','Chuteira Futsal Munique Talento Mn18-indoor','784.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chut
-eira Society Munique Astro 321','198','Chuteira Society Munique Astro 321','785.jpg','2020-01-01',CURRENT_TIMESTAMP,CU
-RRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chut
-eira Futsal Munique Trivela 621','198','Chuteira Futsal Munique Trivela 621','786.jpg','2020-01-01',CURRENT_TIMESTAMP,
-CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chut
-eira Campo Munique Astro 421','198','Chuteira Campo Munique Astro 421','787.jpg','2020-01-01',CURRENT_TIMESTAMP,CURREN
-T_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Kit 
-Árbitro de Futebol com apito tipo Fox40, cartão e bandeira xadrez','129','Kit Árbitro de Futebol com apito tipo Fox40,
- cartão e bandeira xadrez','788.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Infl
-ador de balões com touch 220volts','85','Inflador de balões com touch 220volts','789.jpg','2020-01-01',CURRENT_TIMESTA
-MP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chuteira Society Munique Astro 321','198','Chuteira Society Munique Astro 321','785.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chuteira Futsal Munique Trivela 621','198','Chuteira Futsal Munique Trivela 621','786.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chuteira Campo Munique Astro 421','198','Chuteira Campo Munique Astro 421','787.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Kit Árbitro de Futebol com apito tipo Fox40, cartão e bandeira xadrez','129','Kit Árbitro de Futebol com apito tipo Fox40, cartão e bandeira xadrez','788.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Inflador de balões com touch 220volts','85','Inflador de balões com touch 220volts','789.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chuteira Campo Munique Talento 421','198','Chuteira Campo Munique Talento 421','790.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chuteira Society Munique Área','198','Chuteira Society Munique Área','791.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Kit Apito Modelo Tipo Fox40 c/Cordão e Cartão para Árbitro de FUTSAL','29','Kit Apito Modelo Tipo Fox40 c/Cordão e Cartão para Árbitro de FUTSAL','792.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
@@ -1085,21 +904,11 @@ insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validad
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chuteira Futsal Umbro Medusae III Club Branco','189','Chuteira Futsal Umbro Medusae III Club Branco','806.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chuteira Society Munique Trivela Mn18-321-621','198','Chuteira Society Munique Trivela Mn18-321-621','807.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chuteira Society Mathaus 113.029','228','Chuteira Society Mathaus 113.029','808.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chut
-eira Society Munique Astro 321','198','Chuteira Society Munique Astro 321','809.jpg','2020-01-01',CURRENT_TIMESTAMP,CU
-RRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Cami
-sa Feminina Flamengo Adidas Branca CF9049 (G) (G)','175','Camisa Feminina Flamengo Adidas Branca CF9049 (G) (G)','810.
-jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chut
-eira Infantil Masculina Extreme Topper - 4200444 Cinza/laranja','79','Chuteira Infantil Masculina Extreme Topper - 420
-0444 Cinza/laranja','811.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chut
-eira Society Dsix Ds19-6203','69','Chuteira Society Dsix Ds19-6203','812.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_T
-IMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chut
-eira Society Dray Topfly Ix Juvenil Dr19-368co','89','Chuteira Society Dray Topfly Ix Juvenil Dr19-368co','813.jpg','2
-020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chuteira Society Munique Astro 321','198','Chuteira Society Munique Astro 321','809.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Camisa Feminina Flamengo Adidas Branca CF9049 (G) (G)','175','Camisa Feminina Flamengo Adidas Branca CF9049 (G) (G)','810.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chuteira Infantil Masculina Extreme Topper - 4200444 Cinza/laranja','79','Chuteira Infantil Masculina Extreme Topper - 4200444 Cinza/laranja','811.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chuteira Society Dsix Ds19-6203','69','Chuteira Society Dsix Ds19-6203','812.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chuteira Society Dray Topfly Ix Juvenil Dr19-368co','89','Chuteira Society Dray Topfly Ix Juvenil Dr19-368co','813.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chuteira Futsal Dsix Ds18-6203','69','Chuteira Futsal Dsix Ds18-6203','814.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chuteira Society Dsix Juvenil 6203','59','Chuteira Society Dsix Juvenil 6203','815.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chuteira Society Dray Top Fly Dr18-367co','99','Chuteira Society Dray Top Fly Dr18-367co','816.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
@@ -1119,22 +928,12 @@ insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validad
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chuteira Futsal Dsix 6203','69','Chuteira Futsal Dsix 6203','830.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chuteira Futsal Dsix 6203','69','Chuteira Futsal Dsix 6203','831.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chuteira Society Dsix Ds18-6203','69','Chuteira Society Dsix Ds18-6203','832.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chut
-eira Futsal Dsix 6203','69','Chuteira Futsal Dsix 6203','833.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chut
-eira Society Dsix Ds18-6203','69','Chuteira Society Dsix Ds18-6203','834.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_T
-IMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chut
-eira Futsal Dsix Juvenil Ds18-6203','69','Chuteira Futsal Dsix Juvenil Ds18-6203','835.jpg','2020-01-01',CURRENT_TIMES
-TAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chut
-eira Campo Dray Foorcy Iv Dr18-363co','99','Chuteira Campo Dray Foorcy Iv Dr18-363co','836.jpg','2020-01-01',CURRENT_T
-IMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chut
-eira Futsal Dray Topfly Iv Juvenil Dr18-363co','89','Chuteira Futsal Dray Topfly Iv Juvenil Dr18-363co','837.jpg','202
-0-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chut
-eira Society Dray Top Fly Dr18-367co','99','Chuteira Society Dray Top Fly Dr18-367co','838.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chuteira Futsal Dsix 6203','69','Chuteira Futsal Dsix 6203','833.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chuteira Society Dsix Ds18-6203','69','Chuteira Society Dsix Ds18-6203','834.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chuteira Futsal Dsix Juvenil Ds18-6203','69','Chuteira Futsal Dsix Juvenil Ds18-6203','835.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chuteira Campo Dray Foorcy Iv Dr18-363co','99','Chuteira Campo Dray Foorcy Iv Dr18-363co','836.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chuteira Futsal Dray Topfly Iv Juvenil Dr18-363co','89','Chuteira Futsal Dray Topfly Iv Juvenil Dr18-363co','837.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chuteira Society Dray Top Fly Dr18-367co','99','Chuteira Society Dray Top Fly Dr18-367co','838.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chuteira Society Dray Foorcy V Dr18-308co','89','Chuteira Society Dray Foorcy V Dr18-308co','839.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chuteira Society Dsix Infantil Ds18-6203','69','Chuteira Society Dsix Infantil Ds18-6203','840.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Camisa Feminina Flamengo Adidas Branca CF9049 (M)','175','Camisa Feminina Flamengo Adidas Branca CF9049 (M)','841.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
@@ -1153,21 +952,11 @@ insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validad
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chuteira Infantil Masculina Extreme Topper - 4200444 Azul/laranja','79','Chuteira Infantil Masculina Extreme Topper - 4200444 Azul/laranja','854.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chuteira Infantil Masculina Extreme Topper - 4200444 Amarelo','79','Chuteira Infantil Masculina Extreme Topper - 4200444 Amarelo','855.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Trave de Futebol Juvenil','679','Trave de Futebol Juvenil','856.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chut
-eira Infantil Masculina Society Champion 6 Topper - 420043 Amarelo','79','Chuteira Infantil Masculina Society Champion
- 6 Topper - 420043 Amarelo','857.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chut
-eira Infantil Masculina Society Molekinho - 2819101 Marinho','59','Chuteira Infantil Masculina Society Molekinho - 281
-9101 Marinho','858.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chut
-eira Infantil Masculina Society Champion 6 Topper - 420043 Roxo','79','Chuteira Infantil Masculina Society Champion 6 
-Topper - 420043 Roxo','859.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chut
-eira Infantil Masculina Society Champion 6 Topper - 420043 Preto','79','Chuteira Infantil Masculina Society Champion 6
- Topper - 420043 Preto','860.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chut
-eira Society Munique Astro 321','198','Chuteira Society Munique Astro 321','861.jpg','2020-01-01',CURRENT_TIMESTAMP,CU
-RRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chuteira Infantil Masculina Society Champion 6 Topper - 420043 Amarelo','79','Chuteira Infantil Masculina Society Champion 6 Topper - 420043 Amarelo','857.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chuteira Infantil Masculina Society Molekinho - 2819101 Marinho','59','Chuteira Infantil Masculina Society Molekinho - 2819101 Marinho','858.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chuteira Infantil Masculina Society Champion 6 Topper - 420043 Roxo','79','Chuteira Infantil Masculina Society Champion 6 Topper - 420043 Roxo','859.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chuteira Infantil Masculina Society Champion 6 Topper - 420043 Preto','79','Chuteira Infantil Masculina Society Champion 6 Topper - 420043 Preto','860.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chuteira Society Munique Astro 321','198','Chuteira Society Munique Astro 321','861.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Luva Nga Soccer Venture - Verde Neon','0','Luva Nga Soccer Venture - Verde Neon','862.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Meião Futebol Matis Penalty Vi Preto - Juvenil 36-38','19','Meião Futebol Matis Penalty Vi Preto - Juvenil 36-38','863.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Meião Kanguru S11 Pró Penalty - 39-43 - Azul','41','Meião Kanguru S11 Pró Penalty - 39-43 - Azul','864.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
@@ -1187,21 +976,11 @@ insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validad
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Luva Goleiro Profissional N1 Goalkeeper Beta Elite Yellow Shadow','190','Luva Goleiro Profissional N1 Goalkeeper Beta Elite Yellow Shadow','878.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chuteira Suíço Nedel 7 Preta/dourada','239','Chuteira Suíço Nedel 7 Preta/dourada','879.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bandeira 2 Panos Brasil - Myflag','109','Bandeira 2 Panos Brasil - Myflag','880.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Meiã
-o Futebol Matis Penalty Vi Branco - Adulto Tam: 39-44','19','Meião Futebol Matis Penalty Vi Branco - Adulto Tam: 39-44
-','881.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Matí
-s Penalty VIII Juvenil Penalty Unissex 33 - 38 Vermelho','13','Matís Penalty VIII Juvenil Penalty Unissex 33 - 38 Verm
-elho','882.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Moto
-r Soprador para Infláveis 680 W','790','Motor Soprador para Infláveis 680 W','883.jpg','2020-01-01',CURRENT_TIMESTAMP,
-CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bola
- Society Maestro TD2 2019 - Topper','94','Bola Society Maestro TD2 2019 - Topper','884.jpg','2020-01-01',CURRENT_TIMES
-TAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Agas
-alho Corinthians Juvenil - 10 anos','229','Agasalho Corinthians Juvenil - 10 anos','885.jpg','2020-01-01',CURRENT_TIME
-STAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Meião Futebol Matis Penalty Vi Branco - Adulto Tam: 39-44','19','Meião Futebol Matis Penalty Vi Branco - Adulto Tam: 39-44','881.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Matís Penalty VIII Juvenil Penalty Unissex 33 - 38 Vermelho','13','Matís Penalty VIII Juvenil Penalty Unissex 33 - 38 Vermelho','882.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Motor Soprador para Infláveis 680 W','790','Motor Soprador para Infláveis 680 W','883.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bola Society Maestro TD2 2019 - Topper','94','Bola Society Maestro TD2 2019 - Topper','884.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Agasalho Corinthians Juvenil - 10 anos','229','Agasalho Corinthians Juvenil - 10 anos','885.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bandeira De Carro Botafogo - Myflag','19','Bandeira De Carro Botafogo - Myflag','886.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bola Penalty Campo S11 R3 Ultra Fusion Vi','125','Bola Penalty Campo S11 R3 Ultra Fusion Vi','887.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Kit Infantil São Paulo Adidas 18/19 Branco DZ5625','190','Kit Infantil São Paulo Adidas 18/19 Branco DZ5625','888.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
@@ -1221,21 +1000,11 @@ insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validad
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bola T50 Brasil 70 IX Penalty 53 cm Amarelo','59','Bola T50 Brasil 70 IX Penalty 53 cm Amarelo','902.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bola Society Ataque Ix Stadium 69 Cm Rosa','69','Bola Society Ataque Ix Stadium 69 Cm Rosa','903.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Caneleira Futebol Adulto/Protetor Canela Futebol Starflex - Preto','19','Caneleira Futebol Adulto/Protetor Canela Futebol Starflex - Preto','904.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bola
- Society Rx Fusion Viii Penalty 69 Cm Laranja','114','Bola Society Rx Fusion Viii Penalty 69 Cm Laranja','905.jpg','20
-20-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bola
- Campo S11 R4 Ix Penalty 70 Cm Laranja','109','Bola Campo S11 R4 Ix Penalty 70 Cm Laranja','906.jpg','2020-01-01',CURR
-ENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Luva
- Poker Icon Semi Profissional Campo Azul','159','Luva Poker Icon Semi Profissional Campo Azul','907.jpg','2020-01-01',
-CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Meiã
-o de Futebol Matis Azul - Penalty 36-38','20','Meião de Futebol Matis Azul - Penalty 36-38','908.jpg','2020-01-01',CUR
-RENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bola
- Hand Borracha 2 Stadium 56 C M Verde','64','Bola Hand Borracha 2 Stadium 56 C M Verde','909.jpg','2020-01-01',CURRENT
-_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bola Society Rx Fusion Viii Penalty 69 Cm Laranja','114','Bola Society Rx Fusion Viii Penalty 69 Cm Laranja','905.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bola Campo S11 R4 Ix Penalty 70 Cm Laranja','109','Bola Campo S11 R4 Ix Penalty 70 Cm Laranja','906.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Luva Poker Icon Semi Profissional Campo Azul','159','Luva Poker Icon Semi Profissional Campo Azul','907.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Meião de Futebol Matis Azul - Penalty 36-38','20','Meião de Futebol Matis Azul - Penalty 36-38','908.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bola Hand Borracha 2 Stadium 56 C M Verde','64','Bola Hand Borracha 2 Stadium 56 C M Verde','909.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bola Futebol Americano Viii Penalty 71 Cm Vermelho','107','Bola Futebol Americano Viii Penalty 71 Cm Vermelho','910.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bola Ultra Campo Viii Stadium 70 Cm Azul','49','Bola Ultra Campo Viii Stadium 70 Cm Azul','911.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Caneta e Lapiseira São Paulo - Kit 2 peças','21','Caneta e Lapiseira São Paulo - Kit 2 peças','912.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
@@ -1255,21 +1024,11 @@ insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validad
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Prancheta Tática Magnética De Basquete Modelo Coach Board','79','Prancheta Tática Magnética De Basquete Modelo Coach Board','926.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Prancheta Tática Magnética De Futebol Modelo Coach Board','79','Prancheta Tática Magnética De Futebol Modelo Coach Board','927.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chuteira Society Lotto Fury Profissional','99','Chuteira Society Lotto Fury Profissional','928.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Meiã
-o Matís Penalty VIII Juvenil Penalty Unissex 33 - 38 Preto','18','Meião Matís Penalty VIII Juvenil Penalty Unissex 33 
-- 38 Preto','929.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Apit
-o Trânsito, Guarda, Vigilância, Vigilante, Segurança','29','Apito Trânsito, Guarda, Vigilância, Vigilante, Segurança',
-'930.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Luva
- Delta Training Viii Pt-Bc T 0, Penalty','94','Luva Delta Training Viii Pt-Bc T 0, Penalty','931.jpg','2020-01-01',CUR
-RENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chut
-eira Society Lotto Skill Profissional','79','Chuteira Society Lotto Skill Profissional','932.jpg','2020-01-01',CURRENT
-_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chut
-eira Society Lotto Velox Profissional','69','Chuteira Society Lotto Velox Profissional','933.jpg','2020-01-01',CURRENT
-_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Meião Matís Penalty VIII Juvenil Penalty Unissex 33 - 38 Preto','18','Meião Matís Penalty VIII Juvenil Penalty Unissex 33 - 38 Preto','929.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Apito Trânsito, Guarda, Vigilância, Vigilante, Segurança','29','Apito Trânsito, Guarda, Vigilância, Vigilante, Segurança','930.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Luva Delta Training Viii Pt-Bc T 0, Penalty','94','Luva Delta Training Viii Pt-Bc T 0, Penalty','931.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chuteira Society Lotto Skill Profissional','79','Chuteira Society Lotto Skill Profissional','932.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chuteira Society Lotto Velox Profissional','69','Chuteira Society Lotto Velox Profissional','933.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chuteira Suíço Mizuno Morelia Classic As P Azul/branco/preto','323','Chuteira Suíço Mizuno Morelia Classic As P Azul/branco/preto','934.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chuteira Society Lotto Magic Profissional','89','Chuteira Society Lotto Magic Profissional','935.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chuteira Campo Lotto Iron Profissional','89','Chuteira Campo Lotto Iron Profissional','936.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
@@ -1289,21 +1048,11 @@ insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validad
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bola Futsal Cosmos Ix Stadium, Stadium','59','Bola Futsal Cosmos Ix Stadium, Stadium','950.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bola Topper Samba Velocity Pro X','189','Bola Topper Samba Velocity Pro X','951.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bola Topper Samba TD2','75','Bola Topper Samba TD2','952.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chut
-eira Suíço Mizuno Morelia Classic Br/pr/vm','319','Chuteira Suíço Mizuno Morelia Classic Br/pr/vm','953.jpg','2020-01-
-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chut
-eira Campo Penalty Matis Force Vii Cinza/preto','95','Chuteira Campo Penalty Matis Force Vii Cinza/preto','954.jpg','2
-020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bola
- Society Cosmos Ix Stadium 69 Cm Laranja','56','Bola Society Cosmos Ix Stadium 69 Cm Laranja','955.jpg','2020-01-01',C
-URRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bola
- Topper Samba TD1 Campo nº 4','75','Bola Topper Samba TD1 Campo nº 4','956.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT
-_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Cane
-leira Brasil 70 V BC-PT T -U Penalty Unissex Preto Adulto','29','Caneleira Brasil 70 V BC-PT T -U Penalty Unissex Pret
-o Adulto','957.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chuteira Suíço Mizuno Morelia Classic Br/pr/vm','319','Chuteira Suíço Mizuno Morelia Classic Br/pr/vm','953.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chuteira Campo Penalty Matis Force Vii Cinza/preto','95','Chuteira Campo Penalty Matis Force Vii Cinza/preto','954.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bola Society Cosmos Ix Stadium 69 Cm Laranja','56','Bola Society Cosmos Ix Stadium 69 Cm Laranja','955.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bola Topper Samba TD1 Campo nº 4','75','Bola Topper Samba TD1 Campo nº 4','956.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Caneleira Brasil 70 V BC-PT T -U Penalty Unissex Preto Adulto','29','Caneleira Brasil 70 V BC-PT T -U Penalty Unissex Preto Adulto','957.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bola Campo Cosmos IX - Stadium','49','Bola Campo Cosmos IX - Stadium','958.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bola Topper Samba Pro Costurada','91','Bola Topper Samba Pro Costurada','959.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bola Topper Samba TD1 Campo nº 3','75','Bola Topper Samba TD1 Campo nº 3','960.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
@@ -1323,21 +1072,11 @@ insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validad
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Placar esportivo para substituição de atletas com quatro dígitos dupla face fácil ajuste Pista e Campo','399','Placar esportivo para substituição de atletas com quatro dígitos dupla face fácil ajuste Pista e Campo','974.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chuteira Futsal Diavolo Classic Evolution - Preta','199','Chuteira Futsal Diavolo Classic Evolution - Preta','975.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chuteira Campo Diavolo Classic Udinese - Preta','159','Chuteira Campo Diavolo Classic Udinese - Preta','976.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bola
- Penalty Iniciação de Borracha N°8','31','Bola Penalty Iniciação de Borracha N°8','977.jpg','2020-01-01',CURRENT_TIMES
-TAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chut
-eira Campo Oxn Mundialli Ii Bco/pto/dou','83','Chuteira Campo Oxn Mundialli Ii Bco/pto/dou','978.jpg','2020-01-01',CUR
-RENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chut
-eira Campo Oxn Velox 2 Preto/azul','81','Chuteira Campo Oxn Velox 2 Preto/azul','979.jpg','2020-01-01',CURRENT_TIMESTA
-MP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chut
-eira Suiço Oxn Velox 2 Laranja','83','Chuteira Suiço Oxn Velox 2 Laranja','980.jpg','2020-01-01',CURRENT_TIMESTAMP,CUR
-RENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chut
-eira Suiço Oxn Mission Ii Preto/verde Infantil','71','Chuteira Suiço Oxn Mission Ii Preto/verde Infantil','981.jpg','2
-020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bola Penalty Iniciação de Borracha N°8','31','Bola Penalty Iniciação de Borracha N°8','977.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chuteira Campo Oxn Mundialli Ii Bco/pto/dou','83','Chuteira Campo Oxn Mundialli Ii Bco/pto/dou','978.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chuteira Campo Oxn Velox 2 Preto/azul','81','Chuteira Campo Oxn Velox 2 Preto/azul','979.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chuteira Suiço Oxn Velox 2 Laranja','83','Chuteira Suiço Oxn Velox 2 Laranja','980.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chuteira Suiço Oxn Mission Ii Preto/verde Infantil','71','Chuteira Suiço Oxn Mission Ii Preto/verde Infantil','981.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chuteira Oxn Mission 2 Society Juvenil Azul','71','Chuteira Oxn Mission 2 Society Juvenil Azul','982.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Porta Chuteira Topper','62','Porta Chuteira Topper','983.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chuteira Futsal Oxn Agilis Infantil Marinho/pink','83','Chuteira Futsal Oxn Agilis Infantil Marinho/pink','984.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
@@ -1357,22 +1096,11 @@ insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validad
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Bola Nike Strike Footballx Campo','99','Bola Nike Strike Footballx Campo','998.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Luva De Goleiro Three Stars Onix - Adulto','229','Luva De Goleiro Three Stars Onix - Adulto','999.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,13,'Chuteira de Society Topper Extreme Masculino','79','Chuteira de Society Topper Extreme Masculino','1000.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'camis
-a manga comprida não amassa o kit 6 peças na mesmas cores das fotos (rosa claro, m)','0','camisa manga comprida não am
-assa o kit 6 peças na mesmas cores das fotos (rosa claro, m)','1000.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMEST
-AMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camis
-a manga curta listrada branca e preta','119','Camisa manga curta listrada branca e preta','1001.jpg','2020-01-01',CURR
-ENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camis
-a Praia Masculino Neon Discoteca Luzes Tumblr Moda','0','Camisa Praia Masculino Neon Discoteca Luzes Tumblr Moda','100
-2.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camis
-eta Praia Coffe Eu Amo Café Sorvete Ice Cream Tumblr','0','Camiseta Praia Coffe Eu Amo Café Sorvete Ice Cream Tumblr',
-'1003.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camis
-a Básica T-shirt Plus Size Algodão Penteado MECHLER','40','Camisa Básica T-shirt Plus Size Algodão Penteado MECHLER','
-1004.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'camisa manga comprida não amassa o kit 6 peças na mesmas cores das fotos (rosa claro, m)','0','camisa manga comprida não amassa o kit 6 peças na mesmas cores das fotos (rosa claro, m)','1000.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camisa manga curta listrada branca e preta','119','Camisa manga curta listrada branca e preta','1001.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camisa Praia Masculino Neon Discoteca Luzes Tumblr Moda','0','Camisa Praia Masculino Neon Discoteca Luzes Tumblr Moda','1002.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camiseta Praia Coffe Eu Amo Café Sorvete Ice Cream Tumblr','0','Camiseta Praia Coffe Eu Amo Café Sorvete Ice Cream Tumblr','1003.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camisa Básica T-shirt Plus Size Algodão Penteado MECHLER','40','Camisa Básica T-shirt Plus Size Algodão Penteado MECHLER','1004.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'5 Camisas Básica T-shirt Plus Size Algodão Penteado MECHLER','201','5 Camisas Básica T-shirt Plus Size Algodão Penteado MECHLER','1005.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camisa Praia Masculino Floral Concha Borboleta Tropical','0','Camisa Praia Masculino Floral Concha Borboleta Tropical','1006.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Kit Com 3 Camisas Estampadas Masculinas Manga Curta Bamborra','132','Kit Com 3 Camisas Estampadas Masculinas Manga Curta Bamborra','1007.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
@@ -1416,22 +1144,12 @@ insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validad
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camisa Social Slim Fit Argali Falklands Xadrez Azul','209','Camisa Social Slim Fit Argali Falklands Xadrez Azul','1045.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camisa Social Slim Fit Argali Falklands Blue Jeans','219','Camisa Social Slim Fit Argali Falklands Blue Jeans','1046.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camisa Social Slim Fit Argali Falklands Branco Esporte','219','Camisa Social Slim Fit Argali Falklands Branco Esporte','1047.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camis
-a Casual Argali Falklands Flanela Xadrez Dark','199','Camisa Casual Argali Falklands Flanela Xadrez Dark','1048.jpg','
-2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camis
-a Casual Argali Falklands Flanela Xadrez Intensity','199','Camisa Casual Argali Falklands Flanela Xadrez Intensity','1
-049.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camis
-a Social Slim Fit Argali Falklands Giz Cinza Confort','204','Camisa Social Slim Fit Argali Falklands Giz Cinza Confort
-','1050.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camis
-a Social Slim Fit Argali Falklands True Black','229','Camisa Social Slim Fit Argali Falklands True Black','1051.jpg','
-2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camis
-as Social Masculina Slim - Promoção - Pp Ao Plus Size','0','Camisas Social Masculina Slim - Promoção - Pp Ao Plus Size
-','1052.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camiseta O'Neill Estampada Freak Zone Cinza Mescla','39','Camiseta O'Neill Estampada Freak Zone Cinza Mescla','1053.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camisa Casual Argali Falklands Flanela Xadrez Dark','199','Camisa Casual Argali Falklands Flanela Xadrez Dark','1048.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camisa Casual Argali Falklands Flanela Xadrez Intensity','199','Camisa Casual Argali Falklands Flanela Xadrez Intensity','1049.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camisa Social Slim Fit Argali Falklands Giz Cinza Confort','204','Camisa Social Slim Fit Argali Falklands Giz Cinza Confort','1050.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camisa Social Slim Fit Argali Falklands True Black','229','Camisa Social Slim Fit Argali Falklands True Black','1051.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camisas Social Masculina Slim - Promoção - Pp Ao Plus Size','0','Camisas Social Masculina Slim - Promoção - Pp Ao Plus Size','1052.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camiseta ONeill Estampada Freak Zone Cinza Mescla','39','Camiseta ONeill Estampada Freak Zone Cinza Mescla','1053.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'CAMISA MASCULINA FLANELADA MANGA LONGA','179','CAMISA MASCULINA FLANELADA MANGA LONGA','1054.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camiseta com proteção solar pedal bruto masculina','99','Camiseta com proteção solar pedal bruto masculina','1055.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camiseta de corrida pedal bruto feminina','49','Camiseta de corrida pedal bruto feminina','1056.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
@@ -1474,21 +1192,11 @@ insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validad
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camisa Social Masculina Vermelho Lisa 50125 Colombo','149','Camisa Social Masculina Vermelho Lisa 50125 Colombo','1093.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camisa Social Colombo 44093 Lisa Masculina','149','Camisa Social Colombo 44093 Lisa Masculina','1094.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camisa Social Masculina Azul Detalhada 50137 Colombo','149','Camisa Social Masculina Azul Detalhada 50137 Colombo','1095.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camis
-a Social Masculina Azul Escuro Lisa 50117 Colombo','149','Camisa Social Masculina Azul Escuro Lisa 50117 Colombo','109
-6.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camis
-a Social Colombo 41199 Listrada Masculina','59','Camisa Social Colombo 41199 Listrada Masculina','1097.jpg','2020-01-0
-1',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camis
-a Social Masculina Preto Lisa 50113 Colombo','149','Camisa Social Masculina Preto Lisa 50113 Colombo','1098.jpg','2020
--01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camis
-a Pf Pied Poule Color Reserva','299','Camisa Pf Pied Poule Color Reserva','1099.jpg','2020-01-01',CURRENT_TIMESTAMP,CU
-RRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camis
-a Social Masculina Preto Detalhada 50109 Colombo','149','Camisa Social Masculina Preto Detalhada 50109 Colombo','1100.
-jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camisa Social Masculina Azul Escuro Lisa 50117 Colombo','149','Camisa Social Masculina Azul Escuro Lisa 50117 Colombo','1096.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camisa Social Colombo 41199 Listrada Masculina','59','Camisa Social Colombo 41199 Listrada Masculina','1097.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camisa Social Masculina Preto Lisa 50113 Colombo','149','Camisa Social Masculina Preto Lisa 50113 Colombo','1098.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camisa Pf Pied Poule Color Reserva','299','Camisa Pf Pied Poule Color Reserva','1099.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camisa Social Masculina Preto Detalhada 50109 Colombo','149','Camisa Social Masculina Preto Detalhada 50109 Colombo','1100.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camisa Limits Capri Manga Longa Garden Draw','329','Camisa Limits Capri Manga Longa Garden Draw','1101.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camisa Regular Dark Reserva','279','Camisa Regular Dark Reserva','1102.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camisa Social Colombo 50133 Detalhada Masculina','149','Camisa Social Colombo 50133 Detalhada Masculina','1103.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
@@ -1532,21 +1240,11 @@ insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validad
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camisa Social Manga Curta Cinza e Preta Flores','69','Camisa Social Manga Curta Cinza e Preta Flores','1141.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camisa Pf Vichy Textura Inv 19 Reserva','329','Camisa Pf Vichy Textura Inv 19 Reserva','1142.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camisa Regular Ml Iconha Ii Reserva','289','Camisa Regular Ml Iconha Ii Reserva','1143.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camis
-a Levis Short Sleeve Sunset One Pocket Masculino Branco','249','Camisa Levis Short Sleeve Sunset One Pocket Masculino 
-Branco','1144.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camis
-a Social Manga Curta Caveira Vonpiper','69','Camisa Social Manga Curta Caveira Vonpiper','1145.jpg','2020-01-01',CURRE
-NT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camis
-a Jeans Claro Masculina','349','Camisa Jeans Claro Masculina','1146.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMEST
-AMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'CAMIS
-A SLIM M/L CONTRASTE MAQUIN BIS Mofficer','279','CAMISA SLIM M/L CONTRASTE MAQUIN BIS Mofficer','1147.jpg','2020-01-01
-',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camis
-a Lotto Lighting Marinho e Vermelha','39','Camisa Lotto Lighting Marinho e Vermelha','1148.jpg','2020-01-01',CURRENT_T
-IMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camisa Levis Short Sleeve Sunset One Pocket Masculino Branco','249','Camisa Levis Short Sleeve Sunset One Pocket Masculino Branco','1144.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camisa Social Manga Curta Caveira Vonpiper','69','Camisa Social Manga Curta Caveira Vonpiper','1145.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camisa Jeans Claro Masculina','349','Camisa Jeans Claro Masculina','1146.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'CAMISA SLIM M/L CONTRASTE MAQUIN BIS Mofficer','279','CAMISA SLIM M/L CONTRASTE MAQUIN BIS Mofficer','1147.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camisa Lotto Lighting Marinho e Vermelha','39','Camisa Lotto Lighting Marinho e Vermelha','1148.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camisa Lotto Catalunha Marinho e Vermelha','39','Camisa Lotto Catalunha Marinho e Vermelha','1149.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camisa Lotto Lahm Vermelha','39','Camisa Lotto Lahm Vermelha','1150.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camisa Lotto Imortal 2.0 Laranja e Preta','39','Camisa Lotto Imortal 2.0 Laranja e Preta','1151.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
@@ -1590,21 +1288,12 @@ insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validad
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camisa Umbro Cruzeiro I 2019','249','Camisa Umbro Cruzeiro I 2019','1189.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camisa Linho Manga Curta Ramos','99','Camisa Linho Manga Curta Ramos','1190.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camisa Linho Manga Curta Park','99','Camisa Linho Manga Curta Park','1191.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camis
-a Regular Flanela Rio Reserva','319','Camisa Regular Flanela Rio Reserva','1192.jpg','2020-01-01',CURRENT_TIMESTAMP,CU
-RRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camis
-a Rústica Azul','99','Camisa Rústica Azul','1193.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camis
-a Rústica Laranja','99','Camisa Rústica Laranja','1194.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camis
-a Manga Curta Tropical','103','Camisa Manga Curta Tropical','1195.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAM
-P);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camis
-a Verde Masculina','349','Camisa Verde Masculina','1196.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camis
-a Jeans Escuro Masculina','299','Camisa Jeans Escuro Masculina','1197.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIME
-STAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camisa Regular Flanela Rio Reserva','319','Camisa Regular Flanela Rio Reserva','1192.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camisa Rústica Azul','99','Camisa Rústica Azul','1193.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camisa Rústica Laranja','99','Camisa Rústica Laranja','1194.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camisa Manga Curta Tropical','103','Camisa Manga Curta Tropical','1195.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camisa Verde Masculina','349','Camisa Verde Masculina','1196.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camisa Jeans Escuro Masculina','299','Camisa Jeans Escuro Masculina','1197.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camisa Flanelada Xadrez verde - Inverno','129','Camisa Flanelada Xadrez verde - Inverno','1198.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camisa Jeans Regular Acau Reserva','289','Camisa Jeans Regular Acau Reserva','1199.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camisa Rip Curl Southshore Branca','289','Camisa Rip Curl Southshore Branca','1200.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
@@ -1647,22 +1336,12 @@ insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validad
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'CAMISA SOCIAL ML LISTRADA 100% ALGODÃO','259','CAMISA SOCIAL ML LISTRADA 100% ALGODÃO','1237.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'CAMISA WORK ML XADREZ EM ALGODÃO EGÍPCIO FIO 60','279','CAMISA WORK ML XADREZ EM ALGODÃO EGÍPCIO FIO 60','1238.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'CAMISA WORK ML MAQUINETADA EM ALGODÃO EGÍPCIO FIO 60','279','CAMISA WORK ML MAQUINETADA EM ALGODÃO EGÍPCIO FIO 60','1239.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'CAMIS
-A SOCIAL ML MAQUINETADA 100% ALGODÃO','269','CAMISA SOCIAL ML MAQUINETADA 100% ALGODÃO','1240.jpg','2020-01-01',CURREN
-T_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'CAMIS
-A SOCIAL ML MAQUINETADA 100% ALGODÃO','239','CAMISA SOCIAL ML MAQUINETADA 100% ALGODÃO','1241.jpg','2020-01-01',CURREN
-T_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'CAMIS
-A SOCIAL ML MAQUINETADA EM ALGODÃO EGÍPCIO FIO 80','299','CAMISA SOCIAL ML MAQUINETADA EM ALGODÃO EGÍPCIO FIO 80','124
-2.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'CAMIS
-A WORK ML MAQUINETADA EM ALGODÃO EGÍPCIO FIO 60','269','CAMISA WORK ML MAQUINETADA EM ALGODÃO EGÍPCIO FIO 60','1243.jp
-g','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'CAMIS
-A CASUAL ML XADREZ','259','CAMISA CASUAL ML XADREZ','1244.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'CAMIS
-A SOCIAL ML LISTRADA EM ALGODÃO EGÍPCIO FIO 80','299','CAMISA SOCIAL ML LISTRADA EM ALGODÃO EGÍPCIO FIO 80','1245.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'CAMISA SOCIAL ML MAQUINETADA 100% ALGODÃO','269','CAMISA SOCIAL ML MAQUINETADA 100% ALGODÃO','1240.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'CAMISA SOCIAL ML MAQUINETADA 100% ALGODÃO','239','CAMISA SOCIAL ML MAQUINETADA 100% ALGODÃO','1241.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'CAMISA SOCIAL ML MAQUINETADA EM ALGODÃO EGÍPCIO FIO 80','299','CAMISA SOCIAL ML MAQUINETADA EM ALGODÃO EGÍPCIO FIO 80','1242.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'CAMISA WORK ML MAQUINETADA EM ALGODÃO EGÍPCIO FIO 60','269','CAMISA WORK ML MAQUINETADA EM ALGODÃO EGÍPCIO FIO 60','1243.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'CAMISA CASUAL ML XADREZ','259','CAMISA CASUAL ML XADREZ','1244.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'CAMISA SOCIAL ML LISTRADA EM ALGODÃO EGÍPCIO FIO 80','299','CAMISA SOCIAL ML LISTRADA EM ALGODÃO EGÍPCIO FIO 80','1245.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'CAMISA WORK ML XADREZ 100% ALGODÃO','259','CAMISA WORK ML XADREZ 100% ALGODÃO','1246.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'CAMISA SOCIAL SLIM FIT ML LISTRADA EM ALGODÃO EGÍPCIO FIO 80','289','CAMISA SOCIAL SLIM FIT ML LISTRADA EM ALGODÃO EGÍPCIO FIO 80','1247.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'CAMISA WORK SLIM FIT ML MAQUINETADA 100% ALGODÃO','249','CAMISA WORK SLIM FIT ML MAQUINETADA 100% ALGODÃO','1248.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
@@ -1705,22 +1384,12 @@ insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validad
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'CAMISA TIMBERLAND LINEN','219','CAMISA TIMBERLAND LINEN','1285.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camisa Masculina estampada Florida - Manga curta','119','Camisa Masculina estampada Florida - Manga curta','1286.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'CAMISA POLO TIMBERLAND RIVER PATTERN','99','CAMISA POLO TIMBERLAND RIVER PATTERN','1287.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camis
-a Polo Timberland Canoe River','129','Camisa Polo Timberland Canoe River','1288.jpg','2020-01-01',CURRENT_TIMESTAMP,CU
-RRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camis
-a Umbro Twr Colors Marinho E Royal','59','Camisa Umbro Twr Colors Marinho E Royal','1289.jpg','2020-01-01',CURRENT_TIM
-ESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camis
-a Umbro TWR Graphic Pró Velocita','59','Camisa Umbro TWR Graphic Pró Velocita','1290.jpg','2020-01-01',CURRENT_TIMESTA
-MP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camis
-a Umbro TWR Graphic Pro Velocita Goleiro Laranja','109','Camisa Umbro TWR Graphic Pro Velocita Goleiro Laranja','1291.
-jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camis
-a em Viscose','0','Camisa em Viscose','1292.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camis
-a de Manga Longa Slim de Algodão e Elastano','0','Camisa de Manga Longa Slim de Algodão e Elastano','1293.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camisa Polo Timberland Canoe River','129','Camisa Polo Timberland Canoe River','1288.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camisa Umbro Twr Colors Marinho E Royal','59','Camisa Umbro Twr Colors Marinho E Royal','1289.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camisa Umbro TWR Graphic Pró Velocita','59','Camisa Umbro TWR Graphic Pró Velocita','1290.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camisa Umbro TWR Graphic Pro Velocita Goleiro Laranja','109','Camisa Umbro TWR Graphic Pro Velocita Goleiro Laranja','1291.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camisa em Viscose','0','Camisa em Viscose','1292.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camisa de Manga Longa Slim de Algodão e Elastano','0','Camisa de Manga Longa Slim de Algodão e Elastano','1293.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camisa Umbro TWR Graphic Pró Velocita Azul','59','Camisa Umbro TWR Graphic Pró Velocita Azul','1294.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'CAMISA UV MASCULINA PRAIANO','139','CAMISA UV MASCULINA PRAIANO','1295.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camisa Floral em Viscose - Slim','0','Camisa Floral em Viscose - Slim','1296.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
@@ -1763,22 +1432,12 @@ insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validad
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camisa Avaí Ii 2019 s/n Jogador Umbro Masculina','239','Camisa Avaí Ii 2019 s/n Jogador Umbro Masculina','1333.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camisa Umbro Cruzeiro II 2019','249','Camisa Umbro Cruzeiro II 2019','1334.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camisa Wrangler WFS','119','Camisa Wrangler WFS','1335.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camis
-a Polo Wrangler','119','Camisa Polo Wrangler','1336.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'CAMIS
-A CASUAL ML TRICOLINE FLAMÊ XADREZ 100% ALGODÃO','219','CAMISA CASUAL ML TRICOLINE FLAMÊ XADREZ 100% ALGODÃO','1337.jp
-g','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'CAMIS
-A SOCIAL ML XADREZ 100% ALGODÃO','249','CAMISA SOCIAL ML XADREZ 100% ALGODÃO','1338.jpg','2020-01-01',CURRENT_TIMESTAM
-P,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'CAMIS
-A SOCIAL ML MAQUINETADA ALGODÃO EGÍPCIO FIO 80','269','CAMISA SOCIAL ML MAQUINETADA ALGODÃO EGÍPCIO FIO 80','1339.jpg'
-,'2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'CAMIS
-A CASUAL MC XADREZ 100% ALGODÃO','199','CAMISA CASUAL MC XADREZ 100% ALGODÃO','1340.jpg','2020-01-01',CURRENT_TIMESTAM
-P,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'CAMIS
-A WORK MC XADREZ 100% ALGODÃO','159','CAMISA WORK MC XADREZ 100% ALGODÃO','1341.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camisa Polo Wrangler','119','Camisa Polo Wrangler','1336.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'CAMISA CASUAL ML TRICOLINE FLAMÊ XADREZ 100% ALGODÃO','219','CAMISA CASUAL ML TRICOLINE FLAMÊ XADREZ 100% ALGODÃO','1337.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'CAMISA SOCIAL ML XADREZ 100% ALGODÃO','249','CAMISA SOCIAL ML XADREZ 100% ALGODÃO','1338.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'CAMISA SOCIAL ML MAQUINETADA ALGODÃO EGÍPCIO FIO 80','269','CAMISA SOCIAL ML MAQUINETADA ALGODÃO EGÍPCIO FIO 80','1339.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'CAMISA CASUAL MC XADREZ 100% ALGODÃO','199','CAMISA CASUAL MC XADREZ 100% ALGODÃO','1340.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'CAMISA WORK MC XADREZ 100% ALGODÃO','159','CAMISA WORK MC XADREZ 100% ALGODÃO','1341.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'CAMISA CASUAL ML TRICOLINE MAQUINETADA 100% ALGODÃO','199','CAMISA CASUAL ML TRICOLINE MAQUINETADA 100% ALGODÃO','1342.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'CAMISA WORK ML MAQUINETADA 100% ALGODÃO','219','CAMISA WORK ML MAQUINETADA 100% ALGODÃO','1343.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'CAMISA WORK ML ESTAMPA 100% ALGODÃO','189','CAMISA WORK ML ESTAMPA 100% ALGODÃO','1344.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
@@ -1821,21 +1480,11 @@ insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validad
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'CAMISA CASUAL ML INDIGO','189','CAMISA CASUAL ML INDIGO','1381.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'CAMISA WORK ML XADREZ 100% ALGODÃO','219','CAMISA WORK ML XADREZ 100% ALGODÃO','1382.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'CAMISA CASUAL ML INDIGO','159','CAMISA CASUAL ML INDIGO','1383.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camis
-eta Reserva Feminina Coruja Reserva','129','Camiseta Reserva Feminina Coruja Reserva','1384.jpg','2020-01-01',CURRENT_
-TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camis
-eta O Auto da Compadecida','54','Camiseta O Auto da Compadecida','1385.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIM
-ESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camis
-eta Blusa T shirt Bata Criativa Urbana Et I Don't Belive In Humans','49','Camiseta Blusa T shirt Bata Criativa Urbana 
-Et I Don't Belive In Humans','1386.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camis
-eta Feminina T-Shirt Kpop BTS Rap Monster You Never Walk Alone ES_160','29','Camiseta Feminina T-Shirt Kpop BTS Rap Mo
-nster You Never Walk Alone ES_160','1387.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camis
-eta Nolite Te Bastardes','49','Camiseta Nolite Te Bastardes','1388.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTA
-MP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camiseta Reserva Feminina Coruja Reserva','129','Camiseta Reserva Feminina Coruja Reserva','1384.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camiseta O Auto da Compadecida','54','Camiseta O Auto da Compadecida','1385.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camiseta Blusa T shirt Bata Criativa Urbana Et I Dont Belive In Humans','49','Camiseta Blusa T shirt Bata Criativa Urbana Et I Dont Belive In Humans','1386.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camiseta Feminina T-Shirt Kpop BTS Rap Monster You Never Walk Alone ES_160','29','Camiseta Feminina T-Shirt Kpop BTS Rap Monster You Never Walk Alone ES_160','1387.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camiseta Nolite Te Bastardes','49','Camiseta Nolite Te Bastardes','1388.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'CAMISETA FEMININA A LA GARCONNE NEW ERA','186','CAMISETA FEMININA A LA GARCONNE NEW ERA','1389.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camiseta Coffee Unissex 100% Algodão','49','Camiseta Coffee Unissex 100% Algodão','1390.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camiseta FUN Unissex 100% Algodão','49','Camiseta FUN Unissex 100% Algodão','1391.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
@@ -1927,21 +1576,11 @@ insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validad
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'T-SHIRT FEMININA A CARA DE PAINHO - DIA DOS PAIS','94','T-SHIRT FEMININA A CARA DE PAINHO - DIA DOS PAIS','1477.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'BLUSA FEMININA','154','BLUSA FEMININA','1478.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'CAMISA BASICA CREPE ROSA','399','CAMISA BASICA CREPE ROSA','1479.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camis
-eta Feminina Stoned Follow the Baile','79','Camiseta Feminina Stoned Follow the Baile','1480.jpg','2020-01-01',CURRENT
-_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'T-SHI
-RT FEMININA PÔR DO SOL EM ITAPUÃ','94','T-SHIRT FEMININA PÔR DO SOL EM ITAPUÃ','1481.jpg','2020-01-01',CURRENT_TIMESTA
-MP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'T-SHI
-RT MASCULINA PAINHO - DIA DOS PAIS','99','T-SHIRT MASCULINA PAINHO - DIA DOS PAIS','1482.jpg','2020-01-01',CURRENT_TIM
-ESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camis
-eta Feminina Stoned Five Doll','79','Camiseta Feminina Stoned Five Doll','1483.jpg','2020-01-01',CURRENT_TIMESTAMP,CUR
-RENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camis
-eta Feminina Stoned Gun Girl','79','Camiseta Feminina Stoned Gun Girl','1484.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRE
-NT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camiseta Feminina Stoned Follow the Baile','79','Camiseta Feminina Stoned Follow the Baile','1480.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'T-SHIRT FEMININA PÔR DO SOL EM ITAPUÃ','94','T-SHIRT FEMININA PÔR DO SOL EM ITAPUÃ','1481.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'T-SHIRT MASCULINA PAINHO - DIA DOS PAIS','99','T-SHIRT MASCULINA PAINHO - DIA DOS PAIS','1482.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camiseta Feminina Stoned Five Doll','79','Camiseta Feminina Stoned Five Doll','1483.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Camiseta Feminina Stoned Gun Girl','79','Camiseta Feminina Stoned Gun Girl','1484.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Blusa de Alça Feminina Endless','89','Blusa de Alça Feminina Endless','1485.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'Blusa de Alça Feminina Secret Glam','94','Blusa de Alça Feminina Secret Glam','1486.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,5,'REGATA FEMININA SALVADOR MEU AMOR','84','REGATA FEMININA SALVADOR MEU AMOR','1487.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
@@ -2217,21 +1856,11 @@ insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validad
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,7,'Calça Jeans Rasgos Premium','328','Calça Jeans Rasgos Premium','1717.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,7,'Calça Jeans Comfort Jogging','300','Calça Jeans Comfort Jogging','1718.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,7,'Calça Jeans Basic Blue','208','Calça Jeans Basic Blue','1719.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,7,'Calça
- Jeans O'Neill Tacoma Azul','109','Calça Jeans O'Neill Tacoma Azul','1720.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_
-TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,7,'Calça
- Moletom Fatal Azul Mescla','59','Calça Moletom Fatal Azul Mescla','1721.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_T
-IMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,7,'Calça
- Moletom Fatal Cold Preta e Cinza','59','Calça Moletom Fatal Cold Preta e Cinza','1722.jpg','2020-01-01',CURRENT_TIMES
-TAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,7,'Calça
- Jeans Ecko Skinny Azul','129','Calça Jeans Ecko Skinny Azul','1723.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMEST
-AMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,7,'Calça
- Jeans O'Neill Geo Azul','119','Calça Jeans O'Neill Geo Azul','1724.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMEST
-AMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,7,'Calça Jeans ONeill Tacoma Azul','109','Calça Jeans ONeill Tacoma Azul','1720.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,7,'Calça Moletom Fatal Azul Mescla','59','Calça Moletom Fatal Azul Mescla','1721.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,7,'Calça Moletom Fatal Cold Preta e Cinza','59','Calça Moletom Fatal Cold Preta e Cinza','1722.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,7,'Calça Jeans Ecko Skinny Azul','129','Calça Jeans Ecko Skinny Azul','1723.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,7,'Calça Jeans ONeill Geo Azul','119','Calça Jeans ONeill Geo Azul','1724.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,7,'Calça Ecko Slim Chino Preto','129','Calça Ecko Slim Chino Preto','1725.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,7,'Calça Jeans Ecko Slim Preta','129','Calça Jeans Ecko Slim Preta','1726.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,7,'Calça Moletom Fatal Vinho','59','Calça Moletom Fatal Vinho','1727.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
@@ -2275,22 +1904,12 @@ insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validad
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,7,'CALÇA SUPER COMFORT MESCLA','225','CALÇA SUPER COMFORT MESCLA','1765.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,7,'CALÇA JEANS','135','CALÇA JEANS','1766.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,7,'CALÇA JEANS SLIM DARK BLUE Mofficer','198','CALÇA JEANS SLIM DARK BLUE Mofficer','1767.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,11,'Drác
-ula - Dark Edition','49','Drácula - Dark Edition','1768.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,11,'O Sa
-ngue dos Elfos - The Witcher: Volume 3','32','O Sangue dos Elfos - The Witcher: Volume 3','1769.jpg','2020-01-01',CURR
-ENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,11,'A Es
-pada do Destino - The Witcher: Volume 2','35','A Espada do Destino - The Witcher: Volume 2','1770.jpg','2020-01-01',CU
-RRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,11,'Mito
-logia Nórdica - Edição de Luxo','35','Mitologia Nórdica - Edição de Luxo','1771.jpg','2020-01-01',CURRENT_TIMESTAMP,CU
-RRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,11,'Tril
-ogia da Fundação - Deluxe','98','Trilogia da Fundação - Deluxe','1772.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIME
-STAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,11,'Temp
-o de Tempestade - The Witcher - A Saga do Bruxo Geralt de Rivia - Prelúdio','37','Tempo de Tempestade - The Witcher - A Saga do Bruxo Geralt de Rivia - Prelúdio','1773.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,11,'Drácula - Dark Edition','49','Drácula - Dark Edition','1768.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,11,'O Sangue dos Elfos - The Witcher: Volume 3','32','O Sangue dos Elfos - The Witcher: Volume 3','1769.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,11,'A Espada do Destino - The Witcher: Volume 2','35','A Espada do Destino - The Witcher: Volume 2','1770.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,11,'Mitologia Nórdica - Edição de Luxo','35','Mitologia Nórdica - Edição de Luxo','1771.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,11,'Trilogia da Fundação - Deluxe','98','Trilogia da Fundação - Deluxe','1772.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,11,'Tempo de Tempestade - The Witcher - A Saga do Bruxo Geralt de Rivia - Prelúdio','37','Tempo de Tempestade - The Witcher - A Saga do Bruxo Geralt de Rivia - Prelúdio','1773.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,11,'Good Omens: Belas Maldições','19','Good Omens: Belas Maldições','1774.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,11,'Frankenstein','56','Frankenstein','1775.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,11,'Duna','40','Duna','1776.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
@@ -2301,21 +1920,12 @@ insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validad
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,11,'O Labirinto Do Fauno','56','O Labirinto Do Fauno','1781.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,11,'Trono de vidro: Coroa da meia-noite (Vol. 2)','31','Trono de vidro: Coroa da meia-noite (Vol. 2)','1782.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,11,'Trono de Vidro. Reino de Cinzas - Volume 6 (+ Marcadores, Tatuagem e Pin)','64','Trono de Vidro. Reino de Cinzas - Volume 6 (+ Marcadores, Tatuagem e Pin)','1783.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,11,'Tron
-o de Vidro: Império de tempestades (Vol. 5 Tomo 2)','33','Trono de Vidro: Império de tempestades (Vol. 5 Tomo 2)','178
-4.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,11,'Vilã
-o','34','Vilão','1785.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,11,'Temp
-o do Desprezo - The Witcher: Volume 4','31','Tempo do Desprezo - The Witcher: Volume 4','1786.jpg','2020-01-01',CURREN
-T_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,11,'Cona
-n, o Bárbaro - Livro 1 Exclusivo Amazon','29','Conan, o Bárbaro - Livro 1 Exclusivo Amazon','1787.jpg','2020-01-01',CU
-RRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,11,'Mise
-ry','41','Misery','1788.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,11,'Neur
-omancer','27','Neuromancer','1789.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,11,'Trono de Vidro: Império de tempestades (Vol. 5 Tomo 2)','33','Trono de Vidro: Império de tempestades (Vol. 5 Tomo 2)','1784.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,11,'Vilão','34','Vilão','1785.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,11,'Tempo do Desprezo - The Witcher: Volume 4','31','Tempo do Desprezo - The Witcher: Volume 4','1786.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,11,'Conan, o Bárbaro - Livro 1 Exclusivo Amazon','29','Conan, o Bárbaro - Livro 1 Exclusivo Amazon','1787.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,11,'Misery','41','Misery','1788.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,11,'Neuromancer','27','Neuromancer','1789.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,11,'Os Heróis do Olimpo - Box','105','Os Heróis do Olimpo - Box','1790.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,11,'Eu sou a lenda','27','Eu sou a lenda','1791.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,11,'Batismo de Fogo - The Witcher: Volume 5','32','Batismo de Fogo - The Witcher: Volume 5','1792.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
@@ -2326,21 +1936,12 @@ insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validad
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,11,'Harry Potter e a Pedra Filosofal - Edição Ilustrada','45','Harry Potter e a Pedra Filosofal - Edição Ilustrada','1797.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,11,'Harry Potter e a Criança Amaldiçoada - Parte Um e Dois','27','Harry Potter e a Criança Amaldiçoada - Parte Um e Dois','1798.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,11,'Corte de asas e ruína (Vol. 3 Corte de espinhos e rosas)','36','Corte de asas e ruína (Vol. 3 Corte de espinhos e rosas)','1799.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-nsert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,11,'A Da
-nça dos Dragões. As Crônicas de Gelo e Fogo - Livro 5','20','A Dança dos Dragões. As Crônicas de Gelo e Fogo - Livro 5
-','1800.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,11,'Nós'
-,'35','Nós','1801.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,11,'Flor
-es para Algernon','31','Flores para Algernon','1802.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,11,'Blad
-e Runner: Androides sonham com ovelhas elétricas?','25','Blade Runner: Androides sonham com ovelhas elétricas?','1803.
-jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,11,'Fogo
- & Sangue – Volume 1','41','Fogo & Sangue – Volume 1','1804.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
-insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,11,'O sa
-ngue dos elfos - The Witcher - A saga do bruxo Geralt de Rívia: 3','32','O sangue dos elfos - The Witcher - A saga do 
-bruxo Geralt de Rívia: 3','1805.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,11,'A Dança dos Dragões. As Crônicas de Gelo e Fogo - Livro 5','20','A Dança dos Dragões. As Crônicas de Gelo e Fogo - Livro 5','1800.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,11,'Nós','35','Nós','1801.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,11,'Flores para Algernon','31','Flores para Algernon','1802.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,11,'Blade Runner: Androides sonham com ovelhas elétricas?','25','Blade Runner: Androides sonham com ovelhas elétricas?','1803.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,11,'Fogo & Sangue – Volume 1','41','Fogo & Sangue – Volume 1','1804.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,11,'O sangue dos elfos - The Witcher - A saga do bruxo Geralt de Rívia: 3','32','O sangue dos elfos - The Witcher - A saga do bruxo Geralt de Rívia: 3','1805.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,11,'Rastro de sangue: Príncipe Drácula: 2','43','Rastro de sangue: Príncipe Drácula: 2','1806.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,11,'As Crônicas de Nárnia. Brochura','62','As Crônicas de Nárnia. Brochura','1807.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
 insert into anuncios (user_id,categoria_id,descricao,preco,titulo,imagem,validade,created,modified) values (1,11,'Máquinas como eu: E gente como vocês','43','Máquinas como eu: E gente como vocês','1808.jpg','2020-01-01',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
