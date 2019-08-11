@@ -189,7 +189,7 @@ class AnunciosController extends AppController {
       }
     }
 
-    $condicoes['conditions']["Anuncios.id  IN "] = [1,5,10,15,20,25,30,35,40,100,120,125,127,150,151,152,160,165,170,200,210,215,267,289,300,330,350,400,504,510,580,600,610,670,700];
+    $condicoes['conditions']["Anuncios.id  IN "] = [1,5,10,15,20,25,30,35,40,100,120,125,127,150,151,152,160,165,170,200,210,215,267,289,300,330,352,400,504,510,580,600,610,670,700,1119,1171];
 
     $resultado = $this->Anuncios->find('all', $condicoes);
     $anuncios = $this->paginate($resultado);
