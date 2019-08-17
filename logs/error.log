@@ -5972,3 +5972,763 @@ Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
 
 
 
+2019-08-17 12:58:37 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/html/vendor/cakephp/cakephp/src/Error/Debugger.php line=850 in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /tracking/visitas
+Referer URL: http://localhost/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-08-17 12:58:37 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/vendor/cakephp/cakephp/src/Error/Debugger.php:850) in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Request URL: /tracking/visitas
+Referer URL: http://localhost/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-08-17 12:58:37 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/vendor/cakephp/cakephp/src/Error/Debugger.php:850) in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /tracking/visitas
+Referer URL: http://localhost/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-08-17 12:58:51 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/html/src/Controller/TrackingController.php line=64 in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /tracking/eventos
+Referer URL: http://localhost/anuncios/view/2942
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-08-17 12:58:51 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/Controller/TrackingController.php:64) in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Request URL: /tracking/eventos
+Referer URL: http://localhost/anuncios/view/2942
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-08-17 12:58:51 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/Controller/TrackingController.php:64) in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /tracking/eventos
+Referer URL: http://localhost/anuncios/view/2942
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-08-17 12:58:56 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/html/src/Controller/TrackingController.php line=64 in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /tracking/eventos
+Referer URL: http://localhost/anuncios/view/2280
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-08-17 12:58:56 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/Controller/TrackingController.php:64) in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Request URL: /tracking/eventos
+Referer URL: http://localhost/anuncios/view/2280
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-08-17 12:58:56 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/Controller/TrackingController.php:64) in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /tracking/eventos
+Referer URL: http://localhost/anuncios/view/2280
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-08-17 12:59:06 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/html/src/Controller/TrackingController.php line=64 in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /tracking/eventos
+Referer URL: http://localhost/anuncios/view/4461
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-08-17 12:59:06 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/Controller/TrackingController.php:64) in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Request URL: /tracking/eventos
+Referer URL: http://localhost/anuncios/view/4461
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-08-17 12:59:06 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/Controller/TrackingController.php:64) in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /tracking/eventos
+Referer URL: http://localhost/anuncios/view/4461
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-08-17 12:59:50 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/html/src/Controller/TrackingController.php line=64 in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /tracking/eventos
+Referer URL: http://localhost/anuncios/view/4461
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-08-17 12:59:50 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/Controller/TrackingController.php:64) in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Request URL: /tracking/eventos
+Referer URL: http://localhost/anuncios/view/4461
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-08-17 12:59:50 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/Controller/TrackingController.php:64) in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /tracking/eventos
+Referer URL: http://localhost/anuncios/view/4461
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-08-17 12:59:50 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/html/src/Controller/TrackingController.php line=64 in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /tracking/eventos
+Referer URL: http://localhost/anuncios/view/4461
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-08-17 12:59:50 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/Controller/TrackingController.php:64) in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Request URL: /tracking/eventos
+Referer URL: http://localhost/anuncios/view/4461
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-08-17 12:59:50 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/Controller/TrackingController.php:64) in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /tracking/eventos
+Referer URL: http://localhost/anuncios/view/4461
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-08-17 12:59:51 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/html/src/Controller/TrackingController.php line=64 in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /tracking/eventos
+Referer URL: http://localhost/anuncios/view/4461
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-08-17 12:59:51 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/Controller/TrackingController.php:64) in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Request URL: /tracking/eventos
+Referer URL: http://localhost/anuncios/view/4461
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-08-17 12:59:51 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/Controller/TrackingController.php:64) in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /tracking/eventos
+Referer URL: http://localhost/anuncios/view/4461
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-08-17 12:59:51 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/html/src/Controller/TrackingController.php line=64 in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /tracking/eventos
+Referer URL: http://localhost/anuncios/pesquisar
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-08-17 12:59:51 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/Controller/TrackingController.php:64) in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Request URL: /tracking/eventos
+Referer URL: http://localhost/anuncios/pesquisar
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-08-17 12:59:51 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/Controller/TrackingController.php:64) in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /tracking/eventos
+Referer URL: http://localhost/anuncios/pesquisar
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-08-17 12:59:57 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/html/src/Controller/TrackingController.php line=64 in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /tracking/eventos
+Referer URL: http://localhost/anuncios/pesquisar
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-08-17 12:59:57 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/Controller/TrackingController.php:64) in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Request URL: /tracking/eventos
+Referer URL: http://localhost/anuncios/pesquisar
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-08-17 12:59:57 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/Controller/TrackingController.php:64) in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /tracking/eventos
+Referer URL: http://localhost/anuncios/pesquisar
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-08-17 12:59:57 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/html/src/Controller/TrackingController.php line=64 in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /tracking/eventos
+Referer URL: http://localhost/anuncios/pesquisar?pesquisa=profissional&page=2
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-08-17 12:59:57 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/Controller/TrackingController.php:64) in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Request URL: /tracking/eventos
+Referer URL: http://localhost/anuncios/pesquisar?pesquisa=profissional&page=2
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-08-17 12:59:57 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/Controller/TrackingController.php:64) in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /tracking/eventos
+Referer URL: http://localhost/anuncios/pesquisar?pesquisa=profissional&page=2
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-08-17 13:00:02 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/html/src/Controller/TrackingController.php line=64 in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /tracking/eventos
+Referer URL: http://localhost/anuncios/pesquisar?pesquisa=profissional&page=2
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-08-17 13:00:02 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/Controller/TrackingController.php:64) in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Request URL: /tracking/eventos
+Referer URL: http://localhost/anuncios/pesquisar?pesquisa=profissional&page=2
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-08-17 13:00:02 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/Controller/TrackingController.php:64) in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /tracking/eventos
+Referer URL: http://localhost/anuncios/pesquisar?pesquisa=profissional&page=2
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-08-17 13:00:02 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/html/src/Controller/TrackingController.php line=64 in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /tracking/eventos
+Referer URL: http://localhost/anuncios/pesquisar?pesquisa=profissional&page=3
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-08-17 13:00:02 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/Controller/TrackingController.php:64) in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Request URL: /tracking/eventos
+Referer URL: http://localhost/anuncios/pesquisar?pesquisa=profissional&page=3
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-08-17 13:00:02 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/Controller/TrackingController.php:64) in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /tracking/eventos
+Referer URL: http://localhost/anuncios/pesquisar?pesquisa=profissional&page=3
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-08-17 13:00:08 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/html/src/Controller/TrackingController.php line=64 in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /tracking/eventos
+Referer URL: http://localhost/anuncios/pesquisar?pesquisa=profissional&page=3
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-08-17 13:00:08 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/Controller/TrackingController.php:64) in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Request URL: /tracking/eventos
+Referer URL: http://localhost/anuncios/pesquisar?pesquisa=profissional&page=3
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-08-17 13:00:08 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/Controller/TrackingController.php:64) in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /tracking/eventos
+Referer URL: http://localhost/anuncios/pesquisar?pesquisa=profissional&page=3
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-08-17 13:00:08 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/html/src/Controller/TrackingController.php line=64 in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /tracking/eventos
+Referer URL: http://localhost/anuncios/pesquisar?pesquisa=profissional&page=4
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-08-17 13:00:08 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/Controller/TrackingController.php:64) in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Request URL: /tracking/eventos
+Referer URL: http://localhost/anuncios/pesquisar?pesquisa=profissional&page=4
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-08-17 13:00:08 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/Controller/TrackingController.php:64) in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /tracking/eventos
+Referer URL: http://localhost/anuncios/pesquisar?pesquisa=profissional&page=4
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-08-17 13:00:13 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/html/src/Controller/TrackingController.php line=64 in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /tracking/eventos
+Referer URL: http://localhost/anuncios/pesquisar?pesquisa=profissional&page=4
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-08-17 13:00:13 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/Controller/TrackingController.php:64) in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Request URL: /tracking/eventos
+Referer URL: http://localhost/anuncios/pesquisar?pesquisa=profissional&page=4
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-08-17 13:00:13 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/Controller/TrackingController.php:64) in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /tracking/eventos
+Referer URL: http://localhost/anuncios/pesquisar?pesquisa=profissional&page=4
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-08-17 13:00:13 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/html/src/Controller/TrackingController.php line=64 in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /tracking/eventos
+Referer URL: http://localhost/anuncios/pesquisar?pesquisa=profissional&page=4
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-08-17 13:00:13 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/Controller/TrackingController.php:64) in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Request URL: /tracking/eventos
+Referer URL: http://localhost/anuncios/pesquisar?pesquisa=profissional&page=4
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-08-17 13:00:13 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/Controller/TrackingController.php:64) in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /tracking/eventos
+Referer URL: http://localhost/anuncios/pesquisar?pesquisa=profissional&page=4
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-08-17 13:00:13 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/html/src/Controller/TrackingController.php line=64 in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /tracking/eventos
+Referer URL: http://localhost/anuncios/pesquisar?pesquisa=profissional&page=4
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-08-17 13:00:13 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/Controller/TrackingController.php:64) in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Request URL: /tracking/eventos
+Referer URL: http://localhost/anuncios/pesquisar?pesquisa=profissional&page=4
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-08-17 13:00:13 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/Controller/TrackingController.php:64) in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /tracking/eventos
+Referer URL: http://localhost/anuncios/pesquisar?pesquisa=profissional&page=4
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-08-17 13:00:14 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/html/src/Controller/TrackingController.php line=64 in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /tracking/eventos
+Referer URL: http://localhost/anuncios/pesquisar
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-08-17 13:00:14 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/Controller/TrackingController.php:64) in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Request URL: /tracking/eventos
+Referer URL: http://localhost/anuncios/pesquisar
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-08-17 13:00:14 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/Controller/TrackingController.php:64) in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /tracking/eventos
+Referer URL: http://localhost/anuncios/pesquisar
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-08-17 13:34:05 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/html/src/Controller/TrackingController.php line=64 in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /tracking/eventos
+Referer URL: http://localhost/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-08-17 13:34:05 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/Controller/TrackingController.php:64) in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Request URL: /tracking/eventos
+Referer URL: http://localhost/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-08-17 13:34:05 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/Controller/TrackingController.php:64) in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /tracking/eventos
+Referer URL: http://localhost/
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
