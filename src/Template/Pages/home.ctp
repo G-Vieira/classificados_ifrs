@@ -31,7 +31,7 @@
           <?php if(!$anuncios->isEmpty()): ?>
           <h3>Anúncios mais procurados</h3>
           <hr>
-          <div id="carousel_anuncios" data-section="carrossel" class="carousel slide" data-ride="carousel">
+          <div id="carousel_anuncios" data-section="carrossel" class="carousel slide" data-ride="carousel" data-interval="2000">
          
             <!--
             <ol class="carousel-indicators">

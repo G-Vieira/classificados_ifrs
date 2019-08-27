@@ -20,3 +20,5 @@ ahoy.configure({
 });
 
 ahoy.trackAll();
+
+/* EXIBIÇÃO DO FILTRO */
