@@ -12,7 +12,7 @@
       <li><?= $this->Html->link(__('Novo Anúncio'), ['action' => 'add']) ?></li>
       <li><?= $this->Html->link(__('Listar Categorias'), ['controller' => 'Categorias', 'action' => 'index']) ?></li>
     </ul>
-    <ul data-section="section" class="nav nav-pills nav-stacked">
+    <ul data-section="filtros" class="nav nav-pills nav-stacked">
       <li class="heading"><b><?= __('Filtros Por:') ?></b></li>
       <li><?= __('Categorias') ?></li>
       <?php foreach ($categorias as $categoria): ?>
@@ -30,6 +30,7 @@
   </div>
   <div class="col-md-9">
     <h3><?= __('Anúncios mais procurados') ?></h3>
+    <h3 id="filtro_nome"></h3>
     <table cellpadding="0" cellspacing="0" class="table">
       <thead>
         <tr>
@@ -60,7 +61,7 @@
             <?php endforeach; ?>
       </tbody>
     </table>
-    <div class="paginator">
+    <div class="paginator" data-section="paginacao">
       <ul class="pagination">
             <?= $this->Paginator->first('<< ' . __('primeiro')) ?>
             <?= $this->Paginator->prev('< ' . __('amterior')) ?>

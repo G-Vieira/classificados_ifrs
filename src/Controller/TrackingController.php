@@ -24,6 +24,10 @@ class TrackingController extends AppController {
     $events = $this->request->data['events_json'];
     $visit_token = $this->request->data['visit_token'];
     $visitor_token = $this->request->data['visitor_token'];
+
+    $events = json_decode($events);
+    $events[0]->ip = $this->request->clientIp();
+    $events = json_encode($events);
     
     $redis = new \Predis\Client([
       "scheme" => "tcp",
@@ -31,7 +35,7 @@ class TrackingController extends AppController {
       "password" => "tccredis",
 		  "port" => 6379
     ]);
-
+    
     $key = "visitor:$visit_token";
     if(empty($redis->get($key))){
       $redis->set($key, $visit_token);
@@ -48,6 +52,10 @@ class TrackingController extends AppController {
     $events = $this->request->data['events_json'];
     $visit_token = $this->request->data['visit_token'];
     $visitor_token = $this->request->data['visitor_token'];
+
+    $events = json_decode($events);
+    $events[0]->ip = $this->request->clientIp();
+    $events = json_encode($events);
     
     $redis = new \Predis\Client([
       "scheme" => "tcp",
@@ -61,7 +69,7 @@ class TrackingController extends AppController {
       $redis->set($key, $visit_token);
     }
     $res = $redis->rpush("events:$visitor_token", $events);
-    echo json_encode(['result' => 'OK']);
+    echo json_encode(['result' => $events]);
   }
 
 }

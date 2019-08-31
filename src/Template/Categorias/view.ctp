@@ -21,7 +21,7 @@
       <li><?= $this->Html->link(__('Listar Anúncios'), ['controller' => 'Anuncios', 'action' => 'index']) ?> </li>
       <li><?= $this->Html->link(__('Novo Anúncio'), ['controller' => 'Anuncios', 'action' => 'add']) ?> </li>
     </ul>
-    <ul data-section="section" class="nav nav-pills nav-stacked">
+    <ul class="nav nav-pills nav-stacked">
       <li class="heading"><b><?= __('Filtros Por:') ?></b></li>
       <li><?= __('Anúncios') ?></li>
       <li><?= $this->Html->link(__('Últimos adicionados'), ['controller' => 'anuncios','action' => 'ultimos']) ?></li>
@@ -64,9 +64,9 @@
         </table>
       <?php endif; ?>
     </div>
-    <div class="row" data-section="filtros">
+    <div class="row">
       <?php if (!$anuncios->isEmpty()): ?>
-        <h4><?= __('Anúncios') ?></h4>
+        <h4><?= __('Anúncios') ?></h4><h4 id="filtro_nome"></h4>
         <table cellpadding="0" cellspacing="0" class="table">
           <tr>
             <th scope="col"><?= __('Imagem') ?></th>
@@ -86,7 +86,7 @@
             </tr>
           <?php endforeach; ?>
         </table>
-        <div class="paginator">
+        <div class="paginator" data-section="paginacao">
           <ul class="pagination">
             <?= $this->Paginator->first('<< ' . __('primeiro')) ?>
             <?= $this->Paginator->prev('< ' . __('anterior')) ?>
