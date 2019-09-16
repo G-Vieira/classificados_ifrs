@@ -26,6 +26,15 @@ if(buscando == 1){
 }
 
 $(document).ready(function(){
+  console.log(buscando);
+  if(buscando == 1){
+    $("#acao_busca").text("Parar Busca");
+    console.log("B");
+  }else{
+    $("#acao_busca").text("Iniciar Busca");
+    console.log("C");
+  }
+
   var url = new URL(document.URL).search;
   if(url.includes("preco")){
     if(url.includes("A")){

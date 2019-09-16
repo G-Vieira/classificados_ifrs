@@ -71,7 +71,7 @@
             ";
           }else{
            //echo "<li>" . $this->Html->link(__('Registrar-se'), ['controller' => 'users', 'action' => 'register'])  . "</li>";
-           echo "<li>" . $this->Html->link(__('Login'), ['controller' => 'users', 'action' => 'login'])  . "</li>";
+           //echo "<li>" . $this->Html->link(__('Login'), ['controller' => 'users', 'action' => 'login'])  . "</li>";
          }
          ?>
          <form data-section="campo_busca" class="navbar-form navbar-left" method="post" action="<?= $this->Url->build(["controller" => "Anuncios","action" => "pesquisar"]); ?>">
