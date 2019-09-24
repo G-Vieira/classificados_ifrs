@@ -82,6 +82,13 @@
     FOREIGN KEY(user_id) REFERENCES users(id)
   );
 
+  CREATE TABLE event (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    visitor_token varchar(400) not null,
+    visit_token varchar(400) not null,
+    event text not null
+  );
+
   INSERT INTO cidades (nome,uf) VALUES('Ibirubá','RS');
   INSERT INTO cidades (nome,uf) VALUES('Tapera','RS');
   INSERT INTO cidades (nome,uf) VALUES('Selbach','RS');

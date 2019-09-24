@@ -4,38 +4,34 @@ function getCookie(name) {
   if (parts.length == 2) return parts.pop().split(";").shift();
 }
 
-var buscando = getCookie("buscando");
+var url = new URL(document.URL).search;
 
-if(buscando == 1){
-  ahoy.configure({
-    urlPrefix: "",
-    visitsUrl: "/tracking/visitas",
-    eventsUrl: "/tracking/eventos",
-    page: null,
-    platform: "Web",
-    useBeacon: true,
-    startOnReady: true,
-    trackVisits: true,
-    cookies: true,
-    cookieDomain: null,
-    headers: {},
-    visitParams: {},
-    withCredentials: false
-  });
-  ahoy.trackAll();
+/* SE HOUVER UM PARAMETRO GET CHAMADO MYSQL, ENTAO GRAVAR O TRACKING NO BANCO MYSQL*/
+var visitsUrl = "/tracking/visitas";
+var eventsUrl = "/tracking/eventos";
+if(url.includes("mysql")){
+  visitsUrl = "/tracking/visitasmysql";
+  eventsUrl = "/tracking/eventosmysql";
 }
 
-$(document).ready(function(){
-  console.log(buscando);
-  if(buscando == 1){
-    $("#acao_busca").text("Parar Busca");
-    console.log("B");
-  }else{
-    $("#acao_busca").text("Iniciar Busca");
-    console.log("C");
-  }
+ahoy.configure({
+  urlPrefix: "",
+  visitsUrl: visitsUrl,
+  eventsUrl: eventsUrl,
+  page: null,
+  platform: "Web",
+  useBeacon: true,
+  startOnReady: true,
+  trackVisits: true,
+  cookies: true,
+  cookieDomain: null,
+  headers: {},
+  visitParams: {},
+  withCredentials: false
+});
+ahoy.trackAll();
 
-  var url = new URL(document.URL).search;
+$(document).ready(function(){
   if(url.includes("preco")){
     if(url.includes("A")){
       $("#filtro_nome").text("Até R$ 500,00");
@@ -54,18 +50,3 @@ $(document).on("click",".anuncio_carrossel",function(event){
   event.preventDefault();
   $("#car_" + $(this).attr("data-id"))[0].click();
 });
-
-$(document).on("click","#acao_busca",function(event){
-  if(buscando == 1){
-    if(confirm("Deseja para a busca?")){
-      document.cookie = "buscando=0";
-      buscando = 0;
-      $(this).text("Iniciar busca");
-    }
-  }else{
-    document.cookie = "buscando=1";
-    buscando = 1;
-    $(this).text("Parar busca");
-  }
-});
-

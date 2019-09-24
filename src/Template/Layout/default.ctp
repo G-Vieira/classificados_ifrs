@@ -81,9 +81,6 @@
           <button type="submit" class="btn btn-default">Procurar</button>
         </form>
       </ul>
-      <ul class="nav navbar-nav navbar-right" data-section="acoes_busca">
-        <li style="padding: 8px 8px;"><button class="btn btn-default" id="acao_busca">Iniciar Busca</button></li>
-      </ul>
       <ul class="nav navbar-nav navbar-right" data-section="filtros">
        <li><?= $this->Html->link(__('Anúncios'), ['controller' => 'anuncios']) ?></li>
        <li><?= $this->Html->link(__('Categorias'), ['controller' => 'categorias']) ?></li>
