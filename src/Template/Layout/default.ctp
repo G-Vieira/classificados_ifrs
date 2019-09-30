@@ -86,6 +86,7 @@
        <li><?= $this->Html->link(__('Categorias'), ['controller' => 'categorias']) ?></li>
        <li><?= ($authUser)?($this->Html->link(__('Sugestões'), ['controller' => 'sugestoes', 'action' => 'add'])):'' ?></li>
        <li><?= ($authUser['role'] === 'admin')? ($this->Html->link(__('Usuarios'), ['controller' => 'Users', 'action' => 'index'])): ''?></li>
+       <li><?= ($authUser['role'] === 'admin')? ($this->Html->link(__('Relatórios'), ['controller' => 'Tracking', 'action' => 'index'])): ''?></li>
       
      </ul> 
    </div><!--/.nav-collapse -->

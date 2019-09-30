@@ -16,6 +16,99 @@ use Cake\Datasource\ConnectionManager;
 */
 class TrackingController extends AppController {
 
+  public function index(){
+    $this->isAdmin();
+  }
+
+  public function get_dados(){
+    $redis = new \Predis\Client([
+      "scheme" => "tcp",
+		  "host" => "redis",
+      "password" => "tccredis",
+		  "port" => 6379
+    ]);
+
+    $keys = $redis->keys('*events*');
+
+    $dados = [];
+    foreach($keys as $key){
+      $dados[str_replace('events:','',$key)] = $redis->lrange($key,0,-1);
+    }
+
+    return $dados;
+  }
+
+  public function relatorio1(){
+    $this->isAdmin();
+    
+    $dados = $this->get_dados();
+    $this->set(compact('dados'));
+  }
+
+  public function relatorio2(){
+    $this->isAdmin();
+
+    $dados = $this->get_dados();
+
+    $resultados = [];
+    $temp = TableRegistry::get('Anuncios');
+
+    foreach($dados as $dado){
+      foreach($dado as $d){
+        $json = json_decode($d)[0];
+        if (isset($json->properties->url)){
+          if(strpos($json->properties->url,'anuncios/view') !== false){
+            $id = explode('/',$json->properties->url);
+            $resultado = $temp->find('all', ['conditions' => ["Anuncios.id = " => $id[count($id) - 1]]]);
+            
+            if(!isset($resultados[$resultado->first()->titulo])){
+              $resultados[$resultado->first()->titulo] = 0;
+            }
+
+            $resultados[$resultado->first()->titulo]++;
+
+          }
+        }
+  
+      }
+    }
+    arsort($resultados);
+
+    $this->set(compact('resultados'));
+  }
+
+  public function relatorio3(){
+    $this->isAdmin();
+    
+    $dados = $this->get_dados();
+    $resultados = [];
+    $temp = TableRegistry::get('Anuncios');
+
+    foreach($dados as $dado){
+      foreach($dado as $d){
+        $json = json_decode($d)[0];
+        if(isset($json->properties->section)){
+  
+          if ($json->properties->section == 'campo_busca' && isset($json->properties->value)){
+            $resultado = $temp->find('all', ['conditions' => ["Anuncios.titulo LIKE " => '%' . str_replace(' ','%',$json->properties->value) . '%']]);
+            
+            if($resultado->isEmpty()){
+              if(!isset($resultados[$json->properties->value])){
+                $resultados[$json->properties->value] = 0;
+              }
+
+              $resultados[$json->properties->value]++;
+            }
+          }
+  
+        }
+      }
+    }
+
+    arsort($resultados);
+    $this->set(compact('resultados'));
+  }
+
   public function visitas(){
     $this->RequestHandler->respondAs('json');
     $this->response->type('application/json');  
