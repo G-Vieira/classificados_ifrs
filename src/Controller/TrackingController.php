@@ -25,7 +25,8 @@ class TrackingController extends AppController {
       "scheme" => "tcp",
 		  "host" => "redis",
       "password" => "tccredis",
-		  "port" => 6379
+      "port" => 6379,
+      "database" => 1
     ]);
 
     $keys = $redis->keys('*events*');
