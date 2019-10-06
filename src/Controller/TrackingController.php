@@ -23,10 +23,10 @@ class TrackingController extends AppController {
   public function get_dados(){
     $redis = new \Predis\Client([
       "scheme" => "tcp",
-		  "host" => "redis",
+		  "host" => "191.235.80.137",
       "password" => "tccredis",
       "port" => 6379,
-      "database" => 1
+      "database" => 0
     ]);
 
     $keys = $redis->keys('*events*');
@@ -108,6 +108,13 @@ class TrackingController extends AppController {
 
     arsort($resultados);
     $this->set(compact('resultados'));
+  }
+
+  public function relatorio4(){
+    $this->isAdmin();
+    
+    $dados = $this->get_dados();
+    $this->set(compact('dados'));
   }
 
   public function visitas(){

@@ -16,6 +16,10 @@
     </div>
 
     <div class="row" style="margin-top: 10px;">
+      <?= $this->Html->link(__('Filtro utilizado na busca real'), ['controller' => 'tracking', 'action' => 'relatorio4'],['class' => 'btn btn-default']) ?>
+    </div>
+
+    <div class="row" style="margin-top: 10px;">
       <?= $this->Html->link(__('Produtos mais procurados'), ['controller' => 'tracking', 'action' => 'relatorio2'],['class' => 'btn btn-default']) ?>
     </div>
 
