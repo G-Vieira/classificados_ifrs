@@ -46564,3 +46564,785 @@ Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
 
 
 
+2019-10-13 17:39:04 Warning: Warning (2): Creating default object from empty value in [/var/www/html/src/Controller/TrackingController.php, line 183]
+Request URL: /tracking/visitasmysql
+Referer URL: http://localhost/?mysql
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+App\Controller\TrackingController::visitasmysql() - APP/Controller/TrackingController.php, line 183
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 440
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 119
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 81
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-10-13 17:39:04 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'event' cannot be null
+Request URL: /tracking/visitasmysql
+Referer URL: http://localhost/?mysql
+Stack Trace:
+#0 /var/www/html/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 /var/www/html/vendor/cakephp/cakephp/src/Database/Connection.php(315): Cake\Database\Statement\MysqlStatement->execute()
+#2 /var/www/html/vendor/cakephp/cakephp/src/Database/Query.php(214): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#3 /var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php(1929): Cake\Database\Query->execute()
+#4 /var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php(1823): Cake\ORM\Table->_insert(Object(Cake\ORM\Entity), Array)
+#5 /var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php(1736): Cake\ORM\Table->_processSave(Object(Cake\ORM\Entity), Object(ArrayObject))
+#6 /var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php(1459): Cake\ORM\Table->Cake\ORM\{closure}()
+#7 /var/www/html/vendor/cakephp/cakephp/src/Database/Connection.php(682): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#8 /var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php(1460): Cake\Database\Connection->transactional(Object(Closure))
+#9 /var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php(1737): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#10 /var/www/html/src/Controller/TrackingController.php(195): Cake\ORM\Table->save(Object(Cake\ORM\Entity))
+#11 /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php(440): App\Controller\TrackingController->visitasmysql()
+#12 /var/www/html/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#13 /var/www/html/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\TrackingController))
+#14 /var/www/html/vendor/cakephp/cakephp/src/Http/BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /var/www/html/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 /var/www/html/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 /var/www/html/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 /var/www/html/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 /var/www/html/webroot/index.php(40): Cake\Http\Server->run()
+#25 {main}
+
+
+2019-10-13 17:39:04 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/html/vendor/cakephp/cakephp/src/Error/Debugger.php line=850 in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /tracking/visitasmysql
+Referer URL: http://localhost/?mysql
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-10-13 17:39:04 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/vendor/cakephp/cakephp/src/Error/Debugger.php:850) in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Request URL: /tracking/visitasmysql
+Referer URL: http://localhost/?mysql
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-10-13 17:39:04 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/vendor/cakephp/cakephp/src/Error/Debugger.php:850) in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /tracking/visitasmysql
+Referer URL: http://localhost/?mysql
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-10-13 17:39:43 Warning: Warning (2): Creating default object from empty value in [/var/www/html/src/Controller/TrackingController.php, line 183]
+Request URL: /tracking/visitasmysql
+Referer URL: http://localhost/?mysql
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+App\Controller\TrackingController::visitasmysql() - APP/Controller/TrackingController.php, line 183
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 440
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 119
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 81
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-10-13 17:39:43 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'event' cannot be null
+Request URL: /tracking/visitasmysql
+Referer URL: http://localhost/?mysql
+Stack Trace:
+#0 /var/www/html/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 /var/www/html/vendor/cakephp/cakephp/src/Database/Connection.php(315): Cake\Database\Statement\MysqlStatement->execute()
+#2 /var/www/html/vendor/cakephp/cakephp/src/Database/Query.php(214): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#3 /var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php(1929): Cake\Database\Query->execute()
+#4 /var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php(1823): Cake\ORM\Table->_insert(Object(Cake\ORM\Entity), Array)
+#5 /var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php(1736): Cake\ORM\Table->_processSave(Object(Cake\ORM\Entity), Object(ArrayObject))
+#6 /var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php(1459): Cake\ORM\Table->Cake\ORM\{closure}()
+#7 /var/www/html/vendor/cakephp/cakephp/src/Database/Connection.php(682): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#8 /var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php(1460): Cake\Database\Connection->transactional(Object(Closure))
+#9 /var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php(1737): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#10 /var/www/html/src/Controller/TrackingController.php(195): Cake\ORM\Table->save(Object(Cake\ORM\Entity))
+#11 /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php(440): App\Controller\TrackingController->visitasmysql()
+#12 /var/www/html/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#13 /var/www/html/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\TrackingController))
+#14 /var/www/html/vendor/cakephp/cakephp/src/Http/BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /var/www/html/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 /var/www/html/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 /var/www/html/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 /var/www/html/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 /var/www/html/webroot/index.php(40): Cake\Http\Server->run()
+#25 {main}
+
+
+2019-10-13 17:39:43 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/html/vendor/cakephp/cakephp/src/Error/Debugger.php line=850 in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /tracking/visitasmysql
+Referer URL: http://localhost/?mysql
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-10-13 17:39:43 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/vendor/cakephp/cakephp/src/Error/Debugger.php:850) in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Request URL: /tracking/visitasmysql
+Referer URL: http://localhost/?mysql
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-10-13 17:39:43 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/vendor/cakephp/cakephp/src/Error/Debugger.php:850) in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /tracking/visitasmysql
+Referer URL: http://localhost/?mysql
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-10-13 17:40:17 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /css/bootstrap.min.css.map
+Stack Trace:
+#0 /var/www/html/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /var/www/html/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /var/www/html/vendor/cakephp/cakephp/src/Http/BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /var/www/html/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /var/www/html/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /var/www/html/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /var/www/html/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /var/www/html/webroot/index.php(40): Cake\Http\Server->run()
+#13 {main}
+
+
+2019-10-13 17:40:17 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/html/src/Controller/TrackingController.php line=219 in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /tracking/eventosmysql
+Referer URL: http://localhost/?mysql
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-10-13 17:40:17 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/Controller/TrackingController.php:219) in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Request URL: /tracking/eventosmysql
+Referer URL: http://localhost/?mysql
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-10-13 17:40:17 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/Controller/TrackingController.php:219) in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /tracking/eventosmysql
+Referer URL: http://localhost/?mysql
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-10-13 17:40:38 Warning: Warning (2): Creating default object from empty value in [/var/www/html/src/Controller/TrackingController.php, line 183]
+Request URL: /tracking/visitasmysql
+Referer URL: http://localhost/?mysql
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+App\Controller\TrackingController::visitasmysql() - APP/Controller/TrackingController.php, line 183
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 440
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 119
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 81
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-10-13 17:40:38 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'event' cannot be null
+Request URL: /tracking/visitasmysql
+Referer URL: http://localhost/?mysql
+Stack Trace:
+#0 /var/www/html/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 /var/www/html/vendor/cakephp/cakephp/src/Database/Connection.php(315): Cake\Database\Statement\MysqlStatement->execute()
+#2 /var/www/html/vendor/cakephp/cakephp/src/Database/Query.php(214): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#3 /var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php(1929): Cake\Database\Query->execute()
+#4 /var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php(1823): Cake\ORM\Table->_insert(Object(Cake\ORM\Entity), Array)
+#5 /var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php(1736): Cake\ORM\Table->_processSave(Object(Cake\ORM\Entity), Object(ArrayObject))
+#6 /var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php(1459): Cake\ORM\Table->Cake\ORM\{closure}()
+#7 /var/www/html/vendor/cakephp/cakephp/src/Database/Connection.php(682): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#8 /var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php(1460): Cake\Database\Connection->transactional(Object(Closure))
+#9 /var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php(1737): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#10 /var/www/html/src/Controller/TrackingController.php(195): Cake\ORM\Table->save(Object(Cake\ORM\Entity))
+#11 /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php(440): App\Controller\TrackingController->visitasmysql()
+#12 /var/www/html/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#13 /var/www/html/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\TrackingController))
+#14 /var/www/html/vendor/cakephp/cakephp/src/Http/BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /var/www/html/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 /var/www/html/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 /var/www/html/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 /var/www/html/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 /var/www/html/webroot/index.php(40): Cake\Http\Server->run()
+#25 {main}
+
+
+2019-10-13 17:40:38 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/html/vendor/cakephp/cakephp/src/Error/Debugger.php line=850 in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /tracking/visitasmysql
+Referer URL: http://localhost/?mysql
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-10-13 17:40:38 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/vendor/cakephp/cakephp/src/Error/Debugger.php:850) in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Request URL: /tracking/visitasmysql
+Referer URL: http://localhost/?mysql
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-10-13 17:40:38 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/vendor/cakephp/cakephp/src/Error/Debugger.php:850) in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /tracking/visitasmysql
+Referer URL: http://localhost/?mysql
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-10-13 17:40:38 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /css/bootstrap.min.css.map
+Stack Trace:
+#0 /var/www/html/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /var/www/html/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /var/www/html/vendor/cakephp/cakephp/src/Http/BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /var/www/html/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /var/www/html/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /var/www/html/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /var/www/html/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /var/www/html/webroot/index.php(40): Cake\Http\Server->run()
+#13 {main}
+
+
+2019-10-13 17:41:09 Warning: Warning (2): Creating default object from empty value in [/var/www/html/src/Controller/TrackingController.php, line 183]
+Request URL: /tracking/visitasmysql
+Referer URL: http://localhost/?mysql
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+App\Controller\TrackingController::visitasmysql() - APP/Controller/TrackingController.php, line 183
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 440
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 119
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 81
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-10-13 17:41:09 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /css/bootstrap.min.css.map
+Stack Trace:
+#0 /var/www/html/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /var/www/html/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /var/www/html/vendor/cakephp/cakephp/src/Http/BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /var/www/html/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /var/www/html/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /var/www/html/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /var/www/html/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /var/www/html/webroot/index.php(40): Cake\Http\Server->run()
+#13 {main}
+
+
+2019-10-13 17:41:09 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'event' cannot be null
+Request URL: /tracking/visitasmysql
+Referer URL: http://localhost/?mysql
+Stack Trace:
+#0 /var/www/html/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 /var/www/html/vendor/cakephp/cakephp/src/Database/Connection.php(315): Cake\Database\Statement\MysqlStatement->execute()
+#2 /var/www/html/vendor/cakephp/cakephp/src/Database/Query.php(214): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#3 /var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php(1929): Cake\Database\Query->execute()
+#4 /var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php(1823): Cake\ORM\Table->_insert(Object(Cake\ORM\Entity), Array)
+#5 /var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php(1736): Cake\ORM\Table->_processSave(Object(Cake\ORM\Entity), Object(ArrayObject))
+#6 /var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php(1459): Cake\ORM\Table->Cake\ORM\{closure}()
+#7 /var/www/html/vendor/cakephp/cakephp/src/Database/Connection.php(682): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#8 /var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php(1460): Cake\Database\Connection->transactional(Object(Closure))
+#9 /var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php(1737): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#10 /var/www/html/src/Controller/TrackingController.php(195): Cake\ORM\Table->save(Object(Cake\ORM\Entity))
+#11 /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php(440): App\Controller\TrackingController->visitasmysql()
+#12 /var/www/html/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#13 /var/www/html/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\TrackingController))
+#14 /var/www/html/vendor/cakephp/cakephp/src/Http/BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /var/www/html/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 /var/www/html/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 /var/www/html/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 /var/www/html/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 /var/www/html/webroot/index.php(40): Cake\Http\Server->run()
+#25 {main}
+
+
+2019-10-13 17:41:09 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/html/vendor/cakephp/cakephp/src/Error/Debugger.php line=850 in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /tracking/visitasmysql
+Referer URL: http://localhost/?mysql
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-10-13 17:41:09 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/vendor/cakephp/cakephp/src/Error/Debugger.php:850) in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Request URL: /tracking/visitasmysql
+Referer URL: http://localhost/?mysql
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-10-13 17:41:09 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/vendor/cakephp/cakephp/src/Error/Debugger.php:850) in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /tracking/visitasmysql
+Referer URL: http://localhost/?mysql
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-10-13 17:42:04 Warning: Warning (2): Creating default object from empty value in [/var/www/html/src/Controller/TrackingController.php, line 185]
+Request URL: /tracking/visitasmysql
+Referer URL: http://localhost/?mysql
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+App\Controller\TrackingController::visitasmysql() - APP/Controller/TrackingController.php, line 185
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 440
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 119
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 93
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 108
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 104
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 81
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-10-13 17:42:04 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'event' cannot be null
+Request URL: /tracking/visitasmysql
+Referer URL: http://localhost/?mysql
+Stack Trace:
+#0 /var/www/html/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 /var/www/html/vendor/cakephp/cakephp/src/Database/Connection.php(315): Cake\Database\Statement\MysqlStatement->execute()
+#2 /var/www/html/vendor/cakephp/cakephp/src/Database/Query.php(214): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#3 /var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php(1929): Cake\Database\Query->execute()
+#4 /var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php(1823): Cake\ORM\Table->_insert(Object(Cake\ORM\Entity), Array)
+#5 /var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php(1736): Cake\ORM\Table->_processSave(Object(Cake\ORM\Entity), Object(ArrayObject))
+#6 /var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php(1459): Cake\ORM\Table->Cake\ORM\{closure}()
+#7 /var/www/html/vendor/cakephp/cakephp/src/Database/Connection.php(682): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#8 /var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php(1460): Cake\Database\Connection->transactional(Object(Closure))
+#9 /var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php(1737): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#10 /var/www/html/src/Controller/TrackingController.php(197): Cake\ORM\Table->save(Object(Cake\ORM\Entity))
+#11 /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php(440): App\Controller\TrackingController->visitasmysql()
+#12 /var/www/html/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#13 /var/www/html/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\TrackingController))
+#14 /var/www/html/vendor/cakephp/cakephp/src/Http/BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /var/www/html/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 /var/www/html/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 /var/www/html/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 /var/www/html/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 /var/www/html/webroot/index.php(40): Cake\Http\Server->run()
+#25 {main}
+
+
+2019-10-13 17:42:04 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/html/vendor/cakephp/cakephp/src/Error/Debugger.php line=850 in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /tracking/visitasmysql
+Referer URL: http://localhost/?mysql
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-10-13 17:42:04 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/vendor/cakephp/cakephp/src/Error/Debugger.php:850) in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Request URL: /tracking/visitasmysql
+Referer URL: http://localhost/?mysql
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-10-13 17:42:04 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/vendor/cakephp/cakephp/src/Error/Debugger.php:850) in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /tracking/visitasmysql
+Referer URL: http://localhost/?mysql
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-10-13 17:42:04 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /css/bootstrap.min.css.map
+Stack Trace:
+#0 /var/www/html/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /var/www/html/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /var/www/html/vendor/cakephp/cakephp/src/Http/BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /var/www/html/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /var/www/html/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /var/www/html/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /var/www/html/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /var/www/html/webroot/index.php(40): Cake\Http\Server->run()
+#13 {main}
+
+
+2019-10-13 17:42:54 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'event' cannot be null
+Request URL: /tracking/visitasmysql
+Referer URL: http://localhost/?mysql
+Stack Trace:
+#0 /var/www/html/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 /var/www/html/vendor/cakephp/cakephp/src/Database/Connection.php(315): Cake\Database\Statement\MysqlStatement->execute()
+#2 /var/www/html/vendor/cakephp/cakephp/src/Database/Query.php(214): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#3 /var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php(1929): Cake\Database\Query->execute()
+#4 /var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php(1823): Cake\ORM\Table->_insert(Object(Cake\ORM\Entity), Array)
+#5 /var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php(1736): Cake\ORM\Table->_processSave(Object(Cake\ORM\Entity), Object(ArrayObject))
+#6 /var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php(1459): Cake\ORM\Table->Cake\ORM\{closure}()
+#7 /var/www/html/vendor/cakephp/cakephp/src/Database/Connection.php(682): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#8 /var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php(1460): Cake\Database\Connection->transactional(Object(Closure))
+#9 /var/www/html/vendor/cakephp/cakephp/src/ORM/Table.php(1737): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#10 /var/www/html/src/Controller/TrackingController.php(192): Cake\ORM\Table->save(Object(Cake\ORM\Entity))
+#11 /var/www/html/vendor/cakephp/cakephp/src/Controller/Controller.php(440): App\Controller\TrackingController->visitasmysql()
+#12 /var/www/html/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#13 /var/www/html/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\TrackingController))
+#14 /var/www/html/vendor/cakephp/cakephp/src/Http/BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 /var/www/html/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 /var/www/html/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 /var/www/html/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 /var/www/html/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 /var/www/html/webroot/index.php(40): Cake\Http\Server->run()
+#25 {main}
+
+
+2019-10-13 17:42:54 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/html/src/Controller/TrackingController.php line=181 in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /tracking/visitasmysql
+Referer URL: http://localhost/?mysql
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-10-13 17:42:54 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/Controller/TrackingController.php:181) in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Request URL: /tracking/visitasmysql
+Referer URL: http://localhost/?mysql
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-10-13 17:42:54 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/Controller/TrackingController.php:181) in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /tracking/visitasmysql
+Referer URL: http://localhost/?mysql
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-10-13 17:42:54 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /css/bootstrap.min.css.map
+Stack Trace:
+#0 /var/www/html/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /var/www/html/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /var/www/html/vendor/cakephp/cakephp/src/Http/BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /var/www/html/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /var/www/html/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /var/www/html/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /var/www/html/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /var/www/html/webroot/index.php(40): Cake\Http\Server->run()
+#13 {main}
+
+
+2019-10-13 17:43:21 Warning: Warning (512): Unable to emit headers. Headers sent in file=/var/www/html/src/Controller/TrackingController.php line=181 in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 48]
+Request URL: /tracking/visitasmysql
+Referer URL: http://localhost/?mysql
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-10-13 17:43:21 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/Controller/TrackingController.php:181) in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 148]
+Request URL: /tracking/visitasmysql
+Referer URL: http://localhost/?mysql
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE/src/Http/ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-10-13 17:43:21 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/src/Controller/TrackingController.php:181) in [/var/www/html/vendor/cakephp/cakephp/src/Http/ResponseEmitter.php, line 181]
+Request URL: /tracking/visitasmysql
+Referer URL: http://localhost/?mysql
+Client IP: 172.18.0.1
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE/src/Http/ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE/src/Http/ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE/src/Http/Server.php, line 106
+[main] - ROOT/webroot/index.php, line 40
+
+
+
+2019-10-13 17:43:21 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /css/bootstrap.min.css.map
+Stack Trace:
+#0 /var/www/html/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /var/www/html/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /var/www/html/vendor/cakephp/cakephp/src/Http/BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /var/www/html/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /var/www/html/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /var/www/html/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /var/www/html/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /var/www/html/vendor/cakephp/cakephp/src/Http/Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /var/www/html/webroot/index.php(40): Cake\Http\Server->run()
+#13 {main}
+
+

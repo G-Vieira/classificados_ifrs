@@ -175,7 +175,21 @@ class TrackingController extends AppController {
     $this->response->type('application/json');  
     $this->autoRender = false;
 
-    echo json_encode(['result' => []]);
+    $visit_token = $this->request->data['visit_token'];
+    $visitor_token = $this->request->data['visitor_token'];
+
+    $saveData = [
+      'visitor_token' => $this->request->data['visitor_token'],
+      'visit_token' => $this->request->data['visit_token'],
+      'event' => ' ',
+      'data' => date('d/m/Y')
+    ];
+
+    $this->loadModel('Event');
+    $evento = $this->Event->newEntity($saveData);
+    $ok = $this->Event->save($evento);
+
+    echo json_encode(['result' => $ok]);
   }
 
   public function eventosmysql(){
