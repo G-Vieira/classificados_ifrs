@@ -86,6 +86,7 @@
     id INT AUTO_INCREMENT PRIMARY KEY,
     visitor_token varchar(400) not null,
     visit_token varchar(400) not null,
+    data string varchar(12) not null,
     event text not null
   );
 

@@ -23,7 +23,7 @@ class TrackingController extends AppController {
   public function get_dados(){
     $redis = new \Predis\Client([
       "scheme" => "tcp",
-		  "host" => "191.235.80.137",
+		  "host" => "redis",
       "password" => "tccredis",
       "port" => 6379,
       "database" => 0
@@ -156,6 +156,7 @@ class TrackingController extends AppController {
 
     $events = json_decode($events);
     $events[0]->ip = $this->request->clientIp();
+    $data = date('d/m/Y',$events[0]->time);
     $events = json_encode($events);
     
     $redis = new \Predis\Client([
@@ -165,11 +166,7 @@ class TrackingController extends AppController {
 		  "port" => 6379
     ]);
 
-    $key = "visitor:$visit_token";
-    if(empty($redis->get($key))){
-      $redis->set($key, $visit_token);
-    }
-    $res = $redis->rpush("events:$visitor_token", $events);
+    $res = $redis->rpush("events:$data:$visitor_token", $events);
     echo json_encode(['result' => $events]);
   }
 
@@ -186,10 +183,14 @@ class TrackingController extends AppController {
     $this->response->type('application/json');  
     $this->autoRender = false;
 
+    $t = json_decode($this->request->data['events_json']);
+    $data = date('d/m/Y',$t[0]->time);
+
     $saveData = [
       'visitor_token' => $this->request->data['visitor_token'],
       'visit_token' => $this->request->data['visit_token'],
-      'event' => $this->request->data['events_json']
+      'event' => $this->request->data['events_json'],
+      'data' => $data
     ];
 
     $this->loadModel('Event');

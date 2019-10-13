@@ -47,6 +47,11 @@ class EventsTable extends Table
             ->notEmpty('visit_token');
         
         $validator
+            ->scalar('data')
+            ->requirePresence('data', 'create')
+            ->notEmpty('data');
+
+        $validator
             ->scalar('event')
             ->requirePresence('event', 'create')
             ->notEmpty('event');

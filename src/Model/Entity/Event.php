@@ -19,6 +19,7 @@ class Event extends Entity
         'id' => true,
         'visitor_token' => true,
         'visit_token' => true,
-        'event' => true
+        'event' => true,
+        'data' => true
     ];
 }
