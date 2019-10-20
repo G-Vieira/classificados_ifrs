@@ -134,7 +134,8 @@ class TrackingController extends AppController {
       "scheme" => "tcp",
 		  "host" => "redis",
       "password" => "tccredis",
-		  "port" => 6379
+		  "port" => 6379,
+       "database" => 1
     ]);
     
     $key = "visitor:$visit_token";
@@ -163,7 +164,8 @@ class TrackingController extends AppController {
       "scheme" => "tcp",
 		  "host" => "redis",
       "password" => "tccredis",
-		  "port" => 6379
+		  "port" => 6379,
+      "database" => 1
     ]);
 
     $res = $redis->rpush("events:$data:$visitor_token", $events);
