@@ -1,3 +1,7 @@
+<script>
+  ahoy.configure({page: "home_page"});
+</script>
+
   <div data-section="filtros" class="col-sm-2" id="actions-sidebar">
     <ul class="nav nav-pills nav-stacked">
       <li class="heading"><b><?= __('Filtros Por:') ?></b></li>

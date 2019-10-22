@@ -1,3 +1,7 @@
+<script>
+  ahoy.configure({page: "editar_anuncios"});
+</script>
+
 <?php
 
 /**

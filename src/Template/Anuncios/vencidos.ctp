@@ -1,3 +1,7 @@
+<script>
+  ahoy.configure({page: "vencidos_anuncios"});
+</script>
+
 <?php
 
 /**

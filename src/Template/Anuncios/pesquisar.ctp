@@ -1,3 +1,7 @@
+<script>
+  ahoy.configure({page: "pesquisar_anuncios"});
+</script>
+
 <?php
 
 /**

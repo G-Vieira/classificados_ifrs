@@ -1,3 +1,7 @@
+<script>
+  ahoy.configure({page: "anuncios"});
+</script>
+
 <?php
 
 /**

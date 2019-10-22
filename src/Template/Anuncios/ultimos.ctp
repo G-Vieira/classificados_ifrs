@@ -1,3 +1,7 @@
+<script>
+  ahoy.configure({page: "ultimos_anuncios"});
+</script>
+
 <?php
 
 /**
