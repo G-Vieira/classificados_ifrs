@@ -1,5 +1,6 @@
 <script>
   ahoy.configure({page: "ultimos_anuncios"});
+  ahoy.trackAll();
 </script>
 
 <?php

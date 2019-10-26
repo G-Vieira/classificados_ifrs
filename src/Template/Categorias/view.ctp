@@ -6,6 +6,11 @@
 */
 
 ?>
+<script>
+  ahoy.configure({page: "ver_categoria"});
+  ahoy.trackAll();
+</script>
+
 <div class="row" >
   <nav data-section="filtros" class="col-md-2" id="actions-sidebar">
     <ul class="nav nav-pills nav-stacked">

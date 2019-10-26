@@ -29,7 +29,6 @@ ahoy.configure({
   visitParams: {},
   withCredentials: false
 });
-ahoy.trackAll();
 
 $(document).ready(function(){
   if(url.includes("preco")){
@@ -43,7 +42,6 @@ $(document).ready(function(){
       $("#filtro_nome").text("Mais de R$ 1500,00");
     }
   }
-  
 });
 
 $(document).on("click",".anuncio_carrossel",function(event){

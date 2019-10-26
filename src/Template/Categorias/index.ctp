@@ -12,6 +12,11 @@
  * @var \App\Model\Entity\Categoria[]|\Cake\Collection\CollectionInterface $categorias
  */
   ?>
+  <script>
+  ahoy.configure({page: "categorias"});
+  ahoy.trackAll();
+</script>
+
   <div class="row">
     <div class="col-md-3" id="actions-sidebar">
       <ul class="nav nav-pills nav-stacked">

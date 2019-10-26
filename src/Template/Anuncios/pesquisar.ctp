@@ -1,5 +1,7 @@
+
 <script>
   ahoy.configure({page: "pesquisar_anuncios"});
+  ahoy.trackAll();
 </script>
 
 <?php

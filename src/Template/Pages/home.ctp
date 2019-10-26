@@ -1,5 +1,6 @@
 <script>
   ahoy.configure({page: "home_page"});
+  ahoy.trackAll();
 </script>
 
   <div data-section="filtros" class="col-sm-2" id="actions-sidebar">

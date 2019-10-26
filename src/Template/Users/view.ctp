@@ -4,6 +4,11 @@
  * @var \App\Model\Entity\User $user
  */
 ?>
+<script>
+  ahoy.configure({page: "ver_usuario"});
+  ahoy.trackAll();
+</script>
+
 <div class="row">
 <nav class="col-md-3" id="actions-sidebar">
     <ul class="nav nav-pills nav-stacked">

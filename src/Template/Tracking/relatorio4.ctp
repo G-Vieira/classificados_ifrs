@@ -1,34 +1,3 @@
-<?php
-  
-  $resultados = [];
-
-  $lastFilter = 'a';
-  foreach($dados as $dado){
-    foreach($dado as $d){
-      $json = json_decode($d)[0];
-      if(isset($json->properties->section)){
-
-        if ($json->properties->section == 'acoes_busca'){
-          continue;
-        }
-
-        $lastFilter = $json->properties->section;      
-      }
-
-      if(isset($json->properties->url)){
-        if(strpos($json->properties->url,'anuncios/view') !== false){
-          if(!isset($resultados[$lastFilter])){
-            $resultados[$lastFilter] = 0;
-          }
-          $resultados[$lastFilter]++;
-        }
-        
-      }
-    }
-  }
-
-  arsort($resultados);
-?>
 <div class="row">
   <div class="col-md-3" id="actions-sidebar">
   </div>

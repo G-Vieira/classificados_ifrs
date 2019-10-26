@@ -1,26 +1,3 @@
-<?php
-  
-  $resultados = [];
-
-  foreach($dados as $dado){
-    foreach($dado as $d){
-      $json = json_decode($d)[0];
-      if(isset($json->properties->section)){
-
-        if ($json->properties->section == 'acoes_busca'){
-          continue;
-        }
-
-        if(!isset($resultados[$json->properties->section])){
-          $resultados[$json->properties->section] = 0;
-        }
-        $resultados[$json->properties->section]++;
-      }
-    }
-  }
-
-  arsort($resultados);
-?>
 <div class="row">
   <div class="col-md-3" id="actions-sidebar">
   </div>

@@ -26,7 +26,7 @@ class TrackingController extends AppController {
 		  "host" => "redis",
       "password" => "tccredis",
       "port" => 6379,
-      "database" => 0
+      "database" => 1
     ]);
 
     $keys = $redis->keys('*events*');
@@ -41,9 +41,29 @@ class TrackingController extends AppController {
 
   public function relatorio1(){
     $this->isAdmin();
-    
     $dados = $this->get_dados();
-    $this->set(compact('dados'));
+
+    $resultados = [];
+
+    foreach($dados as $dado){
+      foreach($dado as $d){
+        $json = json_decode($d)[0];
+        if(isset($json->properties->section)){
+
+          if ($json->properties->section == 'acoes_busca'){
+            continue;
+          }
+
+          if(!isset($resultados[$json->properties->section])){
+            $resultados[$json->properties->section] = 0;
+          }
+          $resultados[$json->properties->section]++;
+        }
+      }
+    }
+
+    arsort($resultados);
+    $this->set(compact('resultados'));
   }
 
   public function relatorio2(){
@@ -58,7 +78,7 @@ class TrackingController extends AppController {
       foreach($dado as $d){
         $json = json_decode($d)[0];
         if (isset($json->properties->url)){
-          if(strpos($json->properties->url,'anuncios/view') !== false){
+          if($json->properties->page == 'ver_anuncios' &&  $json->name == '$view'){
             $id = explode('/',$json->properties->url);
             $resultado = $temp->find('all', ['conditions' => ["Anuncios.id = " => $id[count($id) - 1]]]);
             
@@ -112,9 +132,35 @@ class TrackingController extends AppController {
 
   public function relatorio4(){
     $this->isAdmin();
-    
     $dados = $this->get_dados();
-    $this->set(compact('dados'));
+
+    $resultados = [];
+
+    $lastFilter = 'a';
+    foreach($dados as $dado){
+      foreach($dado as $d){
+        $json = json_decode($d)[0];
+        if(isset($json->properties->section)){
+  
+          if ($json->properties->section == 'acoes_busca'){
+            continue;
+          }
+  
+          $lastFilter = $json->properties->section;      
+        }
+  
+        if($json->properties->page == 'ver_anuncios' &&  $json->name == '$view'){
+          if(!isset($resultados[$lastFilter])){
+            $resultados[$lastFilter] = 0;
+          }
+          $resultados[$lastFilter]++;
+        }
+      }
+    }
+  
+    arsort($resultados);
+
+    $this->set(compact('resultados'));
   }
 
   public function visitas(){

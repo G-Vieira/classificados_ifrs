@@ -1,10 +1,7 @@
-<?php
-
-/**
- * @var \App\View\AppView $this
- * @var \App\Model\Entity\Anuncio[]|\Cake\Collection\CollectionInterface $anuncios
- */
-?>
+<script>
+  ahoy.configure({page: "procurados"});
+  ahoy.trackAll();
+</script>
 <div class="row">
   <div class="col-md-3" id="actions-sidebar">
     <ul class="nav nav-pills nav-stacked">
