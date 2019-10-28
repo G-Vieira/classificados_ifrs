@@ -58,22 +58,17 @@
        </div>
        <div class="navbar-collapse collapse">
          <ul class="nav navbar-nav navbar-left">
-           <?php
-           if($authUser){
-            echo "
+          <?php if($authUser): ?>
             <li>
-            <a href='javascript:void(0);'><label>Olá, " . $authUser['username'] . "<span class='caret'></span></label></a>
+            <a href='javascript:void(0);'><label>Olá, <?= $authUser['username'] ?><span class='caret'></span></label></a>
             <ul class='dropdown-menu '>
-            <li>".$this->Html->link(__('Perfil'), ['controller' => 'users', 'action' => 'view', $authUser['id']])."</li>
-            <li>".$this->Html->link(__('Sair'), ['controller' => 'users', 'action' => 'logout'])."</li>
+            <li><?= $this->Html->link(__('Perfil'), ['controller' => 'users', 'action' => 'view', $authUser['id']])?></li>
+            <li><?= $this->Html->link(__('Sair'), ['controller' => 'users', 'action' => 'logout'])?></li>
             </ul>
             </li>
-            ";
-          }else{
-           //echo "<li>" . $this->Html->link(__('Registrar-se'), ['controller' => 'users', 'action' => 'register'])  . "</li>";
-           //echo "<li>" . $this->Html->link(__('Login'), ['controller' => 'users', 'action' => 'login'])  . "</li>";
-         }
-         ?>
+          <?php else: ?>
+           <li><?= $this->Html->link(__('Login'), ['controller' => 'users', 'action' => 'login']) ?></li>
+          <?php endif; ?>
          <form data-section="campo_busca" class="navbar-form navbar-left" method="post" action="<?= $this->Url->build(["controller" => "Anuncios","action" => "pesquisar"]); ?>">
           <div class="form-group">
             <input type="text" class="form-control" placeholder="Pesquisar anúncios" name="pesquisa">
