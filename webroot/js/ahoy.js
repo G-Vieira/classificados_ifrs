@@ -6,6 +6,8 @@
  * MIT License
  */
 
+var trackingConfig = null;
+
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
   typeof define === 'function' && define.amd ? define(factory) :
@@ -143,6 +145,7 @@
   };
 
   var config = {
+    trackingConfig: null,
     urlPrefix: "",
     visitsUrl: "/ahoy/visits",
     eventsUrl: "/ahoy/events",
@@ -162,8 +165,13 @@
 
   ahoy.configure = function (options) {
     for (var key in options) {
+      
       if (options.hasOwnProperty(key)) {
         config[key] = options[key];
+        if(key == "trackingConfig"){
+          trackingConfig = options[key];
+        }
+        
       }
     }
   };
@@ -539,10 +547,24 @@
   };
 
   ahoy.trackView = function (additionalProperties) {
+    /* BUSCANDO O ELEMENTO IDENTIFICADOR DO ANUNCIO/PRODUTO NA PAGINA */
+    var view_id = null;
+    try{
+      if(trackingConfig != null){
+        view_id = document.getElementById(trackingConfig);
+        if(view_id != undefined){
+          view_id = document.getElementById(trackingConfig).getAttribute("data-id")
+        }
+      }
+    }catch(Exception ){
+      //DO NOTHING
+    }
+
     var properties = {
       url: window.location.href,
       title: document.title,
-      page: page()
+      page: page(),
+      view_id: view_id 
     };
 
     if (additionalProperties) {
@@ -575,7 +597,6 @@
   ahoy.trackChanges = function () {
     onEvent("change", "input, textarea, select", function (e) {
       var properties = eventProperties(e);
-      console.log(properties);
       ahoy.track("$change", properties);
     });
   };

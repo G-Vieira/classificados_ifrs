@@ -13,10 +13,7 @@ foreach($categorias as $cat){
 }
 
 ?>
-<script>
-  ahoy.configure({page: "add_categorias"});
-  ahoy.trackAll();
-</script>
+
 
 <div class="row">
   <div class="col-md-3" id="actions-sidebar">
@@ -54,3 +51,7 @@ foreach($categorias as $cat){
     </fieldset>
     <?= $this->Form->end() ?>
   </div>
+<script>
+  ahoy.configure({page: "add_categorias"});
+  ahoy.trackAll();
+</script>

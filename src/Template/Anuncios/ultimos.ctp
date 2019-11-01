@@ -1,7 +1,4 @@
-<script>
-  ahoy.configure({page: "ultimos_anuncios"});
-  ahoy.trackAll();
-</script>
+
 
 <?php
 
@@ -78,3 +75,7 @@
     </div>
   </div>
 </div>
+<script>
+  ahoy.configure({page: "ultimos_anuncios"});
+  ahoy.trackAll();
+</script>

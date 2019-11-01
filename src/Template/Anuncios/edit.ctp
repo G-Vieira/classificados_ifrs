@@ -1,7 +1,3 @@
-<script>
-  ahoy.configure({page: "editar_anuncios"});
-  ahoy.trackAll();
-</script>
 
 
 <?php
@@ -99,3 +95,7 @@ foreach($categorias as $categoria){
       <?= $this->Form->end() ?>
     </div>
   </div>
+ <script>
+  ahoy.configure({page: "editar_anuncios"});
+  ahoy.trackAll();
+</script>

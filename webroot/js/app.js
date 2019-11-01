@@ -15,6 +15,7 @@ if(url.includes("mysql")){
 }
 
 ahoy.configure({
+  trackingConfig: "view_id",
   urlPrefix: "",
   visitsUrl: visitsUrl,
   eventsUrl: eventsUrl,

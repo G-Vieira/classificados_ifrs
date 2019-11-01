@@ -5,11 +5,15 @@
 * @var \App\Model\Entity\Categoria $categoria
 */
 
+  try{
+    $tracking_config = json_decode(file_get_contents(WWW_ROOT.'js/tracking_config.json'));
+    $view_id = $tracking_config->view_id;
+  }catch(Exception $ex){
+    $view_id = null;
+  }
+
 ?>
-<script>
-  ahoy.configure({page: "ver_categoria"});
-  ahoy.trackAll();
-</script>
+
 
 <div class="row" >
   <nav data-section="filtros" class="col-md-2" id="actions-sidebar">
@@ -39,7 +43,7 @@
     </ul>
   </nav>
   <div class="col-md-10">
-    <h3><?= h($categoria->id) ?></h3>
+    <h3 data-id="<?= $categoria->id ?>" id="<?= $view_id ?>"><?= h($categoria->id) ?></h3>
     <table class="table">
       <tr>
         <th scope="row"><?= __('Descricao') ?></th>
@@ -105,3 +109,7 @@
     </div>
   </div>
 </div>
+<script>
+  ahoy.configure({page: "ver_categoria"});
+  ahoy.trackAll();
+</script>

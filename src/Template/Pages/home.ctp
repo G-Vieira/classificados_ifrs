@@ -1,7 +1,4 @@
-<script>
-  ahoy.configure({page: "home_page"});
-  ahoy.trackAll();
-</script>
+
 
   <div data-section="filtros" class="col-sm-2" id="actions-sidebar">
     <ul class="nav nav-pills nav-stacked">
@@ -83,3 +80,7 @@
         
       </div>
   </div>
+  <script>
+    ahoy.configure({page: "home_page"});
+    ahoy.trackAll();
+  </script>

@@ -1,8 +1,4 @@
 
-<script>
-  ahoy.configure({page: "pesquisar_anuncios"});
-  ahoy.trackAll();
-</script>
 
 <?php
 
@@ -94,3 +90,8 @@
     </div>
   </div>
 </div>
+
+<script>
+  ahoy.configure({page: "pesquisar_anuncios"});
+  ahoy.trackAll();
+</script>

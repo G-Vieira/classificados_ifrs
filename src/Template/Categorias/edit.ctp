@@ -12,10 +12,7 @@ foreach($categorias as $cat){
   $array_categorias[$cat->id] = $cat->descricao;
 }
 ?>
-<script>
-  ahoy.configure({page: "editar_categorias"});
-  ahoy.trackAll();
-</script>
+
 
 <div class="row">
   <div class="col-md-3" id="actions-sidebar">
@@ -60,3 +57,7 @@ foreach($categorias as $cat){
     <?= $this->Form->end() ?>
   </div>
 </div>
+<script>
+  ahoy.configure({page: "editar_categorias"});
+  ahoy.trackAll();
+</script>

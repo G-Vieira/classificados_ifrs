@@ -1,6 +1,3 @@
-<script>
-  ahoy.configure({page: "vencidos_anuncios"});
-</script>
 
 <?php
 
@@ -67,3 +64,6 @@
     </div>
   </div>
 </div>
+<script>
+  ahoy.configure({page: "vencidos_anuncios"});
+</script>

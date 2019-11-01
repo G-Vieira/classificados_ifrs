@@ -1,10 +1,12 @@
-<script>
-  ahoy.configure({page: "ver_anuncios"});
-  ahoy.trackAll();
-</script>
-
 <?php
 
+  try{
+    $tracking_config = json_decode(file_get_contents(WWW_ROOT.'js/tracking_config.json'));
+    $view_id = $tracking_config->view_id;
+  }catch(Exception $ex){
+    $view_id = null;
+  }
+  
 /**
 * @var \App\View\AppView $this
 * @var \App\Model\Entity\Anuncio $anuncio
@@ -28,7 +30,7 @@
     </ul>
   </div>
   <div class="col-md-10">
-    <h3>ID: <?= h($anuncio->id) ?></h3>
+    <h3 data-id="<?= $anuncio->id ?>" id="<?= $view_id ?>">ID: <?= h($anuncio->id) ?></h3>
     <?= $this->Html->image('../files/Anuncios/imagem/' . $anuncio->imagem); ?>
     <table class="table">
       <tr>
@@ -100,3 +102,7 @@
     </div>
   </div>
 </div>
+<script>
+  ahoy.configure({page: "ver_anuncios"});
+  ahoy.trackAll();
+</script>

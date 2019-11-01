@@ -39,9 +39,20 @@ class TrackingController extends AppController {
     return $dados;
   }
 
+  public function getJsonConfig(){
+    try{
+      $tracking_config = json_decode(file_get_contents(WWW_ROOT.'js/tracking_config.json'));
+    }catch(Exception $ex){
+      $tracking_config = null;
+    }
+
+    return $tracking_config;
+  }
+
   public function relatorio1(){
     $this->isAdmin();
     $dados = $this->get_dados();
+    $jsonConfig = $this->getJsonConfig();
 
     $resultados = [];
 
@@ -49,10 +60,6 @@ class TrackingController extends AppController {
       foreach($dado as $d){
         $json = json_decode($d)[0];
         if(isset($json->properties->section)){
-
-          if ($json->properties->section == 'acoes_busca'){
-            continue;
-          }
 
           if(!isset($resultados[$json->properties->section])){
             $resultados[$json->properties->section] = 0;
@@ -70,6 +77,7 @@ class TrackingController extends AppController {
     $this->isAdmin();
 
     $dados = $this->get_dados();
+    $jsonConfig = $this->getJsonConfig();
 
     $resultados = [];
     $temp = TableRegistry::get('Anuncios');
@@ -78,9 +86,9 @@ class TrackingController extends AppController {
       foreach($dado as $d){
         $json = json_decode($d)[0];
         if (isset($json->properties->url)){
-          if($json->properties->page == 'ver_anuncios' &&  $json->name == '$view'){
-            $id = explode('/',$json->properties->url);
-            $resultado = $temp->find('all', ['conditions' => ["Anuncios.id = " => $id[count($id) - 1]]]);
+          if($json->properties->page == $jsonConfig->pagina_produtos &&  $json->name == '$view'){
+            $id = $json->properties->view_id;
+            $resultado = $temp->find('all', ['conditions' => ["Anuncios.id = " => $id]]);
             
             if(!isset($resultados[$resultado->first()->titulo])){
               $resultados[$resultado->first()->titulo] = 0;
@@ -102,6 +110,7 @@ class TrackingController extends AppController {
     $this->isAdmin();
     
     $dados = $this->get_dados();
+    $jsonConfig = $this->getJsonConfig();
     $resultados = [];
     $temp = TableRegistry::get('Anuncios');
 
@@ -110,7 +119,7 @@ class TrackingController extends AppController {
         $json = json_decode($d)[0];
         if(isset($json->properties->section)){
   
-          if ($json->properties->section == 'campo_busca' && isset($json->properties->value)){
+          if ($json->properties->section == $jsonConfig->campo_busca && isset($json->properties->value)){
             $resultado = $temp->find('all', ['conditions' => ["Anuncios.titulo LIKE " => '%' . str_replace(' ','%',$json->properties->value) . '%']]);
             
             if($resultado->isEmpty()){
@@ -133,6 +142,7 @@ class TrackingController extends AppController {
   public function relatorio4(){
     $this->isAdmin();
     $dados = $this->get_dados();
+    $jsonConfig = $this->getJsonConfig();
 
     $resultados = [];
 
@@ -141,15 +151,10 @@ class TrackingController extends AppController {
       foreach($dado as $d){
         $json = json_decode($d)[0];
         if(isset($json->properties->section)){
-  
-          if ($json->properties->section == 'acoes_busca'){
-            continue;
-          }
-  
           $lastFilter = $json->properties->section;      
         }
   
-        if($json->properties->page == 'ver_anuncios' &&  $json->name == '$view'){
+        if($json->properties->page == $jsonConfig->pagina_produtos &&  $json->name == '$view'){
           if(!isset($resultados[$lastFilter])){
             $resultados[$lastFilter] = 0;
           }
