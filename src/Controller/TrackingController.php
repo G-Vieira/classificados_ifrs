@@ -23,7 +23,7 @@ class TrackingController extends AppController {
   public function get_dados(){
     $redis = new \Predis\Client([
       "scheme" => "tcp",
-		  "host" => "200.98.201.199",
+		  "host" => "redis",
       "password" => "tccredis",
       "port" => 6379,
       "database" => 1
