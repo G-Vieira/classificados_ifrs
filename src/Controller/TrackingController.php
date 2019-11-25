@@ -23,7 +23,7 @@ class TrackingController extends AppController {
   public function get_dados(){
     $redis = new \Predis\Client([
       "scheme" => "tcp",
-		  "host" => "redis",
+		  "host" => "200.98.201.199",
       "password" => "tccredis",
       "port" => 6379,
       "database" => 1
@@ -60,6 +60,9 @@ class TrackingController extends AppController {
       foreach($dado as $d){
         $json = json_decode($d)[0];
         if(isset($json->properties->section)){
+          if($json->properties->section == 'section'){
+            continue;
+          }
 
           if(!isset($resultados[$json->properties->section])){
             $resultados[$json->properties->section] = 0;
@@ -152,6 +155,9 @@ class TrackingController extends AppController {
         $json = json_decode($d)[0];
         if(isset($json->properties->section)){
           $lastFilter = $json->properties->section;      
+        }
+        if($lastFilter == 'section'){
+          continue;
         }
   
         if($json->properties->page == $jsonConfig->pagina_produtos &&  $json->name == '$view'){
