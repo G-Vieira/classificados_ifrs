@@ -16,19 +16,8 @@ if(url.includes("mysql")){
 
 ahoy.configure({
   trackingConfig: "view_id",
-  urlPrefix: "",
   visitsUrl: visitsUrl,
-  eventsUrl: eventsUrl,
-  page: null,
-  platform: "Web",
-  useBeacon: true,
-  startOnReady: true,
-  trackVisits: true,
-  cookies: true,
-  cookieDomain: null,
-  headers: {},
-  visitParams: {},
-  withCredentials: false
+  eventsUrl: eventsUrl
 });
 
 $(document).ready(function(){
