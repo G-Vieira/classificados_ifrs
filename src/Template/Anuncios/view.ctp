@@ -12,6 +12,8 @@
 * @var \App\Model\Entity\Anuncio $anuncio
 */
 ?>
+<!-- PARA REGISTRO DO NOME DO ANUNCIO -->
+<input type="hidden" id="view_id" data-id="<?= $anuncio->titulo ?>"/>
 <div class="row">
   <div class="col-md-2" id="actions-sidebar">
     <ul class="nav nav-pills nav-stacked">

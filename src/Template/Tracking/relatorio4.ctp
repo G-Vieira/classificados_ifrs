@@ -2,7 +2,7 @@
   <div class="col-md-3" id="actions-sidebar">
   </div>
   <div class="col-md-6 col-12">
-    <h3><?= __('Filtro utilizado na busca real') ?></h3>
+    <h3><?= __('Filtros utilizados na busca real') ?></h3>
 
     <?php if(empty($resultados)): ?>
       <div class="row">

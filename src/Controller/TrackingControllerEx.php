@@ -254,48 +254,4 @@ class TrackingController extends AppController {
     echo json_encode(['result' => $events]);
   }
 
-  public function visitasmysql(){
-    $this->RequestHandler->respondAs('json');
-    $this->response->type('application/json');  
-    $this->autoRender = false;
-
-    $visit_token = $this->request->data['visit_token'];
-    $visitor_token = $this->request->data['visitor_token'];
-
-    $saveData = [
-      'visitor_token' => $this->request->data['visitor_token'],
-      'visit_token' => $this->request->data['visit_token'],
-      'event' => ' ',
-      'data' => date('d/m/Y')
-    ];
-
-    $this->loadModel('Event');
-    $evento = $this->Event->newEntity($saveData);
-    $ok = $this->Event->save($evento);
-
-    echo json_encode(['result' => $ok]);
-  }
-
-  public function eventosmysql(){
-    $this->RequestHandler->respondAs('json');
-    $this->response->type('application/json');  
-    $this->autoRender = false;
-
-    $t = json_decode($this->request->data['events_json']);
-    $data = date('d/m/Y',$t[0]->time);
-
-    $saveData = [
-      'visitor_token' => $this->request->data['visitor_token'],
-      'visit_token' => $this->request->data['visit_token'],
-      'event' => $this->request->data['events_json'],
-      'data' => $data
-    ];
-
-    $this->loadModel('Event');
-    $evento = $this->Event->newEntity($saveData);
-    $ok = $this->Event->save($evento);
-
-    echo json_encode(['result' => $ok]);
-  }
-
 }

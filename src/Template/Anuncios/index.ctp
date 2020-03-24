@@ -8,6 +8,7 @@
  */
 
 ?>
+
 <div class="row">
   <div class="col-md-3" id="actions-sidebar">
     <ul class="nav nav-pills nav-stacked">
