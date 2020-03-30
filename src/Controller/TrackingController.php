@@ -20,11 +20,7 @@ class TrackingController extends AppController {
     $this->isAdmin();
   }
 
-  /*
-    Função para resgate dos dados brutos gravados no Redis 
-    A conexão deve ser configurada para a instância em questão
-  */
-  public function get_dados(){
+  public function get_conexao(){
     $redis = new \Predis\Client([
       "scheme" => "tcp",
 		  "host" => "redis",
@@ -32,6 +28,16 @@ class TrackingController extends AppController {
       "port" => 6379,
       "database" => 1
     ]);
+
+    return $redis;
+  }
+
+  /*
+    Função para resgate dos dados brutos gravados no Redis 
+    A conexão deve ser configurada para a instância em questão
+  */
+  public function get_dados(){
+    $redis = get_conexao();
 
     $keys = $redis->keys('*events*');
 
@@ -212,13 +218,7 @@ class TrackingController extends AppController {
     $events[0]->ip = $this->request->clientIp();
     $events = json_encode($events);
     
-    $redis = new \Predis\Client([
-      "scheme" => "tcp",
-		  "host" => "redis",
-      "password" => "tccredis",
-		  "port" => 6379,
-       "database" => 1
-    ]);
+    $redis = get_conexao();
     
     $key = "visitor:$visit_token";
     if(empty($redis->get($key))){
@@ -242,13 +242,7 @@ class TrackingController extends AppController {
     $data = date('d/m/Y',$events[0]->time);
     $events = json_encode($events);
     
-    $redis = new \Predis\Client([
-      "scheme" => "tcp",
-		  "host" => "redis",
-      "password" => "tccredis",
-		  "port" => 6379,
-      "database" => 1
-    ]);
+    $redis = get_conexao();
 
     $res = $redis->rpush("events:$data:$visitor_token", $events);
     echo json_encode(['result' => $events]);
