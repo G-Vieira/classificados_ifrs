@@ -1,0 +1,92 @@
+html,
+body{
+  height: 100%;
+}
+div.message {
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    font-weight: normal;
+    padding: 0 1.5rem 0 1.5rem;
+    transition: height 300ms ease-out 0s;
+    background-color: #a0d3e8;
+    color: #626262;
+    top: 15px;
+    right: 15px;
+    z-index: 999;
+    overflow: hidden;
+    height: 50px;
+    line-height: 2.5em;
+    box-radius: 5px;
+}
+
+div.message:before {
+    line-height: 0px;
+    font-size: 20px;
+    height: 12px;
+    width: 12px;
+    border-radius: 15px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+    left: -11px;
+    background-color: #FFF;
+    padding: 12px 14px 12px 10px;
+    content: "i";
+    color: #a0d3e8;
+}
+
+div.message.error {
+    background-color: #C3232D;
+    color: #FFF;
+}
+
+div.message.error:before {
+    padding: 11px 16px 14px 7px;
+    color: #C3232D;
+    content: "x";
+}
+div.message.hidden {
+    height: 0;
+}
+.navbar-default{
+  box-shadow: 3px 3px #e0dede;
+  background-color: #113c07e3;
+}
+.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-brand{
+  color: #f3f1f1;
+}
+.breadcrumb{
+  margin-bottom: 5;
+  padding: 0px 15px;
+}
+.img_anuncio_home{
+  max-width: 100px;
+  max-height: 100px;
+}
+#carousel_anuncios{
+  height: 350px!important;
+  margin: auto;
+  padding-top: 0;
+}
+.carousel-inner,
+.carousel-inner>.item,
+.carousel-inner>.item>a{
+  height: 100%;
+}
+.carousel-inner>.item>a>img, 
+.carousel-inner>.item>img{
+  margin: auto;
+}
+.carousel-inner > .item > a{
+  display: inline-block;
+  width: 100%;
+}
+.carousel-caption{
+  color: black;
+  top: 0;
+  padding: 0;
+  position: initial;
+}
