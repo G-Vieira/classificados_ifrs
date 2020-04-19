@@ -1,2 +1,7 @@
-logs/*
-tmp/*
+/.env
+/.vscode
+/config/*
+/data/*
+/logs/*
+/www/**
+.DS_Store
