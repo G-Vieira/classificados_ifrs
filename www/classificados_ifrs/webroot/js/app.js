@@ -14,7 +14,7 @@ ahoy.configure({
   campo_busca: "campo_busca",
   carrossel: "carrossel",
   paginacao: "paginacao",
-  pagina_produtos: "ver_anuncios",
+  pagina_produtos: "pagina_anuncio",
 });
 
 /* SE HOUVER UM PARAMETRO GET CHAMADO MYSQL, ENTAO GRAVAR O TRACKING NO BANCO MYSQL*/

@@ -17,21 +17,19 @@
   </div>
 </div>
 <script>
-  ahoy.relatorio(3,function(dados){
+  ahoy.relatorio(3,null,null,function(dados){
 
-    var vazio = true;    
-    for(var key in dados){
-      $("#tabela > tbody").append(
-        $("<tr>").append($("<td>").text(key))
-                 .append($("<td>").text(dados[key]))
-      );
-      vazio = false;
-    }
-
-    if(vazio){
+    if(dados.length == 0){
       $("#tabela").hide();
       $("#aviso").show();
     }
+
+    $(dados).each(function(i, val){
+      $("#tabela > tbody").append(
+        $("<tr>").append($("<td>").text(val.informacao))
+                 .append($("<td>").text(val.quantidade))
+      );
+    });
 
   });
 </script>

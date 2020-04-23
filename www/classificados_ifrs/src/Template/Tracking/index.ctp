@@ -1,5 +1,3 @@
-
-<div class="row">
   <div class="col-md-3" id="actions-sidebar">
   </div>
   <div class="col-md-9">
@@ -18,8 +16,7 @@
     </div>
 
     <div class="row" style="margin-top: 10px;">
-      <?= $this->Html->link(__('Erros de busca'), ['controller' => 'tracking', 'action' => 'relatorio4'],['class' => 'btn btn-default']) ?>
+      <?= $this->Html->link(__('Erros de busca sem sucesso'), ['controller' => 'tracking', 'action' => 'relatorio4'],['class' => 'btn btn-default']) ?>
     </div>
 
   </div>
-</div>
