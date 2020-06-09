@@ -2,7 +2,7 @@
   <div class="col-md-3" id="actions-sidebar">
   </div>
   <div class="col-md-6 col-12">
-    <h3><?= __('Relatório de Forma mais utilizada de busca') ?></h3>
+    <h3><?= __('Relatório das ações dos usuários') ?></h3>
     <div class="row" id="aviso" style="display:none">
       <h3>Não existem dados para este relatório!</h3>
     </div>

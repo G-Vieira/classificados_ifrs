@@ -2,7 +2,7 @@
   <div class="col-md-3" id="actions-sidebar">
   </div>
   <div class="col-md-6 col-12">
-    <h3><?= __('Relatório de filtros utilizados na busca real') ?></h3>
+    <h3><?= __('Relatório da forma mais utilizada pelos usuários para chegar até osprodutos de interesse') ?></h3>
     <div class="row" id="aviso" style="display:none">
       <h3>Não existem dados para este relatório!</h3>
     </div>
