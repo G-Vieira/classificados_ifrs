@@ -38,7 +38,7 @@
       <?= $this->Html->script('bootstrap.min.js') ?>
       <?= $this->Html->script('jquery.smartmenus.min.js') ?>
       <?= $this->Html->script('jquery.smartmenus.bootstrap.min.js') ?>
-      <?= $this->Html->script('http://localhost:81/tracking/public/js/ahoy.js') ?>
+      <?= $this->Html->script('http://www.classificadosifrstcc.website:81/tracking/public/js/ahoy.js') ?>
       <?= $this->Html->script('app.js') ?>
 
       <?= $this->fetch('meta') ?>
