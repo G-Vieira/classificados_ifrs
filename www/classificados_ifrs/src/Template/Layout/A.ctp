@@ -44,7 +44,6 @@
       <?= $this->fetch('meta') ?>
       <?= $this->fetch('css') ?>
       <?= $this->fetch('script') ?>
-      
     </head>
     <body>
       <div class="navbar navbar-default" role="navigation">
@@ -70,22 +69,20 @@
           <?php else: ?>
            <li><?= $this->Html->link(__('Login'), ['controller' => 'users', 'action' => 'login']) ?></li>
           <?php endif; ?>
+         <form data-section="campo_busca" class="navbar-form navbar-left" method="post" action="<?= $this->Url->build(["controller" => "Anuncios","action" => "pesquisar"]); ?>">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Pesquisar anúncios" name="pesquisa">
+          </div>
+          <button type="submit" class="btn btn-default">Procurar</button>
+        </form>
       </ul>
       <ul class="nav navbar-nav navbar-right" data-section="filtros">
-       
        <li><?= $this->Html->link(__('Anúncios'), ['controller' => 'anuncios']) ?></li>
        <li><?= $this->Html->link(__('Categorias'), ['controller' => 'categorias']) ?></li>
        <li><?= ($authUser)?($this->Html->link(__('Sugestões'), ['controller' => 'sugestoes', 'action' => 'add'])):'' ?></li>
        <li><?= ($authUser['role'] === 'admin')? ($this->Html->link(__('Usuarios'), ['controller' => 'Users', 'action' => 'index'])): ''?></li>
        <li><?= ($authUser['role'] === 'admin')? ($this->Html->link(__('Relatórios'), ['controller' => 'Tracking', 'action' => 'index'])): ''?></li>
-       <li>
-         <form data-section="campo_busca" class="navbar-form navbar-left" method="post" action="<?= $this->Url->build(["controller" => "Anuncios","action" => "pesquisar"]); ?>">
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="Pesquisar" id="pesquisa" name="pesquisa">
-          </div>
-          <button type="submit" class="btn btn-default" id="btn_pesquisar"></button>
-        </form>
-       </li>
+      
      </ul> 
    </div><!--/.nav-collapse -->
  </div>

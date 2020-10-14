@@ -90,27 +90,3 @@ div.message.hidden {
   padding: 0;
   position: initial;
 }
-
-#pesquisa {
-  width: 100%;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-  background-color: white; 
-}
-
-#btn_pesquisar{
-  background-color: white;
-  background-image: url('/webroot/img/searchicon.png');
-  background-position: 6px 5px; 
-  background-repeat: no-repeat;
-  height: 34px;
-  width: 35px;
-}
-
-.btn_categorias{
-  width: 33%;
-  border: 1px solid;
-  margin-top: 2px;
-}
