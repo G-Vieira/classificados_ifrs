@@ -7,7 +7,7 @@ function getCookie(name) {
 var url = new URL(document.URL).search;
 
 ahoy.configure({
-  urlPrefix: "http://www.classificadosifrstcc.website:81",
+  urlPrefix: "http://classificadostcc.com.br:81",
   trackingId: "tracking_anuncio",
   trackingIdElem: "text",
   filtros: "filtros",

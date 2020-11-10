@@ -50,6 +50,13 @@ class TrackingController extends AppController {
   public function relatorio4(){
     $this->isAdmin();
   }
+  
+  /*
+    Teste A/B
+  */
+  public function relatorio5(){
+    $this->isAdmin();
+  }
 
   public function visitasmysql(){
     $this->RequestHandler->respondAs('json');
